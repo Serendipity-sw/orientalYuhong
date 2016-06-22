@@ -6,6 +6,14 @@ body, html, ul, li, img {
     overflow: hidden;
     box-sizing: border-box;
 }
+html,body{
+    width:100%;
+    height:100%;
+}
+body{
+    overflow-y: auto;
+    overflow-x: hidden;
+}
 span {
     font: normal 12px/1.5 'microsoft yahei';
 }
