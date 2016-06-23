@@ -1,4 +1,4 @@
-body, html, ul, li, img {
+body, html, ul, li {
     padding: 0;
     margin: 0;
     display: block;
@@ -11,8 +11,9 @@ html,body{
     height:100%;
 }
 body{
+    overflow:hidden;
     overflow-y: auto;
-    overflow-x: hidden;
+    position: relative;
 }
 span {
     font: normal 12px/1.5 'microsoft yahei';
