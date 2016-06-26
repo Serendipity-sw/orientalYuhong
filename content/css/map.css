@@ -1,108 +1,108 @@
 /*左部区域搜索*/
 body>.leftSearchArea{
 
-width: 324px;
+    width: 324px;
 
-position: absolute;
+    position: absolute;
 
-left: 15px;
+    left: 15px;
 
-display: block;
+    display: block;
 
-top: 17px;
+    top: 17px;
 
-margin: 0;
+    margin: 0;
 
-padding: 0;
+    padding: 0;
 
-z-index: 1;
+    z-index: 1;
 }
 /*顶部区域*/
 body>.leftSearchArea>.top{
 
-background-color: white;
+    background-color: white;
 
-position: relative;
+    position: relative;
 
-margin: 0;
+    margin: 0;
 
-padding: 0;
+    padding: 0;
 }
 body>.leftSearchArea>.top>.logoIcon{
 
-margin-top: 22px;
+    margin-top: 22px;
 
-margin-left: 15px;
+    margin-left: 15px;
 }
 body>.leftSearchArea>.top>.divider{border: 1px solid #919191;width: 294px;margin: 0 auto;margin-top: 8px;}
 body>.leftSearchArea>.top>.categoryList{
 
-margin: 0 auto;
+    margin: 0 auto;
 
-margin-top: 11px;
+    margin-top: 11px;
 
-width: 294px;
+    width: 294px;
 }
 body>.leftSearchArea>.top>.categoryList>.rows{
 
-margin-top: 7px;
+    margin-top: 7px;
 
-height: 30px;
+    height: 30px;
 }
 body>.leftSearchArea>.top>.categoryList>.rows:first-child{
 
-border-bottom: 1px solid #f7f7f7;
+    border-bottom: 1px solid #f7f7f7;
 }
 body>.leftSearchArea>.top>.categoryList>.rows>.title{
 
-font-size: 15px;
+    font-size: 15px;
 
-display: block;
+    display: block;
 
-margin: 0;
+    margin: 0;
 
-float: left;
+    float: left;
 
-padding: 0;
+    padding: 0;
 }
 body>.leftSearchArea>.top>.categoryList>.rows>.sureBtn{
 
-height: 14px;
+    height: 14px;
 
-margin-left: 220px;
+    margin-left: 220px;
 
-margin-top: 4px;
+    margin-top: 4px;
 }
 body>.leftSearchArea>.top>.categoryList>.rowsList{
 
-border-top: 1px solid #f7f7f7;
+    border-top: 1px solid #f7f7f7;
 
-border-bottom: 1px solid #f7f7f7;
+    border-bottom: 1px solid #f7f7f7;
 
-margin-top: 9px;
+    margin-top: 9px;
 
-height: 307px;
+    height: 307px;
 
-overflow: hidden;
+    overflow: hidden;
 
-display: none;
+    display: none;
 }
 body>.leftSearchArea>.top>.categoryList>.rowsList .title{
 
-display: block;
+    display: block;
 
-margin-top: 5px;
+    margin-top: 5px;
 
-font-size: 13px;
+    font-size: 13px;
 
-color: #6a6a6a;
+    color: #6a6a6a;
 }
 /*顶部区域*/
 
 /*中间区域*/
 body>.leftSearchArea>.center{
 
-display: none;
+    display: none;
 }
 body>.leftSearchArea>.center>.centerTop{
 
@@ -130,11 +130,11 @@ body>.leftSearchArea>.center>.more{
 /*底部区域*/
 body>.leftSearchArea>.searchBottom{
 
-background-color: white;
+    background-color: white;
 
-margin-top: 22px;
+    margin-top: 22px;
 
-overflow: hidden;
+    overflow: hidden;
 }
 body>.leftSearchArea>.searchBottom>.rows{width: 294px;margin: 0 auto;overflow: hidden;}
 body>.leftSearchArea>.searchBottom>.rows:first-child{display: block;}
@@ -148,80 +148,80 @@ body>.leftSearchArea>.searchBottom>.rows>.title{
 }
 body>.leftSearchArea>.searchBottom>.searchBtn{
 
-display: block;
+    display: block;
 
-margin: 0 auto;
+    margin: 0 auto;
 
-width: 117px;
+    width: 117px;
 
-background-color: red;
+    background-color: red;
 
-border-radius: 8px;
+    border-radius: 8px;
 
-height: 42px;
+    height: 42px;
 
-text-align: center;
+    text-align: center;
 
-line-height: 42px;
+    line-height: 42px;
 
-font-size: 18px;
+    font-size: 18px;
 
-letter-spacing: 2px;
+    letter-spacing: 2px;
 
-color: #fefefe;
+    color: #fefefe;
 
-margin-bottom: 20px;
+    margin-bottom: 20px;
 
-margin-top: 13px;
+    margin-top: 13px;
 }
 
 /*搜索结果区域*/
 body>.leftSearchArea>.searchBottom>.searchList{
 
-width: 294px;
+    width: 294px;
 
-margin: 0 auto;
+    margin: 0 auto;
 
-height: 305px;
+    height: 305px;
 
-margin-bottom: 19px;
+    margin-bottom: 19px;
 
-/* display: none; */
+    /* display: none; */
 }
 body>.leftSearchArea>.searchBottom>.searchList .rows{
 
-margin-top: 8px;
+    margin-top: 8px;
 
-cursor: pointer;
+    cursor: pointer;
 }
 body>.leftSearchArea>.searchBottom>.searchList .rows>.number{
 
 }
 body>.leftSearchArea>.searchBottom>.searchList .rows>.number>.sortNumber{
 
-background: url(../images/numberTitle.png) no-repeat 100% 100%;
+    background: url(../images/numberTitle.png) no-repeat 100% 100%;
 
-display: block;
+    display: block;
 
-float: left;
+    float: left;
 
-width: 22px;
+    width: 22px;
 
-height: 22px;
+    height: 22px;
 
-background-size: 99%;
+    background-size: 99%;
 
-text-align: center;
+    text-align: center;
 
-line-height: 19px;
+    line-height: 19px;
 
-color: white;
+    color: white;
 }
 body>.leftSearchArea>.searchBottom>.searchList .rows>.title{
 
-margin-left: 7px;
+    margin-left: 7px;
 
-font-size: 14px;
+    font-size: 14px;
 }
 /*搜索结果区域*/
 
@@ -233,7 +233,7 @@ font-size: 14px;
 /*左部详情区域*/
 body>.leftDetail{
 
-display: none;
+    display: none;
 }
 body>.leftDetail>.left{
 
@@ -337,109 +337,152 @@ body>.leftDetail>.left>.projectPhoto>img{
 /*地图模块*/
 body>.mapArea{
 
-width: 100%;
+    width: 100%;
 
-height: 100%;
+    height: 100%;
 }
 /*地图模块*/
 
 /*右部文字说明区域*/
 body>.wordDescription{
-position: absolute;
-top: 22px;
-right: -47px;
-background-color: white;
-width: 406px;
-border-radius: 48px;
-height: 64px;
+
+    position: absolute;
+
+    top: 22px;
+
+    right: -47px;
+
+    background-color: white;
+
+    width: 406px;
+
+    border-radius: 48px;
+
+    height: 64px;
 }
 body>.wordDescription>.goBack{
-margin-top: 21px;
-float: left;
-margin-left: 23px;
-cursor: pointer;
+
+    margin-top: 21px;
+
+    float: left;
+
+    margin-left: 23px;
+
+    cursor: pointer;
 }
 
 /*区域显示说明*/
 body>.wordDescription>.areaShow{
 
-float: left;
+    float: left;
 
-margin-left: 23px;
+    margin-left: 23px;
 
-margin-top: 21px;
+    margin-top: 21px;
 
-cursor: pointer;
+    cursor: pointer;
 }
 body>.wordDescription>.areaShow>.positionIcon{
 
-float: left;
+    float: left;
 }
 body>.wordDescription>.areaShow>.areaTitle{
 
-font-size: 13px;
+    font-size: 13px;
 
-display: block;
+    display: block;
 
-width: 90px;
+    width: 90px;
 
-margin-left: 18px;
+    margin-left: 18px;
 
-float: left;
+    float: left;
 
-margin-top: 1px;
+    margin-top: 1px;
 
-background: url(../images/expansion.png) no-repeat 74% 60%;
+    background: url(../images/expansion.png) no-repeat 74% 60%;
 }
 /*区域显示说明*/
 
 /*用户区域*/
 body>.wordDescription>.userArea{
-float: left;
-margin-left: 0px;
-margin-top: 8px;
-cursor: pointer;
-width: 166px;
+
+    float: left;
+
+    margin-left: 0px;
+
+    margin-top: 8px;
+
+    cursor: pointer;
+
+    width: 166px;
 }
 body>.wordDescription>.userArea>.userPhoto{
-width: 34%;
-border-radius: 85px;
-float: left;
-display: block;
-cursor: pointer;
+
+    width: 29%;
+
+    border-radius: 85px;
+
+    float: left;
+
+    display: block;
+
+    cursor: pointer;
+
+    margin-top: 3px;
 }
 body>.wordDescription>.userArea>.userName{
-float: left;
-display: block;
-width: 93px;
-margin-left: 13px;
-margin-top: 16px;
-background: url(../images/expansion.png) no-repeat 86% 60%;
-cursor: pointer;
+
+    float: left;
+
+    display: block;
+
+    width: 102px;
+
+    margin-left: 13px;
+
+    margin-top: 16px;
+
+    background: url(../images/expansion.png) no-repeat 86% 60%;
+
+    cursor: pointer;
 }
 /*用户区域*/
 
 /*城市列表区域*/
 body>.cityListArea{
-position: absolute;
-top: 91px;
-right: 0px;
-width: 308px;
-background-color: white;
+
+    position: absolute;
+
+    top: 91px;
+
+    right: 0;
+
+    width: 308px;
+
+    background-color: white;
 }
 body>.cityListArea>.cityTitle{
-margin: 20px 0px 12px 12px;
-display: block;
+
+    margin: 20px 0 8px 12px;
+
+    display: block;
 }
 body>.cityListArea>.closeBtn{
 
+    position: absolute;
+
+    right: 12px;
+
+    top: 20px;
 }
 body>.cityListArea>.cityDivider{
 
-}
-body>.cityListArea>.currentCityArea{
+    border-bottom: 1px solid #f7f7f7;
 
+    width: 92%;
 }
+body>.cityListArea>.currentCityArea{margin: 12px 0px 7px 12px;}
 body>.cityListArea>.currentCityArea>.currentCity{
 
 }
@@ -452,43 +495,142 @@ body>.cityListArea>.currentCityArea>.cityName{
 body>.cityListArea>.popularCity{
 
 }
-body>.cityListArea>.popularCity>.cityList{
-
-}
+body>.cityListArea>.popularCity>.cityList{width: 92%;margin: 0 auto;}
 body>.cityListArea>.popularCity>.cityList>.rows{
 
+    float: left;
+
+    margin-left: 19px;
+
+    cursor: pointer;
+}
+body>.cityListArea>.popularCity>.cityList>.rows:first-child{
+
+    margin: 0;
+}
+body>.cityListArea>.popularCity>.cityList>.rows:nth-child(n+8){
+
+    margin-top: 9px;
+
+    margin-bottom: 14px;
+}
+body>.cityListArea>.popularCity>.cityList>.rows:nth-child(8){
+
+    margin-left: 0;
 }
 body>.cityListArea>.popularCity>.cityList>.cityName{
 
+    color: red;
 }
 /*城市列表区域1*/
 
 /*搜索区域*/
 body>.cityListArea>.searchArea{
 
+    width: 92%;
+
+    margin: 0 auto;
+
+    overflow: hidden;
 }
 body>.cityListArea>.searchArea>.citySelect{
 
+    float: left;
+
+    width: 92px;
+
+    border: 1px solid red;
+
+    margin: 0;
+
+    padding: 0;
 }
 body>.cityListArea>.searchArea>.citySelect>span{
 
-}
-body>.cityListArea>.searchArea>.inputCityArea{
+    display: block;
 
+    float: left;
+
+    width: 50%;
+
+    text-align: center;
+
+    cursor: pointer;
+
+    color: red;
+
+    height: 27px;
+
+    line-height: 27px;
 }
+body>.cityListArea>.searchArea>.citySelect>.select{
+
+    background: red;
+
+    color: white;
+}
+body>.cityListArea>.searchArea>.inputCityArea{margin-left: 8px;float: left;}
 body>.cityListArea>.searchArea>.inputCityArea>.inputCityName{
 
+    width: 148px;
+
+    height: 25px;
+
+    display: block;
+
+    border: 1px solid red;
+
+    float: left;
 }
 body>.cityListArea>.searchArea>.inputCityArea>.searchBtn{
 
+    width: 31px;
+
+    height: 29px;
+
+    display: block;
+
+    float: left;
+
+    cursor: pointer;
+
+    background: url(../images/seachBtn.png) no-repeat 50%;
+
+    background-size: 50%;
+
+    background-color: red;
 }
 /*搜索区域*/
 
 body>.cityListArea>.letterSelectArea{
 
+    width: 92%;
+
+    margin: 0 auto;
 }
 body>.cityListArea>.letterSelectArea>.rows{
 
+    float: left;
+
+    margin-left: 17px;
+
+    cursor: pointer;
+
+    margin-top: 5px;
+
+    font-weight: 500;
+}
+body>.cityListArea>.letterSelectArea>.rows:first-child{
+
+    margin-left: 0;
+}
+body>.cityListArea>.letterSelectArea>.rows:nth-child(13){
+
+    margin-left: 0;
+}
+body>.cityListArea>.letterSelectArea>.rows:nth-child(n+13){
+
+    margin-bottom: 9px;
 }
 body>.cityListArea>.cityDivider{
 
@@ -497,43 +639,99 @@ body>.cityListArea>.cityDivider{
 /*城市列表区域3*/
 body>.cityListArea>.provinceFilterArea{
 
+    width: 97%;
+
+    height: 182px;
+
+    margin-left: 12px;
+
+    margin-bottom: 12px;
 }
-body>.cityListArea>.provinceFilterArea>.provinceCityList{
+body>.cityListArea>.provinceFilterArea .provinceCityList{
 
 }
-body>.cityListArea>.provinceFilterArea>.provinceCityList>.rows{
+body>.cityListArea>.provinceFilterArea .provinceCityList>.rows{
 
 }
-body>.cityListArea>.provinceFilterArea>.provinceCityList>.rows>.letterNumber{
+body>.cityListArea>.provinceFilterArea .provinceCityList>.rows>.letterNumber{
 
+    float: left;
+
+    display: block;
+
+    width: 18px;
+
+    background-color: red;
+
+    text-align: center;
+
+    color: white;
 }
-body>.cityListArea>.provinceFilterArea>.provinceCityList>.rows>.provinceName{
+body>.cityListArea>.provinceFilterArea .provinceCityList>.rows>.provinceName{
 
+    display: block;
+
+    float: left;
+
+    margin-left: 10px;
+
+    font-weight: 700;
 }
-body>.cityListArea>.provinceFilterArea>.provinceCityList>.rows>.cityList{
+body>.cityListArea>.provinceFilterArea .provinceCityList>.rows>.cityList{
 
+    float: left;
+
+    width: 216px;
 }
-body>.cityListArea>.provinceFilterArea>.provinceCityList>.rows>.cityList>.cityName{
+body>.cityListArea>.provinceFilterArea .provinceCityList>.rows>.cityList>.cityName{
 
+    display: block;
+
+    float: left;
+
+    margin-left: 12px;
+
+    height: 21px;
 }
 
 body>.cityListArea>.cityFilterArea{
 
+    width: 92%;
+
+    margin: 0 auto;
+
+    height: 153px;
+
+    overflow: hidden;
 }
 body>.cityListArea>.cityFilterArea>.cityList{
 
 }
 body>.cityListArea>.cityFilterArea>.cityList>.rows{
 
+    float: left;
+
+    font-weight: 700;
+
+    margin-left: 12px;
 }
 body>.cityListArea>.cityFilterArea>.cityList>.rows>.letterNumber{
 
+    display: block;
+
+    float: left;
+
+    width: 18px;
+
+    text-align: center;
+
+    background-color: red;
+
+    color: white;
 }
 body>.cityListArea>.cityFilterArea>.cityList>.rows>.cityList{
-
 }
 body>.cityListArea>.cityFilterArea>.cityList>.rows>.cityList>.cityName{
-
 }
 /*城市列表区域3*/
 
