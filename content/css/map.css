@@ -1,21 +1,23 @@
 /*左部区域搜索*/
 body>.leftSearchArea{
 
-    width: 324px;
+width: 324px;
 
-    position: absolute;
+position: absolute;
 
-    left: 15px;
+left: 15px;
 
-    display: block;
+display: block;
 
-    top: 17px;
+top: 17px;
 
-    margin: 0;
+margin: 0;
 
-    padding: 0;
+padding: 0;
 
-    z-index: 1;
+z-index: 1;
+
+display: none;
 }
 /*顶部区域*/
 body>.leftSearchArea>.top{
@@ -233,66 +235,216 @@ body>.leftSearchArea>.searchBottom>.searchList .rows>.title{
 /*左部详情区域*/
 body>.leftDetail{
 
-    display: none;
+/* display: none; */
+
+position: absolute;
+
+top: 20px;
+
+z-index: 1;
+
+left: 12px;
 }
 body>.leftDetail>.left{
-
+background-color: white;
+width: 329px;
+overflow: hidden;
+margin: 0;
+padding: 0;
+float: left;
 }
 body>.leftDetail>.left>.title{
 
+display: block;
+
+margin-top: 18px;
+
+font-size: 16px;
+
+margin-left: 10px;
 }
 body>.leftDetail>.left>.divider{
 
+border-bottom: 1px solid #f7f7f7;
+
+width: 93%;
+
+margin: 0 auto;
+
+margin-top: 6px;
 }
 
 /*进度区域*/
 body>.leftDetail>.left>.subtitle{
 
+display: block;
+
+margin: 9px 0px 0px 10px;
 }
 body>.leftDetail>.left>.progressRegion{
 
+width: 93%;
+
+margin: 0 auto;
+
+border: 1px solid #ededed;
+
+margin-top: 9px;
 }
 body>.leftDetail>.left>.progressRegion>.progressRows{
 
+margin: 0 auto;
+
+margin-top: 16px;
+
+width: 93%;
+
+position: relative;
+
+overflow: hidden;
+
+padding-top: 16px;
+}
+body>.leftDetail>.left>.progressRegion>.progressRows:nth-child(n+2){
+
+width: 94%;
 }
 body>.leftDetail>.left>.progressRegion>.progressRows>img{
 
+float: left;
+
+display: block;
+
+width: 24px;
+
+margin-left: 12px;
 }
 body>.leftDetail>.left>.progressRegion>.progressRows>.title{
 
+display: block;
+
+float: left;
+
+height: 24px;
+
+line-height: 24px;
+
+margin-left: 5px;
+
+width: 35px;
+
+background: url(../images/expansion.png) no-repeat 100%;
+
+background-size: 24%;
+
+cursor: pointer;
 }
 body>.leftDetail>.left>.progressRegion>.progressRows>.dateTime{
 
+position: absolute;
+
+top: 0px;
+
+border: 1px solid #dcdcdc;
+
+display: block;
+
+height: 16px;
+
+left: 121px;
+
+line-height: 16px;
 }
 body>.leftDetail>.left>.progressRegion>.progressRows>.progressBarArea{
 
+background-color: #f1f1f1;
+
+width: 153px;
+
+height: 10px;
+
+float: left;
+
+border-radius: 14px;
+
+margin-top: 8px;
+
+margin-left: 1px;
 }
 body>.leftDetail>.left>.progressRegion>.progressRows>.progressBarArea>.progressBar{
 
+height: 6px;
+
+width: 50px;
+
+background-color: red;
+
+border-radius: 91px;
+
+margin: 2px 0px 0px 5px;
 }
 body>.leftDetail>.left>.progressRegion>.progressRows>.number{
 
+position: absolute;
+
+left: 132px;
+
+font-weight: bold;
+
+top: 23px;
+
+background-color: #f1f1f1;
+
+height: 12px;
+
+line-height: 12px;
 }
 body>.leftDetail>.left>.progressRegion>.progressRows>.scheduleNumber{
 
+display: block;
+
+margin: 2px 0 0 5px;
+
+float: left;
+
+color: red;
 }
 body>.leftDetail>.left>.progressRegion>.dottedLine{
 
+border: 1px dashed #ededed;
+
+width: 93%;
+
+margin: 0 auto;
+
+margin-top: 13px;
 }
 body>.leftDetail>.left>.progressRegion>.progressRows>a{
 
-}
-body>.leftDetail>.left>.progressRegion>.gather{
+float: left;
 
+width: 49px;
+
+color: white;
+
+background-color: #10cad7;
+
+height: 23px;
+
+border-radius: 5px;
+
+line-height: 23px;
+
+text-align: center;
 }
+body>.leftDetail>.left>.progressRegion>.gather{width: 81%;margin: 10px auto;}
 body>.leftDetail>.left>.progressRegion>.gather>.total{
 
 }
-body>.leftDetail>.left>.progressRegion>.gather>.total>.number{
+body>.leftDetail>.left>.progressRegion>.gather>span>.number{
 
 }
 body>.leftDetail>.left>.progressRegion>.gather>.completion{
-
 }
 body>.leftDetail>.left>.progressRegion>.gather>.processing{
 
@@ -300,38 +452,83 @@ body>.leftDetail>.left>.progressRegion>.gather>.processing{
 body>.leftDetail>.left>.progressRegion>.gather>.notStarted{
 
 }
+body>.leftDetail>.left>.progressRegion>.gather>span:nth-child(n+2){
+
+margin-left: 13px;
+}
 /*进度区域*/
 
 /*项目信息区域*/
 body>.leftDetail>.left>.projectTitle{
 
-}
-body>.leftDetail>.left>.projectArea{
+margin: 10px 0px 0px 10px;
 
+display: block;
 }
+body>.leftDetail>.left>.projectArea{width: 93%;margin: 0 auto;border: 1px solid #ededed;margin-top: 9px;}
 body>.leftDetail>.left>.projectArea>.rows{
 
+width: 90%;
+
+margin: 9px auto;
 }
 body>.leftDetail>.left>.projectArea>.rows>.title{
 
+color: #727272;
 }
 body>.leftDetail>.left>.projectArea>.rows>.content{
 
+margin-left: 5px;
 }
 /*项目信息区域*/
 
 /*项目图片展示区域*/
 body>.leftDetail>.left>.projectPhotoTitle{
 
+margin: 10px 0px 0px 10px;
+
+display: block;
 }
 body>.leftDetail>.left>.projectPhoto{
 
+width: 93%;
+
+margin: 0 auto;
+
+margin-top: 9px;
 }
 body>.leftDetail>.left>.projectPhoto>img{
 
+width: 99px;
+
+height: 103px;
+}
+body>.leftDetail>.left>.projectPhoto>img:nth-child(n+2){
+
+}
+body>.leftDetail>.left>.enterBtn{
+margin: 24px auto;
+display: block;
+width: 155px;
+height: 40px;
+background-color: red;
+color: white;
+text-align: center;
+line-height: 40px;
+font-size: 16px;
+letter-spacing: 2px;
+border-radius: 23px;
 }
 /*项目图片展示区域*/
 
+body>.leftDetail>.rightClose{
+float: left;
+width: 37px;
+background-color: red;
+height: 49px;
+background: url(../images/closeWhite.png) no-repeat 50% red;
+background-size: 53%;
+}
 /*左部详情区域*/
 
 /*地图模块*/
@@ -469,12 +666,10 @@ body>.cityListArea>.cityTitle{
     display: block;
 }
 body>.cityListArea>.closeBtn{
-
-    position: absolute;
-
-    right: 12px;
-
-    top: 20px;
+position: absolute;
+right: 12px;
+top: 20px;
+cursor: pointer;
 }
 body>.cityListArea>.cityDivider{
 
@@ -488,6 +683,7 @@ body>.cityListArea>.currentCityArea>.currentCity{
 }
 body>.cityListArea>.currentCityArea>.cityName{
 
+color: red;
 }
 /*城市列表区域*/
 
@@ -572,15 +768,19 @@ body>.cityListArea>.searchArea>.citySelect>.select{
 body>.cityListArea>.searchArea>.inputCityArea{margin-left: 8px;float: left;}
 body>.cityListArea>.searchArea>.inputCityArea>.inputCityName{
 
-    width: 148px;
+width: 138px;
 
-    height: 25px;
+height: 25px;
 
-    display: block;
+display: block;
 
-    border: 1px solid red;
+border: 1px solid red;
 
-    float: left;
+float: left;
+
+line-height: 25px;
+
+padding-left: 10px;
 }
 body>.cityListArea>.searchArea>.inputCityArea>.searchBtn{
 
@@ -649,6 +849,7 @@ body>.cityListArea>.provinceFilterArea{
 }
 body>.cityListArea>.provinceFilterArea .provinceCityList{
 
+display: none;
 }
 body>.cityListArea>.provinceFilterArea .provinceCityList>.rows{
 
@@ -685,13 +886,60 @@ body>.cityListArea>.provinceFilterArea .provinceCityList>.rows>.cityList{
 }
 body>.cityListArea>.provinceFilterArea .provinceCityList>.rows>.cityList>.cityName{
 
-    display: block;
+display: block;
 
-    float: left;
+float: left;
 
-    margin-left: 12px;
+margin-left: 12px;
 
-    height: 21px;
+height: 21px;
+
+color: #a7a7a7;
+}
+
+
+body>.cityListArea>.provinceFilterArea .cityFilterArea{
+
+}
+body>.cityListArea>.provinceFilterArea .cityFilterArea>.cityList{
+
+}
+body>.cityListArea>.provinceFilterArea .cityFilterArea>.cityList>.rows{
+
+}
+body>.cityListArea>.provinceFilterArea .cityFilterArea>.cityList>.rows>.letterNumber{
+
+width: 18px;
+
+text-align: center;
+
+display: block;
+
+background-color: red;
+
+color: white;
+
+float: left;
+}
+body>.cityListArea>.provinceFilterArea .cityFilterArea>.cityList>.rows>.cityList{
+
+float: left;
+
+width: 250px;
+}
+body>.cityListArea>.provinceFilterArea .cityFilterArea>.cityList>.rows>.cityList>.cityName{
+
+display: block;
+
+float: left;
+
+margin-left: 11px;
+
+height: 20px;
+
+line-height: 20px;
+
+color: #a7a7a7;
 }
 
 body>.cityListArea>.cityFilterArea{
