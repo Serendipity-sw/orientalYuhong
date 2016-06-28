@@ -321,34 +321,22 @@ body>.leftDetail>.left>.progressRegion>.progressRows:nth-child(n+2){
 width: 94%;
 }
 body>.leftDetail>.left>.progressRegion>.progressRows>img{
-
-float: left;
-
-display: block;
-
-width: 24px;
-
-margin-left: 12px;
+float: left;
+display: block;
+width: 24px;
+margin-left: 12px;
+margin-right: 11px;
 }
 body>.leftDetail>.left>.progressRegion>.progressRows>.title{
-
-display: block;
-
-float: left;
-
-height: 24px;
-
-line-height: 24px;
-
-margin-left: 5px;
-
-width: 35px;
-
-background: url(../images/expansion.png) no-repeat 100%;
-
-background-size: 24%;
-
-cursor: pointer;
+display: block;
+float: left;
+height: 24px;
+line-height: 24px;
+margin-left: 5px;
+width: 35px;
+background: url(../images/expansion.png) no-repeat 100%;
+background-size: 24%;
+cursor: pointer;
 }
 body>.leftDetail>.left>.progressRegion>.progressRows>.dateTime{
 
