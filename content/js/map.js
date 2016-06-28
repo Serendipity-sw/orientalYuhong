@@ -88,3 +88,28 @@ function statisticsShowOrHide() {
         value.style.display="none";
     });
 }
+
+/**
+ * 省份和城市区域文字选中切换事件
+ * 创建人:邵炜
+ * 创建时间:2016年6月28日17:42:42
+ */
+document.getElementsByClassName("citySelect")[0].addEventListener("click",function (e) {
+    this.querySelectorAll("span").forEach(function (value) {
+       value.className="";
+    });
+    var element=e.target;
+    element.className="select";
+    citySelectSwitch(element.textContent == "按省份");
+});
+
+/**
+ * 城市切换
+ * 创建人:邵炜
+ * 创建时间:2016年6月28日17:39:06
+ * @param bo true 省份显示, 城市隐藏   false 省份隐藏 城市显示
+ */
+function citySelectSwitch(bo) {
+    document.getElementsByClassName("provinceCityList")[0].style.display=bo?"block":"none";
+    document.getElementsByClassName("cityFilterArea")[0].style.display=bo?"none":"block";
+}
