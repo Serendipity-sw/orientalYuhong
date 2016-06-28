@@ -113,3 +113,22 @@ function citySelectSwitch(bo) {
     document.getElementsByClassName("provinceCityList")[0].style.display=bo?"block":"none";
     document.getElementsByClassName("cityFilterArea")[0].style.display=bo?"none":"block";
 }
+
+/**
+ * 城市选择地图区域关闭按钮事件
+ * 创建人:邵炜
+ * 创建时间:2016年6月28日17:50:13
+ */
+document.getElementsByClassName("closeBtn")[0].addEventListener(function () {
+    cityAreaShowOrHide(false);
+});
+
+/**
+ * 城市区域显示和隐藏事件
+ * 创建人:邵炜
+ * 创建时间:2016年6月28日17:47:45
+ * @param bo true 显示  false隐藏
+ */
+function cityAreaShowOrHide(bo) {
+    document.getElementsByClassName("cityListArea")[0].style.display=bo?"block":"none";
+}
