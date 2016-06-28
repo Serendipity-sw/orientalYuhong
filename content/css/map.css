@@ -325,7 +325,7 @@ body>.leftDetail>.left>.progressRegion>.progressRows>img{
 display: block;
 width: 24px;
 margin-left: 12px;
-margin-right: 11px;
+margin-right: 4px;
 }
 body>.leftDetail>.left>.progressRegion>.progressRows>.title{
 display: block;
@@ -335,8 +335,14 @@ body>.leftDetail>.left>.progressRegion>.progressRows>.title{
 margin-left: 5px;
 width: 35px;
 background: url(../images/expansion.png) no-repeat 100%;
-background-size: 24%;
+background-size: 23%;
 cursor: pointer;
+}
+body>.leftDetail>.left>.progressRegion>.progressRows:first-child>.title{
+width: 55px;
+margin-left: 0;
+background-size: 17%;
+background-position: 89%;
 }
 body>.leftDetail>.left>.progressRegion>.progressRows>.dateTime{
 
@@ -666,12 +672,18 @@ cursor: pointer;
 
 /*城市列表区域*/
 body>.cityListArea{
-position: absolute;
-top: 91px;
-right: 0;
-width: 308px;
-background-color: white;
-/* display: none; */
+
+position: absolute;
+
+top: 91px;
+
+right: 0;
+
+width: 308px;
+
+background-color: white;
+
+/* display: none; */
 }
 body>.cityListArea>.cityTitle{
 
@@ -866,19 +878,28 @@ body>.cityListArea>.provinceFilterArea{
     margin-bottom: 12px;
 }
 body>.cityListArea>.provinceFilterArea .provinceCityList{
-/* display: none; */
+
+/* display: none; */
 }
 body>.cityListArea>.provinceFilterArea .provinceCityList>.rows{
-margin: 5px 0 5px 0;
+
+margin: 5px 0 5px 0;
 }
 body>.cityListArea>.provinceFilterArea .provinceCityList>.rows>.letterNumber{
-float: left;
-display: block;
-width: 18px;
-background-color: red;
-text-align: center;
-color: white;
-height: 18px;
+
+float: left;
+
+display: block;
+
+width: 18px;
+
+background-color: red;
+
+text-align: center;
+
+color: white;
+
+height: 18px;
 }
 body>.cityListArea>.provinceFilterArea .provinceCityList>.rows>.provinceName{
 
@@ -891,21 +912,30 @@ body>.cityListArea>.provinceFilterArea .provinceCityList>.rows>.provinceName{
     font-weight: 700;
 }
 body>.cityListArea>.provinceFilterArea .provinceCityList>.rows>.cityList{
-float: left;
-width: 201px;
+
+float: left;
+
+width: 201px;
 }
 body>.cityListArea>.provinceFilterArea .provinceCityList>.rows>.cityList>.cityName{
-display: block;
-float: left;
-margin-left: 12px;
-height: 21px;
-color: #a7a7a7;
-cursor: pointer;
+
+display: block;
+
+float: left;
+
+margin-left: 12px;
+
+height: 21px;
+
+color: #a7a7a7;
+
+cursor: pointer;
 }
 
 
 body>.cityListArea>.provinceFilterArea .cityFilterArea{
-display: none;
+
+display: none;
 }
 body>.cityListArea>.provinceFilterArea .cityFilterArea>.cityList{
 
@@ -934,13 +964,20 @@ float: left;
 width: 250px;
 }
 body>.cityListArea>.provinceFilterArea .cityFilterArea>.cityList>.rows>.cityList>.cityName{
-display: block;
-float: left;
-margin-left: 11px;
-height: 20px;
-line-height: 20px;
-color: #a7a7a7;
-cursor: pointer;
+
+display: block;
+
+float: left;
+
+margin-left: 11px;
+
+height: 20px;
+
+line-height: 20px;
+
+color: #a7a7a7;
+
+cursor: pointer;
 }
 
 body>.cityListArea>.cityFilterArea{

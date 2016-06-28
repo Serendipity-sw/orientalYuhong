@@ -119,8 +119,8 @@ function citySelectSwitch(bo) {
  * 创建人:邵炜
  * 创建时间:2016年6月28日17:50:13
  */
-document.getElementsByClassName("closeBtn")[0].addEventListener(function () {
-    cityAreaShowOrHide(false);
+document.getElementsByClassName("closeBtn")[0].addEventListener("click",function () {
+    rightCityAreaShowOrHide(false);
 });
 
 /**
@@ -129,6 +129,6 @@ document.getElementsByClassName("closeBtn")[0].addEventListener(function () {
  * 创建时间:2016年6月28日17:47:45
  * @param bo true 显示  false隐藏
  */
-function cityAreaShowOrHide(bo) {
+function rightCityAreaShowOrHide(bo) {
     document.getElementsByClassName("cityListArea")[0].style.display=bo?"block":"none";
 }
