@@ -605,7 +605,30 @@ body>.mapArea .map_areaOverLay{
     margin-left: 39px;
     margin-top: 74px;
 }
+body>.mapArea .map_projectOverLay{
+    position: absolute;
+    width: 26px;
+    background: url(../images/redFlag.png) no-repeat;
+    background-size: 101%;
+    height: 31px;
+    opacity: 0.9;
+    margin-left: 39px;
+    margin-top: 74px;
+    cursor: pointer;
+}
 body>.mapArea .map_project{margin-top: 32px;text-align: center;cursor: pointer;color: white;}
+body>.mapArea .map_projectProject{margin-top: 32px;text-align: center;cursor: pointer;color: white;}
+body>.mapArea .map-projectTitle{margin-top: 32px;text-align: center;cursor: pointer;position: absolute;top: -85px;width: 293px;left: -126px;height: 65px;background-color: white;border: 1px solid #e6e4e2;display: none;}
+body>.mapArea .map-projectTitle span{
+    display: block;
+    text-align: center;
+    margin-top: 3px;
+}
+body>.mapArea .map-projectTitle span:first-child{
+    margin-top: 9px;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
 body>.mapArea .map_areaProject{text-align: center;cursor: pointer;color: white;margin-top: 3px;}
 body>.mapArea .map_cityProject{margin-top: 17px;text-align: center;cursor: pointer;color: white;font-size: 12px;}
 body>.mapArea .map-location{
