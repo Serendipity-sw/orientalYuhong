@@ -6,7 +6,7 @@
 //mapObj.addOverlay([{lng:116.395645,lat:39.929986,city:"北京市",count:15,process:12,noProcess:33,haveProcess:123,type:1,number:1,locationName:'卧牛山',remark:'卧牛山水电培训中心内精装修'},{lng:115.661434,lat:38.61384,city:"河北省",count:10,process:12,noProcess:33,haveProcess:123,type:1,number:2,locationName:'卧牛山',remark:'卧牛山水电培训中心内精装修'},{lng:122.753592,lat:41.6216,city:"辽宁省",count:30,process:12,noProcess:33,haveProcess:123,type:1,number:3,locationName:'卧牛山',remark:'卧牛山水电培训中心内精装修'}],3);
 
 /**
- * 地图实例方法
+ * 地图实例方法  方法粗糙, 待优化重构
  * 创建人:邵炜
  * 创建时间:2016年6月29日10:33:37
  */
