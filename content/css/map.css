@@ -321,28 +321,46 @@ body>.leftDetail>.left>.progressRegion>.progressRows:nth-child(n+2){
 width: 94%;
 }
 body>.leftDetail>.left>.progressRegion>.progressRows>img{
-float: left;
-display: block;
-width: 24px;
-margin-left: 12px;
-margin-right: 4px;
+
+float: left;
+
+display: block;
+
+width: 24px;
+
+margin-left: 12px;
+
+margin-right: 4px;
 }
 body>.leftDetail>.left>.progressRegion>.progressRows>.title{
-display: block;
-float: left;
-height: 24px;
-line-height: 24px;
-margin-left: 5px;
-width: 35px;
-background: url(../images/expansion.png) no-repeat 100%;
-background-size: 23%;
-cursor: pointer;
+
+display: block;
+
+float: left;
+
+height: 24px;
+
+line-height: 24px;
+
+margin-left: 5px;
+
+width: 35px;
+
+background: url(../images/expansion.png) no-repeat 100%;
+
+background-size: 23%;
+
+cursor: pointer;
 }
 body>.leftDetail>.left>.progressRegion>.progressRows:first-child>.title{
-width: 55px;
-margin-left: 0;
-background-size: 17%;
-background-position: 89%;
+
+width: 55px;
+
+margin-left: 0;
+
+background-size: 17%;
+
+background-position: 89%;
 }
 body>.leftDetail>.left>.progressRegion>.progressRows>.dateTime{
 
@@ -559,6 +577,70 @@ body>.mapArea{
     width: 100%;
 
     height: 100%;
+}
+body>.mapArea .map_overLay{
+    position: absolute;
+    width: 100px;
+    background: url(../images/provinceOverlay.png) no-repeat;
+    background-size: 101%;
+    height: 100px;
+    opacity: 0.9;
+}
+body>.mapArea .map_cityOverLay{
+    position: absolute;
+    width: 110px;
+    background: url(../images/provinceOverlay.png) no-repeat;
+    background-size: 101%;
+    height: 111px;
+    opacity: 0.9;
+    margin-left: -4px;
+}
+body>.mapArea .map_areaOverLay{
+    position: absolute;
+    width: 26px;
+    background: url(../images/redLocation.png) no-repeat;
+    background-size: 101%;
+    height: 31px;
+    opacity: 0.9;
+    margin-left: 39px;
+    margin-top: 74px;
+}
+body>.mapArea .map_project{margin-top: 32px;text-align: center;cursor: pointer;color: white;}
+body>.mapArea .map_areaProject{text-align: center;cursor: pointer;color: white;margin-top: 3px;}
+body>.mapArea .map_cityProject{margin-top: 17px;text-align: center;cursor: pointer;color: white;font-size: 12px;}
+body>.mapArea .map-location{
+    background: url(../images/blueLocate.png) no-repeat;
+    position: absolute;
+    width: 15px;
+    height: 11px;
+    background-size: 17px;
+    top: 104px;
+    left: 39px;
+    overflow: hidden;
+}
+body>.mapArea .map-areaLocation{
+    background: url(../images/redLocate.png) no-repeat;
+    position: absolute;
+    width: 15px;
+    height: 11px;
+    background-size: 17px;
+    top: 26px;
+    left: 4px;
+    overflow: hidden;
+}
+body>.mapArea .map-cityLocation{
+    background: url(../images/blueLocate.png) no-repeat;
+    position: absolute;
+    width: 15px;
+    height: 11px;
+    background-size: 17px;
+    top: 104px;
+    left: 45px;
+    overflow: hidden;
+}
+body>.mapArea .map_project>.map-title{
+}
+body>.mapArea .map_project>.map-process-project{
 }
 /*地图模块*/
 
