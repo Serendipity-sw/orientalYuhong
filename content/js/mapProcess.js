@@ -35,6 +35,10 @@ var mapObj=(function () {
         reset:null //地图重置
     };
     var mp=new BMap.Map("mapArea");
+
+    this._mp=mp;
+    this._dataS=data;
+
     /*
      设初始化地图。
      如果center类型为Point时，zoom必须赋值，范围3-19级，若调用高清底图（针对移动端开发）时，zoom可赋值范围为3-18级。
