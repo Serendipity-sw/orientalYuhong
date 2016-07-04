@@ -109,7 +109,7 @@ var mapObj=(function () {
         mp.clearOverlays();
         switch (type){
             case 0: //省级
-                data.forEach(function (value) {
+                $.each(data,function (index,value) {
                     mp.addOverlay(new ComplexCustomOverlay(new BMap.Point(value.lng,value.lat), value.city,"("+value.count+")"));
                 });
                 /**
@@ -117,16 +117,16 @@ var mapObj=(function () {
                  * 创建人:邵炜
                  * 创建时间:2016年6月29日10:50:07
                  */
-                document.querySelectorAll(".mapArea .map_project").forEach(function (value) {
-                    value.addEventListener("click",function(){
+                $(".mapArea .map_project").each(function (index,value) {
+                    $(value).click(function(){
                         if (data.overlayClick) {
-                            data.overlayClick(this.querySelector("div").textContent);
+                            data.overlayClick($(this).find("div:eq(0)").val());
                         }
                     });
                 });
                 break;
             case 1://市级
-                data.forEach(function (value) {
+                $.each(data,function (index,value) {
                     mp.addOverlay(new CityComplexCustomOverlay(new BMap.Point(value.lng,value.lat), value.city,"进行中:"+value.process,"未开工:"+value.noProcess,"已开工:"+value.haveProcess));
                 });
                 /**
@@ -134,16 +134,16 @@ var mapObj=(function () {
                  * 创建人:邵炜
                  * 创建时间:2016年6月29日10:50:07
                  */
-                document.querySelectorAll(".mapArea .map_cityProject").forEach(function (value) {
-                    value.addEventListener("click",function(){
+                $(".mapArea .map_cityProject").each(function (index,value) {
+                    $(value).click(function(){
                         if (data.cityOverlayClick) {
-                            data.cityOverlayClick(this.querySelector("div").textContent);
+                            data.cityOverlayClick($(this).find("div:eq(0)").val());
                         }
                     });
                 });
                 break;
             case 2://区域搜索点
-                data.forEach(function (value) {
+                $.each(data,function (index,value) {
                     mp.addOverlay(new areaComplexCustomOverlay(new BMap.Point(value.lng,value.lat),value.number));
                 });
                 /**
@@ -151,16 +151,16 @@ var mapObj=(function () {
                  * 创建人:邵炜
                  * 创建时间:2016年6月29日10:50:07
                  */
-                document.querySelectorAll(".mapArea .map_areaProject").forEach(function (value) {
-                    value.addEventListener("click",function(){
+                $(".mapArea .map_areaProject").each(function (index,value) {
+                    $(value).click(function(){
                         if (data.areaOverlayClick) {
-                            data.areaOverlayClick(this.querySelector("div").textContent);
+                            data.areaOverlayClick($(this).find("div:eq(0)").val());
                         }
                     });
                 });
                 break;
             case 3://项目覆盖点
-                data.forEach(function (value) {
+                $.each(data,function (index,value) {
                     mp.addOverlay(new projectComplexCustomOverlay(new BMap.Point(value.lng,value.lat),value.locationName,value.remark));
                 });
                 /**
@@ -168,14 +168,14 @@ var mapObj=(function () {
                  * 创建人:邵炜
                  * 创建时间:2016年6月29日10:50:07
                  */
-                document.querySelectorAll(".mapArea .map_projectOverLay").forEach(function (value) {
-                    value.addEventListener("click",function(){
-                        document.querySelectorAll(".map-projectTitle").forEach(function (value) {
+                $(".mapArea .map_projectOverLay").each(function (index,value) {
+                    $(value).click(function(){
+                        $(".map-projectTitle").each(function (index,value) {
                             value.style.display="none";
                         });
-                        this.querySelector(".map-projectTitle").style.display="block";
+                        $(this).find(".map-projectTitle:eq(0)").style.display="block";
                         if (data.areaOverlayClick) {
-                            data.areaOverlayClick(this.querySelector(".map-projectTitle span").textContent);
+                            data.areaOverlayClick($(this).find(".map-projectTitle span:eq(0)").textContent);
                         }
                     });
                 });

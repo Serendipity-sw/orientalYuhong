@@ -2,28 +2,19 @@
  * Created by wei on 2016/06/28.
  */
 
-Object.prototype.forEach=function (callback) {
-    var list=this;
-    for (var obj in list) {
-        if (obj.toLowerCase()==="length") {
-            break;
-        }
-        callback(list[obj],obj);
-    }
-};
 
 /**
  * 统计报表及劳务数据点击展开显示
  * 创建人:邵炜
  * 创建时间:2016年6月28日11:29:36
  */
-document.querySelectorAll(".categoryList> .rows").forEach(function(value){
+$(".categoryList> .rows").each(function(index,value){
     value.onclick=function () {
-        var rowsListElement=this.nextElementSibling,
+        var rowsListElement=$(this).next()[0],
             display=rowsListElement.style.display;
         statisticsShowOrHide();
         rowsListElement.style.display=display==="block"?"none":"block";
-        document.getElementsByClassName("searchList")[0].style.display="none";
+        $(".searchList")[0].style.display="none";
     };
 });
 
@@ -32,10 +23,10 @@ document.querySelectorAll(".categoryList> .rows").forEach(function(value){
  * 创建人:邵炜
  * 创建时间:2016年6月28日12:13:37
  */
-document.querySelector(".leftSearchArea .searchBtn").onclick=function () {
+$(".leftSearchArea .searchBtn")[0].onclick=function () {
     var postData={};
-    document.querySelectorAll(".searchBottom input").forEach(function(value){
-       postData[value.getAttribute("name")]=value.value;
+    $(".searchBottom input").each(function(index,value){
+       postData[$(value).attr("name")]=value.value;
     });
 
     //ajax方法
@@ -44,7 +35,7 @@ document.querySelector(".leftSearchArea .searchBtn").onclick=function () {
     //    liHtml+='<li class="rows"> <div class="number"><span class="sortNumber">'+value.Number+'</span></div> <span class="title">'+value.Name+'</span> </li>';
     // });
     // document.querySelector(".searchBottom .searchList").innerHTML=liHtml;
-    this.nextElementSibling.style.display="block";
+    $(this).next()[0].style.display="block";
     statisticsShowOrHide();
 };
 
@@ -53,7 +44,7 @@ document.querySelector(".leftSearchArea .searchBtn").onclick=function () {
  * 创建人:邵炜
  * 创建时间:2016年6月28日15:40:37
  */
-document.querySelectorAll(".searchList .rows").forEach(function (value) {
+$(".searchList .rows").each(function (index,value) {
    value.onclick=function () {
        cityAreaShowOrHide(true);
    };
@@ -94,7 +85,7 @@ document.getElementsByClassName("enterBtn")[0].onclick=function () {
  * 创建时间:2016年6月28日16:42:36
  */
 function statisticsShowOrHide() {
-    document.querySelectorAll(".categoryList .rowsList").forEach(function (value) {
+    $(".categoryList .rowsList").each(function (index,value) {
         value.style.display="none";
     });
 }
@@ -105,7 +96,7 @@ function statisticsShowOrHide() {
  * 创建时间:2016年6月28日17:42:42
  */
 document.getElementsByClassName("citySelect")[0].onclick=function (e) {
-    this.querySelectorAll("span").forEach(function (value) {
+    $(this).find("span").each(function (index,value) {
        value.className="";
     });
     var element=e.target;
