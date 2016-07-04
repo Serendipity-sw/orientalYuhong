@@ -1,44 +1,82 @@
 /*左部区域*/
 body>.leftArea{
-
+width: 218px;
+box-sizing: border-box;
+overflow: hidden;
+float: left;
 }
 
 /*头部logo*/
 body>.leftArea>.logoIcon{
-
+margin: 0 auto;
+width: 122px;
+display: block;
+margin-top: 26px;
 }
 /*头部logo*/
 
 /*搜索区域*/
 body>.leftArea>.search{
-
+border: 2px solid red;
+overflow: hidden;
+width: 174px;
+margin: 0 auto;
+margin-top: 17px;
 }
 body>.leftArea>.search>select{
-
+border: 0px;
+float: left;
+display: block;
+height: 24px;
 }
 body>.leftArea>.search>select>option{
 
 }
 body>.leftArea>.search>input{
-
+display: block;
+box-sizing: border-box;
+float: left;
+width: 85px;
+height: 24px;
+border: 0px;
+line-height: 24px;
 }
 body>.leftArea>.search>.searchBtn{
-
+width: 28px;
+height: 24px;
+background-color: red;
+display: block;
+float: left;
+cursor: pointer;
+background: url(../images/seachBtn.png) no-repeat 65% red;
+background-size: 57%;
+box-sizing: border-box;
 }
 /*搜索区域*/
 
 /*项目列表*/
 body>.leftArea>.projectList{
-
+width: 100%;
+margin-top: 25px;
 }
 body>.leftArea>.projectList>.rows{
 
 }
 body>.leftArea>.projectList>.rows>.endProject{
-
+display: block;
+width: 80%;
+margin: 0 auto;
+box-sizing: border-box;
+background: url(../images/projectEnd.png);
+padding-left: 27px;
+background-repeat: no-repeat;
+background-color: red;
+background-position: 7px 2px;
 }
 body>.leftArea>.projectList>.rows>.noProcess{
-
+display: block;
+width: 80%;
+margin: 0 auto;
 }
 body>.leftArea>.projectList>.rows>.select{
 
