@@ -32,7 +32,8 @@ var mapObj=(function () {
         areaOverlayClick:null, //将区域覆盖物单击回调事件 该事件传入参数区域名称
         projectOverlayClick:null, //将项目覆盖物单击回调事件 该事件传入参数项目所属名称
         setCenter:null, //设置地图的中心点区域 该事件参数传递经纬度, 第一个参数为lng 经度  第二个参数为lat纬度, 调用方式 setCenter(116.417854, 39.921988);
-        reset:null //地图重置
+        reset:null, //地图重置
+        length:0 //无用占位符
     };
     var mp=new BMap.Map("mapArea");
 

@@ -2,19 +2,29 @@
  * Created by wei on 2016/06/28.
  */
 
+Object.prototype.forEach=function (callback) {
+    var list=this;
+    for (var obj in list) {
+        if (obj.toLowerCase()==="length") {
+            break;
+        }
+        callback(list[obj],obj);
+    }
+};
+
 /**
  * 统计报表及劳务数据点击展开显示
  * 创建人:邵炜
  * 创建时间:2016年6月28日11:29:36
  */
 document.querySelectorAll(".categoryList> .rows").forEach(function(value){
-    value.addEventListener("click",function () {
+    value.onclick=function () {
         var rowsListElement=this.nextElementSibling,
             display=rowsListElement.style.display;
         statisticsShowOrHide();
         rowsListElement.style.display=display==="block"?"none":"block";
         document.getElementsByClassName("searchList")[0].style.display="none";
-    });
+    };
 });
 
 /**
@@ -22,7 +32,7 @@ document.querySelectorAll(".categoryList> .rows").forEach(function(value){
  * 创建人:邵炜
  * 创建时间:2016年6月28日12:13:37
  */
-document.querySelector(".leftSearchArea .searchBtn").addEventListener("click",function () {
+document.querySelector(".leftSearchArea .searchBtn").onclick=function () {
     var postData={};
     document.querySelectorAll(".searchBottom input").forEach(function(value){
        postData[value.getAttribute("name")]=value.value;
@@ -36,7 +46,7 @@ document.querySelector(".leftSearchArea .searchBtn").addEventListener("click",fu
     // document.querySelector(".searchBottom .searchList").innerHTML=liHtml;
     this.nextElementSibling.style.display="block";
     statisticsShowOrHide();
-});
+};
 
 /**
  * 城市名称点击展现详细
@@ -44,9 +54,9 @@ document.querySelector(".leftSearchArea .searchBtn").addEventListener("click",fu
  * 创建时间:2016年6月28日15:40:37
  */
 document.querySelectorAll(".searchList .rows").forEach(function (value) {
-   value.addEventListener("click",function () {
+   value.onclick=function () {
        cityAreaShowOrHide(true);
-   });
+   };
 });
 
 /**
@@ -54,9 +64,9 @@ document.querySelectorAll(".searchList .rows").forEach(function (value) {
  * 创建人:邵炜
  * 创建时间:2016年6月28日16:09:56
  */
-document.getElementsByClassName("rightClose")[0].addEventListener("click",function () {
+document.getElementsByClassName("rightClose")[0].onclick=function () {
     cityAreaShowOrHide(false);
-});
+};
 
 /**
  * 城市检索区域和城市信息框区域切换
@@ -74,9 +84,9 @@ function cityAreaShowOrHide(bo) {
  * 创建人:邵炜
  * 创建时间:2016年6月28日16:16:05
  */
-document.getElementsByClassName("enterBtn")[0].addEventListener("click",function () {
+document.getElementsByClassName("enterBtn")[0].onclick=function () {
     alert(1);
-});
+};
 
 /**
  * 统计报表及劳务数据隐藏方法
@@ -94,14 +104,14 @@ function statisticsShowOrHide() {
  * 创建人:邵炜
  * 创建时间:2016年6月28日17:42:42
  */
-document.getElementsByClassName("citySelect")[0].addEventListener("click",function (e) {
+document.getElementsByClassName("citySelect")[0].onclick=function (e) {
     this.querySelectorAll("span").forEach(function (value) {
        value.className="";
     });
     var element=e.target;
     element.className="select";
     citySelectSwitch(element.textContent == "按省份");
-});
+};
 
 /**
  * 城市切换
@@ -119,9 +129,9 @@ function citySelectSwitch(bo) {
  * 创建人:邵炜
  * 创建时间:2016年6月28日17:50:13
  */
-document.getElementsByClassName("closeBtn")[0].addEventListener("click",function () {
+document.getElementsByClassName("closeBtn")[0].onclick=function () {
     rightCityAreaShowOrHide(false);
-});
+};
 
 /**
  * 城市区域显示和隐藏事件

@@ -146,7 +146,7 @@ body>.leftSearchArea>.searchBottom{
 body>.leftSearchArea>.searchBottom>.rows{width: 294px;margin: 0 auto;overflow: hidden;}
 body>.leftSearchArea>.searchBottom>.rows:first-child{display: block;}
 body>.leftSearchArea>.searchBottom>.rows:nth-child(4){display: none;}
-body>.leftSearchArea>.searchBottom>.rows>input{border: 1px solid #dcdcdc;margin-top: 10px;height: 29px;width: 278px;padding-left: 14px;font-size: 15px;}
+body>.leftSearchArea>.searchBottom>.rows>input{border: 1px solid #dcdcdc;margin-top: 10px;height: 29px;width: 294px;padding-left: 14px;font-size: 15px;box-sizing: border-box;}
 body>.leftSearchArea>.searchBottom>.rows:first-child>input{
     margin-top: 24px;
 }
@@ -865,16 +865,12 @@ body>.cityListArea>.searchArea{
     overflow: hidden;
 }
 body>.cityListArea>.searchArea>.citySelect{
-
-    float: left;
-
-    width: 92px;
-
-    border: 1px solid red;
-
-    margin: 0;
-
-    padding: 0;
+float: left;
+width: 92px;
+border: 1px solid red;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 }
 body>.cityListArea>.searchArea>.citySelect>span{
 
