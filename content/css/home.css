@@ -1,15 +1,25 @@
 /*左部区域*/
 body>.leftArea{
-width: 218px;
-box-sizing: border-box;
-overflow: hidden;
-margin-bottom: 1px;
-position: fixed;
-border-right: 1px solid #e9e9e9;
-background-color: white;
-box-shadow: 7px 9px 7px #e4e3e3;
-bottom: 0;
-top: 0;
+
+width: 218px;
+
+box-sizing: border-box;
+
+overflow: hidden;
+
+margin-bottom: 1px;
+
+position: fixed;
+
+border-right: 1px solid #e9e9e9;
+
+background-color: white;
+
+box-shadow: 7px 9px 7px #e4e3e3;
+
+bottom: 0;
+
+top: 0;
 }
 
 /*头部logo*/
@@ -180,19 +190,19 @@ body>.centerArea{
 /*头部区域*/
 body>.centerArea>.head{
 
-    overflow: hidden;
+overflow: hidden;
 
-    height: 87px;
+height: 65px;
 
-    padding-top: 48px;
+padding-top: 27px;
 
-    box-sizing: border-box;
+box-sizing: border-box;
 
-    width: 98%;
+width: 98%;
 
-    margin: 0 auto;
+margin: 0 auto;
 
-    border-bottom: 3px solid #f7f7f7;
+border-bottom: 3px solid #f7f7f7;
 }
 
 /*头部左区域*/
@@ -1046,58 +1056,177 @@ margin-left: 0;
 
 /*右部区域*/
 body>.rightArea{
-
-    width: 301px;
-
-    position: absolute;
-
-    right: 0;
-
-    top: 0;
+width: 301px;
+position: fixed;
+right: 0;
+background-color: #f6f6f6;
+top: 0;
+box-sizing: border-box;
+padding-bottom: 16px;
 }
 
 /*头部用户区域*/
 body>.rightArea>.headTop{
 
+border-bottom: 1px solid #cacaca;
+
+overflow: hidden;
+
+box-sizing: border-box;
+
+height: 59px;
 }
 body>.rightArea>.headTop>.userPhoto{
 
+width: 33px;
+
+height: 33px;
+
+border-radius: 134px;
+
+margin: 13px 0 13px 11px;
+
+float: left;
 }
 body>.rightArea>.headTop>.userName{
 
+display: block;
+
+float: left;
+
+margin: 19px 0 0 7px;
+
+box-sizing: border-box;
+
+padding-right: 19px;
+
+background: url(../images/expansion.png) no-repeat 100%;
+
+background-size: 9px;
+
+background-position-y: 8px;
+
+cursor: pointer;
 }
 body>.rightArea>.headTop>.shoppingCart{
 
+float: right;
+
+margin: 0;
+
+height: 42px;
+
+width: 42px;
+
+box-sizing: border-box;
+
+padding: 10px;
+
+position: relative;
+
+overflow: hidden;
+
+margin: 7px 7px 0 0;
+}
+body>.rightArea>.headTop>.shoppingCart>div{
+
+background: url(../images/shoppingChart.png) no-repeat 50%;
+
+width: 20px;
+
+height: 22px;
+
+background-position-y: -21px;
+
+cursor: pointer;
+}
+body>.rightArea>.headTop>.shoppingCart>div:hover{
+    background-position-y: 2px;
 }
 body>.rightArea>.headTop>.shoppingCart>.number{
 
+display: block;
+
+position: absolute;
+
+top: 2px;
+
+right: 3px;
+
+color: white;
+
+background-color: red;
+
+padding: 0 5px;
+
+border-radius: 14px;
+
+text-align: center;
+
+cursor: pointer;
 }
 /*头部用户区域*/
 
 /*项目基本信息*/
 body>.rightArea>.projectBasicInfo{
-
 }
 body>.rightArea>.projectBasicInfo>.headInfo{
 
 }
 body>.rightArea>.projectBasicInfo>.headInfo>.title{
 
+background: url(../images/projectBasicInfo.png) no-repeat 0px;
 }
 body>.rightArea>.projectBasicInfo>.headInfo>.foldExpansion{
 
 }
 body>.rightArea>.projectBasicInfo>.startState{
 
+height: 28px;
+
+background-color: #00b7c4;
+
+overflow: hidden;
+
+position: relative;
 }
 body>.rightArea>.projectBasicInfo>.startState>.state{
 
-}
-body>.rightArea>.projectBasicInfo>.rows{
+display: block;
 
+box-sizing: border-box;
+
+color: white;
+
+padding-right: 14px;
+
+float: left;
+
+position: absolute;
+
+top: 50%;
+
+margin-top: -9px;
+
+left: 50%;
+
+background: url(../images/Triangle.png) no-repeat 100%;
+
+margin-left: -25px;
+
+cursor: pointer;
 }
+body>.rightArea>.projectBasicInfo>.rows{margin: 3px auto 0 auto;width: 93%;}
+body>.rightArea>.projectBasicInfo>.rows:nth-child(1){}
 body>.rightArea>.projectBasicInfo>.rows>.title{
 
+display: block;
+
+float: left;
+
+margin-right: 6px;
+
+color: #8e8b8b;
 }
 body>.rightArea>.projectBasicInfo>.rows>.value{
 
@@ -1105,89 +1234,360 @@ body>.rightArea>.projectBasicInfo>.rows>.value{
 /*项目基本信息*/
 
 
-body>.rightArea>div:nth-child(n+3){
+body>.rightArea>div:nth-child(n+2){
+
+width: 95%;
+
+margin: 11px auto 0 auto;
+
+box-sizing: border-box;
+
+overflow: hidden;
+
+padding-bottom: 9px;
+
+border: 1px solid #d2d2d2;
+
+background-color: white;
+}
+body>.rightArea>div:nth-child(n+2)>.headInfo{
+
+height: 33px;
+
+overflow: hidden;
+
+background-color: #f6f6f6;
+}
+body>.rightArea>div:nth-child(n+2)>.headInfo>.title{
+
+overflow: hidden;
+
+display: block;
+
+float: left;
+
+margin: 6px 0 0 9px;
+
+padding-left: 19px;
+
+background-size: 16px;
+
+position: relative;
+
+width: auto;
+}
+body>.rightArea>div:nth-child(n+2)>.headInfo>.foldExpansion{
+
+width: 24px;
+
+cursor: pointer;
+
+height: 18px;
+
+float: right;
+
+background: url(../images/foldExpansion.png) no-repeat 50%;
+
+background-size: 16px;
+
+background-position-y: -2px;
+
+margin: 9px 8px 0 0;
+}
+body>.rightArea>div:nth-child(n+2)>.headInfo>.select{
+
+background-position-y: 1px;
+
+height: 3px;
+
+margin-top: 14px;
+}
+body>.rightArea>div:nth-child(n+2)>.selectArea{
+
+overflow: hidden;
+}
+body>.rightArea>div:nth-child(n+2)>.selectArea>.out{
+
+overflow: hidden;
+
+box-sizing: border-box;
+
+margin: 5px 0 0 11px;
+
+height: 22px;
+
+width: 95%;
+}
+body>.rightArea>div:nth-child(n+2)>.selectArea>.out>.fraction{
+
+color: #828181;
+
+display: block;
+
+float: left;
+
+margin-right: 4px;
+}
+body>.rightArea>div:nth-child(n+2)>.selectArea>.out>.number{
+color: red !important;
+display: block;
+float: left;
+position: relative;
+background-color: transparent;
+margin-left: 8px;
+}
+body>.rightArea>div:nth-child(n+2)>.selectArea>div{
+width: 78px;
+float: left;
+height: 74px;
+margin: 9px 0 9px 16px;
+overflow: hidden;
+position: relative;
+cursor: pointer;
+}
+body>.rightArea>div:nth-child(n+2)>.selectArea>.rate>div{
+    
+width: 100%;
+    
+height: 44px;
+    
+background: url(../images/rate.png) no-repeat 50% -44px;
+    
+margin-top: 10px;
+}
+body>.rightArea>div:nth-child(n+2)>.selectArea>.distribution>div{
+
+width: 100%;
+
+height: 44px;
+
+background: url(../images/inbound.png) no-repeat 50% -44px;
+
+margin-top: 10px;
+}
+body>.rightArea>div:nth-child(n+2)>.selectArea>.markingRecords>div{
+
+width: 100%;
+
+height: 44px;
+
+background: url(../images/markingRecords.png) no-repeat 50% -44px;
+
+margin-top: 10px;
+}
+body>.rightArea>div:nth-child(n+2)>.selectArea>.templateMaintenance>div{
+
+width: 100%;
+
+height: 44px;
+
+background: url(../images/inbound.png) no-repeat 50% -44px;
+
+margin-top: 10px;
+}
+body>.rightArea>div:nth-child(n+2)>.selectArea>.checkAttendance>div{
+
+width: 100%;
+
+height: 44px;
+
+background: url(../images/inbound.png) no-repeat 50% -44px;
+
+margin-top: 10px;
+}
+body>.rightArea>div:nth-child(n+2)>.selectArea>.attendanceDetails>div{
+
+width: 100%;
+
+height: 44px;
+
+background: url(../images/inbound.png) no-repeat 50% -44px;
+
+margin-top: 10px;
+}
+body>.rightArea>div:nth-child(n+2)>.selectArea>.payroll>div{
+
+width: 100%;
+
+height: 44px;
+
+background: url(../images/inbound.png) no-repeat 50% -44px;
+
+margin-top: 10px;
+}
+body>.rightArea>div:nth-child(n+2)>.selectArea>div>.number{
+position: absolute;
+right: 11px;
+box-sizing: border-box;
+overflow: hidden;
+color: white !important;
+background-color: red;
+padding: 0 5px;
+border-radius: 94px;
+width: 24px;
+height: 20px;
+line-height: 20px;
+text-align: center;
+}
+body>.rightArea>div:nth-child(n+2)>.selectArea>div>.title{
+
+position: absolute;
+
+bottom: 0;
+
+display: block;
+
+text-align: center;
+
+width: 100%;
+
+color: #929292;
+
+background: transparent;
+}
+body>.rightArea>div:nth-child(n+2)>.selectArea>div>.div{
 
 }
-body>.rightArea>div:nth-child(n+3)>.headInfo{
+body>.rightArea>div:nth-child(n+2)>.selectArea>.out>div{
 
 }
-body>.rightArea>div:nth-child(n+3)>.headInfo>.title{
+body>.rightArea>div:nth-child(n+2)>.selectArea>.out>div>.number{
 
 }
-body>.rightArea>div:nth-child(n+3)>.headInfo>.foldExpansion{
+body>.rightArea>div:nth-child(n+2)>.selectArea>.out>div>.title{
 
 }
-body>.rightArea>div:nth-child(n+3)>.selectArea{
+body>.rightArea>div:nth-child(n+2)>.selectArea>.rate{
 
 }
-body>.rightArea>div:nth-child(n+3)>.selectArea>.out{
+body>.rightArea>div:nth-child(n+2)>.selectArea>.distribution>div{
+
+width: 100%;
+
+height: 44px;
+
+background: url(../images/distribution.png) no-repeat 50% -44px;
+
+margin-top: 10px;
+}
+body>.rightArea>div:nth-child(n+2)>.selectArea>.markingRecords>div{
 
 }
-body>.rightArea>div:nth-child(n+3)>.selectArea>.out>.fraction{
+body>.rightArea>div:nth-child(n+2)>.selectArea>.templateMaintenance>div{
 
-}
-body>.rightArea>div:nth-child(n+3)>.selectArea>.out>.number{
+width: 100%;
 
-}
-body>.rightArea>div:nth-child(n+3)>.selectArea>.out>div{
+height: 44px;
 
-}
-body>.rightArea>div:nth-child(n+3)>.selectArea>.out>div>.number{
+background: url(../images/templateMaintenance.png) no-repeat 50% -44px;
 
+margin-top: 10px;
 }
-body>.rightArea>div:nth-child(n+3)>.selectArea>.out>div>.title{
+body>.rightArea>div:nth-child(n+2)>.selectArea>.checkAttendance>div{
 
-}
-body>.rightArea>div:nth-child(n+3)>.selectArea>.rate{
+width: 100%;
 
-}
-body>.rightArea>div:nth-child(n+3)>.selectArea>.distribution{
+height: 44px;
 
-}
-body>.rightArea>div:nth-child(n+3)>.selectArea>.markingRecords{
+background: url(../images/checkAttendance.png) no-repeat 50% -44px;
 
+margin-top: 10px;
 }
-body>.rightArea>div:nth-child(n+3)>.selectArea>.templateMaintenance{
+body>.rightArea>div:nth-child(n+2)>.selectArea>.attendanceDetails>div{
 
-}
-body>.rightArea>div:nth-child(n+3)>.selectArea>.checkAttendance{
+width: 100%;
 
-}
-body>.rightArea>div:nth-child(n+3)>.selectArea>.attendanceDetails{
+height: 44px;
 
-}
-body>.rightArea>div:nth-child(n+3)>.selectArea>.payroll{
+background: url(../images/attendanceDetails.png) no-repeat 50% -44px;
 
+margin-top: 10px;
 }
-body>.rightArea>div:nth-child(n+3)>.selectArea>.alreadyApplied{
+body>.rightArea>div:nth-child(n+2)>.selectArea>.payroll>div{
 
-}
-body>.rightArea>div:nth-child(n+3)>.selectArea>.inbound{
+width: 100%;
 
-}
-body>.rightArea>div:nth-child(n+3)>.selectArea>.updateReceipt{
+height: 44px;
 
-}
-body>.rightArea>div:nth-child(n+3)>.selectArea>.beConsumed{
+background: url(../images/payroll.png) no-repeat 50% -44px;
 
+margin-top: 10px;
 }
-body>.rightArea>div:nth-child(n+3)>.selectArea>.consumed{
+body>.rightArea>div:nth-child(n+2)>.selectArea>div>div:hover{
+background-position-y: 0;
+}
+body>.rightArea>div:nth-child(n+2)>.selectArea>.alreadyApplied>div{
 
-}
-body>.rightArea>div:nth-child(n+3)>.selectArea>.manReceiver{
+width: 100%;
 
-}
-body>.rightArea>.projectMaterial .title{
+height: 44px;
 
+background: url(../images/alreadyApplied.png) no-repeat 50% -44px;
+
+margin-top: 10px;
 }
+body>.rightArea>div:nth-child(n+2)>.selectArea>.inbound>div{
+
+width: 100%;
+
+height: 44px;
+
+background: url(../images/inbound.png) no-repeat 50% -44px;
+
+margin-top: 10px;
+}
+body>.rightArea>div:nth-child(n+2)>.selectArea>.updateReceipt>div{
+
+width: 100%;
+
+height: 44px;
+
+background: url(../images/updateReceipt.png) no-repeat 50% -44px;
+
+margin-top: 10px;
+}
+body>.rightArea>div:nth-child(n+2)>.selectArea>.beConsumed>div{
+
+width: 100%;
+
+height: 44px;
+
+background: url(../images/beConsumed.png) no-repeat 50% -44px;
+
+margin-top: 10px;
+}
+body>.rightArea>div:nth-child(n+2)>.selectArea>.consumed>div{
+
+width: 100%;
+
+height: 44px;
+
+background: url(../images/consumed.png) no-repeat 50% -44px;
+
+margin-top: 10px;
+}
+body>.rightArea>div:nth-child(n+2)>.selectArea>.manReceiver>div{
+
+width: 100%;
+
+height: 44px;
+
+background: url(../images/manReceiver.png) no-repeat 50% -44px;
+
+margin-top: 10px;
+}
+body>.rightArea>.projectMaterial .title{background: url(../images/projectMaterial.png) no-repeat 0px;}
 body>.rightArea>.projectQuality .title{
 
+background: url(../images/projectQuality.png) no-repeat 0px;
 }
 body>.rightArea>.projectData .title{
 
+background: url(../images/projectData.png) no-repeat 0px;
 }
 body>.rightArea>.laborManagement .title{
 
+background: url(../images/laborManagement.png) no-repeat 0px;
 }
 
 /*右部区域*/
