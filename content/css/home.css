@@ -140,6 +140,9 @@ body>.leftArea>.projectList>.rows{
 
     cursor: pointer;
 }
+body>.leftArea>.projectList>.rows:hover{
+
+}
 body>.leftArea>.projectList>.rows>.endProject{
 
     display: block;
@@ -577,22 +580,15 @@ overflow: hidden;
 margin-top: 16px;
 }
 body>.centerArea>.projectInfoSwitch>span{
-
-font-size: 15px;
-
-font-weight: 400;
-
-display: block;
-
-float: left;
-
-margin-left: 39px;
-
-height: 33px;
-
-line-height: 33px;
-
-padding: 0px 21px;
+font-size: 15px;
+font-weight: 400;
+display: block;
+float: left;
+margin-left: 39px;
+height: 33px;
+line-height: 33px;
+padding: 0px 21px;
+cursor: pointer;
 }
 body>.centerArea>.projectInfoSwitch>.projectInfo{
 
@@ -610,8 +606,7 @@ color: red;
 
 /*项目信息数据区域*/
 body>.centerArea>.projectInfo{
-
-display: none;
+display: block;
 }
 
 
@@ -751,7 +746,7 @@ background: url(../images/visaRemittance.png) no-repeat 1px;
 
 /*现场图片区域*/
 body>.centerArea>.sitePhoto{
-
+display: none;
 }
 
 /*标准化施工流程区域*/
@@ -950,10 +945,8 @@ background-position-y: -68px !important;
 
 /*项目信息总结区域*/
 body>.centerArea>.projectContent{
-
-overflow: hidden;
-
-display: block;
+overflow: hidden;
+display: none;
 }
 body>.centerArea>.projectContent>.rows{
 
@@ -1230,30 +1223,17 @@ overflow: hidden;
 position: relative;
 }
 body>.rightArea>div>div>.projectBasicInfo>.startState>.state{
-
-display: block;
-
-box-sizing: border-box;
-
-color: white;
-
-padding-right: 14px;
-
-float: left;
-
-position: absolute;
-
-top: 50%;
-
-margin-top: -9px;
-
-left: 50%;
-
-background: url(../images/Triangle.png) no-repeat 100%;
-
-margin-left: -25px;
-
-cursor: pointer;
+display: block;
+box-sizing: border-box;
+color: white;
+padding-right: 14px;
+float: left;
+position: absolute;
+top: 50%;
+margin-top: -9px;
+left: 50%;
+background: url(../images/Triangle.png) no-repeat 100%;
+margin-left: -25px;
 }
 body>.rightArea>div>div>.projectBasicInfo>.rows{margin: 3px auto 0 auto;width: 93%;}
 body>.rightArea>div>div>.projectBasicInfo>.rows:nth-child(1){}
