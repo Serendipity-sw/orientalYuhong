@@ -186,7 +186,7 @@ var mapObj=(function () {
                         $(".map-projectTitle").each(function (index,value) {
                             value.style.display="none";
                         });
-                        $(this).find(".map-projectTitle:eq(0)").style.display="block";
+                        $(this).find(".map-projectTitle:eq(0)")[0].style.display="block";
                         if (data.areaOverlayClick) {
                             data.areaOverlayClick($(this).find(".map-projectTitle span:eq(0)").textContent);
                         }
@@ -433,3 +433,5 @@ var mapObj=(function () {
     };
     return data;
 })();
+
+//mapObj.addOverlay([{lng:116.395645,lat:39.929986,city:"北京市",count:15,process:12,noProcess:33,haveProcess:123,type:1,number:1,locationName:'卧牛山',remark:'卧牛山水电培训中心内精装修'},{lng:115.661434,lat:38.61384,city:"河北省",count:10,process:12,noProcess:33,haveProcess:123,type:1,number:2,locationName:'卧牛山',remark:'卧牛山水电培训中心内精装修'},{lng:122.753592,lat:41.6216,city:"辽宁省",count:30,process:12,noProcess:33,haveProcess:123,type:1,number:3,locationName:'卧牛山',remark:'卧牛山水电培训中心内精装修'}],3);
