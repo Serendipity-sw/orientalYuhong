@@ -33,7 +33,8 @@ var mapObj=(function () {
         projectOverlayClick:null, //将项目覆盖物单击回调事件 该事件传入参数项目所属名称
         setCenter:null, //设置地图的中心点区域 该事件参数传递经纬度, 第一个参数为lng 经度  第二个参数为lat纬度, 调用方式 setCenter(116.417854, 39.921988);
         reset:null, //地图重置
-        length:0 //无用占位符
+        length:0, //无用占位符
+        zoomend:null //地图缩放时产生的事件,  共返回两个参数,  第一个参数为西南角坐标    第二个参数为东北角坐标  参数对象示例 {lat:30.911877,lng:106.106169}
     };
     var mp=new BMap.Map("mapArea");
 
@@ -55,6 +56,18 @@ var mapObj=(function () {
     data.reset=function () {
         mp.reset();
     };
+
+    /**
+     * 当地图发生缩放的时候触发事件
+     * 创建人:邵炜
+     * 创建时间:2016年7月6日10:32:26
+     */
+    mp.addEventListener("zoomend",function(){
+        var bounds=mp.getBounds();
+        if (data.zoomend) {
+            data.zoomend(bounds.getSouthWest(),bounds.getNorthEast());
+        }
+    });
 
     /**
      * 设置地图的中心点
