@@ -34,7 +34,7 @@ var mapObj=(function () {
         setCenter:null, //设置地图的中心点区域 该事件参数传递经纬度, 第一个参数为lng 经度  第二个参数为lat纬度, 调用方式 setCenter(116.417854, 39.921988);
         reset:null, //地图重置
         length:0, //无用占位符
-        zoomend:null //地图缩放时产生的事件 回调方法  传递方法名称,  共返回两个参数,  第一个参数为西南角坐标    第二个参数为东北角坐标  参数对象示例 {lat:30.911877,lng:106.106169}
+        zoomend:null //地图缩放时产生的事件 回调方法  传递方法名称,  共返回两个参数,  第一个参数为西南角坐标    第二个参数为东北角坐标  参数对象示例 {lat:30.911877,lng:106.106169}  第三个为缩放级别
     };
     var mp=new BMap.Map("mapArea");
 
@@ -65,7 +65,7 @@ var mapObj=(function () {
     mp.addEventListener("zoomend",function(){
         var bounds=mp.getBounds();
         if (data.zoomend) {
-            data.zoomend(bounds.getSouthWest(),bounds.getNorthEast());
+            data.zoomend(bounds.getSouthWest(),bounds.getNorthEast(),mp.getZoom());
         }
     });
 
