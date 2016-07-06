@@ -37,52 +37,89 @@ body>.leftArea>.logoIcon{
 
 /*搜索区域*/
 body>.leftArea>.search{
-border: 2px solid red;
-overflow: hidden;
-width: 174px;
-margin: 0 auto;
-margin-top: 17px;
-box-sizing: border-box;
-padding: 0;
+
+border: 2px solid red;
+
+overflow: hidden;
+
+width: 174px;
+
+margin: 0 auto;
+
+margin-top: 17px;
+
+box-sizing: border-box;
+
+padding: 0;
 }
 body>.leftArea>.search>select{
-border: 0px;
-float: left;
-display: block;
-height: 24px;
-box-sizing: border-box;
-width: 61px;
-margin: 0;
-padding: 0;
-overflow: hidden;
+
+border: 0px;
+
+float: left;
+
+display: block;
+
+height: 24px;
+
+box-sizing: border-box;
+
+width: 61px;
+
+margin: 0;
+
+padding: 0;
+
+overflow: hidden;
 }
 body>.leftArea>.search>select>option{
 
 }
 body>.leftArea>.search>input{
-display: block;
-box-sizing: border-box;
-float: left;
-width: 77px;
-height: 24px;
-border: 0px;
-line-height: 24px;
-overflow: hidden;
-margin: 0;
-padding: 0;
+
+display: block;
+
+box-sizing: border-box;
+
+float: left;
+
+width: 77px;
+
+height: 24px;
+
+border: 0px;
+
+line-height: 24px;
+
+overflow: hidden;
+
+margin: 0;
+
+padding: 0;
 }
 body>.leftArea>.search>.searchBtn{
-width: 32px;
-height: 24px;
-background-color: red;
-display: block;
-float: left;
-cursor: pointer;
-background: url(../images/seachBtn.png) no-repeat 65% red;
-background-size: 57%;
-box-sizing: border-box;
-margin: 0;
-padding: 0;
+
+width: 32px;
+
+height: 24px;
+
+background-color: red;
+
+display: block;
+
+float: left;
+
+cursor: pointer;
+
+background: url(../images/seachBtn.png) no-repeat 65% red;
+
+background-size: 57%;
+
+box-sizing: border-box;
+
+margin: 0;
+
+padding: 0;
 }
 /*搜索区域*/
 
@@ -1043,17 +1080,32 @@ margin-left: 0;
 
 /*右部区域*/
 body>.rightArea{
-width: 301px;
-position: fixed;
-right: 0;
-background-color: #f6f6f6;
-top: 0;
-box-sizing: border-box;
-padding-bottom: 16px;
+
+width: 301px;
+
+position: fixed;
+
+right: 0;
+
+background-color: #f6f6f6;
+
+top: 0;
+
+box-sizing: border-box;
+
+padding-bottom: 16px;
+
+bottom: 0;
 }
 
 /*头部用户区域*/
-body>.rightArea>.headTop{
+body>.rightArea>div>div{
+    margin: 0 !important;
+}
+body>.rightArea>div>div:last-child{
+    width: 0 !important;
+}
+body>.rightArea>div>div>.headTop{
 
 border-bottom: 1px solid #cacaca;
 
@@ -1063,7 +1115,7 @@ box-sizing: border-box;
 
 height: 59px;
 }
-body>.rightArea>.headTop>.userPhoto{
+body>.rightArea>div>div>.headTop>.userPhoto{
 
 width: 33px;
 
@@ -1075,7 +1127,7 @@ margin: 13px 0 13px 11px;
 
 float: left;
 }
-body>.rightArea>.headTop>.userName{
+body>.rightArea>div>div>.headTop>.userName{
 
 display: block;
 
@@ -1095,7 +1147,7 @@ background-position-y: 8px;
 
 cursor: pointer;
 }
-body>.rightArea>.headTop>.shoppingCart{
+body>.rightArea>div>div>.headTop>.shoppingCart{
 
 float: right;
 
@@ -1115,7 +1167,7 @@ overflow: hidden;
 
 margin: 7px 7px 0 0;
 }
-body>.rightArea>.headTop>.shoppingCart>div{
+body>.rightArea>div>div>.headTop>.shoppingCart>div{
 
 background: url(../images/shoppingChart.png) no-repeat 50%;
 
@@ -1127,10 +1179,10 @@ background-position-y: -21px;
 
 cursor: pointer;
 }
-body>.rightArea>.headTop>.shoppingCart>div:hover{
+body>.rightArea>div>div>.headTop>.shoppingCart>div:hover{
     background-position-y: 2px;
 }
-body>.rightArea>.headTop>.shoppingCart>.number{
+body>.rightArea>div>div>.headTop>.shoppingCart>.number{
 
 display: block;
 
@@ -1155,19 +1207,19 @@ cursor: pointer;
 /*头部用户区域*/
 
 /*项目基本信息*/
-body>.rightArea>.projectBasicInfo{
+body>.rightArea>div>div>.projectBasicInfo{
 }
-body>.rightArea>.projectBasicInfo>.headInfo{
+body>.rightArea>div>div>.projectBasicInfo>.headInfo{
 
 }
-body>.rightArea>.projectBasicInfo>.headInfo>.title{
+body>.rightArea>div>div>.projectBasicInfo>.headInfo>.title{
 
 background: url(../images/projectBasicInfo.png) no-repeat 0px;
 }
-body>.rightArea>.projectBasicInfo>.headInfo>.foldExpansion{
+body>.rightArea>div>div>.projectBasicInfo>.headInfo>.foldExpansion{
 
 }
-body>.rightArea>.projectBasicInfo>.startState{
+body>.rightArea>div>div>.projectBasicInfo>.startState{
 
 height: 28px;
 
@@ -1177,7 +1229,7 @@ overflow: hidden;
 
 position: relative;
 }
-body>.rightArea>.projectBasicInfo>.startState>.state{
+body>.rightArea>div>div>.projectBasicInfo>.startState>.state{
 
 display: block;
 
@@ -1203,9 +1255,9 @@ margin-left: -25px;
 
 cursor: pointer;
 }
-body>.rightArea>.projectBasicInfo>.rows{margin: 3px auto 0 auto;width: 93%;}
-body>.rightArea>.projectBasicInfo>.rows:nth-child(1){}
-body>.rightArea>.projectBasicInfo>.rows>.title{
+body>.rightArea>div>div>.projectBasicInfo>.rows{margin: 3px auto 0 auto;width: 93%;}
+body>.rightArea>div>div>.projectBasicInfo>.rows:nth-child(1){}
+body>.rightArea>div>div>.projectBasicInfo>.rows>.title{
 
 display: block;
 
@@ -1215,13 +1267,13 @@ margin-right: 6px;
 
 color: #8e8b8b;
 }
-body>.rightArea>.projectBasicInfo>.rows>.value{
+body>.rightArea>div>div>.projectBasicInfo>.rows>.value{
 
 }
 /*项目基本信息*/
 
 
-body>.rightArea>div:nth-child(n+2){
+body>.rightArea>div>div>div:nth-child(n+2){
 
 width: 95%;
 
@@ -1237,7 +1289,7 @@ border: 1px solid #d2d2d2;
 
 background-color: white;
 }
-body>.rightArea>div:nth-child(n+2)>.headInfo{
+body>.rightArea>div>div>div:nth-child(n+2)>.headInfo{
 
 height: 33px;
 
@@ -1245,7 +1297,7 @@ overflow: hidden;
 
 background-color: #f6f6f6;
 }
-body>.rightArea>div:nth-child(n+2)>.headInfo>.title{
+body>.rightArea>div>div>div:nth-child(n+2)>.headInfo>.title{
 
 overflow: hidden;
 
@@ -1263,7 +1315,7 @@ position: relative;
 
 width: auto;
 }
-body>.rightArea>div:nth-child(n+2)>.headInfo>.foldExpansion{
+body>.rightArea>div>div>div:nth-child(n+2)>.headInfo>.foldExpansion{
 
 width: 24px;
 
@@ -1281,7 +1333,7 @@ background-position-y: -2px;
 
 margin: 9px 8px 0 0;
 }
-body>.rightArea>div:nth-child(n+2)>.headInfo>.select{
+body>.rightArea>div>div>div:nth-child(n+2)>.headInfo>.select{
 
 background-position-y: 1px;
 
@@ -1289,11 +1341,11 @@ height: 3px;
 
 margin-top: 14px;
 }
-body>.rightArea>div:nth-child(n+2)>.selectArea{
+body>.rightArea>div>div>div:nth-child(n+2)>.selectArea{
 
 overflow: hidden;
 }
-body>.rightArea>div:nth-child(n+2)>.selectArea>.out{
+body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>.out{
 
 overflow: hidden;
 
@@ -1305,7 +1357,7 @@ height: 22px;
 
 width: 95%;
 }
-body>.rightArea>div:nth-child(n+2)>.selectArea>.out>.fraction{
+body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>.out>.fraction{
 
 color: #828181;
 
@@ -1315,24 +1367,37 @@ float: left;
 
 margin-right: 4px;
 }
-body>.rightArea>div:nth-child(n+2)>.selectArea>.out>.number{
-color: red !important;
-display: block;
-float: left;
-position: relative;
-background-color: transparent;
-margin-left: 8px;
+body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>.out>.number{
+
+color: red !important;
+
+display: block;
+
+float: left;
+
+position: relative;
+
+background-color: transparent;
+
+margin-left: 8px;
 }
-body>.rightArea>div:nth-child(n+2)>.selectArea>div{
-width: 78px;
-float: left;
-height: 74px;
-margin: 9px 0 9px 16px;
-overflow: hidden;
-position: relative;
-cursor: pointer;
+body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>div{
+
+width: 78px;
+
+float: left;
+
+height: 74px;
+
+margin: 9px 0 9px 16px;
+
+overflow: hidden;
+
+position: relative;
+
+cursor: pointer;
 }
-body>.rightArea>div:nth-child(n+2)>.selectArea>.rate>div{
+body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>.rate>div{
     
 width: 100%;
     
@@ -1342,7 +1407,7 @@ background: url(../images/rate.png) no-repeat 50% -44px;
     
 margin-top: 10px;
 }
-body>.rightArea>div:nth-child(n+2)>.selectArea>.distribution>div{
+body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>.distribution>div{
 
 width: 100%;
 
@@ -1352,7 +1417,7 @@ background: url(../images/inbound.png) no-repeat 50% -44px;
 
 margin-top: 10px;
 }
-body>.rightArea>div:nth-child(n+2)>.selectArea>.markingRecords>div{
+body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>.markingRecords>div{
 
 width: 100%;
 
@@ -1362,7 +1427,7 @@ background: url(../images/markingRecords.png) no-repeat 50% -44px;
 
 margin-top: 10px;
 }
-body>.rightArea>div:nth-child(n+2)>.selectArea>.templateMaintenance>div{
+body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>.templateMaintenance>div{
 
 width: 100%;
 
@@ -1372,7 +1437,7 @@ background: url(../images/inbound.png) no-repeat 50% -44px;
 
 margin-top: 10px;
 }
-body>.rightArea>div:nth-child(n+2)>.selectArea>.checkAttendance>div{
+body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>.checkAttendance>div{
 
 width: 100%;
 
@@ -1382,7 +1447,7 @@ background: url(../images/inbound.png) no-repeat 50% -44px;
 
 margin-top: 10px;
 }
-body>.rightArea>div:nth-child(n+2)>.selectArea>.attendanceDetails>div{
+body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>.attendanceDetails>div{
 
 width: 100%;
 
@@ -1392,7 +1457,7 @@ background: url(../images/inbound.png) no-repeat 50% -44px;
 
 margin-top: 10px;
 }
-body>.rightArea>div:nth-child(n+2)>.selectArea>.payroll>div{
+body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>.payroll>div{
 
 width: 100%;
 
@@ -1402,21 +1467,33 @@ background: url(../images/inbound.png) no-repeat 50% -44px;
 
 margin-top: 10px;
 }
-body>.rightArea>div:nth-child(n+2)>.selectArea>div>.number{
-position: absolute;
-right: 11px;
-box-sizing: border-box;
-overflow: hidden;
-color: white !important;
-background-color: red;
-padding: 0 5px;
-border-radius: 94px;
-width: 24px;
-height: 20px;
-line-height: 20px;
-text-align: center;
+body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>div>.number{
+
+position: absolute;
+
+right: 11px;
+
+box-sizing: border-box;
+
+overflow: hidden;
+
+color: white !important;
+
+background-color: red;
+
+padding: 0 5px;
+
+border-radius: 94px;
+
+width: 24px;
+
+height: 20px;
+
+line-height: 20px;
+
+text-align: center;
 }
-body>.rightArea>div:nth-child(n+2)>.selectArea>div>.title{
+body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>div>.title{
 
 position: absolute;
 
@@ -1432,22 +1509,22 @@ color: #929292;
 
 background: transparent;
 }
-body>.rightArea>div:nth-child(n+2)>.selectArea>div>.div{
+body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>div>.div{
 
 }
-body>.rightArea>div:nth-child(n+2)>.selectArea>.out>div{
+body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>.out>div{
 
 }
-body>.rightArea>div:nth-child(n+2)>.selectArea>.out>div>.number{
+body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>.out>div>.number{
 
 }
-body>.rightArea>div:nth-child(n+2)>.selectArea>.out>div>.title{
+body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>.out>div>.title{
 
 }
-body>.rightArea>div:nth-child(n+2)>.selectArea>.rate{
+body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>.rate{
 
 }
-body>.rightArea>div:nth-child(n+2)>.selectArea>.distribution>div{
+body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>.distribution>div{
 
 width: 100%;
 
@@ -1457,10 +1534,10 @@ background: url(../images/distribution.png) no-repeat 50% -44px;
 
 margin-top: 10px;
 }
-body>.rightArea>div:nth-child(n+2)>.selectArea>.markingRecords>div{
+body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>.markingRecords>div{
 
 }
-body>.rightArea>div:nth-child(n+2)>.selectArea>.templateMaintenance>div{
+body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>.templateMaintenance>div{
 
 width: 100%;
 
@@ -1470,7 +1547,7 @@ background: url(../images/templateMaintenance.png) no-repeat 50% -44px;
 
 margin-top: 10px;
 }
-body>.rightArea>div:nth-child(n+2)>.selectArea>.checkAttendance>div{
+body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>.checkAttendance>div{
 
 width: 100%;
 
@@ -1480,7 +1557,7 @@ background: url(../images/checkAttendance.png) no-repeat 50% -44px;
 
 margin-top: 10px;
 }
-body>.rightArea>div:nth-child(n+2)>.selectArea>.attendanceDetails>div{
+body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>.attendanceDetails>div{
 
 width: 100%;
 
@@ -1490,7 +1567,7 @@ background: url(../images/attendanceDetails.png) no-repeat 50% -44px;
 
 margin-top: 10px;
 }
-body>.rightArea>div:nth-child(n+2)>.selectArea>.payroll>div{
+body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>.payroll>div{
 
 width: 100%;
 
@@ -1500,10 +1577,10 @@ background: url(../images/payroll.png) no-repeat 50% -44px;
 
 margin-top: 10px;
 }
-body>.rightArea>div:nth-child(n+2)>.selectArea>div>div:hover{
+body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>div>div:hover{
 background-position-y: 0;
 }
-body>.rightArea>div:nth-child(n+2)>.selectArea>.alreadyApplied>div{
+body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>.alreadyApplied>div{
 
 width: 100%;
 
@@ -1513,7 +1590,7 @@ background: url(../images/alreadyApplied.png) no-repeat 50% -44px;
 
 margin-top: 10px;
 }
-body>.rightArea>div:nth-child(n+2)>.selectArea>.inbound>div{
+body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>.inbound>div{
 
 width: 100%;
 
@@ -1523,7 +1600,7 @@ background: url(../images/inbound.png) no-repeat 50% -44px;
 
 margin-top: 10px;
 }
-body>.rightArea>div:nth-child(n+2)>.selectArea>.updateReceipt>div{
+body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>.updateReceipt>div{
 
 width: 100%;
 
@@ -1533,7 +1610,7 @@ background: url(../images/updateReceipt.png) no-repeat 50% -44px;
 
 margin-top: 10px;
 }
-body>.rightArea>div:nth-child(n+2)>.selectArea>.beConsumed>div{
+body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>.beConsumed>div{
 
 width: 100%;
 
@@ -1543,7 +1620,7 @@ background: url(../images/beConsumed.png) no-repeat 50% -44px;
 
 margin-top: 10px;
 }
-body>.rightArea>div:nth-child(n+2)>.selectArea>.consumed>div{
+body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>.consumed>div{
 
 width: 100%;
 
@@ -1553,7 +1630,7 @@ background: url(../images/consumed.png) no-repeat 50% -44px;
 
 margin-top: 10px;
 }
-body>.rightArea>div:nth-child(n+2)>.selectArea>.manReceiver>div{
+body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>.manReceiver>div{
 
 width: 100%;
 
@@ -1563,16 +1640,16 @@ background: url(../images/manReceiver.png) no-repeat 50% -44px;
 
 margin-top: 10px;
 }
-body>.rightArea>.projectMaterial .title{background: url(../images/projectMaterial.png) no-repeat 0px;}
-body>.rightArea>.projectQuality .title{
+body>.rightArea>div>div>.projectMaterial .title{background: url(../images/projectMaterial.png) no-repeat 0px;}
+body>.rightArea>div>div>.projectQuality .title{
 
 background: url(../images/projectQuality.png) no-repeat 0px;
 }
-body>.rightArea>.projectData .title{
+body>.rightArea>div>div>.projectData .title{
 
 background: url(../images/projectData.png) no-repeat 0px;
 }
-body>.rightArea>.laborManagement .title{
+body>.rightArea>div>div>.laborManagement .title{
 
 background: url(../images/laborManagement.png) no-repeat 0px;
 }
