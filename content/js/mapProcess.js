@@ -27,14 +27,14 @@ var mapObj=(function () {
                                                                      locationName:'卧牛山', //项目区域名称
                                                                      remark:'描述' //描述
                                                                      }]**/
-        overlayClick:null, //将省覆盖物单击回调事件 该事件传入参数省名称
-        cityOverlayClick:null, //将市覆盖物单击回调事件 该事件传入参数市名称
-        areaOverlayClick:null, //将区域覆盖物单击回调事件 该事件传入参数区域名称
-        projectOverlayClick:null, //将项目覆盖物单击回调事件 该事件传入参数项目所属名称
+        overlayClick:null, //将省覆盖物单击回调事件回调 传入回调方法名称 该事件传入参数省名称
+        cityOverlayClick:null, //将市覆盖物单击回调事件回调 传入回调方法名称 该事件传入参数市名称
+        areaOverlayClick:null, //将区域覆盖物单击回调事件回调 传入回调方法名称 该事件传入参数区域名称
+        projectOverlayClick:null, //将项目覆盖物单击回调事件糊掉 传入回调方法名称 该事件传入参数项目所属名称
         setCenter:null, //设置地图的中心点区域 该事件参数传递经纬度, 第一个参数为lng 经度  第二个参数为lat纬度, 调用方式 setCenter(116.417854, 39.921988);
         reset:null, //地图重置
         length:0, //无用占位符
-        zoomend:null //地图缩放时产生的事件,  共返回两个参数,  第一个参数为西南角坐标    第二个参数为东北角坐标  参数对象示例 {lat:30.911877,lng:106.106169}
+        zoomend:null //地图缩放时产生的事件 回调方法  传递方法名称,  共返回两个参数,  第一个参数为西南角坐标    第二个参数为东北角坐标  参数对象示例 {lat:30.911877,lng:106.106169}
     };
     var mp=new BMap.Map("mapArea");
 
@@ -187,8 +187,8 @@ var mapObj=(function () {
                             value.style.display="none";
                         });
                         $(this).find(".map-projectTitle:eq(0)")[0].style.display="block";
-                        if (data.areaOverlayClick) {
-                            data.areaOverlayClick($(this).find(".map-projectTitle span:eq(0)").textContent);
+                        if (data.projectOverlayClick) {
+                            data.projectOverlayClick($(this).find(".map-projectTitle span:eq(0)").textContent);
                         }
                     });
                 });
