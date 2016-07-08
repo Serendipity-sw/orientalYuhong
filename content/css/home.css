@@ -1199,7 +1199,7 @@ background-position: 50% -21px;
 cursor: pointer;
 }
 body>.rightArea>div>div>.headTop>.shoppingCart>div:hover{
-    background-position: 50% 2px;
+    background-position: 50% 0;
 }
 body>.rightArea>div>div>.headTop>.shoppingCart>.number{
 
