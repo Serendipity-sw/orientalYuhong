@@ -1,0 +1,42 @@
+body{
+
+}
+body>.areaLogin{
+border: 1px solid black;
+width: 500px;
+position: absolute;
+top: 50%;
+height: 300px;
+left: 50%;
+margin-left: -250px;
+margin-top: -150px;
+overflow: hidden;
+}
+body>.areaLogin>.rows{
+margin: 35px 0 0 0;
+overflow: hidden;
+}
+body>.areaLogin>.rows>input{
+
+}
+body>.areaLogin>.rows>.codeInput{
+
+}
+body>.areaLogin>.rows>.code{
+width: 200px;
+height: 64px;
+}
+body>.areaLogin>.login{
+margin: 6px auto 0 auto;
+display: block;
+height: 40px;
+width: 150px;
+line-height: 40px;
+text-align: center;
+background-color: red;
+border-radius: 21px;
+color: white;
+font-size: 15px;
+letter-spacing: 3px;
+overflow: hidden;
+}
