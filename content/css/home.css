@@ -53,24 +53,20 @@ box-sizing: border-box;
 padding: 0;
 }
 body>.leftArea>.search>select{
-
-border: 0px;
-
-float: left;
-
-display: block;
-
-height: 24px;
-
-box-sizing: border-box;
-
-width: 61px;
-
-margin: 0;
-
-padding: 0;
-
-overflow: hidden;
+border: 0px;
+float: left;
+display: block;
+height: 24px;
+box-sizing: border-box;
+width: 61px;
+margin: 0;
+padding: 0;
+overflow: hidden;
+-moz-appearance: none;
+-webkit-appearance: none;
+line-height: 24px;
+padding: 0 12px 0 3px;
+background: url(../images/expansion.png) no-repeat 93%;
 }
 body>.leftArea>.search>select>option{
 
@@ -166,8 +162,8 @@ body>.leftArea>.projectList>.rows>.noProcess{
     font-size: 14px;
 }
 body>.leftArea>.projectList>.rows>div{width: 17px;height: 15px;float: left;margin-top: 3px;}
-body>.leftArea>.projectList>.rows>.projectStateIcon{background: url(../images/projectState.png) no-repeat 50%;background-position-y: -17px;}
-body>.leftArea>.projectList>.rows>.projectEndIcon{background: url(../images/projectEnd.png) no-repeat 50%;background-position-y: -17px;}
+body>.leftArea>.projectList>.rows>.projectStateIcon{background: url(../images/projectState.png) no-repeat 50%;background-position: 50% -17px;}
+body>.leftArea>.projectList>.rows>.projectEndIcon{background: url(../images/projectEnd.png) no-repeat 50%;background-position: 0 -17px;}
 body>.leftArea>.projectList>.select{
 
     background-color: red;
@@ -175,8 +171,7 @@ body>.leftArea>.projectList>.select{
     color: white;
 }
 body>.leftArea>.projectList>.select>div{
-
-    background-position-y: 0px !important;
+background-position: 0 0 !important;
 }
 /*项目列表*/
 
@@ -663,24 +658,16 @@ cursor: pointer;
 width: 26px;
 }
 body>.centerArea>.projectInfo>.rows>.head>.right>.foldExpansion{
-
-width: 24px;
-
-margin-top: 3px;
-
-cursor: pointer;
-
-height: 18px;
-
-float: left;
-
-background: url(../images/foldExpansion.png) no-repeat 50%;
-
-background-size: 16px;
-
-background-position-y: -2px;
+width: 24px;
+margin-top: 3px;
+cursor: pointer;
+height: 18px;
+float: left;
+background: url(../images/foldExpansion.png) no-repeat 50%;
+background-size: 16px;
+background-position: 0 -2px;
 }
-body>.centerArea>.projectInfo>.rows>.head>.right>.select{background-position-y: 1px;height: 3px;margin-top: 9px;}
+body>.centerArea>.projectInfo>.rows>.head>.right>.select{background-position: 0 1px;height: 3px;margin-top: 9px;}
 body>.centerArea>.projectInfo>.rows>.head>.projectMaterial{
 background: url(../images/projectCost.png) no-repeat 1%;
 }
@@ -1161,19 +1148,14 @@ overflow: hidden;
 margin: 7px 7px 0 0;
 }
 body>.rightArea>div>div>.headTop>.shoppingCart>div{
-
-background: url(../images/shoppingChart.png) no-repeat 50%;
-
-width: 20px;
-
-height: 22px;
-
-background-position-y: -21px;
-
-cursor: pointer;
+background: url(../images/shoppingChart.png) no-repeat 50%;
+width: 20px;
+height: 22px;
+background-position: 50% -21px;
+cursor: pointer;
 }
 body>.rightArea>div>div>.headTop>.shoppingCart>div:hover{
-    background-position-y: 2px;
+    background-position: 50% 2px;
 }
 body>.rightArea>div>div>.headTop>.shoppingCart>.number{
 
@@ -1296,30 +1278,19 @@ position: relative;
 width: auto;
 }
 body>.rightArea>div>div>div:nth-child(n+2)>.headInfo>.foldExpansion{
-
-width: 24px;
-
-cursor: pointer;
-
-height: 18px;
-
-float: right;
-
-background: url(../images/foldExpansion.png) no-repeat 50%;
-
-background-size: 16px;
-
-background-position-y: -2px;
-
-margin: 9px 8px 0 0;
+width: 24px;
+cursor: pointer;
+height: 18px;
+float: right;
+background: url(../images/foldExpansion.png) no-repeat 50%;
+background-size: 16px;
+background-position: 0 -2px;
+margin: 9px 8px 0 0;
 }
 body>.rightArea>div>div>div:nth-child(n+2)>.headInfo>.select{
-
-background-position-y: 1px;
-
-height: 3px;
-
-margin-top: 14px;
+background-position: 0 1px;
+height: 3px;
+margin-top: 14px;
 }
 body>.rightArea>div>div>div:nth-child(n+2)>.selectArea{
 
@@ -1557,18 +1528,12 @@ background: url(../images/payroll.png) no-repeat 50% -44px;
 
 margin-top: 10px;
 }
-body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>div>div:hover{
-background-position-y: 0;
-}
+body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>div>div:hover{background-position: 50% 0;}
 body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>.alreadyApplied>div{
-
-width: 100%;
-
-height: 44px;
-
-background: url(../images/alreadyApplied.png) no-repeat 50% -44px;
-
-margin-top: 10px;
+width: 100%;
+height: 44px;
+background: url(../images/alreadyApplied.png) no-repeat 50% -44px;
+margin-top: 10px;
 }
 body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>.inbound>div{
 
