@@ -53,20 +53,34 @@ box-sizing: border-box;
 padding: 0;
 }
 body>.leftArea>.search>select{
-border: 0px;
-float: left;
-display: block;
-height: 24px;
-box-sizing: border-box;
-width: 61px;
-margin: 0;
-padding: 0;
-overflow: hidden;
--moz-appearance: none;
--webkit-appearance: none;
-line-height: 24px;
-padding: 0 12px 0 3px;
-background: url(../images/expansion.png) no-repeat 93%;
+
+border: 0px;
+
+float: left;
+
+display: block;
+
+height: 24px;
+
+box-sizing: border-box;
+
+width: 61px;
+
+margin: 0;
+
+padding: 0;
+
+overflow: hidden;
+
+-moz-appearance: none;
+
+-webkit-appearance: none;
+
+line-height: 24px;
+
+padding: 0 12px 0 3px;
+
+background: url(../images/expansion.png) no-repeat 93%;
 }
 body>.leftArea>.search>select>option{
 
@@ -171,7 +185,8 @@ body>.leftArea>.projectList>.select{
     color: white;
 }
 body>.leftArea>.projectList>.select>div{
-background-position: 0 0 !important;
+
+background-position: 0 0 !important;
 }
 /*项目列表*/
 
@@ -333,6 +348,9 @@ position: relative;
 height: 51px;
 
 margin-top: 8px;
+}
+body>.centerArea>.processArea>.progressRows:nth-child(n+7){
+    display: none;
 }
 body>.centerArea>.processArea>.progressRows>img{
 
@@ -575,15 +593,24 @@ overflow: hidden;
 margin-top: 16px;
 }
 body>.centerArea>.projectInfoSwitch>span{
-font-size: 15px;
-font-weight: 400;
-display: block;
-float: left;
-margin-left: 39px;
-height: 33px;
-line-height: 33px;
-padding: 0px 21px;
-cursor: pointer;
+
+font-size: 15px;
+
+font-weight: 400;
+
+display: block;
+
+float: left;
+
+margin-left: 39px;
+
+height: 33px;
+
+line-height: 33px;
+
+padding: 0px 21px;
+
+cursor: pointer;
 }
 body>.centerArea>.projectInfoSwitch>.projectInfo{
 
@@ -601,7 +628,8 @@ color: red;
 
 /*项目信息数据区域*/
 body>.centerArea>.projectInfo{
-display: block;
+
+display: block;
 }
 
 
@@ -658,14 +686,22 @@ cursor: pointer;
 width: 26px;
 }
 body>.centerArea>.projectInfo>.rows>.head>.right>.foldExpansion{
-width: 24px;
-margin-top: 3px;
-cursor: pointer;
-height: 18px;
-float: left;
-background: url(../images/foldExpansion.png) no-repeat 50%;
-background-size: 16px;
-background-position: 0 -2px;
+
+width: 24px;
+
+margin-top: 3px;
+
+cursor: pointer;
+
+height: 18px;
+
+float: left;
+
+background: url(../images/foldExpansion.png) no-repeat 50%;
+
+background-size: 16px;
+
+background-position: 0 -2px;
 }
 body>.centerArea>.projectInfo>.rows>.head>.right>.select{background-position: 0 1px;height: 3px;margin-top: 9px;}
 body>.centerArea>.projectInfo>.rows>.head>.projectMaterial{
@@ -733,7 +769,8 @@ background: url(../images/visaRemittance.png) no-repeat 1px;
 
 /*现场图片区域*/
 body>.centerArea>.sitePhoto{
-display: none;
+
+display: none;
 }
 
 /*标准化施工流程区域*/
@@ -932,8 +969,10 @@ background-position-y: -68px !important;
 
 /*项目信息总结区域*/
 body>.centerArea>.projectContent{
-overflow: hidden;
-display: none;
+
+overflow: hidden;
+
+display: none;
 }
 body>.centerArea>.projectContent>.rows{
 
@@ -1148,11 +1187,16 @@ overflow: hidden;
 margin: 7px 7px 0 0;
 }
 body>.rightArea>div>div>.headTop>.shoppingCart>div{
-background: url(../images/shoppingChart.png) no-repeat 50%;
-width: 20px;
-height: 22px;
-background-position: 50% -21px;
-cursor: pointer;
+
+background: url(../images/shoppingChart.png) no-repeat 50%;
+
+width: 20px;
+
+height: 22px;
+
+background-position: 50% -21px;
+
+cursor: pointer;
 }
 body>.rightArea>div>div>.headTop>.shoppingCart>div:hover{
     background-position: 50% 2px;
@@ -1205,17 +1249,28 @@ overflow: hidden;
 position: relative;
 }
 body>.rightArea>div>div>.projectBasicInfo>.startState>.state{
-display: block;
-box-sizing: border-box;
-color: white;
-padding-right: 14px;
-float: left;
-position: absolute;
-top: 50%;
-margin-top: -9px;
-left: 50%;
-background: url(../images/Triangle.png) no-repeat 100%;
-margin-left: -25px;
+
+display: block;
+
+box-sizing: border-box;
+
+color: white;
+
+padding-right: 14px;
+
+float: left;
+
+position: absolute;
+
+top: 50%;
+
+margin-top: -9px;
+
+left: 50%;
+
+background: url(../images/Triangle.png) no-repeat 100%;
+
+margin-left: -25px;
 }
 body>.rightArea>div>div>.projectBasicInfo>.rows{margin: 3px auto 0 auto;width: 93%;}
 body>.rightArea>div>div>.projectBasicInfo>.rows:nth-child(1){}
@@ -1278,19 +1333,30 @@ position: relative;
 width: auto;
 }
 body>.rightArea>div>div>div:nth-child(n+2)>.headInfo>.foldExpansion{
-width: 24px;
-cursor: pointer;
-height: 18px;
-float: right;
-background: url(../images/foldExpansion.png) no-repeat 50%;
-background-size: 16px;
-background-position: 0 -2px;
-margin: 9px 8px 0 0;
+
+width: 24px;
+
+cursor: pointer;
+
+height: 18px;
+
+float: right;
+
+background: url(../images/foldExpansion.png) no-repeat 50%;
+
+background-size: 16px;
+
+background-position: 0 -2px;
+
+margin: 9px 8px 0 0;
 }
 body>.rightArea>div>div>div:nth-child(n+2)>.headInfo>.select{
-background-position: 0 1px;
-height: 3px;
-margin-top: 14px;
+
+background-position: 0 1px;
+
+height: 3px;
+
+margin-top: 14px;
 }
 body>.rightArea>div>div>div:nth-child(n+2)>.selectArea{
 
@@ -1530,10 +1596,14 @@ margin-top: 10px;
 }
 body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>div>div:hover{background-position: 50% 0;}
 body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>.alreadyApplied>div{
-width: 100%;
-height: 44px;
-background: url(../images/alreadyApplied.png) no-repeat 50% -44px;
-margin-top: 10px;
+
+width: 100%;
+
+height: 44px;
+
+background: url(../images/alreadyApplied.png) no-repeat 50% -44px;
+
+margin-top: 10px;
 }
 body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>.inbound>div{
 
