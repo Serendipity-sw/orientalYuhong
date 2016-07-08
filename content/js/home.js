@@ -65,3 +65,12 @@ $(".rightArea .foldExpansion").click(function(){
     }
     clickThis.parent().nextAll().toggle();
 });
+
+/**
+ * 中间区域进度条展开关闭事件
+ * 创建人:邵炜
+ * 创建时间:2016年7月8日09:54:21
+ */
+$(".moreDown").click(function () {
+    $(".progressRows:gt(4)").toggle();
+});
