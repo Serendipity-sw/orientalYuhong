@@ -6,9 +6,9 @@
     <link rel="stylesheet" href="../content/css/base.css">
     <link rel="stylesheet" href="../content/css/home.css">
     <link rel="stylesheet" href="../content/css/laborManagement.css">
-    <link rel="stylesheet" href="../content/js/tree_themes/SimpleTree.css">
+    <link rel="stylesheet" href="../content/css/jquery.treemenu.css">
     <script src="../content/js/jquery-2.1.0.min.js"></script>
-    <script src="../content/js/SimpleTree.js"></script>
+    <script src="../content/js/jquery.treemenu.js"></script>
 </head>
 <body>
 <div class="layer">
@@ -27,23 +27,40 @@
     </div>
     <div class="content">
         <div class="left">
-            <ul>
-                <li><a href="#" ref="hyjm">欢迎界面</a></li>
-                <li><a href="#" ref="xtgl">系统管理</a></li>
-                <ul show="true">
-                    <li><a href="#" ref="yhgl">用户管理</a></li>
-                    <li><a href="#" ref="rzck">日志查看</a></li>
-                </ul>
-                <li><a href="#" ref="ckgl">仓库管理</a></li>
-                <ul>
-                    <li><a href="#" ref="kcgl">库存管理</a></li>
-                    <li><a href="#" ref="shgl">收货管理</a></li>
-                    <li><a href="#" ref="fhgl">发货管理</a></li>
+            <ul class="tree">
+                <li><a href="">Home</a></li>
+                <li><span>Category</span>
                     <ul>
-                        <li><a href="#" ref="yhgl">用户管理</a></li>
-                        <li><a href="#" ref="rzck">日志查看</a></li>
+                        <li><a href="#">jQuery</a>
+                            <ul>
+                                <li><a href="#">jQuery</a></li>
+                                <li><a href="#">jQuery UI</a></li>
+                                <li><a href="#">jQuery Mobile</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">JavaScript</a>
+                            <ul>
+                                <li><a class="active" href="#">AngularJS</a></li>
+                                <li><a href="#">React</a></li>
+                                <li><a href="#">Backbone</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#suits">Golang</a></li>
                     </ul>
-                </ul>
+                </li>
+                <li><a href="#about">About</a>
+                    <ul>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Jobs</a>
+                            <ul>
+                                <li><a href="#jobs1">Job 1</a></li>
+                                <li><a href="#jobs2">Job 2</a></li>
+                                <li><a href="#jobs3">Job 3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
             </ul>
 
         </div>
@@ -72,7 +89,7 @@
     </div>
 </div>
 <script>
-    $(".layer>.content>.left").SimpleTree();
+    $(".tree").treemenu({delay:300}).openActive();
 </script>
 </body>
 </html>
