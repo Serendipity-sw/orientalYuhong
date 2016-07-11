@@ -133,3 +133,12 @@ document.getElementsByClassName("closeBtn")[0].onclick=function () {
 function rightCityAreaShowOrHide(bo) {
     document.getElementsByClassName("cityListArea")[0].style.display=bo?"block":"none";
 }
+
+/**
+ * 区域位置点击显示隐藏事件
+ * 创建人:邵炜
+ * 创建时间:2016年7月11日23:05:45
+ */
+$("body>.wordDescription>.areaShow").click(function(){
+    $("body>.cityListArea").toggle();
+});

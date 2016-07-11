@@ -1,34 +1,34 @@
 /*左部区域搜索*/
 body>.leftSearchArea{
 
-width: 324px;
+    width: 324px;
 
-position: absolute;
+    position: absolute;
 
-left: 15px;
+    left: 15px;
 
-display: block;
+    display: block;
 
-top: 17px;
+    top: 17px;
 
-margin: 0;
+    margin: 0;
 
-padding: 0;
+    padding: 0;
 
-z-index: 1;
+    z-index: 1;
 }
 /*顶部区域*/
 body>.leftSearchArea>.top{
 
-background-color: white;
+    background-color: white;
 
-position: relative;
+    position: relative;
 
-margin: 0;
+    margin: 0;
 
-padding: 0;
+    padding: 0;
 
-overflow: hidden;
+    overflow: hidden;
 }
 body>.leftSearchArea>.top>.logoIcon{
 
@@ -47,15 +47,15 @@ body>.leftSearchArea>.top>.categoryList{
 }
 body>.leftSearchArea>.top>.categoryList>.rows{
 
-margin-top: 7px;
+    margin-top: 7px;
 
-height: 30px;
+    height: 30px;
 
-cursor: pointer;
+    cursor: pointer;
 }
 body>.leftSearchArea>.top>.categoryList>.rows:first-child{
 
-border-bottom: 1px solid #f7f7f7;
+    border-bottom: 1px solid #f7f7f7;
 }
 body>.leftSearchArea>.top>.categoryList>.rows>.title{
 
@@ -79,30 +79,30 @@ body>.leftSearchArea>.top>.categoryList>.rows>.sureBtn{
 }
 body>.leftSearchArea>.top>.categoryList>.rowsList{
 
-border-bottom: 1px solid #f7f7f7;
+    border-bottom: 1px solid #f7f7f7;
 
-margin: 6px 0 10px 0;
+    margin: 6px 0 10px 0;
 
-height: 307px;
+    height: 307px;
 
-overflow: hidden;
+    overflow: hidden;
 
-display: none;
+    display: none;
 }
 body>.leftSearchArea>.top>.categoryList>.rowsList .title{
 
-display: block;
+    display: block;
 
-margin-top: 5px;
+    margin-top: 5px;
 
-font-size: 13px;
+    font-size: 13px;
 
-color: #6a6a6a;
+    color: #6a6a6a;
 
-cursor: pointer;
+    cursor: pointer;
 }
 body>.leftSearchArea>.top>.categoryList>.rowsList .title:hover{
-background-color: #e8e8e8;
+    background-color: #e8e8e8;
 }
 /*顶部区域*/
 
@@ -185,15 +185,15 @@ body>.leftSearchArea>.searchBottom>.searchBtn{
 /*搜索结果区域*/
 body>.leftSearchArea>.searchBottom>.searchList{
 
-width: 294px;
+    width: 294px;
 
-margin: 0 auto;
+    margin: 0 auto;
 
-height: 305px;
+    height: 305px;
 
-margin-bottom: 19px;
+    margin-bottom: 19px;
 
-display: none;
+    display: none;
 }
 body>.leftSearchArea>.searchBottom>.searchList .rows{
 
@@ -240,225 +240,225 @@ body>.leftSearchArea>.searchBottom>.searchList .rows>.title{
 /*左部详情区域*/
 body>.leftDetail{
 
-display: none;
+    display: none;
 
-position: absolute;
+    position: absolute;
 
-top: 20px;
+    top: 20px;
 
-z-index: 1;
+    z-index: 1;
 
-left: 12px;
+    left: 12px;
 }
 body>.leftDetail>.left{
 
-background-color: white;
+    background-color: white;
 
-width: 329px;
+    width: 329px;
 
-overflow: hidden;
+    overflow: hidden;
 
-margin: 0;
+    margin: 0;
 
-padding: 0;
+    padding: 0;
 
-float: left;
+    float: left;
 }
 body>.leftDetail>.left>.title{
 
-display: block;
+    display: block;
 
-margin-top: 18px;
+    margin-top: 18px;
 
-font-size: 16px;
+    font-size: 16px;
 
-margin-left: 10px;
+    margin-left: 10px;
 }
 body>.leftDetail>.left>.divider{
 
-border-bottom: 1px solid #f7f7f7;
+    border-bottom: 1px solid #f7f7f7;
 
-width: 93%;
+    width: 93%;
 
-margin: 0 auto;
+    margin: 0 auto;
 
-margin-top: 6px;
+    margin-top: 6px;
 }
 
 /*进度区域*/
 body>.leftDetail>.left>.subtitle{
 
-display: block;
+    display: block;
 
-margin: 9px 0px 0px 10px;
+    margin: 9px 0px 0px 10px;
 }
 body>.leftDetail>.left>.progressRegion{
 
-width: 93%;
+    width: 93%;
 
-margin: 0 auto;
+    margin: 0 auto;
 
-border: 1px solid #ededed;
+    border: 1px solid #ededed;
 
-margin-top: 9px;
+    margin-top: 9px;
 }
 body>.leftDetail>.left>.progressRegion>.progressRows{
 
-margin: 0 auto;
+    margin: 0 auto;
 
-margin-top: 16px;
+    margin-top: 16px;
 
-width: 93%;
+    width: 93%;
 
-position: relative;
+    position: relative;
 
-overflow: hidden;
+    overflow: hidden;
 
-padding-top: 16px;
+    padding-top: 16px;
 }
 body>.leftDetail>.left>.progressRegion>.progressRows:nth-child(n+2){
 
-width: 94%;
+    width: 94%;
 }
 body>.leftDetail>.left>.progressRegion>.progressRows>img{
 
-float: left;
+    float: left;
 
-display: block;
+    display: block;
 
-width: 24px;
+    width: 24px;
 
-margin-left: 12px;
+    margin-left: 12px;
 
-margin-right: 4px;
+    margin-right: 4px;
 }
 body>.leftDetail>.left>.progressRegion>.progressRows>.title{
 
-display: block;
+    display: block;
 
-float: left;
+    float: left;
 
-height: 24px;
+    height: 24px;
 
-line-height: 24px;
+    line-height: 24px;
 
-margin-left: 5px;
+    margin-left: 5px;
 
-width: 35px;
+    width: 35px;
 
-background: url(../images/expansion.png) no-repeat 100%;
+    background: url(../images/expansion.png) no-repeat 100%;
 
-background-size: 23%;
+    background-size: 23%;
 
-cursor: pointer;
+    cursor: pointer;
 }
 body>.leftDetail>.left>.progressRegion>.progressRows:first-child>.title{
 
-width: 55px;
+    width: 55px;
 
-margin-left: 0;
+    margin-left: 0;
 
-background-size: 17%;
+    background-size: 17%;
 
-background-position: 89%;
+    background-position: 89%;
 }
 body>.leftDetail>.left>.progressRegion>.progressRows>.dateTime{
 
-position: absolute;
+    position: absolute;
 
-top: 0px;
+    top: 0px;
 
-border: 1px solid #dcdcdc;
+    border: 1px solid #dcdcdc;
 
-display: block;
+    display: block;
 
-height: 16px;
+    height: 16px;
 
-left: 121px;
+    left: 121px;
 
-line-height: 16px;
+    line-height: 16px;
 }
 body>.leftDetail>.left>.progressRegion>.progressRows>.progressBarArea{
 
-background-color: #f1f1f1;
+    background-color: #f1f1f1;
 
-width: 153px;
+    width: 153px;
 
-height: 10px;
+    height: 10px;
 
-float: left;
+    float: left;
 
-border-radius: 14px;
+    border-radius: 14px;
 
-margin-top: 8px;
+    margin-top: 8px;
 
-margin-left: 1px;
+    margin-left: 1px;
 }
 body>.leftDetail>.left>.progressRegion>.progressRows>.progressBarArea>.progressBar{
 
-height: 6px;
+    height: 6px;
 
-width: 50px;
+    width: 50px;
 
-background-color: red;
+    background-color: red;
 
-border-radius: 91px;
+    border-radius: 91px;
 
-margin: 2px 0px 0px 5px;
+    margin: 2px 0px 0px 5px;
 }
 body>.leftDetail>.left>.progressRegion>.progressRows>.number{
 
-position: absolute;
+    position: absolute;
 
-left: 132px;
+    left: 132px;
 
-font-weight: bold;
+    font-weight: bold;
 
-top: 23px;
+    top: 23px;
 
-background-color: #f1f1f1;
+    background-color: #f1f1f1;
 
-height: 12px;
+    height: 12px;
 
-line-height: 12px;
+    line-height: 12px;
 }
 body>.leftDetail>.left>.progressRegion>.progressRows>.scheduleNumber{
 
-display: block;
+    display: block;
 
-margin: 2px 0 0 5px;
+    margin: 2px 0 0 5px;
 
-float: left;
+    float: left;
 
-color: red;
+    color: red;
 }
 body>.leftDetail>.left>.progressRegion>.dottedLine{
 
-border: 1px dashed #ededed;
+    border: 1px dashed #ededed;
 
-width: 93%;
+    width: 93%;
 
-margin: 0 auto;
+    margin: 0 auto;
 
-margin-top: 13px;
+    margin-top: 13px;
 }
 body>.leftDetail>.left>.progressRegion>.progressRows>a{
 
-float: left;
+    float: left;
 
-width: 49px;
+    width: 49px;
 
-color: white;
+    color: white;
 
-background-color: #10cad7;
+    background-color: #10cad7;
 
-height: 23px;
+    height: 23px;
 
-border-radius: 5px;
+    border-radius: 5px;
 
-line-height: 23px;
+    line-height: 23px;
 
-text-align: center;
+    text-align: center;
 }
 body>.leftDetail>.left>.progressRegion>.gather{width: 81%;margin: 10px auto;}
 body>.leftDetail>.left>.progressRegion>.gather>.total{
@@ -477,97 +477,97 @@ body>.leftDetail>.left>.progressRegion>.gather>.notStarted{
 }
 body>.leftDetail>.left>.progressRegion>.gather>span:nth-child(n+2){
 
-margin-left: 13px;
+    margin-left: 13px;
 }
 /*进度区域*/
 
 /*项目信息区域*/
 body>.leftDetail>.left>.projectTitle{
 
-margin: 10px 0px 0px 10px;
+    margin: 10px 0px 0px 10px;
 
-display: block;
+    display: block;
 }
 body>.leftDetail>.left>.projectArea{width: 93%;margin: 0 auto;border: 1px solid #ededed;margin-top: 9px;}
 body>.leftDetail>.left>.projectArea>.rows{
 
-width: 90%;
+    width: 90%;
 
-margin: 9px auto;
+    margin: 9px auto;
 }
 body>.leftDetail>.left>.projectArea>.rows>.title{
 
-color: #727272;
+    color: #727272;
 }
 body>.leftDetail>.left>.projectArea>.rows>.content{
 
-margin-left: 5px;
+    margin-left: 5px;
 }
 /*项目信息区域*/
 
 /*项目图片展示区域*/
 body>.leftDetail>.left>.projectPhotoTitle{
 
-margin: 10px 0px 0px 10px;
+    margin: 10px 0px 0px 10px;
 
-display: block;
+    display: block;
 }
 body>.leftDetail>.left>.projectPhoto{
 
-width: 93%;
+    width: 93%;
 
-margin: 0 auto;
+    margin: 0 auto;
 
-margin-top: 9px;
+    margin-top: 9px;
 }
 body>.leftDetail>.left>.projectPhoto>img{
 
-width: 99px;
+    width: 99px;
 
-height: 103px;
+    height: 103px;
 }
 body>.leftDetail>.left>.projectPhoto>img:nth-child(n+2){
 
 }
 body>.leftDetail>.left>.enterBtn{
 
-margin: 24px auto;
+    margin: 24px auto;
 
-display: block;
+    display: block;
 
-width: 155px;
+    width: 155px;
 
-height: 40px;
+    height: 40px;
 
-background-color: red;
+    background-color: red;
 
-color: white;
+    color: white;
 
-text-align: center;
+    text-align: center;
 
-line-height: 40px;
+    line-height: 40px;
 
-font-size: 16px;
+    font-size: 16px;
 
-letter-spacing: 2px;
+    letter-spacing: 2px;
 
-border-radius: 23px;
+    border-radius: 23px;
 }
 /*项目图片展示区域*/
 
 body>.leftDetail>.rightClose{
 
-float: left;
+    float: left;
 
-width: 37px;
+    width: 37px;
 
-background-color: red;
+    background-color: red;
 
-height: 49px;
+    height: 49px;
 
-background: url(../images/closeWhite.png) no-repeat 50% red;
+    background: url(../images/closeWhite.png) no-repeat 50% red;
 
-background-size: 53%;
+    background-size: 53%;
 }
 /*左部详情区域*/
 
@@ -670,43 +670,43 @@ body>.mapArea .map_project>.map-process-project{
 /*右部文字说明区域*/
 body>.wordDescription{
 
-position: absolute;
+    position: absolute;
 
-top: 22px;
+    top: 22px;
 
-right: -47px;
+    right: -47px;
 
-background-color: white;
+    background-color: white;
 
-border-radius: 48px;
+    border-radius: 48px;
 
-height: 64px;
+    height: 64px;
 }
 body>.wordDescription>.goBack{
 
-margin-top: 21px;
+    margin-top: 21px;
 
-float: left;
+    float: left;
 
-margin-left: 23px;
+    margin-left: 23px;
 
-cursor: pointer;
+    cursor: pointer;
 
-display: none;
+    display: block;
 }
 
 /*区域显示说明*/
 body>.wordDescription>.areaShow{
 
-float: left;
+    float: left;
 
-margin-left: 23px;
+    margin-left: 23px;
 
-margin-top: 21px;
+    margin-top: 21px;
 
-display: none;
+    display: block;
 
-cursor: pointer;
+    cursor: pointer;
 }
 body>.wordDescription>.areaShow>.positionIcon{
 
@@ -733,62 +733,62 @@ body>.wordDescription>.areaShow>.areaTitle{
 /*用户区域*/
 body>.wordDescription>.userArea{
 
-float: left;
+    float: left;
 
-margin-top: 8px;
+    margin-top: 8px;
 
-cursor: pointer;
+    cursor: pointer;
 
-width: 195px;
+    width: 195px;
 
-margin-left: 20px;
+    margin-left: 20px;
 }
 body>.wordDescription>.userArea>.userPhoto{
 
-width: 21%;
+    width: 21%;
 
-border-radius: 85px;
+    border-radius: 85px;
 
-float: left;
+    float: left;
 
-display: block;
+    display: block;
 
-cursor: pointer;
+    cursor: pointer;
 
-margin-top: 7px;
+    margin-top: 7px;
 }
 body>.wordDescription>.userArea>.userName{
 
-float: left;
+    float: left;
 
-display: block;
+    display: block;
 
-width: 91px;
+    width: 91px;
 
-margin-left: 13px;
+    margin-left: 13px;
 
-margin-top: 16px;
+    margin-top: 16px;
 
-background: url(../images/expansion.png) no-repeat 94%;
+    background: url(../images/expansion.png) no-repeat 94%;
 
-cursor: pointer;
+    cursor: pointer;
 }
 /*用户区域*/
 
 /*城市列表区域*/
 body>.cityListArea{
 
-position: absolute;
+    position: absolute;
 
-top: 91px;
+    top: 91px;
 
-right: 0;
+    right: 0;
 
-width: 308px;
+    width: 308px;
 
-background-color: white;
+    background-color: white;
 
-/* display: none; */
+    /* display: none; */
 }
 body>.cityListArea>.cityTitle{
 
@@ -798,13 +798,13 @@ body>.cityListArea>.cityTitle{
 }
 body>.cityListArea>.closeBtn{
 
-position: absolute;
+    position: absolute;
 
-right: 12px;
+    right: 12px;
 
-top: 20px;
+    top: 20px;
 
-cursor: pointer;
+    cursor: pointer;
 }
 body>.cityListArea>.cityDivider{
 
@@ -818,7 +818,7 @@ body>.cityListArea>.currentCityArea>.currentCity{
 }
 body>.cityListArea>.currentCityArea>.cityName{
 
-color: red;
+    color: red;
 }
 /*城市列表区域*/
 
@@ -865,12 +865,18 @@ body>.cityListArea>.searchArea{
     overflow: hidden;
 }
 body>.cityListArea>.searchArea>.citySelect{
-float: left;
-width: 92px;
-border: 1px solid red;
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+
+    float: left;
+
+    width: 92px;
+
+    border: 1px solid red;
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
 }
 body>.cityListArea>.searchArea>.citySelect>span{
 
@@ -899,19 +905,19 @@ body>.cityListArea>.searchArea>.citySelect>.select{
 body>.cityListArea>.searchArea>.inputCityArea{margin-left: 8px;float: left;}
 body>.cityListArea>.searchArea>.inputCityArea>.inputCityName{
 
-width: 138px;
+    width: 138px;
 
-height: 25px;
+    height: 25px;
 
-display: block;
+    display: block;
 
-border: 1px solid red;
+    border: 1px solid red;
 
-float: left;
+    float: left;
 
-line-height: 25px;
+    line-height: 25px;
 
-padding-left: 10px;
+    padding-left: 10px;
 }
 body>.cityListArea>.searchArea>.inputCityArea>.searchBtn{
 
@@ -980,27 +986,27 @@ body>.cityListArea>.provinceFilterArea{
 }
 body>.cityListArea>.provinceFilterArea .provinceCityList{
 
-/* display: none; */
+    /* display: none; */
 }
 body>.cityListArea>.provinceFilterArea .provinceCityList>.rows{
 
-margin: 5px 0 5px 0;
+    margin: 5px 0 5px 0;
 }
 body>.cityListArea>.provinceFilterArea .provinceCityList>.rows>.letterNumber{
 
-float: left;
+    float: left;
 
-display: block;
+    display: block;
 
-width: 18px;
+    width: 18px;
 
-background-color: red;
+    background-color: red;
 
-text-align: center;
+    text-align: center;
 
-color: white;
+    color: white;
 
-height: 18px;
+    height: 18px;
 }
 body>.cityListArea>.provinceFilterArea .provinceCityList>.rows>.provinceName{
 
@@ -1014,29 +1020,29 @@ body>.cityListArea>.provinceFilterArea .provinceCityList>.rows>.provinceName{
 }
 body>.cityListArea>.provinceFilterArea .provinceCityList>.rows>.cityList{
 
-float: left;
+    float: left;
 
-width: 201px;
+    width: 201px;
 }
 body>.cityListArea>.provinceFilterArea .provinceCityList>.rows>.cityList>.cityName{
 
-display: block;
+    display: block;
 
-float: left;
+    float: left;
 
-margin-left: 12px;
+    margin-left: 12px;
 
-height: 21px;
+    height: 21px;
 
-color: #a7a7a7;
+    color: #a7a7a7;
 
-cursor: pointer;
+    cursor: pointer;
 }
 
 
 body>.cityListArea>.provinceFilterArea .cityFilterArea{
 
-display: none;
+    display: none;
 }
 body>.cityListArea>.provinceFilterArea .cityFilterArea>.cityList{
 
@@ -1046,39 +1052,39 @@ body>.cityListArea>.provinceFilterArea .cityFilterArea>.cityList>.rows{
 }
 body>.cityListArea>.provinceFilterArea .cityFilterArea>.cityList>.rows>.letterNumber{
 
-width: 18px;
+    width: 18px;
 
-text-align: center;
+    text-align: center;
 
-display: block;
+    display: block;
 
-background-color: red;
+    background-color: red;
 
-color: white;
+    color: white;
 
-float: left;
+    float: left;
 }
 body>.cityListArea>.provinceFilterArea .cityFilterArea>.cityList>.rows>.cityList{
 
-float: left;
+    float: left;
 
-width: 250px;
+    width: 250px;
 }
 body>.cityListArea>.provinceFilterArea .cityFilterArea>.cityList>.rows>.cityList>.cityName{
 
-display: block;
+    display: block;
 
-float: left;
+    float: left;
 
-margin-left: 11px;
+    margin-left: 11px;
 
-height: 20px;
+    height: 20px;
 
-line-height: 20px;
+    line-height: 20px;
 
-color: #a7a7a7;
+    color: #a7a7a7;
 
-cursor: pointer;
+    cursor: pointer;
 }
 
 body>.cityListArea>.cityFilterArea{

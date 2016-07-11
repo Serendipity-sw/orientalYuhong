@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../content/css/base.css">
+    <link rel="stylesheet" href="../content/css/home.css">
+    <link rel="stylesheet" href="../content/css/laborManagement.css">
+    <link rel="stylesheet" href="../content/js/tree_themes/SimpleTree.css">
+    <script src="../content/js/jquery-2.1.0.min.js"></script>
+    <script src="../content/js/SimpleTree.js"></script>
+</head>
+<body>
+<div class="layer">
+    <div class="headBtn">
+        <a href="javascript:void(0);" class="select">查询</a>
+        <a href="javascript:void(0);" class="add">新增</a>
+        <a href="javascript:void(0);" class="delete">删除</a>
+    </div>
+    <div class="selectWhere">
+        <div class="head">
+            <span class="title">查询条件</span>
+            <a href="javascript:void(0);" class="downSelect"></a>
+        </div>
+        <div class="rows"><span class="title">劳务人员</span><input type="text" class="userName"></div>
+        <div class="rows"><span class="title">身份证号</span><input type="text" class="idNumber"></div>
+    </div>
+    <div class="content">
+        <div class="left">
+            <ul>
+                <li><a href="#" ref="hyjm">欢迎界面</a></li>
+                <li><a href="#" ref="xtgl">系统管理</a></li>
+                <ul show="true">
+                    <li><a href="#" ref="yhgl">用户管理</a></li>
+                    <li><a href="#" ref="rzck">日志查看</a></li>
+                </ul>
+                <li><a href="#" ref="ckgl">仓库管理</a></li>
+                <ul>
+                    <li><a href="#" ref="kcgl">库存管理</a></li>
+                    <li><a href="#" ref="shgl">收货管理</a></li>
+                    <li><a href="#" ref="fhgl">发货管理</a></li>
+                    <ul>
+                        <li><a href="#" ref="yhgl">用户管理</a></li>
+                        <li><a href="#" ref="rzck">日志查看</a></li>
+                    </ul>
+                </ul>
+            </ul>
+
+        </div>
+        <div class="right">
+            <div class="head">
+                <span class="title">搜索列表</span>
+            </div>
+            <table class="table4_2">
+                <tr>
+                    <th>SAMPLE</th><th>SAMPLE</th><th>SAMPLE</th>
+                </tr>
+                <tr>
+                    <td>SAMPLE</td><td>SAMPLE</td><td>SAMPLE</td>
+                </tr>
+                <tr>
+                    <td>SAMPLE</td><td>SAMPLE</td><td>SAMPLE</td>
+                </tr>
+                <tr>
+                    <td>SAMPLE</td><td>SAMPLE</td><td>SAMPLE</td>
+                </tr>
+                <tr>
+                    <td>SAMPLE</td><td>SAMPLE</td><td>SAMPLE</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+<script>
+    $(".layer>.content>.left").SimpleTree();
+</script>
+</body>
+</html>

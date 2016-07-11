@@ -1,0 +1,136 @@
+body>.layer{
+
+    overflow: hidden;
+
+    box-sizing: border-box;
+
+    padding: 0;
+
+    margin: 0;
+
+    display: block;
+}
+body>.layer>.headBtn{
+
+    overflow: hidden;
+
+    display: block;
+
+    box-sizing: border-box;
+
+    padding: 0;
+
+    margin: 8px auto 0 auto;
+
+    width: 99%;
+}
+body>.layer>.headBtn>a{
+
+    height: 33px;
+
+    display: block;
+
+    overflow: hidden;
+
+    box-sizing: border-box;
+
+    margin: 0 12px;
+
+    float: left;
+
+    padding: 0 34px;
+
+    background: green;
+
+    line-height: 33px;
+
+    color: white;
+
+    font-size: 13px;
+
+    letter-spacing: 6px;
+
+    cursor: pointer;
+}
+body>.layer>.headBtn>.select{
+
+    margin: 0;
+}
+body>.layer>.headBtn>.add{
+
+}
+body>.layer>.headBtn>.delete{
+
+    background: #fd6469;
+}
+body>.layer>.selectWhere{
+
+    overflow: hidden;
+
+    box-sizing: border-box;
+
+    display: block;
+
+    margin: 10px auto 0 auto;
+
+    width: 99%;
+
+    border: 1px solid #5d5b5b;
+
+    padding: 0;
+}
+body>.layer>.selectWhere>.head{
+
+    overflow: hidden;
+
+    padding: 0;
+
+    margin: 0;
+
+    display: block;
+
+    box-sizing: border-box;
+
+    background-color: #d0d0d0;
+
+    border-bottom: 1px solid #7f7f7f;
+}
+body>.layer>.selectWhere>.head>.title{
+
+}
+body>.layer>.selectWhere>.head>.downSelect{
+
+}
+body>.layer>.selectWhere>.rows{
+
+}
+body>.layer>.selectWhere>.rows>.title{
+
+}
+body>.layer>.selectWhere>.rows>input{
+
+}
+body>.layer>.selectWhere>.rows>.userName{
+
+}
+body>.layer>.selectWhere>.rows>.idNumber{
+
+}
+body>.layer>.selectWhere>.rows>.idNumber{
+
+}
+body>.layer>.content{
+
+}
+body>.layer>.content>.left{
+
+}
+body>.layer>.content>.right{
+
+}
+body>.layer>.content>.right>.head{
+
+}
+body>.layer>.content>.right>.head>.title{
+
+}
