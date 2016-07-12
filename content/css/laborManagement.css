@@ -1,4 +1,4 @@
-body>.layer{
+body .layer{
 
     overflow: hidden;
 
@@ -10,7 +10,7 @@ body>.layer{
 
     display: block;
 }
-body>.layer>.headBtn{
+body .layer>.headBtn{
 
     overflow: hidden;
 
@@ -24,7 +24,7 @@ body>.layer>.headBtn{
 
     width: 99%;
 }
-body>.layer>.headBtn>a{
+body .layer>.headBtn>a{
 
     height: 33px;
 
@@ -52,18 +52,18 @@ body>.layer>.headBtn>a{
 
     cursor: pointer;
 }
-body>.layer>.headBtn>.select{
+body .layer>.headBtn>.select{
 
     margin: 0;
 }
-body>.layer>.headBtn>.add{
+body .layer>.headBtn>.add{
 
 }
-body>.layer>.headBtn>.delete{
+body .layer>.headBtn>.delete{
 
     background: #fd6469;
 }
-body>.layer>.selectWhere{
+body .layer>.selectWhere{
 
     overflow: hidden;
 
@@ -79,7 +79,7 @@ body>.layer>.selectWhere{
 
     padding: 0;
 }
-body>.layer>.selectWhere>.head{
+body .layer>.selectWhere>.head{
 
     overflow: hidden;
 
@@ -95,7 +95,7 @@ body>.layer>.selectWhere>.head{
 
     border-bottom: 1px solid #7f7f7f;
 }
-body>.layer>.selectWhere>.head>.title{
+body .layer>.selectWhere>.head>.title{
 
     margin: 7px 0 10px 20px;
 
@@ -113,7 +113,7 @@ body>.layer>.selectWhere>.head>.title{
 
     float: left;
 }
-body>.layer>.selectWhere>.head>.downSelect{
+body .layer>.selectWhere>.head>.downSelect{
 
     float: right;
 
@@ -131,7 +131,7 @@ body>.layer>.selectWhere>.head>.downSelect{
 
     overflow: hidden;
 }
-body>.layer>.selectWhere>.rows{
+body .layer>.selectWhere>.rows{
 
     float: left;
 
@@ -143,7 +143,7 @@ body>.layer>.selectWhere>.rows{
 
     box-sizing: border-box;
 }
-body>.layer>.selectWhere>.rows>.title{
+body .layer>.selectWhere>.rows>.title{
 
     font-size: 13px;
 
@@ -157,20 +157,20 @@ body>.layer>.selectWhere>.rows>.title{
 
     box-sizing: border-box;
 }
-body>.layer>.selectWhere>.rows>input{
+body .layer>.selectWhere>.rows>input{
 
     margin-left: 7px;
 }
-body>.layer>.selectWhere>.rows>.userName{
+body .layer>.selectWhere>.rows>.userName{
 
 }
-body>.layer>.selectWhere>.rows>.idNumber{
+body .layer>.selectWhere>.rows>.idNumber{
 
 }
-body>.layer>.selectWhere>.rows>.idNumber{
+body .layer>.selectWhere>.rows>.idNumber{
 
 }
-body>.layer>.content{
+body .layer>.content{
 
     width: 99%;
 
@@ -178,7 +178,7 @@ body>.layer>.content{
 
     overflow: hidden;
 }
-body>.layer>.content>.left{
+body .layer>.content>.left{
 
     width: 13%;
 
@@ -196,7 +196,7 @@ body>.layer>.content>.left{
 
     float: left;
 }
-body>.layer>.content>.right{
+body .layer>.content>.right{
 
     height: 363px;
 
@@ -212,7 +212,7 @@ body>.layer>.content>.right{
 
     box-sizing: border-box;
 }
-body>.layer>.content>.right>.head{
+body .layer>.content>.right>.head{
 
     overflow: hidden;
 
@@ -228,7 +228,7 @@ body>.layer>.content>.right>.head{
 
     border-bottom: 1px solid #7f7f7f;
 }
-body>.layer>.content>.right>.head>.title{
+body .layer>.content>.right>.head>.title{
 
     margin: 7px 0 10px 20px;
 

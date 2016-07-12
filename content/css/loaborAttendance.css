@@ -1,70 +1,118 @@
-body>.layer{
-overflow: hidden;
-padding: 0;
-margin: 0;
-box-sizing: border-box;
-display: block;
+body .layer{
+
+overflow: hidden;
+
+padding: 0;
+
+margin: 0;
+
+box-sizing: border-box;
+
+display: block;
 }
-body>.layer>.content{
-width: 99%;
-margin: 0 auto;
-border: 1px solid #b1a8a8;
-padding: 0;
-overflow: hidden;
-box-sizing: border-box;
+body .layer>.content{
+
+width: 99%;
+
+margin: 0 auto;
+
+border: 1px solid #b1a8a8;
+
+padding: 0;
+
+overflow: hidden;
+
+box-sizing: border-box;
 }
-body>.layer>.content>.head{
-background-color: #e4e4e4;
-overflow: hidden;
-padding: 0;
-margin: 0;
-border-bottom: 1px solid #b1a8a8;
+body .layer>.content>.head{
+
+background-color: #e4e4e4;
+
+overflow: hidden;
+
+padding: 0;
+
+margin: 0;
+
+border-bottom: 1px solid #b1a8a8;
 }
-body>.layer>.content>.head>.title{
-display: block;
-margin: 8px;
-overflow: hidden;
-box-sizing: border-box;
-padding: 0;
+body .layer>.content>.head>.title{
+
+display: block;
+
+margin: 8px;
+
+overflow: hidden;
+
+box-sizing: border-box;
+
+padding: 0;
 }
-body>.layer>.content>.selectWhere{
-display: block;
-padding: 0;
-overflow: hidden;
-box-sizing: border-box;
-margin: 12px 25px;
+body .layer>.content>.selectWhere{
+
+display: block;
+
+padding: 0;
+
+overflow: hidden;
+
+box-sizing: border-box;
+
+margin: 12px 25px;
 }
-body>.layer>.content>.selectWhere>.title{
-letter-spacing: 1px;
-float: left;
-height: 28px;
-display: block;
-line-height: 28px;
-font-size: 13px;
+body .layer>.content>.selectWhere>.title{
+
+letter-spacing: 1px;
+
+float: left;
+
+height: 28px;
+
+display: block;
+
+line-height: 28px;
+
+font-size: 13px;
 }
-body>.layer>.content>.selectWhere>input{
-box-sizing: border-box;
-overflow: hidden;
-float: left;
-margin-left: 4px;
-height: 28px;
-line-height: 28px;
+body .layer>.content>.selectWhere>input{
+
+box-sizing: border-box;
+
+overflow: hidden;
+
+float: left;
+
+margin-left: 4px;
+
+height: 28px;
+
+line-height: 28px;
 }
-body>.layer>.content>.selectWhere>a{
-display: block;
-float: left;
-margin-left: 16px;
-height: 28px;
-background-color: #1a8641;
-color: white;
-padding: 0 25px;
-line-height: 28px;
-letter-spacing: 3px;
-box-sizing: border-box;
+body .layer>.content>.selectWhere>a{
+
+display: block;
+
+float: left;
+
+margin-left: 16px;
+
+height: 28px;
+
+background-color: #1a8641;
+
+color: white;
+
+padding: 0 25px;
+
+line-height: 28px;
+
+letter-spacing: 3px;
+
+box-sizing: border-box;
 }
-body>.layer>.content>.selectWhere>.selectBtn{
+body .layer>.content>.selectWhere>.selectBtn{
 
 }
-body>.layer>.content>.selectWhere>.addBtn{
+body .layer>.content>.selectWhere>.addBtn{
 
 }
