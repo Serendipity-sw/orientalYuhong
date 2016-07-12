@@ -75,14 +75,29 @@ $(".moreDown").click(function () {
     $(".progressRows:gt(4)").toggle();
 });
 
-$("#demo3").jqPaginator({
-    totalPages: 100,
-    visiblePages: 10,
-    currentPage: 1,
-    prev: '<a class="prev" href="javascript:void(0);">&lt;<\/a>',
-    next: '<a class="next" href="javascript:void(0);">&gt;<\/a>',
-    page: '<a href="javascript:void(0);">{{page}}<\/a>',
-    onPageChange: function (n) {
+/**
+ * 考勤按钮点击事件
+ * 创建人:邵炜
+ * 创建时间:2016年7月12日21:35:40
+ */
+$(".checkAttendance").click(function(){
+    $.layer({title:"考勤",url:"laborAttendance.html"});
+});
 
-    }
+/**
+ * 考勤明细按钮点击事件
+ * 创建人:邵炜
+ * 创建时间:2016年7月12日21:38:35
+ */
+$(".attendanceDetails").click(function(){
+    $.layer({title:"考勤明细",url:"attendanceDetails.html"});
+});
+
+/**
+ * 分页控件脚本事件
+ */
+$('.M-box1').pagination({
+    totalData:100,
+    showData:5,
+    coping:true
 });
