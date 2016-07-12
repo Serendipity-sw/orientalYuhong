@@ -142,3 +142,10 @@ function rightCityAreaShowOrHide(bo) {
 $("body>.wordDescription>.areaShow").click(function(){
     $("body>.cityListArea").toggle();
 });
+
+/**
+ * 劳务列表每项点击事件
+ */
+$(".categoryList .rowsList:eq(1)  span").click(function(){
+   location.href="laborManagement.html" ;
+});
