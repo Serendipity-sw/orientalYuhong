@@ -74,3 +74,15 @@ $(".rightArea .foldExpansion").click(function(){
 $(".moreDown").click(function () {
     $(".progressRows:gt(4)").toggle();
 });
+
+$("#demo3").jqPaginator({
+    totalPages: 100,
+    visiblePages: 10,
+    currentPage: 1,
+    prev: '<a class="prev" href="javascript:void(0);">&lt;<\/a>',
+    next: '<a class="next" href="javascript:void(0);">&gt;<\/a>',
+    page: '<a href="javascript:void(0);">{{page}}<\/a>',
+    onPageChange: function (n) {
+
+    }
+});

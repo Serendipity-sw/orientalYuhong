@@ -9,9 +9,11 @@
     <link rel="stylesheet" href="../content/css/jquery.treemenu.css">
     <link rel="stylesheet" href="../content/css/loaborAttendance.css">
     <link rel="stylesheet" href="../content/css/attendanceDetails.css">
+    <link rel="stylesheet" href="../content/css/pagination.css">
     <script src="../content/js/jquery-2.1.0.min.js"></script>
     <script src="../content/js/layer.js"></script>
     <script src="../content/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="../content/js/jquery.pagination.min.js"></script>
 </head>
 <body>
 <!--左部区域-->
@@ -193,6 +195,7 @@
                     <td>SAMPLE</td><td>SAMPLE</td><td>SAMPLE</td>
                 </tr>
             </table>
+            <div class="M-box1" style="float: right; margin: 2px 5px 10px 0;"></div>
         </div>
         <!--项目材料-->
 
@@ -582,6 +585,11 @@
 <script>
     $(".rightArea").mCustomScrollbar();
     $.layer({title:"面向对象",url:"attendanceDetails.html"});
+    $('.M-box1').pagination({
+        totalData:100,
+        showData:5,
+        coping:true
+    });
 </script>
 <script src="../content/js/home.js"></script>
 </body>
