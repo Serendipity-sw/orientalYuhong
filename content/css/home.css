@@ -335,8 +335,6 @@ body>.centerArea>.processArea>.progressRows:first-child{
 }
 body>.centerArea>.processArea>.progressRows{
 
-    overflow: hidden;
-
     box-sizing: border-box;
 
     width: 96%;
@@ -384,7 +382,43 @@ body>.centerArea>.processArea>.progressRows>.title{
 
     background-size: 23%;
 
+    cursor: pointer;
+
     background-position-y: 16px;
+}
+body>.centerArea>.processArea>.progressRows>ul{
+
+    position: absolute;
+
+    top: 32px;
+
+    left: 75px;
+
+    box-sizing: border-box;
+
+    background-color: white;
+
+    overflow: hidden;
+
+    z-index: 1;
+
+    border: 1px solid gainsboro;
+
+    display: none;
+}
+body>.centerArea>.processArea>.progressRows>ul>li{
+
+    font-size: 14px;
+
+    margin: 4px 0;
+
+    padding: 3px 10px;
+
+    cursor: pointer;
+}
+body>.centerArea>.processArea>.progressRows>ul>li:hover{
+
+    background-color: #c7c7c7;
 }
 body>.centerArea>.processArea>.progressRows:first-child>.title{
 
@@ -1655,18 +1689,18 @@ body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>.manReceiver>div{
 
     margin-top: 10px;
 }
-body>.rightArea>div>div>.projectMaterial .title{background: url(../images/projectMaterial.png) no-repeat 0px;}
+body>.rightArea>div>div>.projectMaterial .title{background: url(../images/projectMaterial.png) no-repeat 0;}
 body>.rightArea>div>div>.projectQuality .title{
 
-    background: url(../images/projectQuality.png) no-repeat 0px;
+    background: url(../images/projectQuality.png) no-repeat 0;
 }
 body>.rightArea>div>div>.projectData .title{
 
-    background: url(../images/projectData.png) no-repeat 0px;
+    background: url(../images/projectData.png) no-repeat 0;
 }
 body>.rightArea>div>div>.laborManagement .title{
 
-    background: url(../images/laborManagement.png) no-repeat 0px;
+    background: url(../images/laborManagement.png) no-repeat 0;
 }
 
 /*右部区域*/

@@ -92,3 +92,20 @@ $('.M-box1').pagination({
     showData:5,
     coping:true
 });
+
+/**
+ * 进度条前面选项点击事件
+ */
+$('.processArea [data-src]:not(ul)').click(function(){
+    var titleClick=$(this);
+    $('.processArea ul[data-src]:not([data-src="'+titleClick.attr("data-src")+'"])').hide();
+    $('.processArea ul[data-src="'+titleClick.attr("data-src")+'"]').toggle();
+});
+
+/**
+ * 进度条下拉框点击事件
+ */
+$(".processArea ul[data-src] li").click(function(){
+    var clickThis=$(this);
+    clickThis.parent().hide().prev().html(clickThis.html());
+});
