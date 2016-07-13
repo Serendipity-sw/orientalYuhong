@@ -22,18 +22,9 @@ $(".projectInfoSwitch> span").click(function(){
     var selectClick=$(this);
     selectClick.parent().find("span").removeClass("select");
     selectClick.addClass("select");
-    var projectInfo=$(".centerArea>.projectInfo"),
-        sitePhotoAndContent=$(".centerArea>.sitePhoto,.centerArea>.projectContent");
-    switch (selectClick.index()){
-        case 0:
-            projectInfo.show();
-            sitePhotoAndContent.hide();
-            break;
-        case 1:
-            projectInfo.hide();
-            sitePhotoAndContent.show();
-            break;
-    }
+
+    $(".centerArea>[data-src]").hide();
+    $('.centerArea>[data-src="'+selectClick.attr("data-src")+'"]').show();
 });
 
 /**
