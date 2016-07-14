@@ -1,622 +1,757 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title></title>
-    <link rel="stylesheet" href="../content/css/base.css">
-    <link rel="stylesheet" href="../content/css/home.css">
-    <link rel="stylesheet" href="../content/css/jquery.mCustomScrollbar.min.css">
-    <link rel="stylesheet" href="../content/css/jquery.treemenu.css">
-    <link rel="stylesheet" href="../content/css/loaborAttendance.css">
-    <link rel="stylesheet" href="../content/css/attendanceDetails.css">
-    <link rel="stylesheet" href="../content/css/pagination.css">
-    <link rel="stylesheet" href="../content/css/jquery.datetimepicker.css">
-    <script src="../content/js/jquery-2.1.0.min.js"></script>
-    <script src="../content/js/layer.js"></script>
-    <script src="../content/js/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script src="../content/js/jquery.pagination.min.js"></script>
-    <script src="../content/js/jquery.datetimepicker.min.js"></script>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="../css/jquery.treemenu.css">
+    <link rel="stylesheet" href="../css/loaborAttendance.css">
+    <link rel="stylesheet" href="../css/attendanceDetails.css">
+    <link rel="stylesheet" href="../css/pagination.css">
+    <link rel="stylesheet" href="../css/jquery.datetimepicker.css">
+    <script src="../js/jquery-2.1.0.min.js"></script>
+    <script src="../js/layer.js"></script>
+    <script src="../js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="../js/jquery.pagination.min.js"></script>
+    <script src="../js/jquery.datetimepicker.min.js"></script>
 </head>
 <body>
-<!--左部区域-->
-<div class="leftArea">
-
-    <!--头部logo-->
-    <img src="../content/images/logoIcon.png" alt="" class="logoIcon">
-    <!--头部logo-->
-
-    <!--搜索区域-->
-    <div class="search">
-        <select name="">
-            <option name="0">按项目</option>
-            <option name="1">按项目</option>
-        </select>
-        <input type="text" placeholder="输入关键字">
-        <a href="javascript:void(0);" class="searchBtn"></a>
+    <!--左部区域-->
+    <div class="leftArea">
+        <!--头部logo-->
+        <img src="../images/logoIcon.png" alt="" class="logoIcon">
+        <!--头部logo-->
+        <!--搜索区域-->
+        <div class="search">
+            <select name="">
+                <option name="0">按项目</option>
+                <option name="1">按项目</option>
+            </select>
+            <input type="text" placeholder="输入关键字">
+            <a href="javascript:void(0);" class="searchBtn"></a>
+        </div>
+        <!--搜索区域-->
+        <!--项目列表-->
+        <ul class="projectList">
+            <li class="rows">
+                <div class="projectEndIcon"></div>
+                <span class="endProject">西二旗领袖硅谷12号楼2单元202</span>
+            </li>
+            <li class="rows">
+                <div class="projectEndIcon"></div>
+                <span class="endProject">西二旗领袖硅谷12号楼2单元202</span>
+            </li>
+            <li class="rows">
+                <div class="projectEndIcon"></div>
+                <span class="endProject">西二旗领袖硅谷12号楼2单元202</span>
+            </li>
+            <li class="rows">
+                <div class="projectStateIcon"></div>
+                <span class="noProcess">西二旗领袖硅谷12号楼2单元202</span>
+            </li>
+            <li class="rows">
+                <div class="projectStateIcon"></div>
+                <span class="noProcess">西二旗领袖硅谷12号楼2单元202</span>
+            </li>
+        </ul>
+        <!--项目列表-->
+        <div class="bottom"><span>加载更多...</span></div>
     </div>
-    <!--搜索区域-->
-
-    <!--项目列表-->
-    <ul class="projectList">
-        <li class="rows">
-            <div class="projectEndIcon"></div>
-            <span class="endProject">西二旗领袖硅谷12号楼2单元202</span>
-        </li>
-        <li class="rows">
-            <div class="projectEndIcon"></div>
-            <span class="endProject">西二旗领袖硅谷12号楼2单元202</span>
-        </li>
-        <li class="rows">
-            <div class="projectEndIcon"></div>
-            <span class="endProject">西二旗领袖硅谷12号楼2单元202</span>
-        </li>
-        <li class="rows">
-            <div class="projectStateIcon"></div>
-            <span class="noProcess">西二旗领袖硅谷12号楼2单元202</span>
-        </li>
-        <li class="rows">
-            <div class="projectStateIcon"></div>
-            <span class="noProcess">西二旗领袖硅谷12号楼2单元202</span>
-        </li>
-    </ul>
-    <!--项目列表-->
-
-    <div class="bottom"><span>加载更多...</span></div>
-</div>
-<!--左部区域-->
-
-<!--中间区域-->
-<div class="centerArea">
-
-    <!--头部区域-->
-    <div class="head">
-
-        <!--头部左区域-->
-        <div class="left">
-            <img src="../content/images/goBack.png" alt="" class="goBack">
-        <span class="pathTitle">西二旗领袖硅谷12号1单元202</span>
-        </div>
-        <!--头部左区域-->
-
-        <!--头部右区域-->
-        <div class="right">
-            <img src="../content/images/positionIcon.png" alt="" class="mapArea">
-            <span class="mapTitle">卧牛山</span>
-        </div>
-        <!--头部右区域-->
-
-    </div>
-    <!--头部区域-->
-
-    <!--进度显示区域-->
-    <div class="processArea">
-        <div class="progressRows">
-            <img src="../content/images/totalProgress.png" alt="">
-            <span class="title">总进度</span>
-          <div class="processArea">
-              <span class="dateTime">03.10</span>
-              <div class="progressBarArea">
-                  <div class="progressBar"></div>
-              </div>
-              <span class="number">10/100</span>
-          </div>
-            <span class="scheduleNumber">10%</span>
-        </div>
-        <div class="dottedLine"></div>
-        <div class="progressRows">
-            <a href="javascript:void(0);">平展面</a>
-            <span class="title" data-src="startWord">开工</span>
-            <ul data-src="startWord">
-                <li>开工</li>
-                <li>开工</li>
-                <li>开工</li>
-                <li>开工</li>
-            </ul>
-            <div class="processArea">
-                <span class="dateTime">03.10</span>
-                <div class="progressBarArea">
-                    <div class="progressBar"></div>
-                </div>
-                <span class="number">10/100</span>
-            </div>
-            <span class="scheduleNumber">10%</span>
-        </div>
-        <div class="progressRows">
-            <a href="javascript:void(0);">顶板</a>
-            <span class="title" data-src="goIn">进场</span>
-            <ul data-src="goIn">
-                <li>开工</li>
-                <li>开工</li>
-                <li>开工</li>
-                <li>开工</li>
-            </ul>
-            <div class="processArea">
-                <span class="dateTime">03.10</span>
-                <div class="progressBarArea">
-                    <div class="progressBar"></div>
-                </div>
-                <span class="number">10/100</span>
-            </div>
-            <span class="scheduleNumber">10%</span>
-        </div>
-        <div class="progressRows">
-            <a href="javascript:void(0);">立墙</a>
-            <span class="title" data-src="endWord">完工</span>
-            <ul data-src="endWord">
-                <li>开工</li>
-                <li>开工</li>
-                <li>开工</li>
-                <li>开工</li>
-            </ul>
-            <div class="processArea">
-                <span class="dateTime">03.10</span>
-                <div class="progressBarArea">
-                    <div class="progressBar"></div>
-                </div>
-                <span class="number">10/100</span>
-            </div>
-            <span class="scheduleNumber">1%</span>
-        </div>
-        <div class="progressRows">
-            <a href="javascript:void(0);">地下室</a>
-            <span class="title">签证</span>
-            <div class="processArea">
-                <span class="dateTime">03.10</span>
-                <div class="progressBarArea">
-                    <div class="progressBar"></div>
-                </div>
-                <span class="number">10/100</span>
-            </div>
-            <span class="scheduleNumber">100%</span>
-        </div>
-        <div class="gather">
-            <span class="total">总计:<span class="number">67</span></span>
-            <span class="completion">完工:<span class="number">67</span></span>
-            <span class="processing">进行中:<span class="number">12</span></span>
-            <span class="notStarted">未开工:<span class="number">3</span></span>
-        </div>
-        <img src="../content/images/moreDown.png" alt="" class="moreDown">
-    </div>
-    <!--进度显示区域-->
-
-    <!--项目信息切换-->
-    <div class="projectInfoSwitch">
-        <span class="projectInfo select" data-src="projectMaterial">项目材料</span>
-        <span class="sitePhoto" data-src="sitePhoto">项目图片</span>
-        <span data-src="projectContract">项目合同</span>
-        <span data-src="projectMaterials">项目物料</span>
-        <span data-src="projectCost">项目费用</span>
-        <span data-src="visaRemittance">签证回款</span>
-    </div>
-    <!--项目信息切换-->
-
-    <div class="projectInfo" data-src="projectCost" style="display: none">
-        <!--项目费用-->
-        <div class="rows">
-            <div class="head">
-                <span class="projectCost">项目费用</span>
-                <div class="right">
-                    <img src="../content/images/update.png" alt="" class="update">
-                    <div class="foldExpansion"></div>
-                </div>
-            </div>
-            <table class="table4_2">
-                <tr>
-                    <th>SAMPLE</th><th>SAMPLE</th><th>SAMPLE</th>
-                </tr>
-                <tr>
-                    <td>SAMPLE</td><td>SAMPLE</td><td>SAMPLE</td>
-                </tr>
-                <tr>
-                    <td>SAMPLE</td><td>SAMPLE</td><td>SAMPLE</td>
-                </tr>
-                <tr>
-                    <td>SAMPLE</td><td>SAMPLE</td><td>SAMPLE</td>
-                </tr>
-                <tr>
-                    <td>SAMPLE</td><td>SAMPLE</td><td>SAMPLE</td>
-                </tr>
-            </table>
-        </div>
-        <!--项目费用-->
-    </div>
-
-    <div class="projectInfo" data-src="projectContract" style="display: none">
-    <!--项目合同-->
-    <div class="rows">
+    <!--左部区域-->
+    <!--中间区域-->
+    <div class="centerArea">
+        <!--头部区域-->
         <div class="head">
-            <span class="projectContract">项目合同</span>
+            <!--头部左区域-->
+            <div class="left">
+                <img src="../images/goBack.png" alt="" class="goBack">
+                <span class="pathTitle">西二旗领袖硅谷12号1单元202</span>
+            </div>
+            <!--头部左区域-->
+            <!--头部右区域-->
             <div class="right">
-                <img src="../content/images/update.png" alt="" class="update">
+                <img src="../images/positionIcon.png" alt="" class="mapArea">
+                <span class="mapTitle">卧牛山</span>
+            </div>
+            <!--头部右区域-->
+        </div>
+        <!--头部区域-->
+        <!--进度显示区域-->
+        <div class="processArea">
+            <div class="progressRows">
+                <img src="../images/totalProgress.png" alt="">
+                <span class="title">总进度</span>
+                <div class="processArea">
+                    <span class="dateTime">03.10</span>
+                    <div class="progressBarArea">
+                        <div class="progressBar"></div>
+                    </div>
+                    <span class="number">10/100</span>
+                </div>
+                <span class="scheduleNumber">10%</span>
+            </div>
+            <div class="dottedLine"></div>
+            <div class="progressRows">
+                <a href="javascript:void(0);">平展面</a>
+                <span class="title" data-src="startWord">开工</span>
+                <ul data-src="startWord">
+                    <li>开工</li>
+                    <li>开工</li>
+                    <li>开工</li>
+                    <li>开工</li>
+                </ul>
+                <div class="processArea">
+                    <span class="dateTime">03.10</span>
+                    <div class="progressBarArea">
+                        <div class="progressBar"></div>
+                    </div>
+                    <span class="number">10/100</span>
+                </div>
+                <span class="scheduleNumber">10%</span>
+            </div>
+            <div class="progressRows">
+                <a href="javascript:void(0);">顶板</a>
+                <span class="title" data-src="goIn">进场</span>
+                <ul data-src="goIn">
+                    <li>开工</li>
+                    <li>开工</li>
+                    <li>开工</li>
+                    <li>开工</li>
+                </ul>
+                <div class="processArea">
+                    <span class="dateTime">03.10</span>
+                    <div class="progressBarArea">
+                        <div class="progressBar"></div>
+                    </div>
+                    <span class="number">10/100</span>
+                </div>
+                <span class="scheduleNumber">10%</span>
+            </div>
+            <div class="progressRows">
+                <a href="javascript:void(0);">立墙</a>
+                <span class="title" data-src="endWord">完工</span>
+                <ul data-src="endWord">
+                    <li>开工</li>
+                    <li>开工</li>
+                    <li>开工</li>
+                    <li>开工</li>
+                </ul>
+                <div class="processArea">
+                    <span class="dateTime">03.10</span>
+                    <div class="progressBarArea">
+                        <div class="progressBar"></div>
+                    </div>
+                    <span class="number">10/100</span>
+                </div>
+                <span class="scheduleNumber">1%</span>
+            </div>
+            <div class="progressRows">
+                <a href="javascript:void(0);">地下室</a>
+                <span class="title">签证</span>
+                <div class="processArea">
+                    <span class="dateTime">03.10</span>
+                    <div class="progressBarArea">
+                        <div class="progressBar"></div>
+                    </div>
+                    <span class="number">10/100</span>
+                </div>
+                <span class="scheduleNumber">100%</span>
+            </div>
+            <div class="progressRows">
+                <a href="javascript:void(0);">地下室</a>
+                <span class="title">签证</span>
+                <div class="processArea">
+                    <span class="dateTime">03.10</span>
+                    <div class="progressBarArea">
+                        <div class="progressBar"></div>
+                    </div>
+                    <span class="number">10/100</span>
+                </div>
+                <span class="scheduleNumber">100%</span>
+            </div>
+            <div class="progressRows">
+                <a href="javascript:void(0);">地下室</a>
+                <span class="title">签证</span>
+                <div class="processArea">
+                    <span class="dateTime">03.10</span>
+                    <div class="progressBarArea">
+                        <div class="progressBar"></div>
+                    </div>
+                    <span class="number">10/100</span>
+                </div>
+                <span class="scheduleNumber">100%</span>
+            </div>
+            <div class="progressRows">
+                <a href="javascript:void(0);">地下室</a>
+                <span class="title">签证</span>
+                <div class="processArea">
+                    <span class="dateTime">03.10</span>
+                    <div class="progressBarArea">
+                        <div class="progressBar"></div>
+                    </div>
+                    <span class="number">10/100</span>
+                </div>
+                <span class="scheduleNumber">100%</span>
+            </div>
+            <div class="gather">
+                <span class="total">总计:<span class="number">67</span></span>
+                <span class="completion">完工:<span class="number">67</span></span>
+                <span class="processing">进行中:<span class="number">12</span></span>
+                <span class="notStarted">未开工:<span class="number">3</span></span>
+            </div>
+            <img src="../images/moreDown.png" alt="" class="moreDown">
+        </div>
+        <!--进度显示区域-->
+        <!--项目信息切换-->
+        <div class="projectInfoSwitch">
+            <span class="projectInfo select" data-src="projectMaterial">项目信息</span>
+            <span class="sitePhoto" data-src="sitePhoto">项目图片</span>
+            <span data-src="projectContract">项目合同</span>
+            <span data-src="projectMaterials">项目物料</span>
+            <span data-src="projectCost">项目费用</span>
+            <span data-src="visaRemittance">签证回款</span>
+        </div>
+        <!--项目信息切换-->
+        <div class="projectInfo" data-src="projectCost" style="display: none">
+            <!--项目费用-->
+            <div class="rows">
+                <div class="head">
+                    <span class="projectCost">项目费用</span>
+                    <div class="right">
+                        <img src="../images/update.png" alt="" class="update">
+                        <div class="foldExpansion"></div>
+                    </div>
+                </div>
+                <table class="table4_2">
+                    <tr>
+                        <th>SAMPLE</th>
+                        <th>SAMPLE</th>
+                        <th>SAMPLE</th>
+                    </tr>
+                    <tr>
+                        <td>SAMPLE</td>
+                        <td>SAMPLE</td>
+                        <td>SAMPLE</td>
+                    </tr>
+                    <tr>
+                        <td>SAMPLE</td>
+                        <td>SAMPLE</td>
+                        <td>SAMPLE</td>
+                    </tr>
+                    <tr>
+                        <td>SAMPLE</td>
+                        <td>SAMPLE</td>
+                        <td>SAMPLE</td>
+                    </tr>
+                    <tr>
+                        <td>SAMPLE</td>
+                        <td>SAMPLE</td>
+                        <td>SAMPLE</td>
+                    </tr>
+                </table>
+            </div>
+            <!--项目费用-->
+        </div>
+        <div class="projectInfo" data-src="projectContract" style="display: none">
+            <!--项目合同-->
+            <div class="rows">
+                <div class="head">
+                    <span class="projectContract">项目合同</span>
+                    <div class="right">
+                        <img src="../images/update.png" alt="" class="update">
+                        <div class="foldExpansion"></div>
+                    </div>
+                </div>
+                <table class="table4_2">
+                    <tr>
+                        <th>SAMPLE</th>
+                        <th>SAMPLE</th>
+                        <th>SAMPLE</th>
+                    </tr>
+                    <tr>
+                        <td>SAMPLE</td>
+                        <td>SAMPLE</td>
+                        <td>SAMPLE</td>
+                    </tr>
+                    <tr>
+                        <td>SAMPLE</td>
+                        <td>SAMPLE</td>
+                        <td>SAMPLE</td>
+                    </tr>
+                    <tr>
+                        <td>SAMPLE</td>
+                        <td>SAMPLE</td>
+                        <td>SAMPLE</td>
+                    </tr>
+                    <tr>
+                        <td>SAMPLE</td>
+                        <td>SAMPLE</td>
+                        <td>SAMPLE</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!--项目合同-->
+        <div class="projectInfo" data-src="projectMaterials" style="display: none">
+            <!--项目物料-->
+            <div class="rows">
+                <div class="head">
+                    <span class="projectMaterials">项目物料（主材）</span>
+                    <div class="right">
+                        <img src="../images/update.png" alt="" class="update">
+                        <div class="foldExpansion"></div>
+                    </div>
+                </div>
+                <table class="table4_2">
+                    <tr>
+                        <th>SAMPLE</th>
+                        <th>SAMPLE</th>
+                        <th>SAMPLE</th>
+                    </tr>
+                    <tr>
+                        <td>SAMPLE</td>
+                        <td>SAMPLE</td>
+                        <td>SAMPLE</td>
+                    </tr>
+                    <tr>
+                        <td>SAMPLE</td>
+                        <td>SAMPLE</td>
+                        <td>SAMPLE</td>
+                    </tr>
+                    <tr>
+                        <td>SAMPLE</td>
+                        <td>SAMPLE</td>
+                        <td>SAMPLE</td>
+                    </tr>
+                    <tr>
+                        <td>SAMPLE</td>
+                        <td>SAMPLE</td>
+                        <td>SAMPLE</td>
+                    </tr>
+                </table>
+            </div>
+            <!--项目物料-->
+            <!--项目物料-->
+            <div class="rows">
+                <div class="head">
+                    <span class="projectMaterials">项目物料（辅材）</span>
+                    <div class="right">
+                        <img src="../images/update.png" alt="" class="update">
+                        <div class="foldExpansion"></div>
+                    </div>
+                </div>
+                <table class="table4_2">
+                    <tr>
+                        <th>SAMPLE</th>
+                        <th>SAMPLE</th>
+                        <th>SAMPLE</th>
+                    </tr>
+                    <tr>
+                        <td>SAMPLE</td>
+                        <td>SAMPLE</td>
+                        <td>SAMPLE</td>
+                    </tr>
+                    <tr>
+                        <td>SAMPLE</td>
+                        <td>SAMPLE</td>
+                        <td>SAMPLE</td>
+                    </tr>
+                    <tr>
+                        <td>SAMPLE</td>
+                        <td>SAMPLE</td>
+                        <td>SAMPLE</td>
+                    </tr>
+                    <tr>
+                        <td>SAMPLE</td>
+                        <td>SAMPLE</td>
+                        <td>SAMPLE</td>
+                    </tr>
+                </table>
+            </div>
+            <!--项目物料-->
+        </div>
+        <div class="projectInfo" data-src="visaRemittance" style="display: none">
+            <!--签证回款-->
+            <div class="rows">
+                <div class="head">
+                    <span class="visaRemittance">签证回款</span>
+                    <div class="right">
+                        <img src="../images/update.png" alt="" class="update">
+                        <div class="foldExpansion"></div>
+                    </div>
+                </div>
+                <table class="table4_2">
+                    <tr>
+                        <th>SAMPLE</th>
+                        <th>SAMPLE</th>
+                        <th>SAMPLE</th>
+                    </tr>
+                    <tr>
+                        <td>SAMPLE</td>
+                        <td>SAMPLE</td>
+                        <td>SAMPLE</td>
+                    </tr>
+                    <tr>
+                        <td>SAMPLE</td>
+                        <td>SAMPLE</td>
+                        <td>SAMPLE</td>
+                    </tr>
+                    <tr>
+                        <td>SAMPLE</td>
+                        <td>SAMPLE</td>
+                        <td>SAMPLE</td>
+                    </tr>
+                    <tr>
+                        <td>SAMPLE</td>
+                        <td>SAMPLE</td>
+                        <td>SAMPLE</td>
+                    </tr>
+                </table>
+            </div>
+            <!--签证回款-->
+        </div>
+        <!--项目信息数据区域-->
+        <div class="projectInfo" data-src="projectMaterial">
+            <!--项目材料-->
+            <div class="rows">
+                <div class="head">
+                    <span class="projectMaterial">项目信息</span>
+                    <div class="right">
+                        <img src="../images/update.png" alt="" class="update">
+                        <div class="foldExpansion"></div>
+                    </div>
+                </div>
+                <table class="table4_2">
+                    <tr>
+                        <th>SAMPLE</th>
+                        <th>SAMPLE</th>
+                        <th>SAMPLE</th>
+                    </tr>
+                    <tr>
+                        <td>SAMPLE</td>
+                        <td>SAMPLE</td>
+                        <td>SAMPLE</td>
+                    </tr>
+                    <tr>
+                        <td>SAMPLE</td>
+                        <td>SAMPLE</td>
+                        <td>SAMPLE</td>
+                    </tr>
+                    <tr>
+                        <td>SAMPLE</td>
+                        <td>SAMPLE</td>
+                        <td>SAMPLE</td>
+                    </tr>
+                    <tr>
+                        <td>SAMPLE</td>
+                        <td>SAMPLE</td>
+                        <td>SAMPLE</td>
+                    </tr>
+                </table>
+            </div>
+            <!--项目材料-->
+            <!--项目材料-->
+            <div class="rows">
+                <div class="head">
+                    <span class="projectMaterial">项目成本</span>
+                    <div class="right">
+                        <img src="../images/update.png" alt="" class="update">
+                        <div class="foldExpansion"></div>
+                    </div>
+                </div>
+                <table class="table4_2">
+                    <tr>
+                        <th>SAMPLE</th>
+                        <th>SAMPLE</th>
+                        <th>SAMPLE</th>
+                    </tr>
+                    <tr>
+                        <td>SAMPLE</td>
+                        <td>SAMPLE</td>
+                        <td>SAMPLE</td>
+                    </tr>
+                    <tr>
+                        <td>SAMPLE</td>
+                        <td>SAMPLE</td>
+                        <td>SAMPLE</td>
+                    </tr>
+                    <tr>
+                        <td>SAMPLE</td>
+                        <td>SAMPLE</td>
+                        <td>SAMPLE</td>
+                    </tr>
+                    <tr>
+                        <td>SAMPLE</td>
+                        <td>SAMPLE</td>
+                        <td>SAMPLE</td>
+                    </tr>
+                </table>
+                <div class="M-box1" style="float: right; margin: 2px 5px 10px 0;"></div>
+            </div>
+            <!--项目材料-->
+        </div>
+        <!--项目信息数据区域-->
+        <!--现场图片区域-->
+        <div class="sitePhoto" data-src="sitePhoto">
+            <!--标准化施工流程区域-->
+            <div class="flowChartArea">
+                <div class="head">
+                    <span>标准化施工流程</span>
+                    <div class="right">
+                        <img src="../images/update.png" alt="" class="update">
+                        <div class="foldExpansion select"></div>
+                    </div>
+                </div>
+                <div class="photoStep">
+                    <div class="rows">
+                        <span class="title">合同确认</span>
+                        <div class="contractConfirmation">
+                        </div>
+                        <span class="dateTime">15.06.12</span>
+                    </div>
+                    <div class="photoStepLetter"></div>
+                    <div class="rows">
+                        <span class="title">开工确认</span>
+                        <div class="confirmStart">
+                        </div>
+                        <span class="dateTime">15.06.12</span>
+                    </div>
+                    <div class="photoStepLetter"></div>
+                    <div class="rows">
+                        <span class="title">施工方案</span>
+                        <div class="constructionScheme">
+                        </div>
+                        <span class="dateTime">15.06.12</span>
+                    </div>
+                    <div class="photoStepLetter"></div>
+                    <div class="rows">
+                        <span class="title">首件制</span>
+                        <div class="firstPieceSystem">
+                        </div><span class="dateTime">15.06.12</span>
+                    </div>
+                    <div class="photoStepLetter"></div>
+                    <div class="rows">
+                        <span class="title">项目施工</span>
+                        <div class="constructionProject">
+                        </div><span class="dateTime">15.06.12</span>
+                    </div>
+                    <div class="photoStepLetter selectLetter"></div>
+                    <div class="rows">
+                        <span class="title">签证单</span>
+                        <div class="singleVisa"></div><span class="dateTime">15.06.12</span>
+                    </div>
+                    <div class="photoStepLetter selectLetter"></div>
+                    <div class="rows select">
+                        <span class="title">项目变更</span>
+                        <div class="updateProject">
+                        </div>
+                        <span class="dateTime">15.06.12</span>
+                    </div>
+                    <div class="photoStepLetter selectLetter"></div>
+                    <div class="rows selectIndex">
+                        <span class="title">客户回访</span>
+                        <div class="clientReview">
+                        </div>
+                        <span class="dateTime">15.06.12</span>
+                    </div>
+                    <div class="photoStepLetter"></div>
+                    <div class="rows">
+                        <span class="title">项目总结</span>
+                        <div class="projectSummary">
+                        </div>
+                        <span class="dateTime">15.06.12</span>
+                    </div>
+                    <div class="photoStepLetter"></div>
+                    <div class="rows">
+                        <span class="title">资料归档</span>
+                        <div class="dataArchiving"></div>
+                        <span class="dateTime">15.06.12</span>
+                    </div>
+                </div>
+            </div>
+            <!--标准化施工流程区域-->
+        </div>
+        <!--现场图片区域-->
+        <!--项目信息总结区域-->
+        <div class="projectContent" data-src="sitePhoto">
+            <div class="rows">
+                <div class="dateTime">
+                    <span class="day">05</span><span class="yearAndMonth">2015-01</span>
+                    <div class="round1"></div>
+                    <div class="vertical"></div>
+                    <div class="round"></div>
+                </div>
+                <div class="content">
+                    <span class="title">施工描述西二旗领秀硅谷</span>
+                    <p class="contentArea">
+                        一.在项目经理的直接领导下开展工作,贯彻安全第一,预防为主的方针,按规定搞好安全防范措施,把安全工作落到实处,做到将效益必须讲安全,抓生产首先必须抓安全.
+                        二.认真熟悉施工图纸,编织各项施工组织设计方案和施工安全,质量,计数方案,编织各单项工程进度计划及人力,物力计划和极具,设备计划
+                        三.编织,组织职工按其开会学习.
+                    </p>
+                    <div class="photo">
+                        <img src="" alt="">
+                        <img src="" alt="">
+                        <img src="" alt="">
+                        <img src="" alt="">
+                        <img src="" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="rows">
+                <div class="dateTime">
+                    <span class="day">05</span><span class="yearAndMonth">2015-01</span>
+                    <div class="round1"></div>
+                    <div class="vertical"></div>
+                    <div class="round"></div>
+                </div>
+                <div class="content">
+                    <span class="title">施工描述西二旗领秀硅谷</span>
+                    <p class="contentArea">
+                        一.在项目经理的直接领导下开展工作,贯彻安全第一,预防为主的方针,按规定搞好安全防范措施,把安全工作落到实处,做到将效益必须讲安全,抓生产首先必须抓安全.
+                        二.认真熟悉施工图纸,编织各项施工组织设计方案和施工安全,质量,计数方案,编织各单项工程进度计划及人力,物力计划和极具,设备计划
+                        三.编织,组织职工按其开会学习.
+                    </p>
+                    <div class="photo">
+                        <img src="" alt="">
+                        <img src="" alt="">
+                        <img src="" alt="">
+                        <img src="" alt="">
+                        <img src="" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="rows">
+                <div class="dateTime">
+                    <span class="day">05</span><span class="yearAndMonth">2015-01</span>
+                    <div class="round1"></div>
+                    <div class="vertical"></div>
+                    <div class="round"></div>
+                </div>
+                <div class="content">
+                    <span class="title">施工描述西二旗领秀硅谷</span>
+                    <p class="contentArea">
+                        一.在项目经理的直接领导下开展工作,贯彻安全第一,预防为主的方针,按规定搞好安全防范措施,把安全工作落到实处,做到将效益必须讲安全,抓生产首先必须抓安全.
+                        二.认真熟悉施工图纸,编织各项施工组织设计方案和施工安全,质量,计数方案,编织各单项工程进度计划及人力,物力计划和极具,设备计划
+                        三.编织,组织职工按其开会学习.
+                    </p>
+                    <div class="photo">
+                        <img src="" alt="">
+                        <img src="" alt="">
+                        <img src="" alt="">
+                        <img src="" alt="">
+                        <img src="" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--项目信息总结区域-->
+    </div>
+    <!--中间区域-->
+    <!--右部区域-->
+    <div class="rightArea">
+        <!--头部用户区域-->
+        <div class="headTop">
+            <img src="../images/redFlag.png" alt="" class="userPhoto">
+            <span class="userName">Hi,Simple</span>
+            <div class="shoppingCart">
+                <div></div>
+                <span class="number">9</span>
+            </div>
+        </div>
+        <!--头部用户区域-->
+        <!--项目基本信息-->
+        <div class="projectBasicInfo">
+            <div class="headInfo">
+                <span class="title">项目基本信息</span>
                 <div class="foldExpansion"></div>
             </div>
-        </div>
-        <table class="table4_2">
-            <tr>
-                <th>SAMPLE</th><th>SAMPLE</th><th>SAMPLE</th>
-            </tr>
-            <tr>
-                <td>SAMPLE</td><td>SAMPLE</td><td>SAMPLE</td>
-            </tr>
-            <tr>
-                <td>SAMPLE</td><td>SAMPLE</td><td>SAMPLE</td>
-            </tr>
-            <tr>
-                <td>SAMPLE</td><td>SAMPLE</td><td>SAMPLE</td>
-            </tr>
-            <tr>
-                <td>SAMPLE</td><td>SAMPLE</td><td>SAMPLE</td>
-            </tr>
-        </table>
-    </div>
-        </div>
-    <!--项目合同-->
-
-        <div class="projectInfo" data-src="projectMaterials" style="display: none">
-        <!--项目物料-->
-        <div class="rows">
-            <div class="head">
-                <span class="projectMaterials">项目物料</span>
-                <div class="right">
-                    <img src="../content/images/update.png" alt="" class="update">
-                    <div class="foldExpansion"></div>
-                </div>
+            <div class="startState">
+                <span class="state">开工中</span>
             </div>
-            <table class="table4_2">
-                <tr>
-                    <th>SAMPLE</th><th>SAMPLE</th><th>SAMPLE</th>
-                </tr>
-                <tr>
-                    <td>SAMPLE</td><td>SAMPLE</td><td>SAMPLE</td>
-                </tr>
-                <tr>
-                    <td>SAMPLE</td><td>SAMPLE</td><td>SAMPLE</td>
-                </tr>
-                <tr>
-                    <td>SAMPLE</td><td>SAMPLE</td><td>SAMPLE</td>
-                </tr>
-                <tr>
-                    <td>SAMPLE</td><td>SAMPLE</td><td>SAMPLE</td>
-                </tr>
-            </table>
+            <div class="rows"><span class="title">项目名称:</span><span class="value">西二旗领秀硅谷</span></div>
+            <div class="rows"><span class="title">项目经理名称:</span><span class="value">刘晓</span></div>
+            <div class="rows"><span class="title">客户名称:</span><span class="value">苏州金螳螂装饰有限公司</span></div>
+            <div class="rows"><span class="title">成本负责人:</span><span class="value">冯金星</span></div>
+            <div class="rows"><span class="title">业务员:</span><span class="value">武勋为</span></div>
+            <div class="rows"><span class="title">实际开工时间:</span><span class="value">2016.01.02</span></div>
+            <div class="rows"><span class="title">预计完成时间:</span><span class="value">2017.01.12</span></div>
+            <div class="rows"><span class="title">项目类型:</span><span class="value">重大项目</span></div>
         </div>
-        <!--项目物料-->
-            </div>
-
-    <div class="projectInfo" data-src="visaRemittance" style="display: none">
-        <!--签证回款-->
-        <div class="rows">
-            <div class="head">
-                <span class="visaRemittance">签证回款</span>
-                <div class="right">
-                    <img src="../content/images/update.png" alt="" class="update">
-                    <div class="foldExpansion"></div>
-                </div>
-            </div>
-            <table class="table4_2">
-                <tr>
-                    <th>SAMPLE</th><th>SAMPLE</th><th>SAMPLE</th>
-                </tr>
-                <tr>
-                    <td>SAMPLE</td><td>SAMPLE</td><td>SAMPLE</td>
-                </tr>
-                <tr>
-                    <td>SAMPLE</td><td>SAMPLE</td><td>SAMPLE</td>
-                </tr>
-                <tr>
-                    <td>SAMPLE</td><td>SAMPLE</td><td>SAMPLE</td>
-                </tr>
-                <tr>
-                    <td>SAMPLE</td><td>SAMPLE</td><td>SAMPLE</td>
-                </tr>
-            </table>
-        </div>
-        <!--签证回款-->
-    </div>
-
-    <!--项目信息数据区域-->
-    <div class="projectInfo" data-src="projectMaterial">
-
+        <!--项目基本信息-->
         <!--项目材料-->
-        <div class="rows">
-            <div class="head">
-                <span class="projectMaterial">项目材料</span>
-                <div class="right">
-                    <img src="../content/images/update.png" alt="" class="update">
-                    <div class="foldExpansion"></div>
-                </div>
+        <div class="projectMaterial">
+            <div class="headInfo">
+                <span class="title">项目材料</span>
+                <div class="foldExpansion"></div>
             </div>
-            <table class="table4_2">
-                <tr>
-                    <th>SAMPLE</th><th>SAMPLE</th><th>SAMPLE</th>
-                </tr>
-                <tr>
-                    <td>SAMPLE</td><td>SAMPLE</td><td>SAMPLE</td>
-                </tr>
-                <tr>
-                    <td>SAMPLE</td><td>SAMPLE</td><td>SAMPLE</td>
-                </tr>
-                <tr>
-                    <td>SAMPLE</td><td>SAMPLE</td><td>SAMPLE</td>
-                </tr>
-                <tr>
-                    <td>SAMPLE</td><td>SAMPLE</td><td>SAMPLE</td>
-                </tr>
-            </table>
-            <div class="M-box1" style="float: right; margin: 2px 5px 10px 0;"></div>
+            <div class="selectArea">
+                <div class="alreadyApplied">
+                    <span class="number">1</span>
+                    <div></div>
+                    <span class="title">已申请</span>
+                </div>
+                <div class="inbound"><span class="number"></span><div></div><span class="title">待收货</span></div>
+                <div class="updateReceipt"><span class="number">19</span><div></div><span class="title">收货变更</span></div>
+                <div class="beConsumed"><span class="number"></span><div></div><span class="title">待消耗</span></div>
+                <div class="consumed"><span class="number"></span><div></div><span class="title">已消耗</span></div>
+                <div class="manReceiver"><span class="number"></span><div></div><span class="title">收货人管理</span></div>
+            </div>
         </div>
         <!--项目材料-->
+        <!--项目质量控制-->
+        <div class="projectQuality">
+            <div class="headInfo">
+                <span class="title">项目质量控制</span>
+                <div class="foldExpansion"></div>
+            </div>
+            <div class="selectArea">
+                <div class="out">
+                    <span class="fraction">总分数:</span><span class="number">79分</span>
+                </div>
+                <div class="rate"><span class="number">1</span><div></div><span class="title">打分</span></div>
+                <div class="distribution"><span class="number"></span><div></div><span class="title">分配</span></div>
+                <div class="markingRecords"><span class="number">19</span><div></div><span class="title">扣分记录</span></div>
+                <div class="templateMaintenance"><span class="number"></span><div></div><span class="title">扣分模版维护</span></div>
+            </div>
+        </div>
+        <!--项目质量控制-->
+        <!--项目资料-->
+        <div class="projectData">
+            <div class="headInfo">
+                <span class="title">项目资料</span>
+                <div class="foldExpansion"></div>
+            </div>
+            <div class="selectArea">
+                <div class="rate"><span class="number">1</span><div></div><span class="title">打分</span></div>
+                <div class="distribution"><span class="number"></span><div></div><span class="title">分配</span></div>
+                <div class="markingRecords"><span class="number">19</span><div></div><span class="title">扣分记录</span></div>
+                <div class="templateMaintenance"><span class="number"></span><div></div><span class="title">扣分模版维护</span></div>
+            </div>
+        </div>
+        <!--项目资料-->
+        <!--劳务管理-->
+        <div class="laborManagement">
+            <div class="headInfo">
+                <span class="title">劳务管理</span>
+                <div class="foldExpansion"></div>
+            </div>
+            <div class="selectArea">
+                <div class="checkAttendance"><span class="number">1</span><div></div><span class="title">考勤</span></div>
+                <div class="attendanceDetails"><span class="number"></span><div></div><span class="title">考勤明细</span></div>
+                <div class="payroll"><span class="number">19</span><div></div><span class="title">工资核算</span></div>
+            </div>
+        </div>
+        <!--劳务管理-->
     </div>
-    <!--项目信息数据区域-->
-
-    <!--现场图片区域-->
-    <div class="sitePhoto" data-src="sitePhoto">
-
-        <!--标准化施工流程区域-->
-        <div class="flowChartArea">
-            <div class="head">
-                <span>标准化施工流程</span>
-                <div class="right">
-                    <img src="../content/images/update.png" alt="" class="update">
-                   <div class="foldExpansion select"></div>
-                </div>
-            </div>
-            <div class="photoStep">
-                <div class="rows">
-                    <span class="title">合同确认</span>
-                    <div class="contractConfirmation">
-                    </div>
-                    <span class="dateTime">15.06.12</span>
-                </div>
-                <div class="photoStepLetter"></div>
-                <div class="rows">
-                    <span class="title">开工确认</span>
-                    <div class="confirmStart">
-                    </div>
-                    <span class="dateTime">15.06.12</span>
-                </div>
-                <div class="photoStepLetter"></div>
-                <div class="rows">
-                    <span class="title">施工方案</span>
-                    <div class="constructionScheme">
-                    </div>
-                    <span
-                        class="dateTime">15.06.12</span>
-                </div>
-                <div class="photoStepLetter"></div>
-                <div class="rows">
-                    <span class="title">首件制</span>
-                    <div class="firstPieceSystem">
-                    </div><span class="dateTime">15.06.12</span>
-                </div>
-                <div class="photoStepLetter"></div>
-                <div class="rows"><span class="title">项目施工</span>
-                    <div class="constructionProject">
-                    </div><span
-                            class="dateTime">15.06.12</span>
-                </div>
-                <div class="photoStepLetter selectLetter"></div>
-                <div class="rows"><span class="title">签证单</span>
-                    <div class="singleVisa"></div><span class="dateTime">15.06.12</span>
-                </div>
-                <div class="photoStepLetter selectLetter"></div>
-                <div class="rows select">
-                    <span class="title">项目变更</span>
-                    <div class="updateProject">
-                    </div>
-                    <span class="dateTime">15.06.12</span>
-                </div>
-                <div class="photoStepLetter selectLetter"></div>
-                <div class="rows selectIndex">
-                    <span class="title">客户回访</span>
-                    <div class="clientReview">
-                    </div>
-                    <span class="dateTime">15.06.12</span>
-                </div>
-                <div class="photoStepLetter"></div>
-                <div class="rows">
-                    <span class="title">项目总结</span>
-                    <div class="projectSummary">
-                    </div>
-                    <span class="dateTime">15.06.12</span>
-                </div>
-                <div class="photoStepLetter"></div>
-                <div class="rows">
-                    <span class="title">资料归档</span>
-                    <div class="dataArchiving"></div>
-                    <span class="dateTime">15.06.12</span>
-                </div>
-            </div>
-        </div>
-        <!--标准化施工流程区域-->
-
-    </div>
-    <!--现场图片区域-->
-
-    <!--项目信息总结区域-->
-    <div class="projectContent" data-src="sitePhoto">
-        <div class="rows">
-            <div class="dateTime"><span class="day">05</span><span class="yearAndMonth">2015-01</span>
-                <div class="round1"></div>
-                <div class="vertical"></div>
-                <div class="round"></div>
-            </div>
-            <div class="content">
-                <span class="title">施工描述西二旗领秀硅谷</span>
-                <p class="contentArea">
-                    一.在项目经理的直接领导下开展工作,贯彻安全第一,预防为主的方针,按规定搞好安全防范措施,把安全工作落到实处,做到将效益必须讲安全,抓生产首先必须抓安全.
-                    二.认真熟悉施工图纸,编织各项施工组织设计方案和施工安全,质量,计数方案,编织各单项工程进度计划及人力,物力计划和极具,设备计划
-                    三.编织,组织职工按其开会学习.
-                </p>
-                <div class="photo">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                </div>
-            </div>
-        </div>
-        <div class="rows">
-            <div class="dateTime"><span class="day">05</span><span class="yearAndMonth">2015-01</span>
-                <div class="round1"></div>
-                <div class="vertical"></div>
-                <div class="round"></div>
-            </div>
-            <div class="content">
-                <span class="title">施工描述西二旗领秀硅谷</span>
-                <p class="contentArea">
-                    一.在项目经理的直接领导下开展工作,贯彻安全第一,预防为主的方针,按规定搞好安全防范措施,把安全工作落到实处,做到将效益必须讲安全,抓生产首先必须抓安全.
-                    二.认真熟悉施工图纸,编织各项施工组织设计方案和施工安全,质量,计数方案,编织各单项工程进度计划及人力,物力计划和极具,设备计划
-                    三.编织,组织职工按其开会学习.
-                </p>
-                <div class="photo">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                </div>
-            </div>
-        </div>
-        <div class="rows">
-            <div class="dateTime"><span class="day">05</span><span class="yearAndMonth">2015-01</span>
-                <div class="round1"></div>
-                <div class="vertical"></div>
-                <div class="round"></div>
-            </div>
-            <div class="content">
-                <span class="title">施工描述西二旗领秀硅谷</span>
-                <p class="contentArea">
-                    一.在项目经理的直接领导下开展工作,贯彻安全第一,预防为主的方针,按规定搞好安全防范措施,把安全工作落到实处,做到将效益必须讲安全,抓生产首先必须抓安全.
-                    二.认真熟悉施工图纸,编织各项施工组织设计方案和施工安全,质量,计数方案,编织各单项工程进度计划及人力,物力计划和极具,设备计划
-                    三.编织,组织职工按其开会学习.
-                </p>
-                <div class="photo">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                </div>
-            </div>
-        </div>
-   </div>
-    <!--项目信息总结区域-->
-
-</div>
-<!--中间区域-->
-
-<!--右部区域-->
-<div class="rightArea">
-
-    <!--头部用户区域-->
-    <div class="headTop">
-        <img src="../content/images/redFlag.png" alt="" class="userPhoto">
-        <span class="userName">Hi,Simple</span>
-        <div class="shoppingCart">
-            <div></div>
-            <span class="number">9</span>
-        </div>
-    </div>
-    <!--头部用户区域-->
-
-    <!--项目基本信息-->
-    <div class="projectBasicInfo">
-        <div class="headInfo">
-            <span class="title">项目基本信息</span>
-            <div class="foldExpansion"></div>
-        </div>
-        <div class="startState">
-            <span class="state">开工中</span>
-        </div>
-        <div class="rows"><span class="title">项目名称:</span><span class="value">西二旗领秀硅谷</span></div>
-        <div class="rows"><span class="title">项目经理名称:</span><span class="value">刘晓</span></div>
-        <div class="rows"><span class="title">客户名称:</span><span class="value">苏州金螳螂装饰有限公司</span></div>
-        <div class="rows"><span class="title">成本负责人:</span><span class="value">冯金星</span></div>
-        <div class="rows"><span class="title">业务员:</span><span class="value">武勋为</span></div>
-        <div class="rows"><span class="title">实际开工时间:</span><span class="value">2016.01.02</span></div>
-        <div class="rows"><span class="title">预计完成时间:</span><span class="value">2017.01.12</span></div>
-        <div class="rows"><span class="title">项目类型:</span><span class="value">重大项目</span></div>
-    </div>
-    <!--项目基本信息-->
-
-    <!--项目材料-->
-    <div class="projectMaterial">
-        <div class="headInfo">
-            <span class="title">项目材料</span>
-            <div class="foldExpansion"></div>
-        </div>
-        <div class="selectArea">
-            <div class="alreadyApplied"><span class="number">1</span>
-                <div></div>
-                <span class="title">已申请</span></div>
-            <div class="inbound"><span class="number"></span><div></div><span class="title">待收货</span></div>
-            <div class="updateReceipt"><span class="number">19</span><div></div><span class="title">收货变更</span></div>
-            <div class="beConsumed"><span class="number"></span><div></div><span class="title">待消耗</span></div>
-            <div class="consumed"><span class="number"></span><div></div><span class="title">已消耗</span></div>
-            <div class="manReceiver"><span class="number"></span><div></div><span class="title">收货人管理</span></div>
-        </div>
-    </div>
-    <!--项目材料-->
-
-    <!--项目质量控制-->
-    <div class="projectQuality">
-        <div class="headInfo">
-            <span class="title">项目质量控制</span>
-            <div class="foldExpansion"></div>
-        </div>
-        <div class="selectArea">
-            <div class="out">
-                <span class="fraction">总分数:</span><span class="number">79分</span>
-            </div>
-            <div class="rate"><span class="number">1</span><div></div><span class="title">打分</span></div>
-            <div class="distribution"><span class="number"></span><div></div><span class="title">分配</span></div>
-            <div class="markingRecords"><span class="number">19</span><div></div><span class="title">扣分记录</span></div>
-            <div class="templateMaintenance"><span class="number"></span><div></div><span class="title">扣分模版维护</span></div>
-        </div>
-    </div>
-    <!--项目质量控制-->
-
-    <!--项目资料-->
-    <div class="projectData">
-        <div class="headInfo">
-            <span class="title">项目资料</span>
-            <div class="foldExpansion"></div>
-        </div>
-        <div class="selectArea">
-            <div class="rate"><span class="number">1</span><div></div><span class="title">打分</span></div>
-            <div class="distribution"><span class="number"></span><div></div><span class="title">分配</span></div>
-            <div class="markingRecords"><span class="number">19</span><div></div><span class="title">扣分记录</span></div>
-            <div class="templateMaintenance"><span class="number"></span><div></div><span class="title">扣分模版维护</span></div>
-        </div>
-    </div>
-    <!--项目资料-->
-
-    <!--劳务管理-->
-    <div class="laborManagement">
-        <div class="headInfo">
-            <span class="title">劳务管理</span>
-            <div class="foldExpansion"></div>
-        </div>
-        <div class="selectArea">
-            <div class="checkAttendance"><span class="number">1</span><div></div><span class="title">考勤</span></div>
-            <div class="attendanceDetails"><span class="number"></span><div></div><span class="title">考勤明细</span></div>
-            <div class="payroll"><span class="number">19</span><div></div><span class="title">工资核算</span></div>
-        </div>
-    </div>
-    <!--劳务管理-->
-
-</div>
-<!--右部区域-->
+    <!--右部区域-->
 
 
+    <script>
+        $(".rightArea").mCustomScrollbar();
 
-
-<script>
-    $(".rightArea").mCustomScrollbar();
-
-</script>
-<script src="../content/js/home.js"></script>
+    </script>
+    <script src="../js/home.js"></script>
 </body>
 </html>
