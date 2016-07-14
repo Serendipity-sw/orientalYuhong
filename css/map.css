@@ -1,0 +1,1131 @@
+/*左部区域搜索*/
+body>.leftSearchArea{
+
+    width: 324px;
+
+    position: absolute;
+
+    left: 15px;
+
+    display: block;
+
+    top: 17px;
+
+    margin: 0;
+
+    padding: 0;
+
+    z-index: 1;
+}
+/*顶部区域*/
+body>.leftSearchArea>.top{
+
+    background-color: white;
+
+    position: relative;
+
+    margin: 0;
+
+    padding: 0;
+
+    overflow: hidden;
+}
+body>.leftSearchArea>.top>.logoIcon{
+
+    margin-top: 22px;
+
+    margin-left: 15px;
+}
+body>.leftSearchArea>.top>.divider{border: 1px solid #919191;width: 294px;margin: 0 auto;margin-top: 8px;}
+body>.leftSearchArea>.top>.categoryList{
+
+    margin: 0 auto;
+
+    margin-top: 11px;
+
+    width: 294px;
+}
+body>.leftSearchArea>.top>.categoryList>.rows{
+
+    margin-top: 7px;
+
+    height: 30px;
+
+    cursor: pointer;
+}
+body>.leftSearchArea>.top>.categoryList>.rows:first-child{
+
+    border-bottom: 1px solid #f7f7f7;
+}
+body>.leftSearchArea>.top>.categoryList>.rows>.title{
+
+    font-size: 15px;
+
+    display: block;
+
+    margin: 0;
+
+    float: left;
+
+    padding: 0;
+}
+body>.leftSearchArea>.top>.categoryList>.rows>.sureBtn{
+
+    height: 14px;
+
+    margin-left: 220px;
+
+    margin-top: 4px;
+}
+body>.leftSearchArea>.top>.categoryList>.rowsList{
+
+    border-bottom: 1px solid #f7f7f7;
+
+    margin: 6px 0 10px 0;
+
+    height: 307px;
+
+    overflow: hidden;
+
+    display: none;
+}
+body>.leftSearchArea>.top>.categoryList>.rowsList .title{
+
+    display: block;
+
+    margin-top: 5px;
+
+    font-size: 13px;
+
+    color: #6a6a6a;
+
+    cursor: pointer;
+}
+body>.leftSearchArea>.top>.categoryList>.rowsList .title:hover{
+    background-color: #e8e8e8;
+}
+/*顶部区域*/
+
+/*中间区域*/
+body>.leftSearchArea>.center{
+
+    display: none;
+}
+body>.leftSearchArea>.center>.centerTop{
+
+}
+body>.leftSearchArea>.center>.centerTop>.title{
+
+}
+body>.leftSearchArea>.center>.cityList{
+
+}
+body>.leftSearchArea>.center>.cityList>.rows{
+
+}
+body>.leftSearchArea>.center>.cityList>.rows>.title{
+
+}
+body>.leftSearchArea>.center>.cityList>.rows>.number{
+
+}
+body>.leftSearchArea>.center>.more{
+
+}
+/*中间区域*/
+
+/*底部区域*/
+body>.leftSearchArea>.searchBottom{
+
+    background-color: white;
+
+    margin-top: 22px;
+
+    overflow: hidden;
+}
+body>.leftSearchArea>.searchBottom>.rows{width: 294px;margin: 0 auto;overflow: hidden;}
+body>.leftSearchArea>.searchBottom>.rows:first-child{display: block;}
+body>.leftSearchArea>.searchBottom>.rows:nth-child(4){display: none;}
+body>.leftSearchArea>.searchBottom>.rows>input{border: 1px solid #dcdcdc;margin-top: 10px;height: 29px;width: 294px;padding-left: 14px;font-size: 15px;box-sizing: border-box;}
+body>.leftSearchArea>.searchBottom>.rows:first-child>input{
+    margin-top: 24px;
+}
+body>.leftSearchArea>.searchBottom>.rows>.title{
+
+}
+body>.leftSearchArea>.searchBottom>.searchBtn{
+
+    display: block;
+
+    margin: 0 auto;
+
+    width: 117px;
+
+    background-color: red;
+
+    border-radius: 8px;
+
+    height: 42px;
+
+    text-align: center;
+
+    line-height: 42px;
+
+    font-size: 18px;
+
+    letter-spacing: 2px;
+
+    color: #fefefe;
+
+    margin-bottom: 20px;
+
+    margin-top: 13px;
+}
+
+/*搜索结果区域*/
+body>.leftSearchArea>.searchBottom>.searchList{
+
+    width: 294px;
+
+    margin: 0 auto;
+
+    height: 305px;
+
+    margin-bottom: 19px;
+
+    display: none;
+}
+body>.leftSearchArea>.searchBottom>.searchList .rows{
+
+    margin-top: 8px;
+
+    cursor: pointer;
+}
+body>.leftSearchArea>.searchBottom>.searchList .rows>.number{
+
+}
+body>.leftSearchArea>.searchBottom>.searchList .rows>.number>.sortNumber{
+
+    background: url(../images/numberTitle.png) no-repeat 100% 100%;
+
+    display: block;
+
+    float: left;
+
+    width: 22px;
+
+    height: 22px;
+
+    background-size: 99%;
+
+    text-align: center;
+
+    line-height: 19px;
+
+    color: white;
+}
+body>.leftSearchArea>.searchBottom>.searchList .rows>.title{
+
+    margin-left: 7px;
+
+    font-size: 14px;
+}
+/*搜索结果区域*/
+
+/*底部区域*/
+
+/*左部区域搜索*/
+
+
+/*左部详情区域*/
+body>.leftDetail{
+
+    display: none;
+
+    position: absolute;
+
+    top: 20px;
+
+    z-index: 1;
+
+    left: 12px;
+}
+body>.leftDetail>.left{
+
+    background-color: white;
+
+    width: 329px;
+
+    overflow: hidden;
+
+    margin: 0;
+
+    padding: 0;
+
+    float: left;
+}
+body>.leftDetail>.left>.title{
+
+    display: block;
+
+    margin-top: 18px;
+
+    font-size: 16px;
+
+    margin-left: 10px;
+}
+body>.leftDetail>.left>.divider{
+
+    border-bottom: 1px solid #f7f7f7;
+
+    width: 93%;
+
+    margin: 0 auto;
+
+    margin-top: 6px;
+}
+
+/*进度区域*/
+body>.leftDetail>.left>.subtitle{
+
+    display: block;
+
+    margin: 9px 0px 0px 10px;
+}
+body>.leftDetail>.left>.progressRegion{
+
+    width: 93%;
+
+    margin: 0 auto;
+
+    border: 1px solid #ededed;
+
+    margin-top: 9px;
+}
+body>.leftDetail>.left>.progressRegion>.progressRows{
+
+    margin: 0 auto;
+
+    margin-top: 16px;
+
+    width: 93%;
+
+    position: relative;
+
+    overflow: hidden;
+
+    padding-top: 16px;
+}
+body>.leftDetail>.left>.progressRegion>.progressRows:nth-child(n+2){
+
+    width: 94%;
+}
+body>.leftDetail>.left>.progressRegion>.progressRows>img{
+
+    float: left;
+
+    display: block;
+
+    width: 24px;
+
+    margin-left: 12px;
+
+    margin-right: 4px;
+}
+body>.leftDetail>.left>.progressRegion>.progressRows>.title{
+
+    display: block;
+
+    float: left;
+
+    height: 24px;
+
+    line-height: 24px;
+
+    margin-left: 5px;
+
+    width: 35px;
+
+    background: url(../images/expansion.png) no-repeat 100%;
+
+    background-size: 23%;
+
+    cursor: pointer;
+}
+body>.leftDetail>.left>.progressRegion>.progressRows:first-child>.title{
+
+    width: 55px;
+
+    margin-left: 0;
+
+    background-size: 17%;
+
+    background-position: 89%;
+}
+body>.leftDetail>.left>.progressRegion>.progressRows>.dateTime{
+
+    position: absolute;
+
+    top: 0px;
+
+    border: 1px solid #dcdcdc;
+
+    display: block;
+
+    height: 16px;
+
+    left: 121px;
+
+    line-height: 16px;
+}
+body>.leftDetail>.left>.progressRegion>.progressRows>.progressBarArea{
+
+    background-color: #f1f1f1;
+
+    width: 153px;
+
+    height: 10px;
+
+    float: left;
+
+    border-radius: 14px;
+
+    margin-top: 8px;
+
+    margin-left: 1px;
+}
+body>.leftDetail>.left>.progressRegion>.progressRows>.progressBarArea>.progressBar{
+
+    height: 6px;
+
+    width: 50px;
+
+    background-color: red;
+
+    border-radius: 91px;
+
+    margin: 2px 0px 0px 5px;
+}
+body>.leftDetail>.left>.progressRegion>.progressRows>.number{
+
+    position: absolute;
+
+    left: 132px;
+
+    font-weight: bold;
+
+    top: 23px;
+
+    background-color: #f1f1f1;
+
+    height: 12px;
+
+    line-height: 12px;
+}
+body>.leftDetail>.left>.progressRegion>.progressRows>.scheduleNumber{
+
+    display: block;
+
+    margin: 2px 0 0 5px;
+
+    float: left;
+
+    color: red;
+}
+body>.leftDetail>.left>.progressRegion>.dottedLine{
+
+    border: 1px dashed #ededed;
+
+    width: 93%;
+
+    margin: 0 auto;
+
+    margin-top: 13px;
+}
+body>.leftDetail>.left>.progressRegion>.progressRows>a{
+
+    float: left;
+
+    width: 49px;
+
+    color: white;
+
+    background-color: #10cad7;
+
+    height: 23px;
+
+    border-radius: 5px;
+
+    line-height: 23px;
+
+    text-align: center;
+}
+body>.leftDetail>.left>.progressRegion>.gather{width: 81%;margin: 10px auto;}
+body>.leftDetail>.left>.progressRegion>.gather>.total{
+
+}
+body>.leftDetail>.left>.progressRegion>.gather>span>.number{
+
+}
+body>.leftDetail>.left>.progressRegion>.gather>.completion{
+}
+body>.leftDetail>.left>.progressRegion>.gather>.processing{
+
+}
+body>.leftDetail>.left>.progressRegion>.gather>.notStarted{
+
+}
+body>.leftDetail>.left>.progressRegion>.gather>span:nth-child(n+2){
+
+    margin-left: 13px;
+}
+/*进度区域*/
+
+/*项目信息区域*/
+body>.leftDetail>.left>.projectTitle{
+
+    margin: 10px 0px 0px 10px;
+
+    display: block;
+}
+body>.leftDetail>.left>.projectArea{width: 93%;margin: 0 auto;border: 1px solid #ededed;margin-top: 9px;}
+body>.leftDetail>.left>.projectArea>.rows{
+
+    width: 90%;
+
+    margin: 9px auto;
+}
+body>.leftDetail>.left>.projectArea>.rows>.title{
+
+    color: #727272;
+}
+body>.leftDetail>.left>.projectArea>.rows>.content{
+
+    margin-left: 5px;
+}
+/*项目信息区域*/
+
+/*项目图片展示区域*/
+body>.leftDetail>.left>.projectPhotoTitle{
+
+    margin: 10px 0px 0px 10px;
+
+    display: block;
+}
+body>.leftDetail>.left>.projectPhoto{
+
+    width: 93%;
+
+    margin: 0 auto;
+
+    margin-top: 9px;
+}
+body>.leftDetail>.left>.projectPhoto>img{
+
+    width: 99px;
+
+    height: 103px;
+}
+body>.leftDetail>.left>.projectPhoto>img:nth-child(n+2){
+
+}
+body>.leftDetail>.left>.enterBtn{
+
+    margin: 24px auto;
+
+    display: block;
+
+    width: 155px;
+
+    height: 40px;
+
+    background-color: red;
+
+    color: white;
+
+    text-align: center;
+
+    line-height: 40px;
+
+    font-size: 16px;
+
+    letter-spacing: 2px;
+
+    border-radius: 23px;
+}
+/*项目图片展示区域*/
+
+body>.leftDetail>.rightClose{
+
+    float: left;
+
+    width: 37px;
+
+    background-color: red;
+
+    height: 49px;
+
+    background: url(../images/closeWhite.png) no-repeat 50% red;
+
+    background-size: 53%;
+}
+/*左部详情区域*/
+
+/*地图模块*/
+body>.mapArea{
+
+    width: 100%;
+
+    height: 100%;
+}
+body>.mapArea .map_overLay{
+    position: absolute;
+    width: 100px;
+    background: url(../images/provinceOverlay.png) no-repeat;
+    background-size: 101%;
+    height: 100px;
+    opacity: 0.9;
+}
+body>.mapArea .map_cityOverLay{
+    position: absolute;
+    width: 110px;
+    background: url(../images/provinceOverlay.png) no-repeat;
+    background-size: 101%;
+    height: 111px;
+    opacity: 0.9;
+    margin-left: -4px;
+}
+body>.mapArea .map_areaOverLay{
+    position: absolute;
+    width: 26px;
+    background: url(../images/redLocation.png) no-repeat;
+    background-size: 101%;
+    height: 31px;
+    opacity: 0.9;
+    margin-left: 39px;
+    margin-top: 74px;
+}
+body>.mapArea .map_projectOverLay{
+    position: absolute;
+    width: 26px;
+    background: url(../images/redFlag.png) no-repeat;
+    background-size: 101%;
+    height: 31px;
+    opacity: 0.9;
+    margin-left: 39px;
+    margin-top: 74px;
+    cursor: pointer;
+}
+body>.mapArea .map_project{margin-top: 32px;text-align: center;cursor: pointer;color: white;}
+body>.mapArea .map_projectProject{margin-top: 32px;text-align: center;cursor: pointer;color: white;}
+body>.mapArea .map-projectTitle{margin-top: 32px;text-align: center;cursor: pointer;position: absolute;top: -85px;width: 293px;left: -126px;height: 65px;background-color: white;border: 1px solid #e6e4e2;display: none;}
+body>.mapArea .map-projectTitle span{
+    display: block;
+    text-align: center;
+    margin-top: 3px;
+}
+body>.mapArea .map-projectTitle span:first-child{
+    margin-top: 9px;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+body>.mapArea .map_areaProject{text-align: center;cursor: pointer;color: white;margin-top: 3px;}
+body>.mapArea .map_cityProject{margin-top: 17px;text-align: center;cursor: pointer;color: white;font-size: 12px;}
+body>.mapArea .map-location{
+    background: url(../images/blueLocate.png) no-repeat;
+    position: absolute;
+    width: 15px;
+    height: 11px;
+    background-size: 17px;
+    top: 104px;
+    left: 39px;
+    overflow: hidden;
+}
+body>.mapArea .map-areaLocation{
+    background: url(../images/redLocate.png) no-repeat;
+    position: absolute;
+    width: 15px;
+    height: 11px;
+    background-size: 17px;
+    top: 26px;
+    left: 4px;
+    overflow: hidden;
+}
+body>.mapArea .map-cityLocation{
+    background: url(../images/blueLocate.png) no-repeat;
+    position: absolute;
+    width: 15px;
+    height: 11px;
+    background-size: 17px;
+    top: 104px;
+    left: 45px;
+    overflow: hidden;
+}
+body>.mapArea .map_project>.map-title{
+}
+body>.mapArea .map_project>.map-process-project{
+}
+/*地图模块*/
+
+/*右部文字说明区域*/
+body>.wordDescription{
+
+    position: absolute;
+
+    top: 22px;
+
+    right: -47px;
+
+    background-color: white;
+
+    border-radius: 48px;
+
+    height: 64px;
+}
+body>.wordDescription>.goBack{
+
+    margin-top: 21px;
+
+    float: left;
+
+    margin-left: 23px;
+
+    cursor: pointer;
+
+    display: block;
+}
+
+/*区域显示说明*/
+body>.wordDescription>.areaShow{
+
+    float: left;
+
+    margin-left: 23px;
+
+    margin-top: 21px;
+
+    display: block;
+
+    cursor: pointer;
+}
+body>.wordDescription>.areaShow>.positionIcon{
+
+    float: left;
+}
+body>.wordDescription>.areaShow>.areaTitle{
+
+    font-size: 13px;
+
+    display: block;
+
+    width: 90px;
+
+    margin-left: 18px;
+
+    float: left;
+
+    margin-top: 1px;
+
+    background: url(../images/expansion.png) no-repeat 74% 60%;
+}
+/*区域显示说明*/
+
+/*用户区域*/
+body>.wordDescription>.userArea{
+
+    float: left;
+
+    margin-top: 8px;
+
+    cursor: pointer;
+
+    width: 195px;
+
+    margin-left: 20px;
+}
+body>.wordDescription>.userArea>.userPhoto{
+
+    width: 21%;
+
+    border-radius: 85px;
+
+    float: left;
+
+    display: block;
+
+    cursor: pointer;
+
+    margin-top: 7px;
+}
+body>.wordDescription>.userArea>.userName{
+
+    float: left;
+
+    display: block;
+
+    width: 91px;
+
+    margin-left: 13px;
+
+    margin-top: 16px;
+
+    background: url(../images/expansion.png) no-repeat 94%;
+
+    cursor: pointer;
+}
+/*用户区域*/
+
+/*城市列表区域*/
+body>.cityListArea{
+
+    position: absolute;
+
+    top: 91px;
+
+    right: 0;
+
+    width: 308px;
+
+    background-color: white;
+
+    display: none;
+}
+body>.cityListArea>.cityTitle{
+
+    margin: 20px 0 8px 12px;
+
+    display: block;
+}
+body>.cityListArea>.closeBtn{
+
+    position: absolute;
+
+    right: 12px;
+
+    top: 20px;
+
+    cursor: pointer;
+}
+body>.cityListArea>.cityDivider{
+
+    border-bottom: 1px solid #f7f7f7;
+
+    width: 92%;
+}
+body>.cityListArea>.currentCityArea{margin: 12px 0px 7px 12px;}
+body>.cityListArea>.currentCityArea>.currentCity{
+
+}
+body>.cityListArea>.currentCityArea>.cityName{
+
+    color: red;
+}
+/*城市列表区域*/
+
+/*城市列表区域1*/
+body>.cityListArea>.popularCity{
+
+}
+body>.cityListArea>.popularCity>.cityList{width: 92%;margin: 0 auto;}
+body>.cityListArea>.popularCity>.cityList>.rows{
+
+    float: left;
+
+    margin-left: 19px;
+
+    cursor: pointer;
+}
+body>.cityListArea>.popularCity>.cityList>.rows:first-child{
+
+    margin: 0;
+}
+body>.cityListArea>.popularCity>.cityList>.rows:nth-child(n+8){
+
+    margin-top: 9px;
+
+    margin-bottom: 14px;
+}
+body>.cityListArea>.popularCity>.cityList>.rows:nth-child(8){
+
+    margin-left: 0;
+}
+body>.cityListArea>.popularCity>.cityList>.cityName{
+
+    color: red;
+}
+/*城市列表区域1*/
+
+/*搜索区域*/
+body>.cityListArea>.searchArea{
+
+    width: 92%;
+
+    margin: 0 auto;
+
+    overflow: hidden;
+}
+body>.cityListArea>.searchArea>.citySelect{
+
+    float: left;
+
+    width: 92px;
+
+    border: 1px solid red;
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+}
+body>.cityListArea>.searchArea>.citySelect>span{
+
+    display: block;
+
+    float: left;
+
+    width: 50%;
+
+    text-align: center;
+
+    cursor: pointer;
+
+    color: red;
+
+    height: 27px;
+
+    line-height: 27px;
+}
+body>.cityListArea>.searchArea>.citySelect>.select{
+
+    background: red;
+
+    color: white;
+}
+body>.cityListArea>.searchArea>.inputCityArea{margin-left: 8px;float: left;}
+body>.cityListArea>.searchArea>.inputCityArea>.inputCityName{
+
+    width: 138px;
+
+    height: 25px;
+
+    display: block;
+
+    border: 1px solid red;
+
+    float: left;
+
+    line-height: 25px;
+
+    padding-left: 10px;
+}
+body>.cityListArea>.searchArea>.inputCityArea>.searchBtn{
+
+    width: 31px;
+
+    height: 29px;
+
+    display: block;
+
+    float: left;
+
+    cursor: pointer;
+
+    background: url(../images/seachBtn.png) no-repeat 50%;
+
+    background-size: 50%;
+
+    background-color: red;
+}
+/*搜索区域*/
+
+body>.cityListArea>.letterSelectArea{
+
+    width: 92%;
+
+    margin: 0 auto;
+}
+body>.cityListArea>.letterSelectArea>.rows{
+
+    float: left;
+
+    margin-left: 17px;
+
+    cursor: pointer;
+
+    margin-top: 5px;
+
+    font-weight: 500;
+}
+body>.cityListArea>.letterSelectArea>.rows:first-child{
+
+    margin-left: 0;
+}
+body>.cityListArea>.letterSelectArea>.rows:nth-child(13){
+
+    margin-left: 0;
+}
+body>.cityListArea>.letterSelectArea>.rows:nth-child(n+13){
+
+    margin-bottom: 9px;
+}
+body>.cityListArea>.cityDivider{
+
+}
+
+/*城市列表区域3*/
+body>.cityListArea>.provinceFilterArea{
+
+    width: 97%;
+
+    height: 182px;
+
+    margin-left: 12px;
+
+    margin-bottom: 12px;
+}
+body>.cityListArea>.provinceFilterArea .provinceCityList{
+
+    /* display: none; */
+}
+body>.cityListArea>.provinceFilterArea .provinceCityList>.rows{
+
+    margin: 5px 0 5px 0;
+}
+body>.cityListArea>.provinceFilterArea .provinceCityList>.rows>.letterNumber{
+
+    float: left;
+
+    display: block;
+
+    width: 18px;
+
+    background-color: red;
+
+    text-align: center;
+
+    color: white;
+
+    height: 18px;
+}
+body>.cityListArea>.provinceFilterArea .provinceCityList>.rows>.provinceName{
+
+    display: block;
+
+    float: left;
+
+    margin-left: 10px;
+
+    font-weight: 700;
+}
+body>.cityListArea>.provinceFilterArea .provinceCityList>.rows>.cityList{
+
+    float: left;
+
+    width: 201px;
+}
+body>.cityListArea>.provinceFilterArea .provinceCityList>.rows>.cityList>.cityName{
+
+    display: block;
+
+    float: left;
+
+    margin-left: 12px;
+
+    height: 21px;
+
+    color: #a7a7a7;
+
+    cursor: pointer;
+}
+
+
+body>.cityListArea>.provinceFilterArea .cityFilterArea{
+
+    display: none;
+}
+body>.cityListArea>.provinceFilterArea .cityFilterArea>.cityList{
+
+}
+body>.cityListArea>.provinceFilterArea .cityFilterArea>.cityList>.rows{
+
+}
+body>.cityListArea>.provinceFilterArea .cityFilterArea>.cityList>.rows>.letterNumber{
+
+    width: 18px;
+
+    text-align: center;
+
+    display: block;
+
+    background-color: red;
+
+    color: white;
+
+    float: left;
+}
+body>.cityListArea>.provinceFilterArea .cityFilterArea>.cityList>.rows>.cityList{
+
+    float: left;
+
+    width: 250px;
+}
+body>.cityListArea>.provinceFilterArea .cityFilterArea>.cityList>.rows>.cityList>.cityName{
+
+    display: block;
+
+    float: left;
+
+    margin-left: 11px;
+
+    height: 20px;
+
+    line-height: 20px;
+
+    color: #a7a7a7;
+
+    cursor: pointer;
+}
+
+body>.cityListArea>.cityFilterArea{
+
+    width: 92%;
+
+    margin: 0 auto;
+
+    height: 153px;
+
+    overflow: hidden;
+}
+body>.cityListArea>.cityFilterArea>.cityList{
+
+}
+body>.cityListArea>.cityFilterArea>.cityList>.rows{
+
+    float: left;
+
+    font-weight: 700;
+
+    margin-left: 12px;
+}
+body>.cityListArea>.cityFilterArea>.cityList>.rows>.letterNumber{
+
+    display: block;
+
+    float: left;
+
+    width: 18px;
+
+    text-align: center;
+
+    background-color: red;
+
+    color: white;
+}
+body>.cityListArea>.cityFilterArea>.cityList>.rows>.cityList{
+}
+body>.cityListArea>.cityFilterArea>.cityList>.rows>.cityList>.cityName{
+}
+/*城市列表区域3*/
+
+/*右部文字说明区域*/
