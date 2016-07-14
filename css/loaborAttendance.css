@@ -75,18 +75,16 @@ line-height: 28px;
 font-size: 13px;
 }
 body .layer>.content>.selectWhere>input{
-
-box-sizing: border-box;
-
-overflow: hidden;
-
-float: left;
-
-margin-left: 4px;
-
-height: 28px;
-
-line-height: 28px;
+box-sizing: border-box;
+overflow: hidden;
+float: left;
+margin-left: 4px;
+height: 28px;
+line-height: 28px;
+width: 109px;
+border: 1px solid #ebebeb;
+text-align: left;
+color: black;
 }
 body .layer>.content>.selectWhere>a{
 

@@ -53,48 +53,87 @@ body>.leftArea>.search{
     padding: 0;
 }
 body>.leftArea>.search>select{
-border: 0px;
-float: left;
-display: block;
-height: 32px;
-box-sizing: border-box;
-width: 61px;
-margin: 0;
-padding: 0;
-overflow: hidden;
--moz-appearance: none;
--webkit-appearance: none;
-line-height: 32px;
-padding: 0 12px 0 3px;
-background: url(../images/expansion.png) no-repeat 93%;
+
+border: 0px;
+
+float: left;
+
+display: block;
+
+height: 32px;
+
+box-sizing: border-box;
+
+width: 61px;
+
+margin: 0;
+
+padding: 0;
+
+overflow: hidden;
+
+-moz-appearance: none;
+
+-webkit-appearance: none;
+
+line-height: 32px;
+
+padding: 0 12px 0 3px;
+
+background: url(../images/expansion.png) no-repeat 93%;
 }
 body>.leftArea>.search>select>option{
 
 }
 body>.leftArea>.search>input{
-display: block;
-box-sizing: border-box;
-float: left;
-width: 77px;
-height: 32px;
-border: 0px;
-line-height: 24px;
-overflow: hidden;
-margin: 0;
-padding: 0;
+
+display: block;
+
+box-sizing: border-box;
+
+float: left;
+
+width: 77px;
+
+height: 32px;
+
+border: 0px;
+
+line-height: 24px;
+
+overflow: hidden;
+
+margin: 0;
+
+padding: 0;
+
+text-align: left;
+
+color: black;
 }
 body>.leftArea>.search>.searchBtn{
-width: 32px;
-height: 32px;
-background-color: red;
-display: block;
-float: left;
-cursor: pointer;
-background: url(../images/seachBtn.png) no-repeat 65% red;
-background-size: 57%;
-box-sizing: border-box;
-margin: 0;
-padding: 0;
+
+width: 32px;
+
+height: 32px;
+
+background-color: red;
+
+display: block;
+
+float: left;
+
+cursor: pointer;
+
+background: url(../images/seachBtn.png) no-repeat 65% red;
+
+background-size: 57%;
+
+box-sizing: border-box;
+
+margin: 0;
+
+padding: 0;
 }
 /*搜索区域*/
 
@@ -1729,3 +1768,149 @@ body>.rightArea>div>div>.laborManagement .title{
 }
 .table4_3 tr:nth-child(even){
 }
+
+/*表单区域*/
+.layer>.mark{
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+width: 100%;
+background-color: black;
+opacity: 0.5;
+display: none;
+}
+.layer>.addOrUpdate{
+width: 318px;
+position: absolute;
+top: 10px;
+background-color: white;
+border: 1px solid #9e9a9a;
+left: 50%;
+margin-left: -159px;
+overflow: hidden;
+box-sizing: border-box;
+padding: 0;
+display: none;
+z-index: 1;
+}
+.layer>.addOrUpdate>.head{
+
+height: 30px;
+
+overflow: hidden;
+
+margin: 0;
+
+padding: 0;
+
+box-sizing: border-box;
+
+background-color: #cacaca;
+}
+.layer>.addOrUpdate>.head>.title{
+
+font-size: 13px;
+
+float: left;
+
+height: 30px;
+
+line-height: 30px;
+
+display: block;
+
+overflow: hidden;
+
+padding: 0;
+
+box-sizing: border-box;
+
+margin-left: 10px;
+}
+.layer>.addOrUpdate>.head>.close{
+
+float: right;
+
+width: 11px;
+
+height: 11px;
+
+background: url(../images/closeBtn.png) no-repeat 50%;
+
+background-size: 12px;
+
+margin: 9px;
+
+cursor: pointer;
+}
+.layer>.addOrUpdate>.rows{
+
+overflow: hidden;
+
+margin: 14px auto;
+
+width: 73%;
+}
+.layer>.addOrUpdate>.rows>.title{
+
+float: left;
+
+height: 30px;
+
+line-height: 30px;
+}
+.layer>.addOrUpdate>.rows>input{
+
+float: left;
+
+margin: 3px 0 0 9px;
+
+height: 23px;
+
+box-sizing: border-box;
+
+border: 1px solid #ebebeb;
+
+border-radius: 5px;
+
+width: 144px;
+}
+.layer>.addOrUpdate>.bottom{
+
+margin: 10px auto;
+
+width: 166px;
+
+overflow: hidden;
+
+box-sizing: border-box;
+
+padding: 0;
+}
+.layer>.addOrUpdate>.bottom>a{
+
+display: block;
+
+float: left;
+
+background-color: green;
+
+color: white;
+
+letter-spacing: 3px;
+
+padding: 9px 21px;
+
+cursor: pointer;
+}
+.layer>.addOrUpdate>.bottom>.sureBtn{
+
+}
+.layer>.addOrUpdate>.bottom>.cancel{
+
+float: right;
+
+background-color: #cacaca;
+}
+/*表单区域*/

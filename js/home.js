@@ -132,3 +132,22 @@ $(".showDilog > li").click(function(){
     $(".startState>.state").html(this.innerHTML);
     $(".showDilog").toggle();
 });
+
+/**
+ * 查询按钮事件
+ * 创建人:邵炜
+ * 创建时间:2016年7月14日22:40:52
+ */
+$(document).on("click",".layer>.selectBtnArea>.select",function(){
+   $(".layer>.mark,.layer>.addOrUpdate").toggle();
+});
+
+/**
+ * 新增或编辑弹框关闭事件
+ * 创建人:邵炜
+ * 创建时间:2016年7月14日22:42:47
+ */
+$(document).on("click",".layer>.addOrUpdate>.head>.close,.layer>.addOrUpdate>.bottom>a",function(){
+    $(".layer>.mark,.layer>.addOrUpdate").toggle();
+});
+

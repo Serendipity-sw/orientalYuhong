@@ -1,4 +1,4 @@
-body .layer{overflow: hidden;padding: 0;margin: 0;display: block;min-width: 670px;box-sizing: border-box;}
+body .layer{overflow: hidden;padding: 0;margin: 0;display: block;min-width: 670px;box-sizing: border-box;position: relative;}
 body .layer>.selectBtnArea{
 
     margin: 7px auto;
@@ -113,24 +113,16 @@ body .layer>.selectWhereArea>.dateTitle{
     float: left;
 }
 body .layer>.selectWhereArea>.startTime{
-
-    margin: 13px 0;
-
-    height: 27px;
-
-    overflow: hidden;
-
-    display: block;
-
-    float: left;
-
-    padding: 0;
-
-    box-sizing: border-box;
-
-    width: 110px;
-
-    line-height: 27px;
+margin: 13px 0;
+height: 27px;
+overflow: hidden;
+display: block;
+float: left;
+padding: 0;
+box-sizing: border-box;
+width: 110px;
+line-height: 27px;
+color: black;
 }
 body .layer>.selectWhereArea>.to{
 
@@ -147,24 +139,16 @@ body .layer>.selectWhereArea>.to{
     margin: 16px 5px;
 }
 body .layer>.selectWhereArea>.endTime{
-
-    margin: 13px 0;
-
-    height: 27px;
-
-    overflow: hidden;
-
-    display: block;
-
-    float: left;
-
-    padding: 0;
-
-    box-sizing: border-box;
-
-    width: 110px;
-
-    line-height: 27px;
+margin: 13px 0;
+height: 27px;
+overflow: hidden;
+display: block;
+float: left;
+padding: 0;
+box-sizing: border-box;
+width: 110px;
+line-height: 27px;
+color: black;
 }
 body .layer>.selectWhereArea>.serviceTroop{
 
@@ -224,24 +208,17 @@ body .layer>.selectWhereArea>.serviceUser{
     margin: 16px 5px 0 20px;
 }
 body .layer>.selectWhereArea>.userName{
-
-    margin: 13px 0;
-
-    height: 27px;
-
-    overflow: hidden;
-
-    display: block;
-
-    float: left;
-
-    padding: 0;
-
-    box-sizing: border-box;
-
-    width: 110px;
-
-    line-height: 27px;
+margin: 13px 0;
+height: 27px;
+overflow: hidden;
+display: block;
+float: left;
+padding: 0;
+box-sizing: border-box;
+width: 110px;
+line-height: 27px;
+text-align: left;
+color: black;
 }
 body .layer>.tableArea{width: 99%;margin: 9px auto 0 auto;overflow: hidden;padding: 0;border: 1px solid #969696;box-sizing: border-box;}
 body .layer>.tableArea>.head{
