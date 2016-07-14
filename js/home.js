@@ -138,8 +138,8 @@ $(".showDilog > li").click(function(){
  * 创建人:邵炜
  * 创建时间:2016年7月14日22:40:52
  */
-$(document).on("click",".layer>.selectBtnArea>.select",function(){
-   $(".layer>.mark,.layer>.addOrUpdate").toggle();
+$(document).on("click",".layer .selectBtnArea>.select, .layer .content>.selectWhere>.addBtn",function(){
+   $(".layer .mark,.layer .addOrUpdate").toggle();
 });
 
 /**
@@ -147,7 +147,7 @@ $(document).on("click",".layer>.selectBtnArea>.select",function(){
  * 创建人:邵炜
  * 创建时间:2016年7月14日22:42:47
  */
-$(document).on("click",".layer>.addOrUpdate>.head>.close,.layer>.addOrUpdate>.bottom>a",function(){
-    $(".layer>.mark,.layer>.addOrUpdate").toggle();
+$(document).on("click",".layer .addOrUpdate>.head>.close,.layer .addOrUpdate>.bottom>a",function(){
+    $(".layer .mark,.layer .addOrUpdate").toggle();
 });
 
