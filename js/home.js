@@ -86,6 +86,8 @@ $(".attendanceDetails").click(function(){
 
 /**
  * 分页控件脚本事件
+ * 创建人:邵炜
+ * 创建时间:2016年7月14日21:06:29
  */
 $('.M-box1').pagination({
     totalData:100,
@@ -95,6 +97,8 @@ $('.M-box1').pagination({
 
 /**
  * 进度条前面选项点击事件
+ * 创建人:邵炜
+ * 创建时间:2016年7月14日21:06:29
  */
 $('.processArea [data-src]:not(ul)').click(function(){
     var titleClick=$(this);
@@ -104,8 +108,27 @@ $('.processArea [data-src]:not(ul)').click(function(){
 
 /**
  * 进度条下拉框点击事件
+ * 创建人:邵炜
+ * 创建时间:2016年7月14日21:06:29
  */
 $(".processArea ul[data-src] li").click(function(){
     var clickThis=$(this);
     clickThis.parent().hide().prev().html(clickThis.html());
+});
+
+/**
+ * 项目基本信息进度状态点击事件
+ * 创建人:邵炜
+ * 创建时间:2016年7月14日21:06:29
+ */
+$(".startState>.state").click(function(){
+    $(".showDilog").toggle();
+});
+
+/**
+ * 项目基本信息状态弹框选择事件
+ */
+$(".showDilog > li").click(function(){
+    $(".startState>.state").html(this.innerHTML);
+    $(".showDilog").toggle();
 });

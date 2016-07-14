@@ -1284,12 +1284,28 @@ body>.rightArea>div>div>.projectBasicInfo>.startState{
 }
 body>.rightArea>div>div>.projectBasicInfo>.showDilog{
 
+    position: absolute;
+
+    top: 59px;
+
+    left: 38%;
+
+    background-color: white;
+
+    border: 1px solid #c1c1c1;
+
+    display: none;
 }
 body>.rightArea>div>div>.projectBasicInfo>.showDilog>.rows{
 
+    padding: 4px 21px;
+
+    margin: 7px 0;
+
+    cursor: pointer;
 }
 body>.rightArea>div>div>.projectBasicInfo>.showDilog>.rows:hover{
-
+    background-color:#c1c1c1;
 }
 body>.rightArea>div>div>.projectBasicInfo>.startState>.state{
 
@@ -1314,6 +1330,8 @@ body>.rightArea>div>div>.projectBasicInfo>.startState>.state{
     background: url(../images/Triangle.png) no-repeat 100%;
 
     margin-left: -25px;
+
+    cursor: pointer;
 }
 body>.rightArea>div>div>.projectBasicInfo>.rows{margin: 3px auto 0 auto;width: 93%;}
 body>.rightArea>div>div>.projectBasicInfo>.rows:nth-child(1){}
