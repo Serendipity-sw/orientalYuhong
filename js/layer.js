@@ -14,14 +14,14 @@ $.extend({
         //遮罩层
         var mark=$('<div style="overflow: hidden; position: fixed; top: 0; left: 0; display: block; padding: 0; box-sizing: border-box; margin: 0; bottom: 0; background-color: black; z-index: 100; opacity: 0.5; right: 0;"></div>');
         //弹框显示层
-        var layer=$('<div style="overflow: hidden;position: fixed;top: 50%;left: 50%;box-sizing: border-box;padding: 0;margin: 0;background-color: white;z-index: 101;"></div>');
+        var layer=$('<div style="overflow: hidden; position: fixed; top: 50%; left: 50%; box-sizing: border-box; padding: 0px; margin: -176px 0px 0px -348px; z-index: 101;"> <div style="min-width: 300px;min-height: 300px;background-color: white;float: left;position: relative;padding: 54px 25px 26px 25px;box-sizing: border-box;"></div> <a href="javascript:void(0);" style="background: url(../images/closeWhite.png) no-repeat 50% red;display: block;float: left;width: 25px;overflow: hidden;height: 43px;box-sizing: border-box;"></a> </div>');
 
-        var layerHead=$('<div style=" height: 36px; overflow: hidden; box-sizing: border-box; padding: 0; margin: 0; display: block; border-bottom: 1px solid #797979; background: #cacaca; min-width: 200px; "><span style=" display: block; overflow: hidden; padding: 0; margin: 7px 0 0 11px; font-size: 13px; letter-spacing: 1px; float: left; ">'+obj.title+'</span><a href="javascript:void(0);" style=" float: right; width: 15px; height: 17px; display: block; overflow: hidden; padding: 0; box-sizing: border-box; margin: 8px 9px 0 0; background: url(../images/closeBtn.png) no-repeat 50%; "></a></div>')
+        var layerHead=$('<span style="position: absolute; top: 11px; display: block; width: 94%; left: 3%; height: 31px; box-sizing: border-box; border-bottom: 1px solid #c3c1c1; padding-left: 13px; font-size: 15px; ">' + obj.title+'</span>')
 
         $("body").append(mark).append(layer);
-        layer.load(obj.url,function(){
-            layer.prepend(layerHead);
-            layer.find("a:eq(0)").click(function(){
+        layer.find("div").load(obj.url,function(){
+            $(this).prepend(layerHead);
+            layer.find(" > a:eq(0)").click(function(){
                 mark.remove();
                 layer.remove();
             });
