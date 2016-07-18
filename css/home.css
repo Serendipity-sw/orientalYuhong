@@ -54,86 +54,86 @@ body>.leftArea>.search{
 }
 body>.leftArea>.search>select{
 
-border: 0px;
+    border: 0px;
 
-float: left;
+    float: left;
 
-display: block;
+    display: block;
 
-height: 32px;
+    height: 32px;
 
-box-sizing: border-box;
+    box-sizing: border-box;
 
-width: 61px;
+    width: 61px;
 
-margin: 0;
+    margin: 0;
 
-padding: 0;
+    padding: 0;
 
-overflow: hidden;
+    overflow: hidden;
 
--moz-appearance: none;
+    -moz-appearance: none;
 
--webkit-appearance: none;
+    -webkit-appearance: none;
 
-line-height: 32px;
+    line-height: 32px;
 
-padding: 0 12px 0 3px;
+    padding: 0 12px 0 3px;
 
-background: url(../images/expansion.png) no-repeat 93%;
+    background: url(../images/expansion.png) no-repeat 93%;
 }
 body>.leftArea>.search>select>option{
 
 }
 body>.leftArea>.search>input{
 
-display: block;
+    display: block;
 
-box-sizing: border-box;
+    box-sizing: border-box;
 
-float: left;
+    float: left;
 
-width: 77px;
+    width: 77px;
 
-height: 32px;
+    height: 32px;
 
-border: 0px;
+    border: 0px;
 
-line-height: 24px;
+    line-height: 24px;
 
-overflow: hidden;
+    overflow: hidden;
 
-margin: 0;
+    margin: 0;
 
-padding: 0;
+    padding: 0;
 
-text-align: left;
+    text-align: left;
 
-color: black;
+    color: black;
 }
 body>.leftArea>.search>.searchBtn{
 
-width: 32px;
+    width: 32px;
 
-height: 32px;
+    height: 32px;
 
-background-color: red;
+    background-color: red;
 
-display: block;
+    display: block;
 
-float: left;
+    float: left;
 
-cursor: pointer;
+    cursor: pointer;
 
-background: url(../images/seachBtn.png) no-repeat 65% red;
+    background: url(../images/seachBtn.png) no-repeat 65% red;
 
-background-size: 57%;
+    background-size: 57%;
 
-box-sizing: border-box;
+    box-sizing: border-box;
 
-margin: 0;
+    margin: 0;
 
-padding: 0;
+    padding: 0;
 }
 /*搜索区域*/
 
@@ -465,6 +465,8 @@ body>.centerArea>.processArea>.progressRows>.processArea{
     height: 51px;
 
     margin-top: 0px;
+
+    cursor: pointer;
 }
 body>.centerArea>.processArea>.progressRows>.processArea>.progressBarArea{
 
@@ -1772,165 +1774,394 @@ body>.rightArea>div>div>.laborManagement .title{
 /*表单区域*/
 .layer .mark{
 
-position: absolute;
+    position: absolute;
 
-top: 0;
+    top: 0;
 
-bottom: 0;
+    bottom: 0;
 
-left: 0;
+    left: 0;
 
-width: 100%;
+    width: 100%;
 
-background-color: black;
+    background-color: black;
 
-opacity: 0.5;
+    opacity: 0.5;
 
-display: none;
+    display: none;
 }
 .layer .addOrUpdate{
 
-width: 318px;
+    width: 318px;
 
-position: absolute;
+    position: absolute;
 
-top: 10px;
+    top: 10px;
 
-background-color: white;
+    background-color: white;
 
-border: 1px solid #9e9a9a;
+    border: 1px solid #9e9a9a;
 
-left: 50%;
+    left: 50%;
 
-margin-left: -159px;
+    margin-left: -159px;
 
-overflow: hidden;
+    overflow: hidden;
 
-box-sizing: border-box;
+    box-sizing: border-box;
 
-padding: 0;
+    padding: 0;
 
-display: none;
+    display: none;
 
-z-index: 1;
+    z-index: 1;
 }
 .layer .addOrUpdate>.head{
 
-height: 30px;
+    height: 30px;
 
-overflow: hidden;
+    overflow: hidden;
 
-margin: 0;
+    margin: 0;
 
-padding: 0;
+    padding: 0;
 
-box-sizing: border-box;
+    box-sizing: border-box;
 
-background-color: #cacaca;
+    background-color: #cacaca;
 }
 .layer .addOrUpdate>.head>.title{
 
-font-size: 13px;
+    font-size: 13px;
 
-float: left;
+    float: left;
 
-height: 30px;
+    height: 30px;
 
-line-height: 30px;
+    line-height: 30px;
 
-display: block;
+    display: block;
 
-overflow: hidden;
+    overflow: hidden;
 
-padding: 0;
+    padding: 0;
 
-box-sizing: border-box;
+    box-sizing: border-box;
 
-margin-left: 10px;
+    margin-left: 10px;
 }
 .layer .addOrUpdate>.head>.close{
 
-float: right;
+    float: right;
 
-width: 11px;
+    width: 11px;
 
-height: 11px;
+    height: 11px;
 
-background: url(../images/closeBtn.png) no-repeat 50%;
+    background: url(../images/closeBtn.png) no-repeat 50%;
 
-background-size: 12px;
+    background-size: 12px;
 
-margin: 9px;
+    margin: 9px;
 
-cursor: pointer;
+    cursor: pointer;
 }
 .layer .addOrUpdate>.rows{
 
-overflow: hidden;
+    overflow: hidden;
 
-margin: 14px auto;
+    margin: 14px auto;
 
-width: 73%;
+    width: 73%;
 }
 .layer .addOrUpdate>.rows>.title{
 
-float: left;
+    float: left;
 
-height: 30px;
+    height: 30px;
 
-line-height: 30px;
+    line-height: 30px;
 }
 .layer .addOrUpdate>.rows>input{
 
-float: left;
+    float: left;
 
-margin: 3px 0 0 9px;
+    margin: 3px 0 0 9px;
 
-height: 23px;
+    height: 23px;
 
-box-sizing: border-box;
+    box-sizing: border-box;
 
-border: 1px solid #ebebeb;
+    border: 1px solid #ebebeb;
 
-border-radius: 5px;
+    border-radius: 5px;
 
-width: 144px;
+    width: 144px;
 }
 .layer .addOrUpdate>.bottom{
 
-margin: 10px auto;
+    margin: 10px auto;
 
-width: 166px;
+    width: 166px;
 
-overflow: hidden;
+    overflow: hidden;
 
-box-sizing: border-box;
+    box-sizing: border-box;
 
-padding: 0;
+    padding: 0;
 }
 .layer .addOrUpdate>.bottom>a{
 
-display: block;
+    display: block;
 
-float: left;
+    float: left;
 
-background-color: green;
+    background-color: green;
 
-color: white;
+    color: white;
 
-letter-spacing: 3px;
+    letter-spacing: 3px;
 
-padding: 9px 21px;
+    padding: 9px 21px;
 
-cursor: pointer;
+    cursor: pointer;
 }
 .layer .addOrUpdate>.bottom>.sureBtn{
 
 }
 .layer .addOrUpdate>.bottom>.cancel{
 
-float: right;
+    float: right;
 
-background-color: #cacaca;
+    background-color: #cacaca;
 }
 /*表单区域*/
+
+/*进度条弹出框区域*/
+body >.processArea{
+
+    position: fixed;
+
+    display: none;
+
+    top: 10px;
+
+    right: 11px;
+
+    z-index: 101;
+
+    background-color: white;
+
+    bottom: 52px;
+
+    width: 393px;
+}
+body >.processArea>.top{
+
+    margin: 25px auto 0 auto;
+
+    width: 93%;
+
+    height: 35px;
+
+    border-bottom: 1px solid #c7c7c7;
+
+    overflow: hidden;
+
+    padding: 0;
+
+    box-sizing: border-box;
+}
+body >.processArea>.top>.title{
+
+    display: block;
+
+    float: left;
+
+    font-size: 16px;
+
+    font-weight: 500;
+
+    overflow: hidden;
+
+    padding: 0;
+
+    margin: 0;
+
+    box-sizing: border-box;
+}
+body >.processArea>.top>.closeBtn{
+
+    overflow: hidden;
+
+    float: right;
+
+    display: block;
+
+    background: url(../images/closeBtn.png) no-repeat 50%;
+
+    background-size: 14px;
+
+    width: 15px;
+
+    height: 15px;
+
+    margin: 5.5px;
+}
+body >.processArea>div{
+
+}
+body >.processArea>div .searchArea{
+
+    width: 93%;
+
+    margin: 24px auto 18px auto;
+
+    overflow: hidden;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+    position: relative;
+}
+body >.processArea>div .searchArea>.title{
+
+    display: block;
+
+    font-size: 13px;
+
+    overflow: hidden;
+
+    padding: 0;
+
+    box-sizing: border-box;
+}
+body >.processArea>div .searchArea>.number{
+
+    position: absolute;
+
+    top: 34px;
+
+    right: 11px;
+
+    font-size: 14px;
+}
+body >.processArea>div .searchArea>.process{
+
+    float: initial;
+
+    width: 100%;
+
+    margin: 8px auto;
+
+    height: 34px;
+
+    line-height: 34px;
+
+    text-align: right;
+
+    box-sizing: border-box;
+
+    background-color: white;
+
+    border: 1px solid #ebebeb;
+
+    outline: none;
+
+    color: black;
+
+    font-size: 14px;
+
+    padding-right: 43px;
+}
+body >.processArea>div .searchArea>.dateTime{
+
+    float: initial;
+
+    width: 100%;
+
+    margin: 8px auto;
+
+    height: 34px;
+
+    line-height: 34px;
+
+    text-align: left;
+
+    box-sizing: border-box;
+
+    background-color: white;
+
+    border: 1px solid #ebebeb;
+
+    outline: none;
+
+    color: black;
+
+    font-size: 14px;
+
+    padding-right: 43px;
+}
+body >.processArea>div .searchArea>.saveBtn{
+
+    overflow: hidden;
+
+    display: block;
+
+    width: 163px;
+
+    background-color: red;
+
+    color: white;
+
+    text-align: center;
+
+    border-radius: 29px;
+
+    height: 39px;
+
+    line-height: 39px;
+
+    font-size: 15px;
+
+    margin: 11px 0 0 105px;
+}
+body >.processArea>div .dataListArea{
+
+    width: 93%;
+
+    margin: 0 auto;
+}
+body >.processArea>div .dataListArea>.title{
+
+    font-size: 13px;
+}
+.table4_5 {
+    width: 99%;
+    margin: 13px auto;
+    border:0;
+}
+.table4_5 th {
+    background-color: #25d0d0;
+    color: white;
+}
+.table4_5,.table4_5 th,.table4_5 td {
+    font-size: 12px;
+    text-align:center;
+    padding:4px;
+    border-collapse:collapse;
+}
+.table4_5 th,.table4_5 td {
+    border-width:1px 0 1px 0;
+    border-bottom: 1px solid #e8e8e8;
+    height: 26px;
+}
+.table4_5 tr {
+}
+.table4_5 tr:nth-child(odd){
+}
+.table4_5 tr:nth-child(even){
+    background-color:#fdfdfd;
+}
+/*进度条弹出框区域*/

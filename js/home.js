@@ -151,3 +151,25 @@ $(document).on("click",".layer .addOrUpdate>.head>.close,.layer .addOrUpdate>.bo
     $(".layer .mark,.layer .addOrUpdate").toggle();
 });
 
+/**
+ * 进度条弹框事件
+ * 创建人:邵炜
+ * 创建时间:2016年7月17日22:49:24
+ */
+$(document).on("click","body>.centerArea>.processArea>.progressRows>.processArea",function(){
+    $("body").append(mark);
+    $("body>.processArea").slideToggle("slow");
+});
+
+/**
+ * 进度条弹框关闭按钮
+ * 创建人:邵炜
+ * 创建时间:2016年7月17日22:55:00
+ */
+$("body >.processArea>.top>.closeBtn").click(function(){
+    $("body>.processArea").slideToggle("slow",function(){
+        mark.remove();
+    });
+});
+
+

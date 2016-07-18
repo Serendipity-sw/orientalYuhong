@@ -11,8 +11,6 @@ $.extend({
             url:data.url, //需要显示的页面地址
             title:data.title //显示名称
         };
-        //遮罩层
-        var mark=$('<div style="overflow: hidden; position: fixed; top: 0; left: 0; display: block; padding: 0; box-sizing: border-box; margin: 0; bottom: 0; background-color: black; z-index: 100; opacity: 0.5; right: 0;"></div>');
         //弹框显示层
         var layer=$('<div style="overflow: hidden; position: fixed; top: 50%; left: 50%; box-sizing: border-box; padding: 0px; margin: -176px 0px 0px -348px; z-index: 101;"> <div style="min-width: 300px;min-height: 300px;background-color: white;float: left;position: relative;padding: 54px 25px 26px 25px;box-sizing: border-box;"></div> <a href="javascript:void(0);" style="background: url(../images/closeWhite.png) no-repeat 50% red;display: block;float: left;width: 25px;overflow: hidden;height: 43px;box-sizing: border-box;"></a> </div>');
 
