@@ -1746,13 +1746,13 @@ body>.rightArea>div>div>.laborManagement .title{
     border:0;
 }
 .table4_3 th {
-    color:#000000;
-    border-bottom: 1px solid #afafaf;
+    color: white;
+    background-color: #65d3de;
 }
 .table4_3,.table4_3 th,.table4_3 td {
-    font-size:0.95em;
+    font-size: 0.95em;
     text-align:center;
-    padding:4px;
+    padding: 7px;
     border-collapse:collapse;
 }
 .table4_3 tr td:first-child {
@@ -1760,14 +1760,13 @@ body>.rightArea>div>div>.laborManagement .title{
     text-align:center;
     padding:4px;
     border-collapse:collapse;
-    color: green;
+    color: #4dc6d2;
 }
 .table4_3 th,.table4_3 td {
     border-width:1px 0 1px 0;
 }
 .table4_3 tr {}
-.table4_3 tr:nth-child(odd){
-}
+.table4_3 tr:nth-child(odd){background-color: #f3f3f3;}
 .table4_3 tr:nth-child(even){
 }
 
