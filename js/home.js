@@ -139,16 +139,20 @@ $(".showDilog > li").click(function(){
  * 创建时间:2016年7月14日22:40:52
  */
 $(document).on("click",".layer .selectBtnArea>.select, .layer .content>.selectWhere>.addBtn",function(){
-   $(".layer .mark,.layer .addOrUpdate").toggle();
-});
-
-/**
- * 新增或编辑弹框关闭事件
- * 创建人:邵炜
- * 创建时间:2016年7月14日22:42:47
- */
-$(document).on("click",".layer .addOrUpdate>.head>.close,.layer .addOrUpdate>.bottom>a",function(){
-    $(".layer .mark,.layer .addOrUpdate").toggle();
+    $.fromLayer({
+        title:'新增',
+        list:[{name:"姓名",Attributes:"userName",value:"无锡"},{name:"密码",Attributes:"passWord"}],
+        saveCallBack:function(obj,closeFunc){
+            $.each(obj,function(index,value){
+                alert(index+":"+value);
+                closeFunc();
+            });
+        },
+        cancelCallBack:function(closeFunc){
+            alert("关闭按钮!");
+            closeFunc();
+        }
+    });
 });
 
 /**
