@@ -176,4 +176,8 @@ $("body >.processArea>.top>.closeBtn").click(function(){
     });
 });
 
-
+$(document).on("click",".goBack",function(){
+    $("body>.leftArea").slideToggle("slow",function(){
+        $("body>.centerArea").animate({paddingLeft:$(this).is(":hidden")?"0":"218px"});
+    });
+});
