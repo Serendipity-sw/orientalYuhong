@@ -134,11 +134,11 @@ $(".showDilog > li").click(function(){
 });
 
 /**
- * 查询按钮事件
+ * 新增或编辑按钮事件
  * 创建人:邵炜
  * 创建时间:2016年7月14日22:40:52
  */
-$(document).on("click",".layer .selectBtnArea>.select, .layer .content>.selectWhere>.addBtn",function(){
+$(document).on("click",".layer .selectBtnArea>.select, .layer .content>.selectWhere>.addBtn,body>.centerArea>.sitePhoto>.flowChartArea>.photoStep>.rows",function(){
     $.fromLayer({
         title:'新增',
         list:[{name:"姓名",Attributes:"userName",value:"无锡"},{name:"密码",Attributes:"passWord"}],
@@ -185,4 +185,17 @@ $(document).on("click",".goBack",function(){
     $("body>.leftArea").toggle("slow",function(){
         $("body>.centerArea").animate({paddingLeft:$(this).is(":hidden")?"0":"218px"});
     });
+});
+
+$(function(){
+    /**
+     * 进度条效果
+     * 创建人:邵炜
+     * 创建时间:2016年7月21日23:04:36
+     */
+    setTimeout(function(){
+        $(".progressBar,body>.centerArea>.processArea>.progressRows>.processArea>.number").animate({
+            width:"90%"
+        },2000);
+    },1000);
 });
