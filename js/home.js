@@ -176,6 +176,11 @@ $("body >.processArea>.top>.closeBtn").click(function(){
     });
 });
 
+/**
+ * 左侧区域显示隐藏事件
+ * 创建人:邵炜
+ * 创建时间:2016年7月21日21:50:48
+ */
 $(document).on("click",".goBack",function(){
     $("body>.leftArea").slideToggle("slow",function(){
         $("body>.centerArea").animate({paddingLeft:$(this).is(":hidden")?"0":"218px"});
