@@ -182,7 +182,7 @@ $("body >.processArea>.top>.closeBtn").click(function(){
  * 创建时间:2016年7月21日21:50:48
  */
 $(document).on("click",".goBack",function(){
-    $("body>.leftArea").slideToggle("slow",function(){
+    $("body>.leftArea").toggle("slow",function(){
         $("body>.centerArea").animate({paddingLeft:$(this).is(":hidden")?"0":"218px"});
     });
 });
