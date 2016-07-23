@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/jquery.treemenu.css">
     <script src="../js/jquery-2.1.0.min.js"></script>
     <script src="../js/jquery.treemenu.js"></script>
+    <script src="../js/layer.js"></script>
 </head>
 <body>
 <div class="layer">
@@ -86,33 +87,10 @@
                 </tr>
             </table>
         </div>
-
-        <div class="mark"></div>
-        <div class="addOrUpdate">
-            <div class="head">
-                <span class="title">新增</span><a href="javascript:void(0);" class="close"></a>
-            </div>
-            <div class="rows"><span class="title">表单名称:</span><input type="text"></div>
-            <div class="rows"><span class="title">表单名称:</span><input type="text"></div>
-            <div class="rows"><span class="title">表单名称:</span><input type="text"></div>
-            <div class="bottom">
-                <a href="javascript:void(0);" class="sureBtn">确定</a>
-                <a href="javascript:void(0);" class="cancel">取消</a>
-            </div>
-        </div>
     </div>
 </div>
 <script>
     $(".tree").treemenu({delay:300}).openActive();
-
-    /**
-     * 新增或编辑弹框关闭事件
-     * 创建人:邵炜
-     * 创建时间:2016年7月14日22:42:47
-     */
-    $(document).on("click",".layer .addOrUpdate>.head>.close,.layer .addOrUpdate>.bottom>a",function(){
-        $(".layer .mark,.layer .addOrUpdate").toggle();
-    });
 
     /**
      * 新增按钮事件
@@ -120,7 +98,20 @@
      * 创建时间:2016年7月14日22:40:52
      */
     $(document).on("click",".layer .headBtn>.add",function(){
-        $(".layer .mark,.layer .addOrUpdate").toggle();
+        $.fromLayer({
+            title:'新增',
+            list:[{name:"姓名",Attributes:"userName",value:"无锡"},{name:"密码",Attributes:"passWord"}],
+            saveCallBack:function(obj,closeFunc){
+                $.each(obj,function(index,value){
+                    alert(index+":"+value);
+                    closeFunc();
+                });
+            },
+            cancelCallBack:function(closeFunc){
+                alert("关闭按钮!");
+                closeFunc();
+            }
+        });
     });
 </script>
 </body>
