@@ -88,8 +88,6 @@ body .layer>.selectWhere>.head{
     box-sizing: border-box;
 
     border-bottom: 1px solid #d0d0d0;
-
-    display: none;
 }
 body .layer>.selectWhere>.head>.title{
 
@@ -101,7 +99,7 @@ body .layer>.selectWhere>.head>.title{
 
     letter-spacing: 1px;
 
-    color: darkgrey;
+    color: black;
 
     box-sizing: border-box;
 
