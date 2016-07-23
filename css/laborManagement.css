@@ -40,7 +40,7 @@ body .layer>.headBtn>a{
 
     padding: 0 34px;
 
-    background: green;
+    background: #65d3de;
 
     line-height: 33px;
 
@@ -75,8 +75,6 @@ body .layer>.selectWhere{
 
     width: 99%;
 
-    border: 1px solid #5d5b5b;
-
     padding: 0;
 }
 body .layer>.selectWhere>.head{
@@ -91,9 +89,7 @@ body .layer>.selectWhere>.head{
 
     box-sizing: border-box;
 
-    background-color: #d0d0d0;
-
-    border-bottom: 1px solid #7f7f7f;
+    border-bottom: 1px solid #d0d0d0;
 }
 body .layer>.selectWhere>.head>.title{
 
@@ -101,11 +97,11 @@ body .layer>.selectWhere>.head>.title{
 
     display: block;
 
-    font-size: 13px;
+    font-size: 15px;
 
     letter-spacing: 1px;
 
-    color: #f36464;
+    color: darkgrey;
 
     box-sizing: border-box;
 
@@ -145,7 +141,7 @@ body .layer>.selectWhere>.rows{
 }
 body .layer>.selectWhere>.rows>.title{
 
-    font-size: 13px;
+    font-size: 15px;
 
     letter-spacing: 1px;
 
@@ -155,11 +151,25 @@ body .layer>.selectWhere>.rows>.title{
 
     margin: 0;
 
+    color: #a9a9a9;
+
     box-sizing: border-box;
 }
 body .layer>.selectWhere>.rows>input{
 
     margin-left: 7px;
+
+    box-sizing: border-box;
+
+    height: 26px;
+
+    overflow: hidden;
+
+    padding-left: 5px;
+
+    border: 1px solid #d0d0d0;
+
+    border-radius: 5px;
 }
 body .layer>.selectWhere>.rows>.userName{
 
@@ -182,7 +192,7 @@ body .layer>.content>.left{
 
     width: 13%;
 
-    border: 1px solid #5d5b5b;
+    border: 1px solid #d0d0d0;
 
     overflow: hidden;
 
@@ -208,7 +218,7 @@ body .layer>.content>.right{
 
     width: 86%;
 
-    border: 1px solid;
+    border: 1px solid #d0d0d0;
 
     box-sizing: border-box;
 }
@@ -218,15 +228,15 @@ body .layer>.content>.right>.head{
 
     padding: 0;
 
-    margin: 0;
+    margin: 0 auto;
 
     display: block;
 
     box-sizing: border-box;
 
-    background-color: #d0d0d0;
+    border-bottom: 1px solid #a9a9a9;
 
-    border-bottom: 1px solid #7f7f7f;
+    width: 98%;
 }
 body .layer>.content>.right>.head>.title{
 
@@ -234,11 +244,11 @@ body .layer>.content>.right>.head>.title{
 
     display: block;
 
-    font-size: 13px;
+    font-size: 16px;
 
     letter-spacing: 1px;
 
-    color: #f36464;
+    color: #a9a9a9;
 
     box-sizing: border-box;
 
