@@ -85,11 +85,11 @@ body .layer>.selectWhere>.head{
 
     margin: 0;
 
-    display: block;
-
     box-sizing: border-box;
 
     border-bottom: 1px solid #d0d0d0;
+
+    display: none;
 }
 body .layer>.selectWhere>.head>.title{
 
@@ -126,6 +126,8 @@ body .layer>.selectWhere>.head>.downSelect{
     margin: 0;
 
     overflow: hidden;
+
+    display: none;
 }
 body .layer>.selectWhere>.rows{
 
@@ -179,6 +181,32 @@ body .layer>.selectWhere>.rows>.idNumber{
 }
 body .layer>.selectWhere>.rows>.idNumber{
 
+}
+body .layer>.selectWhere>a{
+    height: 33px;
+    display: block;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin: 0 12px;
+    float: left;
+    padding: 0 34px;
+    background: #65d3de;
+    line-height: 33px;
+    color: white;
+    font-size: 13px;
+    letter-spacing: 6px;
+    cursor: pointer;
+    margin-top: 17px;
+}
+body .layer>.selectWhere>.select{
+
+}
+body .layer>.selectWhere>.add{
+
+}
+body .layer>.selectWhere>.delete{
+
+    background-color: red;
 }
 body .layer>.content{
 
