@@ -72,7 +72,7 @@ $(".moreDown").click(function () {
  * 创建时间:2016年7月12日21:35:40
  */
 $(".checkAttendance").click(function(){
-    $.layer({title:"考勤",url:"laborAttendance.html"});
+    $.layer({title:"劳务考勤",url:"laborAttendance.html"});
 });
 
 /**
@@ -138,19 +138,55 @@ $(".showDilog > li").click(function(){
  * 创建人:邵炜
  * 创建时间:2016年7月14日22:40:52
  */
-$(document).on("click",".layer .selectBtnArea>.select, .layer .content>.selectWhere>.addBtn,body>.centerArea>.sitePhoto>.flowChartArea>.photoStep>.rows",function(){
+
+/*
+    标准化施工流程  点击弹出框事件
+*/
+$(document).on("click", "body>.centerArea>.sitePhoto>.flowChartArea>.photoStep>.rows", function () {
     $.fromLayer({
-        title:'新增',
-        list:[{name:"姓名",Attributes:"userName",value:"无锡"},{name:"密码",Attributes:"passWord"}],
-        saveCallBack:function(obj,closeFunc){
-            $.each(obj,function(index,value){
-                alert(index+":"+value);
+        title: '标准化施工流程-合同确认',
+        position:"right",
+        list: [{ name: "开始日期", Attributes: "startTime", class: "datetimepicker", value: "" }, { name: "完成日期", class: "datetimepicker", Attributes: "endTime" }],
+        saveCallBack: function (obj, closeFunc) {
+            $.each(obj, function (index, value) {
+                alert(index + ":" + value);
                 closeFunc();
             });
         },
-        cancelCallBack:function(closeFunc){
+        cancelCallBack: function (closeFunc) {
             alert("关闭按钮!");
             closeFunc();
+        },
+        loadCallBack: function (closeFunc) {
+            $('.datetimepicker').datetimepicker();
+        }
+    });
+});
+
+/*
+新增考勤
+*/
+$(document).on("click", ".layer .content>.selectWhere>.addBtn", function () {
+
+    $.fromLayer({
+        title: '新增劳务考勤',
+        list: [
+            { name: "时间", Attributes: "startTime", class: "datetimepicker", value: "" },
+            { name: "施工队", Attributes: "title" },
+             { name: "出勤数", Attributes: "number" }
+        ],
+        saveCallBack: function (obj, closeFunc) {
+            $.each(obj, function (index, value) {
+                alert(index + ":" + value);
+                closeFunc();
+            });
+        },
+        cancelCallBack: function (closeFunc) {
+            alert("关闭按钮!");
+            closeFunc();
+        },
+        loadCallBack: function (closeFunc) {
+            $('.datetimepicker').datetimepicker();
         }
     });
 });
@@ -160,9 +196,12 @@ $(document).on("click",".layer .selectBtnArea>.select, .layer .content>.selectWh
  * 创建人:邵炜
  * 创建时间:2016年7月17日22:49:24
  */
-$(document).on("click","body>.centerArea>.processArea>.progressRows>.processArea",function(){
+$(document).on("click", "body>.centerArea>.processArea>.progressRows>.processArea", function () {
+    $(this).parent().parent().find(".progressRows").removeClass("select");
+    $(this).parent().addClass("select");
     $("body").append(mark);
     $("body>.processArea").slideToggle("slow");
+    $('.dateTime').datetimepicker();
 });
 
 /**
@@ -171,8 +210,10 @@ $(document).on("click","body>.centerArea>.processArea>.progressRows>.processArea
  * 创建时间:2016年7月17日22:55:00
  */
 $("body >.processArea>.top>.closeBtn").click(function(){
-    $("body>.processArea").slideToggle("slow",function(){
+    $("body>.processArea").slideToggle("slow", function () {
+        $(this).parent().parent().find(".progressRows").removeClass("select");
         mark.remove();
+
     });
 });
 

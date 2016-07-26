@@ -123,6 +123,31 @@ body .layer>.content>.selectWhere>a{
 body .layer>.content>.selectWhere>.selectBtn{
 
 }
-body .layer>.content>.selectWhere>.addBtn{
+.saveBtn{
+    display: block;
+    float: left;
+    margin-left: 16px;
+    height: 28px;
+    background-color: #45c9d0;
+    color: white;
+    padding: 0 25px;
+    line-height: 28px;
+    letter-spacing: 3px;
+    box-sizing: border-box;
+}
+.deleteBtn{
+    display: block;
+    float: left;
+    margin-left: 16px;
+    height: 28px;
+    background-color: red;
+    color: white;
+    padding: 0 25px;
+    line-height: 28px;
+    letter-spacing: 3px;
+    box-sizing: border-box;
+}
 
+.table4_3 tr th:last-child {
+    width:220px;
 }

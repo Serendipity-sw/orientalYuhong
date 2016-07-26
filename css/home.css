@@ -353,6 +353,9 @@ body>.centerArea>.processArea>.progressRows{
 
     margin-top: 8px;
 }
+body>.centerArea>.processArea>.progressRows.select{
+  background-color: #b2eaee;
+}
 body>.centerArea>.processArea>.progressRows:nth-child(n+7){
     display: none;
 }

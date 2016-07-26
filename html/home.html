@@ -19,6 +19,7 @@
     <script src="../js/jquery.datetimepicker.full.min.js"></script>
 </head>
 <body>
+    
     <!--左部区域-->
     <div class="leftArea">
         <!--头部logo-->
@@ -731,10 +732,10 @@
                 <div class="foldExpansion"></div>
             </div>
             <div class="selectArea">
-                <div class="rate"><span class="number">1</span><div></div><span class="title">打分</span></div>
-                <div class="distribution"><span class="number"></span><div></div><span class="title">分配</span></div>
+                <div class="rate" style="display:none;"><span class="number">1</span><div></div><span class="title">打分</span></div>
+                <div class="distribution" style="display:none;"><span class="number"></span><div></div><span class="title">分配</span></div>
                 <div class="markingRecords"><span class="number">19</span><div></div><span class="title">扣分记录</span></div>
-                <div class="templateMaintenance"><span class="number"></span><div></div><span class="title">扣分模版维护</span></div>
+                <div class="templateMaintenance" style="display:none;"><span class="number"></span><div></div><span class="title">扣分模版维护</span></div>
             </div>
         </div>
         <!--项目资料-->
@@ -762,7 +763,7 @@
             <span class="title">目前进度</span>
             <span class="number">/100</span>
             <input type="text" class="process">
-            <input type="text" class="dateTime">
+            <input type="text" class="dateTime" >
             <a href="javascript:void(0);" class="saveBtn">保存</a>
         </div>
         <div class="dataListArea">
