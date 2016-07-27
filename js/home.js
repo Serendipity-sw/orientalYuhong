@@ -158,7 +158,10 @@ $(document).on("click", "body>.centerArea>.sitePhoto>.flowChartArea>.photoStep>.
             closeFunc();
         },
         loadCallBack: function (closeFunc) {
-            $('.datetimepicker').datetimepicker();
+            $('.datetimepicker').datetimepicker({
+                lang: "ch",           //语言选择中文
+                format: "Y-m-d",      //格式化日期
+            });
         }
     });
 });
@@ -186,7 +189,10 @@ $(document).on("click", ".layer .content>.selectWhere>.addBtn", function () {
             closeFunc();
         },
         loadCallBack: function (closeFunc) {
-            $('.datetimepicker').datetimepicker();
+            $('.datetimepicker').datetimepicker({
+                lang: "ch",           //语言选择中文
+                format: "Y-m-d",      //格式化日期
+            });
         }
     });
 });
@@ -201,7 +207,10 @@ $(document).on("click", "body>.centerArea>.processArea>.progressRows>.processAre
     $(this).parent().addClass("select");
     $("body").append(mark);
     $("body>.processArea").slideToggle("slow");
-    $('.dateTime').datetimepicker();
+    $('.dateTime').datetimepicker({
+        lang: "ch",           //语言选择中文
+        format: "Y-m-d",      //格式化日期
+    });
 });
 
 /**

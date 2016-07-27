@@ -143,3 +143,47 @@ body .fromLayerArea>.bottom>.cancel{
 
     background-color: #848484;
 }
+
+/*下拉框公共样式*/
+ul.selectPopupCommon {
+    background-color: white;
+    border: 1px solid #ececec;
+    display: none;
+    border-radius: 6px; 
+    overflow:visible;
+}
+ul.selectPopupCommon li{
+    padding: 10px 10px;
+    /* margin: 7px 0; */
+    border-bottom: 1px solid #ececec;
+    cursor: pointer;
+     overflow:visible;
+}
+    ul.selectPopupCommon li:first-child {
+    position:relative;
+    }
+    ul.selectPopupCommon li .selectIcon{
+   padding-right: 10px;
+    float: left;
+    padding-top: 1px;
+}
+ul.selectPopupCommon li .selectIcon>img{
+
+}
+    ul.selectPopupCommon li:first-child {
+    position:relative;
+    }
+ul.selectPopupCommon li:hover{
+    background-color: #ececec;
+}
+ul.selectPopupCommon li:first-child:after {
+    font: normal normal normal 14px/1 FontAwesome;
+    content: "\f0de";
+    position: absolute;
+    color: #ececec;
+    font-size: 22px;
+    top: -10px;
+    right: 10px;
+    z-index: 10;
+    display: block;
+}

@@ -4,18 +4,16 @@
 
 
 /**
- * 统计报表及劳务数据点击展开显示
+ * 统计报表点击展开显示
  * 创建人:邵炜
  * 创建时间:2016年6月28日11:29:36
  */
-$(".categoryList> .rows").each(function(index,value){
-    value.onclick=function () {
-        var rowsListElement=$(this).next()[0],
-            display=rowsListElement.style.display;
-        statisticsShowOrHide();
-        rowsListElement.style.display=display==="block"?"none":"block";
-        $(".searchList")[0].style.display="none";
-    };
+$(".categoryList>.categoryStatisticsReport").click(function () {
+    var rowsListElement=$(this).next()[0],
+        display=rowsListElement.style.display;
+    statisticsShowOrHide();
+    rowsListElement.style.display=display==="block"?"none":"block";
+    $(".searchList")[0].style.display="none";
 });
 
 /**
@@ -139,13 +137,78 @@ function rightCityAreaShowOrHide(bo) {
  * 创建人:邵炜
  * 创建时间:2016年7月11日23:05:45
  */
-$("body>.wordDescription>.areaShow").click(function(){
+$(".goBack").click(function () {
     $("body>.cityListArea").toggle();
 });
 
-/**
- * 劳务列表每项点击事件
- */
-$(".categoryList .rowsList:eq(1)  span").click(function(){
-   location.href="laborManagement.html" ;
+
+/*
+2016-07-27
+城市下拉框切换
+*/
+$("body>.wordDescription>.areaShow").click(function () {
+    $(".citySelect").toggle();
 });
+/*
+2016-07-27
+城市下拉框切换
+*/
+$("body>.wordDescription>.userArea").click(function () {
+    $(".peopleSelect").toggle();
+});
+
+/**
+ * 劳务管理 点击打开弹出框
+ */
+$(".categoryList>.categoryLaborData").click(function () {
+    $.layer({ title: "劳务管理", url: "laborManagement.html" });
+});
+
+/**
+     * 劳务管理 新增按钮事件
+     * 创建人:邵炜
+     * 创建时间:2016年7月14日22:40:52
+     */
+    $(document).on("click", ".layer .selectWhere>.add", function () {
+       
+        $.fromLayer({
+            title:'新增',
+            list:[{name:"姓名",Attributes:"userName",value:"无锡"},{name:"密码",Attributes:"passWord"}],
+            saveCallBack:function(obj,closeFunc){
+                $.each(obj,function(index,value){
+                    alert(index+":"+value);
+                    closeFunc();
+                });
+            },
+            cancelCallBack:function(closeFunc){
+                alert("关闭按钮!");
+                closeFunc();
+            }
+        });
+
+       
+    });
+   
+
+    /**
+     * 安质管理点击展开显示
+     * 创建人:徐建华
+     * 创建时间:2016年7月27日11:29:36
+     */
+    $(".categoryList>.categoryQualityControl").click(function () {
+        var rowsListElement = $(this).next()[0],
+            display = rowsListElement.style.display;
+        statisticsShowOrHide();
+        rowsListElement.style.display = display === "block" ? "none" : "block";
+        $(".searchList")[0].style.display = "none";
+    });
+
+
+    /*打分分配点击弹出框*/
+    $(".categoryList .qualityControlDistribution").click(function () {
+        alert('弹出框');
+    });
+    /*模板维护点击弹出框*/
+    $(".categoryList .qualityControlMaintain").click(function () {
+        alert('弹出框');
+    });

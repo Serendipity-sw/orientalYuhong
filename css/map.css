@@ -707,6 +707,7 @@ body>.wordDescription>.areaShow{
     display: block;
 
     cursor: pointer;
+    position:relative;
 }
 body>.wordDescription>.areaShow>.positionIcon{
 
@@ -728,6 +729,20 @@ body>.wordDescription>.areaShow>.areaTitle{
 
     background: url(../images/expansion.png) no-repeat 74% 60%;
 }
+
+
+    body > .wordDescription > .areaShow > .citySelect {
+        position: absolute;
+        top: 30px;
+        left: 0;
+        display: none;
+    }
+    body > .wordDescription > .userArea > .peopleSelect {
+            position: absolute;
+            top: 44px;
+            left: 44px;
+            display: none;
+    }
 /*区域显示说明*/
 
 /*用户区域*/
@@ -742,6 +757,7 @@ body>.wordDescription>.userArea{
     width: 195px;
 
     margin-left: 20px;
+        position: relative;
 }
 body>.wordDescription>.userArea>.userPhoto{
 
