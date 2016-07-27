@@ -89,6 +89,7 @@ body>.leftSearchArea>.top>.categoryList>.rowsList{
 
     display: none;
 }
+body>.leftSearchArea>.top>.categoryList>.categoryQualityControlRowsList{height: 70px;}
 body>.leftSearchArea>.top>.categoryList>.rowsList .title{
 
     display: block;
