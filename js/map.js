@@ -173,7 +173,15 @@ $(".categoryList>.categoryLaborData").click(function () {
        
         $.fromLayer({
             title:'新增',
-            list:[{name:"姓名",Attributes:"userName",value:"无锡"},{name:"密码",Attributes:"passWord"}],
+            list: [
+                { name: "姓名", Attributes: "userName", value: "无锡" },
+                { name: "手机号码", Attributes: "telephone" },
+                { name: "民族", Attributes: "nation" },
+                { name: "保险", Attributes: "insurance" },
+                { name: "身份证号", Attributes: "number" },
+                { name: "工资标准(人/天)", Attributes: "salary" },
+                { name: "家庭住址", Attributes: "address" },
+            ],
             saveCallBack:function(obj,closeFunc){
                 $.each(obj,function(index,value){
                     alert(index+":"+value);

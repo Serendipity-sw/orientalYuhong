@@ -58,50 +58,8 @@ body .fromLayerArea>.rows{
 
     margin: 20px auto 0 auto;
 }
-body .fromLayerArea>.rows>span{
-
-    float: left;
-
-    margin-left: 46px;
-
-    height: 38px;
-
-    line-height: 38px;
-
-    font-size: 13px;
-
-    color: #6f6c6c;
-
-    overflow: hidden;
-
-    box-sizing: border-box;
-
-    text-align: right;
-}
-body .fromLayerArea>.rows>input{
-
-    height: 30px;
-
-    box-sizing: border-box;
-
-    overflow: hidden;
-
-    padding: 0;
-
-    width: 291px;
-
-    border-radius: 9px;
-
-    text-align: left;
-
-    border: 1px solid #a5a3a3;
-
-    color: #828282;
-
-    padding-left: 9px;
-
-    margin: 4px 43px 0 13px;
-}
+body .fromLayerArea>.rows>span{float: left;/* margin-left: 46px; */height: 38px;line-height: 38px;font-size: 13px;color: #6f6c6c;overflow: hidden;box-sizing: border-box;text-align: right;width: 100px;}
+body .fromLayerArea>.rows>input{height: 30px;box-sizing: border-box;overflow: hidden;padding: 0;width: 250px;text-align: left;border: 1px solid #a5a3a3;color: #828282;padding-left: 9px;margin: 4px 43px 0 13px;}
 body .fromLayerArea>.bottom{
 
     padding: 0;
@@ -114,28 +72,7 @@ body .fromLayerArea>.bottom{
 
     display: block;
 }
-body .fromLayerArea>.bottom>a{
-
-    display: block;
-
-    float: left;
-
-    width: 74px;
-
-    text-align: center;
-
-    height: 31px;
-
-    line-height: 31px;
-
-    color: white;
-
-    background-color: #21c5a7;
-
-    margin: 12px 0 0 87px;
-
-    border-radius: 8px;
-}
+body .fromLayerArea>.bottom>a{display: block;float: left;width: 74px;text-align: center;height: 31px;line-height: 31px;color: white;background-color: #21c5a7;margin: 12px 0 0 87px;}
 body .fromLayerArea>.bottom>.save{
 
 }
@@ -144,7 +81,7 @@ body .fromLayerArea>.bottom>.cancel{
     background-color: #848484;
 }
 
-/*下拉框公共样式*/
+/*锟斤拷锟斤拷锟津公癸拷锟斤拷式*/
 ul.selectPopupCommon {
     background-color: white;
     border: 1px solid #ececec;

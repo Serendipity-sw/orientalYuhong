@@ -42,7 +42,10 @@
             </div>
             <table class="table4_3">
                 <tr>
-                    <th><input type="checkbox"></th><th>姓名</th><th>手机号</th><th>民族</th><th>保险</th><th>身份证号</th><th>工资标准(人/天)</th><th>家庭住址</th>
+                    <th>
+                        <input class="checkboxAll" type="checkbox" />
+                    </th>
+                    <th>姓名</th><th>手机号</th><th>民族</th><th>保险</th><th>身份证号</th><th>工资标准(人/天)</th><th>家庭住址</th>
                 </tr>
                 <tr>
                     <td><input type="checkbox"></td><td>SAMPLE</td><td>18012728897</td><td>SAMPLE</td><td>SAMPLE</td><td>320802198408047787</td><td>SAMPLE</td><td>北京四惠东康家沟劳务队</td>
@@ -65,8 +68,6 @@
 <script>
     /**
        * 分页控件脚本事件
-       * 创建人:邵炜
-       * 创建时间:2016年7月14日21:06:29
        */
     $('.M-box1').pagination({
         totalData: 100,
