@@ -214,8 +214,44 @@ $(".categoryList>.categoryLaborData").click(function () {
 
     /*打分分配点击弹出框*/
     $(".categoryList .qualityControlDistribution").click(function () {
-        alert('弹出框');
+        $.layer({ title: "打分分配", url: "rateDistribution.html" });
     });
+
+    /**
+         * 打分分配 点击明细按钮
+         */
+    $(document).on("click", "table.selectTableRows td .select", function () {
+        $.layer_two({ title: "项目历史分配明细", url: "rateDistributionHistory.html" });
+
+    });
+
+    /**
+      * 打分分配 点击编辑按钮
+      */
+    $(document).on("click", "table.selectTableRows td .edit", function () {
+
+        $.fromLayer({
+            title: '编辑打分分配',
+            list: [
+                { name: "项目名称", Attributes: "projectName", value: "天安门城楼" },
+                { name: "分配人员", Attributes: "user" },
+                { name: "上次分配", Attributes: "lastUser" }
+            ],
+            saveCallBack: function (obj, closeFunc) {
+                $.each(obj, function (index, value) {
+                    alert(index + ":" + value);
+                    closeFunc();
+                });
+            },
+            cancelCallBack: function (closeFunc) {
+                alert("关闭按钮!");
+                closeFunc();
+            }
+        });
+
+
+    });
+
     /*模板维护点击弹出框*/
     $(".categoryList .qualityControlMaintain").click(function () {
         alert('弹出框');

@@ -1,0 +1,67 @@
+﻿<!--项目历史分配明细-->
+<div class="rateDistribution popupCommon">
+   
+    <div class="content">
+        <div class="left">
+
+        </div>
+        <div class="right">
+            <div class="selectWhereRows">
+                <div class="filterRows">
+                    <div class="filter">
+                        <span class="title">安质人员</span>
+                        <input placeholder="安质人员" type="text" class="inputFilter">
+                    </div>
+
+                    <div class="filter">
+                        <span class="title">项目名称</span>
+                        <input placeholder="项目名称" type="text" class="inputFilter">
+                    </div>
+                </div>
+                <div class="selectBtn">
+                    <a href="javascript:void(0);" class="select">查询</a>
+                    <a href="javascript:void(0);" class="reset">重置</a>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <table class="selectTableRows">
+                <tr>
+                    <th>交易日期</th>
+                    <th>项目名称</th>
+                    <th>打分人员</th>
+                </tr>
+                <tr>
+                    <td>2015/07/07</td>
+                    <td>天安门城楼</td>
+                    <td>SAMPLE</td>
+                </tr>
+                <tr>
+                    <td>2015/07/07</td>
+                    <td>天安门城楼</td>
+                    <td>SAMPLE</td>
+                </tr>
+                <tr>
+                    <td>2015/07/07</td>
+                    <td>天安门城楼</td>
+                    <td>SAMPLE</td>
+                </tr>
+                <tr>
+                    <td>2015/07/07</td>
+                    <td>天安门城楼</td>
+                    <td>SAMPLE</td>
+                </tr>
+            </table>
+            <div class="M-box1" style="float: right; margin: 2px 5px 10px 0;"></div>
+        </div>
+    </div>
+</div>
+<script>
+    /**
+       * 分页控件脚本事件
+       */
+    $('.M-box1').pagination({
+        totalData: 100,
+        showData: 5,
+        coping: true
+    });
+</script>
