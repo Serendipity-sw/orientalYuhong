@@ -209,12 +209,16 @@ $(document).on("click", "body>.centerArea>.processArea>.progressRows>.processAre
     $("body>.centerArea>.processArea").find(".progressRows").removeClass("select");
     $(this).parent().addClass("select");
 
-    $("body").append(mark);
-    $("body>.processArea").slideToggle("slow");
-    $('.dateTime').datetimepicker({
-        lang: "ch",           //语言选择中文
-        format: "Y-m-d"      //格式化日期
-    });
+//    $("body").append(mark);
+    var  processAreaOb=$("body>.processArea");
+    var centerArea=$("body>.centerArea");
+    if (processAreaOb.css("right") == "-393px") {
+        processAreaOb.animate({right:"0"});
+        centerArea.animate({paddingRight:"393px"});
+    }else{
+        processAreaOb.animate({right:"-393px"});
+        centerArea.animate({paddingRight:"301px"});
+    }
 });
 
 /**
@@ -223,10 +227,15 @@ $(document).on("click", "body>.centerArea>.processArea>.progressRows>.processAre
  * 创建时间:2016年7月17日22:55:00
  */
 $("body >.processArea>.top>.closeBtn").click(function(){
-    $("body>.processArea").toggle("slow", function () {
-        // $(this).closest(".progressRows").removeClass("select");
-        mark.remove();
-    });
+    var  processAreaOb=$("body>.processArea");
+    var centerArea=$("body>.centerArea");
+    if (processAreaOb.css("right") == "-393px") {
+        processAreaOb.animate({right:"0"});
+        centerArea.animate({paddingRight:"393px"});
+    }else{
+        processAreaOb.animate({right:"-393px"});
+        centerArea.animate({paddingRight:"301px"});
+    }
 });
 
 /**

@@ -2055,17 +2055,15 @@ body >.processArea{
 
     position: fixed;
 
-    display: none;
+    top: 0;
 
-    top: 10px;
-
-    right: 11px;
+    right: -393px;
 
     z-index: 101;
 
     background-color: white;
 
-    bottom: 52px;
+    bottom: 0;
 
     width: 393px;
 }
