@@ -212,12 +212,18 @@ $(document).on("click", "body>.centerArea>.processArea>.progressRows>.processAre
 //    $("body").append(mark);
     var  processAreaOb=$("body>.processArea");
     var centerArea=$("body>.centerArea");
+    var rightArea=$("body>.rightArea");
+    var leftArea=$("body>.leftArea");
     if (processAreaOb.css("right") == "-393px") {
         processAreaOb.animate({right:"0"});
-        centerArea.animate({paddingRight:"393px"});
+        centerArea.animate({paddingRight:"393px",paddingLeft:"0"});
+        rightArea.animate({width:"403px"});
+        leftArea.animate({left:"-224px"});
     }else{
         processAreaOb.animate({right:"-393px"});
-        centerArea.animate({paddingRight:"301px"});
+        centerArea.animate({paddingRight:"301px",paddingLeft:"225px"});
+        rightArea.animate({width:"301px"});
+        leftArea.animate({left:"0"});
     }
 });
 
@@ -229,12 +235,15 @@ $(document).on("click", "body>.centerArea>.processArea>.progressRows>.processAre
 $("body >.processArea>.top>.closeBtn").click(function(){
     var  processAreaOb=$("body>.processArea");
     var centerArea=$("body>.centerArea");
+    var rightArea=$("body>.rightArea");
     if (processAreaOb.css("right") == "-393px") {
         processAreaOb.animate({right:"0"});
         centerArea.animate({paddingRight:"393px"});
+        rightArea.animate({width:"403px"});
     }else{
         processAreaOb.animate({right:"-393px"});
         centerArea.animate({paddingRight:"301px"});
+        rightArea.animate({width:"301px"});
     }
 });
 
