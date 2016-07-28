@@ -31,7 +31,8 @@ var mapObj=(function () {
         cityOverlayClick:null, //将市覆盖物单击回调事件回调 传入回调方法名称 该事件传入参数市名称
         areaOverlayClick:null, //将区域覆盖物单击回调事件回调 传入回调方法名称 该事件传入参数区域名称
         projectOverlayClick:null, //将项目覆盖物单击回调事件糊掉 传入回调方法名称 该事件传入参数项目所属名称
-        setCenter:null, //设置地图的中心点区域 该事件参数传递经纬度, 第一个参数为lng 经度  第二个参数为lat纬度, 调用方式 setCenter(116.417854, 39.921988);
+        setCenter: null, //设置地图的中心点区域 该事件参数传递经纬度, 第一个参数为lng 经度  第二个参数为lat纬度, 调用方式 setCenter(116.417854, 39.921988);
+        setCenterByString: null, //设置地图的中心点区域 该事件参数传递String城市名, setCenterByString(苏州市);
         reset:null, //地图重置
         length:0, //无用占位符
         zoomend:null //地图缩放时产生的事件 回调方法  传递方法名称,  共返回两个参数,  第一个参数为西南角坐标    第二个参数为东北角坐标  参数对象示例 {lat:30.911877,lng:106.106169}  第三个为缩放级别
@@ -70,7 +71,7 @@ var mapObj=(function () {
     });
 
     /**
-     * 设置地图的中心点
+     * 设置地图的中心点  使用坐标点设置时该方法不是异步执行
      * 创建人:邵炜
      * 创建时间:2016年6月29日14:22:43
      * @param lng 经度
@@ -79,7 +80,17 @@ var mapObj=(function () {
     data.setCenter=function (lng, lat) {
         mp.setCenter(new BMap.Point(lng, lat));
     };
+    /**
+   * 设置地图的中心点  使用城市名进行设置时该方法是异步执行
+   * 创建人:徐建华
+   * 创建时间:2016年6月29日14:22:43
+   * @param city 城市名称
+   */
+    data.setCenterByString = function (city) {
+        mp.setCenter(city);
+    };
 
+    
     /**
      * 是否启用地图缩放
      * 创建人:邵炜
