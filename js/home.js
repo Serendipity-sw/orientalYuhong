@@ -226,7 +226,6 @@ $("body >.processArea>.top>.closeBtn").click(function(){
     $("body>.processArea").toggle("slow", function () {
         // $(this).closest(".progressRows").removeClass("select");
         mark.remove();
-
     });
 });
 
