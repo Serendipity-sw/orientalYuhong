@@ -213,7 +213,7 @@ $(document).on("click", "body>.centerArea>.processArea>.progressRows>.processAre
     $("body>.processArea").slideToggle("slow");
     $('.dateTime').datetimepicker({
         lang: "ch",           //语言选择中文
-        format: "Y-m-d",      //格式化日期
+        format: "Y-m-d"      //格式化日期
     });
 });
 
@@ -223,7 +223,7 @@ $(document).on("click", "body>.centerArea>.processArea>.progressRows>.processAre
  * 创建时间:2016年7月17日22:55:00
  */
 $("body >.processArea>.top>.closeBtn").click(function(){
-    $("body>.processArea").slideToggle("slow", function () {
+    $("body>.processArea").toggle("slow", function () {
         // $(this).closest(".progressRows").removeClass("select");
         mark.remove();
 
