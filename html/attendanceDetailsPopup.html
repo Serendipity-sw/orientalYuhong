@@ -1,0 +1,73 @@
+<!--打分分配-->
+<div class="attendanceDetailsPopup popupCommon">
+
+    <div class="content">
+        <div class="left">
+
+        </div>
+        <div class="right">
+            <div class="selectWhereRows">
+                <div class="filterRows">
+                    <div class="filter">
+                        <span class="title">时间</span>
+                        <input placeholder="开始日期" type="text" class="inputFilter startTime">
+                        <span style="">-</span>
+                        <input placeholder="开始日期" type="text" class="inputFilter endTime">
+                    </div>
+                    <div class="filter">
+                        <span class="title">劳务队</span>
+                        <select class="selectFilter">
+                            <option value="volvo">劳务队</option>
+                            <option value="saab">劳务队</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="clearfix"></div>
+            </div>
+            <table class="selectTableRows">
+                <tr>
+                    <th>时间</th>
+                    <th>劳务队</th>
+                    <th>出勤人数</th>
+                </tr>
+                <tr>
+                    <td>2015/12/22</td>
+                    <td>北京四惠东康家沟劳务队</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>2015/12/22</td>
+                    <td>北京四惠东康家沟劳务队</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>2015/12/22</td>
+                    <td>北京四惠东康家沟劳务队</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>2015/12/22</td>
+                    <td>北京四惠东康家沟劳务队</td>
+                    <td>10</td>
+                </tr>
+            </table>
+            <div class="M-box1" style="float: right; margin: 2px 5px 10px 0;"></div>
+        </div>
+    </div>
+</div>
+<script>
+    /**
+       * 分页控件脚本事件
+       */
+    $('.M-box1').pagination({
+        totalData: 100,
+        showData: 5,
+        coping: true
+    });
+
+    $('.attendanceDetailsPopup .startTime,.attendanceDetailsPopup .endTime').datetimepicker({
+        lang: "ch",           //语言选择中文
+        format: "Y-m-d",      //格式化日期
+    });
+</script>

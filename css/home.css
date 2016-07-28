@@ -297,7 +297,7 @@ body>.centerArea>.head>.left{
 
     box-sizing: border-box;
 }
-body>.centerArea>.head>.left>.goBack{
+body>.centerArea>.head>.left .goBack{
 
     width: 13px;
 
@@ -336,12 +336,10 @@ font-weight: 500;
 letter-spacing: 0.5px;
 
 margin-left: 20px;
+
+color: red;
 }
 body>.centerArea>.head>.left>.processTitle .processSelectTitle{
-
-display: block;
-
-float: right;
 
 font-size: 15px;
 
@@ -352,8 +350,6 @@ font-weight: 500;
 letter-spacing: 0.5px;
 
 margin-left: 8px;
-
-color: #00b7c4;
 }
 /*头部左区域*/
 
@@ -1620,6 +1616,16 @@ body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>.markingRecords>div{
 
     margin-top: 10px;
 }
+body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>.projectRecords>div{
+
+    width: 100%;
+
+    height: 44px;
+
+    background: url(../images/attendanceDetails.png) no-repeat 50% -44px;
+
+    margin-top: 10px;
+}
 body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>.templateMaintenance>div{
 
     width: 100%;
@@ -2271,3 +2277,15 @@ body >.processArea>div .dataListArea>.title{
     background-color:#fdfdfd;
 }
 /*进度条弹出框区域*/
+
+/*扣分记录 弹出框页面 start*/
+.markingRecordsPopup {
+}
+    .markingRecordsPopup .markingScore {
+    text-align: right;
+    padding-right: 10px;
+    }
+   .markingRecordsPopup .markingScore .score{
+    color: red;
+    }
+/*扣分记录  弹出框页面  end*/

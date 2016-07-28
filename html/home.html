@@ -18,6 +18,9 @@
     <script src="../js/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="../js/jquery.pagination.min.js"></script>
     <script src="../js/jquery.datetimepicker.full.min.js"></script>
+    <script>
+        $.datetimepicker.setLocale('ch');//设置中文
+    </script>
 </head>
 <body>
     
@@ -69,9 +72,9 @@
         <div class="head">
             <!--头部左区域-->
             <div class="left">
-                <img src="../images/goBack.png" alt="" class="goBack">
+                <a href="../html/map.html"><img src="../images/goBack.png" alt="" class="goBack"></a>
                 <span class="pathTitle">西二旗领袖硅谷12号1单元202</span>
-                <span class="processTitle">当前部位：<span class="processSelectTitle">全部</span></span>
+                <span class="processTitle">（当前部位：<span class="processSelectTitle">全部</span>）</span>
             </div>
             <!--头部左区域-->
             <!--头部右区域-->
@@ -727,10 +730,10 @@
                 <div class="out">
                     <span class="fraction">总分数:</span><span class="number">79分</span>
                 </div>
-                <div class="rate"><span class="number">1</span><div></div><span class="title">打分</span></div>
-                <div class="distribution"><span class="number"></span><div></div><span class="title">分配</span></div>
+                <div style="display:none;" class="rate"><span class="number">1</span><div></div><span class="title">打分</span></div>
+                <div style="display:none;" class="distribution"><span class="number"></span><div></div><span class="title">分配</span></div>
                 <div class="markingRecords"><span class="number">19</span><div></div><span class="title">扣分记录</span></div>
-                <div class="templateMaintenance"><span class="number"></span><div></div><span class="title">扣分模版维护</span></div>
+                <div style="display:none;" class="templateMaintenance"><span class="number"></span><div></div><span class="title">扣分模版维护</span></div>
             </div>
         </div>
         <!--项目质量控制-->
@@ -741,10 +744,7 @@
                 <div class="foldExpansion"></div>
             </div>
             <div class="selectArea">
-                <div class="rate" style="display:none;"><span class="number">1</span><div></div><span class="title">打分</span></div>
-                <div class="distribution" style="display:none;"><span class="number"></span><div></div><span class="title">分配</span></div>
-                <div class="markingRecords"><span class="number">19</span><div></div><span class="title">扣分记录</span></div>
-                <div class="templateMaintenance" style="display:none;"><span class="number"></span><div></div><span class="title">扣分模版维护</span></div>
+                <div class="projectRecords"><span class="number">19</span><div></div><span class="title">项目资料</span></div>
             </div>
         </div>
         <!--项目资料-->
@@ -757,7 +757,7 @@
             <div class="selectArea">
                 <div class="checkAttendance"><span class="number">1</span><div></div><span class="title">考勤</span></div>
                 <div class="attendanceDetails"><span class="number"></span><div></div><span class="title">考勤明细</span></div>
-                <div class="payroll"><span class="number">19</span><div></div><span class="title">工资核算</span></div>
+                <div class="payroll" style="display:none;"><span class="number">19</span><div></div><span class="title">工资核算</span></div>
             </div>
         </div>
         <!--劳务管理-->

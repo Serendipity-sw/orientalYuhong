@@ -60,6 +60,7 @@ body .fromLayerArea>.rows{
 }
 body .fromLayerArea>.rows>span{float: left;/* margin-left: 46px; */height: 38px;line-height: 38px;font-size: 13px;color: #6f6c6c;overflow: hidden;box-sizing: border-box;text-align: right;width: 100px;}
 body .fromLayerArea>.rows>input{height: 30px;box-sizing: border-box;overflow: hidden;padding: 0;width: 250px;text-align: left;border: 1px solid #a5a3a3;color: #828282;padding-left: 9px;margin: 4px 43px 0 13px;}
+body .fromLayerArea>.rows>select{height: 30px;box-sizing: border-box;overflow: hidden;padding: 0;width: 250px;text-align: left;border: 1px solid #a5a3a3;color: #828282;padding-left: 9px;margin: 4px 43px 0 13px;}
 body .fromLayerArea>.bottom{
 
     padding: 0;
@@ -144,12 +145,14 @@ ul.selectPopupCommon li:first-child:after {
 .popupCommon .right .selectWhereRows .filterRows{float: left;}
 .popupCommon .right .selectWhereRows .filterRows .filter{float: left;margin-right: 10px;}
 .popupCommon .right .selectWhereRows .filterRows .filter .title{font-size: 15px;letter-spacing: 1px;overflow: hidden;padding: 0;margin: 0;color: #a9a9a9;box-sizing: border-box;}
-.popupCommon .right .selectWhereRows .filterRows .filter .inputFilter{margin-left: 7px;box-sizing: border-box;height: 34px;overflow: hidden;padding-left: 5px;border: 1px solid #d0d0d0;}
+.popupCommon .right .selectWhereRows .filterRows .filter .inputFilter{margin-left: 7px;box-sizing: border-box;height: 34px;overflow: hidden;padding-left: 5px;border: 1px solid #d0d0d0;width: 155px;color: #444;}
+.popupCommon .right .selectWhereRows .filterRows .filter .selectFilter{margin-left: 7px;box-sizing: border-box;height: 34px;overflow: hidden;padding-left: 5px;border: 1px solid #d0d0d0;width: 155px;font-size: 14px;color: #444;}
 
 .popupCommon   .selectBtn{float: left;margin-left: 20px;}
-.popupCommon   .selectBtn .select{height: 33px;display: block;overflow: hidden;box-sizing: border-box;margin: 0 10px;float: left;padding: 0 20px;background: #65d3de;line-height: 33px;color: white;font-size: 13px;letter-spacing: 6px;cursor: pointer;width: 80px;}
+.popupCommon   .selectBtn .select,.popupCommon   .selectBtn .add{height: 33px;display: block;overflow: hidden;box-sizing: border-box;margin: 0 10px;float: left;padding: 0 20px;background: #65d3de;line-height: 33px;color: white;font-size: 13px;letter-spacing: 6px;cursor: pointer;width: 80px;}
 .popupCommon   .selectBtn .reset{height: 33px;display: block;overflow: hidden;box-sizing: border-box;margin: 0 10px;float: left;padding: 0 20px;background: #999;line-height: 33px;color: white;font-size: 13px;letter-spacing: 6px;cursor: pointer;width: 80px;}
 .popupCommon   .selectBtn .delete{
+    height: 33px;display: block;overflow: hidden;box-sizing: border-box;margin: 0 10px;float: left;padding: 0 20px;background: red;line-height: 33px;color: white;font-size: 13px;letter-spacing: 6px;cursor: pointer;width: 80px;
 }
 .popupCommon  .edit{height: 33px;display: block;overflow: hidden;box-sizing: border-box;margin: 0 10px;float: left;padding: 0 20px;background: #65d3de;line-height: 33px;color: white;font-size: 13px;letter-spacing: 6px;cursor: pointer;width: 80px;}
 
@@ -177,7 +180,7 @@ ul.selectPopupCommon li:first-child:after {
 
     .popupCommon .right table.selectTableRows th.operatingTd,
     .popupCommon .right table.selectTableRows td.operatingTd {
-        width: 200px;
+        /* width: 100%; */
     }
         .popupCommon .right table.selectTableRows th.operatingTd .selectBtn,
         .popupCommon .right table.selectTableRows td.operatingTd .selectBtn {

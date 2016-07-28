@@ -81,7 +81,7 @@ $(".checkAttendance").click(function(){
  * 创建时间:2016年7月12日21:38:35
  */
 $(".attendanceDetails").click(function(){
-    $.layer({title:"考勤明细",url:"attendanceDetails.html"});
+    $.layer({title:"考勤明细",url:"attendanceDetailsPopup.html"});
 });
 
 /**
@@ -233,14 +233,17 @@ $("body >.processArea>.top>.closeBtn").click(function(){
 
 /**
  * 左侧区域显示隐藏事件
+ 修改为点击跳转到地图页面
  * 创建人:邵炜
  * 创建时间:2016年7月21日21:50:48
  */
+/*
 $(document).on("click",".goBack",function(){
     $("body>.leftArea").toggle("slow",function(){
         $("body>.centerArea").animate({paddingLeft:$(this).is(":hidden")?"0":"218px"});
     });
 });
+*/
 
 $(function(){
     /**
@@ -268,4 +271,53 @@ $("body>.centerArea>.head>.right>.mapTitle").click(function () {
 */
 $("body>.rightArea>div>div>.headTop>.userName").click(function () {
     $(".peopleSelect").toggle();
+});
+
+/**
+ * 项目资料 点击打开弹出框
+ */
+$(".rightArea  .projectRecords").click(function () {
+    $.layer({ title: "项目资料", url: "projectInfoPopup.html" });
+});
+
+/**
+* 项目资料  新增按钮事件
+*/
+$(document).on("click", ".projectInfoPopup  .selectWhereRows>.selectBtn>.add", function () {
+    $.fromLayer({
+        title: '新增',
+        list: [
+            { name: "资料名称", Attributes: "fileName", value: "" },
+            { name: "文件类型", Attributes: "fileType", type:"select", selectOption: [{ "text": "视频", "value": "0" }, { "text": "图片", "value": "1" }] },
+            { name: "文件大小", Attributes: "size" },
+            { name: "创建时间", Attributes: "time", class: "projectRecordsDatetimepicker" }
+        ],
+        saveCallBack: function (obj, closeFunc) {
+            $.each(obj, function (index, value) {
+                alert(index + ":" + value);
+                closeFunc();
+            });
+        },
+        cancelCallBack: function (closeFunc) {
+            alert("关闭按钮!");
+            closeFunc();
+        },
+        loadCallBack: function (closeFunc) {
+            $('.projectRecordsDatetimepicker').datetimepicker({
+                lang: "ch",           //语言选择中文
+                format:"Y-m-d",      //格式化日期
+                timepicker:false,     //关闭时间选项
+                todayButton:false    //关闭选择今天按钮
+            });
+        }
+    });
+
+
+});
+
+/**
+ * 扣分记录 点击打开弹出框
+ */
+$(".rightArea  .markingRecords").click(function () {
+    $.layer({ title: "扣分记录", url: "markingRecordsPopup.html" });
 });

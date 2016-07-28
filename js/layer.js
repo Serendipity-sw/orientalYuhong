@@ -54,7 +54,7 @@ $.extend({
         var obj={
             callback:data.callback, //回调函数
             title:data.title,  //标题
-            list: data.list, //数组对象
+            list: data.list, //数组对象    type: data.type, //input 类似（默认 input ，支持select）selectOption: data.selectOption,//select的值，如果 type=select，则需要传递 selectOption: [{ "text": "视频", "value": "0" }, { "text": "图片", "value": "1" }]
             saveCallBack: data.saveCallBack, //保存按钮回调事件
             cancelCallBack: data.cancelCallBack ,//取消按钮回调事件
             loadCallBack: data.loadCallBack //生成表单后执行的方法
@@ -66,8 +66,18 @@ $.extend({
             if (value.class != undefined) {
                 value_class=value.class;
             }
-            rows += '<div class="rows"><span>' + value.name + ':</span><input type="txt"  class="' + value_class + '" name="' + value.Attributes + '" placeholder="' + value.name + '"></div>';
-        });
+            if (value.type == "select" && value.selectOption!= undefined ) {
+                rows += '<div class="rows"><span>' + value.name + ':</span><select class="' + value_class + '" name="' + value.Attributes + '" > ';
+                
+                $.each(value.selectOption, function (index, value) {
+                    rows += '<option value ="' + value.value + '">' + value.text + '</option>';
+                });
+                rows += '</select></div> ';
+            }
+            else {
+                rows += '<div class="rows"><span>' + value.name + ':</span><input type="txt"  class="' + value_class + '" name="' + value.Attributes + '" placeholder="' + value.name + '"></div>';
+            }
+         });
 
         //默认居中
         var layer = $('<div style="overflow: hidden; position: fixed; top: 50%; left: 50%; box-sizing: border-box; padding: 0px; margin: -176px 0px 0px -348px; z-index: 106;"> <div style="min-width: 300px;background-color: white;float: left;position: relative;padding: 54px 25px 26px 25px;box-sizing: border-box;"></div> <a href="javascript:void(0);" style="background: url(../images/closeWhite.png) no-repeat 50% red;display: block;float: left;width: 25px;overflow: hidden;height: 43px;box-sizing: border-box;"></a> </div>');
