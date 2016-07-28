@@ -8,38 +8,55 @@
         <div class="right">
 
             <table class="selectTableRows">
-                <tr>
-                    <th>扣分时间</th>
-                    <th>扣分项</th>
-                    <th>扣分数</th>
+                <thead>
+                    <tr>
+                        <th>扣分时间</th>
+                        <th>扣分项</th>
+                        <th>扣分数</th>
 
-                </tr>
-                <tr>
-                    <td>2015/06/10</td>
-                    <td>吊装作业区域，设置有效警示措施</td>
-                    <td>1</td>
-                </tr>
-                <tr>
-                    <td>2015/06/10</td>
-                    <td>吊装作业区域，设置有效警示措施</td>
-                    <td>1</td>
-                </tr>
-                <tr>
-                    <td>2015/06/10</td>
-                    <td>吊装作业区域，设置有效警示措施</td>
-                    <td>1</td>
-                </tr>
-                <tr>
-                    <td>2015/06/10</td>
-                    <td>吊装作业区域，设置有效警示措施</td>
-                    <td>1</td>
-                </tr>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2015/06/10</td>
+                        <td>吊装作业区域，设置有效警示措施</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>2015/06/10</td>
+                        <td>吊装作业区域，设置有效警示措施</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>2015/06/10</td>
+                        <td>吊装作业区域，设置有效警示措施</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>2015/06/10</td>
+                        <td>吊装作业区域，设置有效警示措施</td>
+                        <td>1</td>
+                    </tr>
+                </tbody>
             </table>
 
             <div class="markingScore">
                 <span>总分数：</span>
                 <span class="score">79</span>
             </div>
+            <div class="clearfix"></div>
+
+            <div class="M-box1" style="float: right; margin: 2px 5px 10px 0;"></div>
         </div>
     </div>
 </div>
+<script>
+    /**
+       * 分页控件脚本事件
+       */
+    $('.M-box1').pagination({
+        totalData: 100,
+        showData: 5,
+        coping: true
+    });
+</script>

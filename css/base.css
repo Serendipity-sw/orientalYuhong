@@ -140,41 +140,69 @@ ul.selectPopupCommon li:first-child:after {
 }
 .popupCommon .right{
 }
-.popupCommon .right .selectWhereRows{
-}
+.popupCommon .right .selectWhereRows{margin: 10px 0px;}
+    .popupCommon .right table.selectTableRows {
+    width: 100%;
+    margin-bottom: 20px;
+    }
 .popupCommon .right .selectWhereRows .filterRows{float: left;}
 .popupCommon .right .selectWhereRows .filterRows .filter{float: left;margin-right: 10px;}
 .popupCommon .right .selectWhereRows .filterRows .filter .title{font-size: 15px;letter-spacing: 1px;overflow: hidden;padding: 0;margin: 0;color: #a9a9a9;box-sizing: border-box;}
 .popupCommon .right .selectWhereRows .filterRows .filter .inputFilter{margin-left: 7px;box-sizing: border-box;height: 34px;overflow: hidden;padding-left: 5px;border: 1px solid #d0d0d0;width: 155px;color: #444;}
 .popupCommon .right .selectWhereRows .filterRows .filter .selectFilter{margin-left: 7px;box-sizing: border-box;height: 34px;overflow: hidden;padding-left: 5px;border: 1px solid #d0d0d0;width: 155px;font-size: 14px;color: #444;}
 
-.popupCommon   .selectBtn{float: left;margin-left: 20px;}
-.popupCommon   .selectBtn .select,.popupCommon   .selectBtn .add{height: 33px;display: block;overflow: hidden;box-sizing: border-box;margin: 0 10px;float: left;padding: 0 20px;background: #65d3de;line-height: 33px;color: white;font-size: 13px;letter-spacing: 6px;cursor: pointer;width: 80px;}
-.popupCommon   .selectBtn .reset{height: 33px;display: block;overflow: hidden;box-sizing: border-box;margin: 0 10px;float: left;padding: 0 20px;background: #999;line-height: 33px;color: white;font-size: 13px;letter-spacing: 6px;cursor: pointer;width: 80px;}
-.popupCommon   .selectBtn .delete{
-    height: 33px;display: block;overflow: hidden;box-sizing: border-box;margin: 0 10px;float: left;padding: 0 20px;background: red;line-height: 33px;color: white;font-size: 13px;letter-spacing: 6px;cursor: pointer;width: 80px;
+.popupCommon  .selectWhereRows>.selectBtn{text-align: center;float: left;}
+.popupCommon  .selectWhereRows>.selectBtn .select,
+.popupCommon   .selectWhereRows>.selectBtn .add{
+    height: 33px;display: inline-block;overflow: hidden;box-sizing: border-box;margin: 0 10px;float: left;background: #65d3de;line-height: 33px;color: white;font-size: 13px;letter-spacing: 6px;cursor: pointer;width: 80px;}
+.popupCommon   .selectWhereRows>.selectBtn .reset{
+    height: 33px;display: inline-block;overflow: hidden;box-sizing: border-box;margin: 0 10px;float: left;background: #999;line-height: 33px;color: white;font-size: 13px;letter-spacing: 6px;cursor: pointer;width: 80px;}
+.popupCommon   .selectWhereRows>.selectBtn .delete{
+    height: 33px;display: inline-block;overflow: hidden;box-sizing: border-box;margin: 0 10px;float: left;background: red;line-height: 33px;color: white;font-size: 13px;letter-spacing: 6px;cursor: pointer;width: 80px;
 }
-.popupCommon  .edit{height: 33px;display: block;overflow: hidden;box-sizing: border-box;margin: 0 10px;float: left;padding: 0 20px;background: #65d3de;line-height: 33px;color: white;font-size: 13px;letter-spacing: 6px;cursor: pointer;width: 80px;}
+.popupCommon   .selectWhereRows>.selectBtn .edit{
+    height: 33px;display: inline-block;overflow: hidden;box-sizing: border-box;margin: 0 10px;float: left;background: #65d3de;line-height: 33px;color: white;font-size: 13px;letter-spacing: 6px;cursor: pointer;width: 80px;}
 
+
+/* icon btn*/
+    .popupCommon .selectBtn  .iconBtn{
+    display: inline-block;
+    margin-left: 10px;
+    }
+    .popupCommon .selectBtn .iconBtn_preview {
+        background:url(../images/commonPopupOpera.png) no-repeat 0px 0px;height:15px;padding-left:25px;
+    }
+    .popupCommon .selectBtn .iconBtn_download {
+        background:url(../images/commonPopupOpera.png) no-repeat 0px -15px;height:15px;padding-left:19px;
+    }
+    .popupCommon .selectBtn .iconBtn_edit {
+        background:url(../images/commonPopupOpera.png) no-repeat 0px -30px;height:16px;padding-left:18px;
+    }
+    .popupCommon .selectBtn .iconBtn_view{
+       background:url(../images/commonPopupOpera.png) no-repeat 0px -46px;height:16px;padding-left:18px;
+    }
+    .popupCommon .selectBtn .iconBtn_delete {
+       background:url(../images/commonPopupOpera.png) no-repeat 0px -62px;height:16px;padding-left:18px;}
+    }
  .popupCommon .right table.selectTableRows {width: 99%;margin: 13px auto;border: 0;}
  .popupCommon .right table.selectTableRows, 
  .popupCommon .right table.selectTableRows th, 
  .popupCommon .right table.selectTableRows td {
     font-size: 0.95em;
     text-align: center;
-    padding: 7px;
+    padding: 10px 7px;
     border-collapse: collapse;
 } 
  .popupCommon .right table.selectTableRows th{
-     color: white;
-     background-color: #65d3de;
-
+     /* color: white; */
+     /* background-color: #65d3de; */
+     border-bottom: 1px solid #dcdcdc;
  }
  .popupCommon .right table.selectTableRows tr:nth-child(odd) {
-    background-color: #f3f3f3;
+    /* background-color: #f3f3f3; */
 }
-    .popupCommon .right table.selectTableRows tr:hover {
-     background-color: #f3f3f3;
+    .popupCommon .right table.selectTableRows  tbody tr:hover {
+    background-color: #f3f3f3;
     }
     .popupCommon .right table.selectTableRows tr td{}
 

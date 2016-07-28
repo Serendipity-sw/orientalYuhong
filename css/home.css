@@ -2283,6 +2283,7 @@ body >.processArea>div .dataListArea>.title{
 .markingRecordsPopup .markingScore {
     text-align: right;
     padding-right: 10px;
+    margin: 10px 0px;
 }
 .markingRecordsPopup .markingScore .score{
     color: red;

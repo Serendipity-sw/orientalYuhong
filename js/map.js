@@ -220,7 +220,7 @@ $(".categoryList>.categoryLaborData").click(function () {
     /**
          * 打分分配 点击明细按钮
          */
-    $(document).on("click", "table.selectTableRows td .select", function () {
+    $(document).on("click", "table.selectTableRows td .iconBtn_view", function () {
         $.layer_two({ title: "项目历史分配明细", url: "rateDistributionHistory.html" });
 
     });
@@ -254,5 +254,5 @@ $(".categoryList>.categoryLaborData").click(function () {
 
     /*模板维护点击弹出框*/
     $(".categoryList .qualityControlMaintain").click(function () {
-        alert('弹出框');
+        $.layer_two({ title: "模板维护", url: "templateMaintenancePopup.html" });
     });

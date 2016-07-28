@@ -1,0 +1,73 @@
+﻿body {
+}
+.templateMaintenancePopup .templateTableRows {
+    height:300px;
+}
+.templateMaintenancePopup .head {position: relative;margin-top: 20px;}
+    .templateMaintenancePopup .head .logoRow {
+    text-align: center;
+    }
+        .templateMaintenancePopup .head .logoRow img {
+        }
+    .templateMaintenancePopup .head .uploadRow {
+    text-align: right;
+    margin: 10px 0px;
+    }
+.templateMaintenancePopup  .head .uploadRow .upload{
+    height: 33px;
+    display: inline-block;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin: 0 10px;
+    /* float: left; */
+    padding: 0 20px;
+    background: red;
+    line-height: 33px;
+    color: white;
+    font-size: 13px;
+    letter-spacing: 6px;
+    cursor: pointer;
+    width: 80px;
+}
+.templateMaintenancePopup {
+}
+.templateMaintenancePopup .templateTable {width:100%;
+}
+.templateMaintenancePopup .table-bordered,.templateMaintenancePopup .table-bordered td{border: 1px solid #dcdcdc;border-collapse: collapse;}
+.templateMaintenancePopup .table-bordered .templateTd{padding: 5px;}
+
+.templateMaintenancePopup .row {
+     
+ }
+
+
+.templateMaintenancePopup .table-bordered-2,.templateMaintenancePopup .table-bordered-2 td {
+  
+}
+
+.templateMaintenancePopup .table-bordered-2 .first-title{
+    width: 50px;
+}
+.templateMaintenancePopup .table-bordered-2 .two-title{
+    width: 50px;
+}
+.templateMaintenancePopup .table-bordered-2 .scoreTable{
+    width: 60px;
+}
+.templateMaintenancePopup .templateTable .left {
+    }
+    .templateMaintenancePopup .templateTable .right {
+    }
+       .templateMaintenancePopup .templateTable .right table{width: 100%;}
+                     .templateMaintenancePopup .templateTable .right table .head td{}
+                        .templateMaintenancePopup .templateTable .right table .body{padding: 0px;}
+                            .templateMaintenancePopup .templateTable .right table .body td{;}
+              .templateMaintenancePopup .templateTable .right table td{
+    padding: 5px;
+}
+   .templateMaintenancePopup .text-center {
+        text-align:center;
+    }
+    .templateMaintenancePopup .text-left {
+        text-align:left;
+    }

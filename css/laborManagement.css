@@ -1,291 +1,50 @@
-body .layer{
-
-    overflow: hidden;
-
-    box-sizing: border-box;
-
-    padding: 0;
-
-    margin: 0;
-
-    display: block;
+.laborManagementPopup {
+    width:900px;
 }
-body .layer>.headBtn{
-
-    overflow: hidden;
-
-    display: block;
-
-    box-sizing: border-box;
-
-    padding: 0;
-
-    margin: 8px auto 0 auto;
-
-    width: 99%;
-}
-body .layer>.headBtn>a{
-
-    height: 33px;
-
-    display: block;
-
-    overflow: hidden;
-
-    box-sizing: border-box;
-
-    margin: 0 12px;
-
+    .laborManagementPopup .selectWhereRows {
+    margin: 20px 10px;
+    }
+        .laborManagementPopup .selectWhereRows .filterRows {
+    margin: 10px 10px;
+    }
+               .laborManagementPopup .selectWhereRows .selectBtn {
     float: left;
-
-    padding: 0 34px;
-
-    background: #65d3de;
-
-    line-height: 33px;
-
-    color: white;
-
-    font-size: 13px;
-
-    letter-spacing: 6px;
-
-    cursor: pointer;
-}
-body .layer>.headBtn>.select{
-
-    margin: 0;
-}
-body .layer>.headBtn>.add{
-
-}
-body .layer>.headBtn>.delete{
-
-    background: #fd6469;
-}
-body .layer>.content>.right>.selectWhere{
-
-    overflow: hidden;
-
-    box-sizing: border-box;
-
-    display: block;
-
-    margin: 10px auto 0 auto;
-
-    width: 99%;
-
-    padding: 0;
-}
-body .layer>.content>.right>.selectWhere>.head{
-
-    overflow: hidden;
-
-    padding: 0;
-
-    margin: 0;
-
-    box-sizing: border-box;
-
-    border-bottom: 1px solid #d0d0d0;
-}
-body .layer>.content>.right>.selectWhere>.head>.title{
-
-    margin: 7px 0 10px 20px;
-
-    display: block;
-
-    font-size: 15px;
-
-    letter-spacing: 1px;
-
-    color: black;
-
-    box-sizing: border-box;
-
-    padding: 0;
-
-    float: left;
-}
-body .layer>.content>.right>.selectWhere>.head>.downSelect{
-
-    float: right;
-
-    width: 39px;
-
-    border-left: 1px solid #7f7f7f;
-
-    height: 40px;
-
-    box-sizing: border-box;
-
-    padding: 0;
-
-    margin: 0;
-
-    overflow: hidden;
-
-    display: none;
-}
-body .layer>.content>.right>.selectWhere>.rows{
-
-    float: left;
-
-    margin: 21px 10px;
-
-    overflow: hidden;
-
-    padding: 0;
-
-    box-sizing: border-box;
-}
-body .layer>.content>.right>.selectWhere>.rows>.title{
-
-    font-size: 15px;
-
-    letter-spacing: 1px;
-
-    overflow: hidden;
-
-    padding: 0;
-
-    margin: 0;
-
-    color: #a9a9a9;
-
-    box-sizing: border-box;
-}
-body .layer>.content>.right>.selectWhere>.rows>input{
-
-    margin-left: 7px;
-
-    box-sizing: border-box;
-
-    height: 34px;
-
-    overflow: hidden;
-
-    padding-left: 5px;
-
-    border: 1px solid #d0d0d0;
-}
-body .layer>.content>.right>.selectWhere>.rows>.userName{
-
-}
-body .layer>.content>.right>.selectWhere>.rows>.idNumber{
-
-}
-body .layer>.content>.right>.selectWhere>.rows>.idNumber{
-
-}
-body .layer>.content>.right>.selectWhere>a{
-    height: 33px;
-    display: block;
-    overflow: hidden;
-    box-sizing: border-box;
-    margin: 0 10px;
-    float: left;
-    padding: 0 20px;
-    background: #65d3de;
-    line-height: 33px;
-    color: white;
-    font-size: 13px;
-    letter-spacing: 6px;
-    cursor: pointer;
-    margin-top: 21px;
-    width: 80px;
-}
-}
-body .layer>.content>.right>.selectWhere>.select{
-
-}
-body .layer>.content>.right>.selectWhere>.add{
-
-}
-body .layer>.content>.right>.selectWhere>.delete{
-
-    background-color: red;
-}
-body .layer>.content{
-
-    width: 99%;
-
-    margin: 10px auto 0 auto;
-
-    overflow: hidden;
-}
-body .layer>.content>.left{width: 24%;border: 1px solid #d0d0d0;overflow: hidden;box-sizing: border-box;margin: 0;padding: 0;/* height: 363px; */float: left;}
-body .layer>.content>.right{/*height: 363px;*/overflow: hidden;float: left;margin-left: 1%;width: 75%;border: 1px solid #d0d0d0;box-sizing: border-box;}
-body .layer>.content>.right>.head{
-
-    overflow: hidden;
-
-    padding: 0;
-
-    margin: 0 auto;
-
-    display: block;
-
-    box-sizing: border-box;
-
-    border-bottom: 1px solid #a9a9a9;
-
-    width: 98%;
-}
-body .layer>.content>.right>.head>.title{
-
-   margin: 10px 0 5px 0px;
-
-    display: block;
-
-    font-size: 16px;
-
-    letter-spacing: 1px;
-
-    color: #a9a9a9;
-
-    box-sizing: border-box;
-
-    padding: 0;
-
-    float: left;
-}
-.tree {color:#46CFB0;width:800px;margin: 1px auto;}
-.tree li,
-.tree li > a,
-.tree li > span {
+    }
+.laborManagementPopup>.content>.left{width: 24%;border: 1px solid #d0d0d0;overflow: hidden;box-sizing: border-box;margin: 0;padding: 0;/* height: 363px; */float: left;}
+.laborManagementPopup>.content>.right{width: 363px;overflow: hidden;float: left;margin-left: 1%;width: 75%;border: 1px solid #d0d0d0;box-sizing: border-box;}
+
+.laborManagementPopup .tree {color:#46CFB0;width:800px;margin: 1px auto;}
+.laborManagementPopup .tree li,
+.laborManagementPopup .tree li > a,
+.laborManagementPopup .tree li > span {
     padding: 4pt;
     border-radius: 4px;
 }
 
-.tree li a {
+.laborManagementPopup .tree li a {
     color:#46CFB0;
     text-decoration: none;
     line-height: 20pt;
     border-radius: 4px;
 }
 
-.tree li a:hover {
+.laborManagementPopup .tree li a:hover {
     background-color: #34BC9D;
     color: #fff;
 }
 
-.active {
+.laborManagementPopup .tree .active {
     background-color: #34495E;
     color: white;
 }
 
-.active a {
+.laborManagementPopup .tree .active a {
     color: #fff;
 }
 
-.tree li a.active:hover {
+.laborManagementPopup .tree li a.active:hover {
     background-color: #34BC9D;
 }
-
-
-
-
 ul.ztree {margin: 0px;width: 100%;height: 460px;overflow-y:scroll;overflow-x:auto;}
 ul.log {border: 1px solid #617775;background: #f0f6e4;width:300px;height:170px;overflow: hidden;}
 ul.log.small {height:45px;}
