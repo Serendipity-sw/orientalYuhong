@@ -101,7 +101,7 @@ $('.M-box1').pagination({
  * 创建时间:2016年7月14日21:06:29
  */
 $('.processArea [data-src]:not(ul)').click(function(){
-    var titleClick=$(this);
+    var titleClick = $(this);
     $('.processArea ul[data-src]:not([data-src="'+titleClick.attr("data-src")+'"])').hide();
     $('.processArea ul[data-src="'+titleClick.attr("data-src")+'"]').toggle();
 });
@@ -203,8 +203,13 @@ $(document).on("click", ".layer .content>.selectWhere>.addBtn", function () {
  * 创建时间:2016年7月17日22:49:24
  */
 $(document).on("click", "body>.centerArea>.processArea>.progressRows>.processArea", function () {
-    $(this).parent().parent().find(".progressRows").removeClass("select");
+    //当前部位 赋值
+    var parent = $(this).closest('.progressRows').find('a').first().html();
+    $(".processSelectTitle").html(parent);
+
+    $("body>.centerArea>.processArea").find(".progressRows").removeClass("select");
     $(this).parent().addClass("select");
+
     $("body").append(mark);
     $("body>.processArea").slideToggle("slow");
     $('.dateTime').datetimepicker({
@@ -220,7 +225,7 @@ $(document).on("click", "body>.centerArea>.processArea>.progressRows>.processAre
  */
 $("body >.processArea>.top>.closeBtn").click(function(){
     $("body>.processArea").slideToggle("slow", function () {
-        $(this).parent().parent().find(".progressRows").removeClass("select");
+        // $(this).closest(".progressRows").removeClass("select");
         mark.remove();
 
     });
@@ -248,4 +253,19 @@ $(function(){
             width:"90%"
         },2000);
     },1000);
+});
+
+/*
+2016-07-27
+城市下拉框切换
+*/
+$("body>.centerArea>.head>.right>.mapTitle").click(function () {
+    $(".citySelect").toggle();
+});
+/*
+2016-07-27
+用户下拉框切换
+*/
+$("body>.rightArea>div>div>.headTop>.userName").click(function () {
+    $(".peopleSelect").toggle();
 });

@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../css/attendanceDetails.css">
     <link rel="stylesheet" href="../css/pagination.css">
     <link rel="stylesheet" href="../css/jquery.datetimepicker.css">
+    <link href="../css/Font-Awesome/css/font-awesome.min.css" rel="stylesheet" />
     <script src="../js/jquery-2.1.0.min.js"></script>
     <script src="../js/base.js"></script>
     <script src="../js/layer.js"></script>
@@ -37,7 +38,7 @@
         <!--搜索区域-->
         <!--项目列表-->
         <ul class="projectList">
-            <li class="rows">
+            <li class="rows select">
                 <div class="projectEndIcon"></div>
                 <span class="endProject">西二旗领袖硅谷12号楼2单元202</span>
             </li>
@@ -70,12 +71,17 @@
             <div class="left">
                 <img src="../images/goBack.png" alt="" class="goBack">
                 <span class="pathTitle">西二旗领袖硅谷12号1单元202</span>
+                <span class="processTitle">当前部位：<span class="processSelectTitle">全部</span></span>
             </div>
             <!--头部左区域-->
             <!--头部右区域-->
             <div class="right">
                 <img src="../images/positionIcon.png" alt="" class="mapArea">
                 <span class="mapTitle">卧牛山</span>
+                <ul class="citySelect selectPopupCommon">
+                    <li><div class="selectIcon"><img src="../images/location.png" alt="" /></div> 卧牛山</li>
+                    <li><div class="selectIcon"><img src="../images/location.png" alt="" /></div> 东方雨虹</li>
+                </ul>
             </div>
             <!--头部右区域-->
         </div>
@@ -657,6 +663,10 @@
         <div class="headTop">
             <img src="../images/redFlag.png" alt="" class="userPhoto">
             <span class="userName">Hi,Simple</span>
+            <ul class="peopleSelect selectPopupCommon">
+                <li><div class="selectIcon"><img src="../images/tuichu.png" alt="" /></div> 退出</li>
+            </ul>
+
             <div class="shoppingCart">
                 <div></div>
                 <span class="number">9</span>
@@ -672,11 +682,10 @@
             <div class="startState">
                 <span class="state">开工中</span>
             </div>
-            <ul class="showDilog">
-                <li class="rows">完工</li>
-                <li class="rows">完工</li>
-                <li class="rows">完工</li>
-                <li class="rows">完工</li>
+            <ul class="showDilog selectPopupCommon">
+                <li><div class="selectIcon"><img src="../images/shigong.png" alt="" /></div> 施工</li>
+                <li><div class="selectIcon"><img src="../images/zanting.png" alt="" /></div> 暂停</li>
+                <li><div class="selectIcon"><img src="../images/wangong.png" alt="" /></div> 完工</li>
             </ul>
             <div class="rows"><span class="title">项目名称:</span><span class="value">西二旗领秀硅谷</span></div>
             <div class="rows"><span class="title">项目经理名称:</span><span class="value">刘晓</span></div>

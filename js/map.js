@@ -151,7 +151,7 @@ $("body>.wordDescription>.areaShow").click(function () {
 });
 /*
 2016-07-27
-城市下拉框切换
+用户下拉框切换
 */
 $("body>.wordDescription>.userArea").click(function () {
     $(".peopleSelect").toggle();
