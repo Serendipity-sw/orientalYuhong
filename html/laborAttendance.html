@@ -1,64 +1,65 @@
+<!--劳务考勤-->
+<div class="laborAttendance popupCommon">
 
-<div class="layer">
     <div class="content">
-        <div class="head"><span class="title">劳务考勤(北京)</span></div>
-        <div class="selectWhere">
-            <span class="title">施工队</span>
-            <input type="text">
-            <a href="javascript:void(0);" class="selectBtn">查询</a>
-            <a href="javascript:void(0);" class="addBtn">新增</a>
+        <div class="left">
+
         </div>
-        <table class="table4_3">
-            <tr>
-                <th>时间</th><th>施工队</th><th>出勤数</th><th class="">操作</th>
-            </tr>
-            <tr>
-                <td>2015/12/22</td><td>北京摸摸施工队</td><td>10</td>
-                <td>
-                    <a href="javascript:void(0);" class="saveBtn">保存</a>
-                    <a href="javascript:void(0);" class="deleteBtn">删除</a>
-                </td>
-            </tr>
-            <tr>
-                <td>2015/12/22</td>
-                <td>北京摸摸施工队</td>
-                <td>10</td>
-                <td>
-                    <a href="javascript:void(0);" class="saveBtn">保存</a>
-                    <a href="javascript:void(0);" class="deleteBtn">删除</a>
-                </td>
-            </tr>
-            <tr>
-                <td>2015/12/22</td>
-                <td>北京摸摸施工队</td>
-                <td>10</td>
-                <td>
-                    <a href="javascript:void(0);" class="saveBtn">保存</a>
-                    <a href="javascript:void(0);" class="deleteBtn">删除</a>
-                </td>
-            </tr>
-            <tr>
-                <td>2015/12/22</td>
-                <td>北京摸摸施工队</td>
-                <td>10</td>
-                <td>
-                    <a href="javascript:void(0);" class="saveBtn">保存</a>
-                    <a href="javascript:void(0);" class="deleteBtn">删除</a>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="mark"></div>
-    <div class="addOrUpdate">
-        <div class="head">
-            <span class="title">新增</span><a href="javascript:void(0);" class="close"></a>
-        </div>
-        <div class="rows"><span class="title">表单名称:</span><input type="text"></div>
-        <div class="rows"><span class="title">表单名称:</span><input type="text"></div>
-        <div class="rows"><span class="title">表单名称:</span><input type="text"></div>
-        <div class="bottom">
-            <a href="javascript:void(0);" class="sureBtn">确定</a>
-            <a href="javascript:void(0);" class="cancel">取消</a>
+        <div class="right">
+            <div class="selectWhereRows">
+                <div class="filterRows">
+                    <div class="filter">
+                        <span class="title">施工队</span>
+                        <input placeholder="施工队" type="text" class="inputFilter">
+                    </div>
+                </div>
+                <div class="selectBtn">
+                    <a href="javascript:void(0);" class="select">查询</a>
+                    <a href="javascript:void(0);" class="add">新增</a>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <table class="selectTableRows">
+                <tr>
+                    <th>时间</th>
+                    <th>施工队</th>
+                    <th>出勤数</th>
+                    <th class="operatingTd">操作</th>
+                </tr>
+                <tr>
+                    <td>2015/12/22</td>
+                    <td>18012728897</td>
+                    <td>10</td>
+                    <td class="operatingTd">
+                        <div class="selectBtn">
+                            <a href="javascript:void(0);" class="edit">编辑</a>
+                            <a href="javascript:void(0);" class="select">明细</a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2015/12/22</td>
+                    <td>18012728897</td>
+                    <td>10</td>
+                    <td class="operatingTd">
+                        <div class="selectBtn">
+                            <a href="javascript:void(0);" class="edit">编辑</a>
+                            <a href="javascript:void(0);" class="select">明细</a>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <div class="M-box1" style="float: right; margin: 2px 5px 10px 0;"></div>
         </div>
     </div>
 </div>
+<script>
+    /**
+       * 分页控件脚本事件
+       */
+    $('.M-box1').pagination({
+        totalData: 100,
+        showData: 5,
+        coping: true
+    });
+</script>

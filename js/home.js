@@ -169,7 +169,7 @@ $(document).on("click", "body>.centerArea>.sitePhoto>.flowChartArea>.photoStep>.
 /*
 新增考勤
 */
-$(document).on("click", ".layer .content>.selectWhere>.addBtn", function () {
+$(document).on("click", ".laborAttendance  .selectWhereRows>.selectBtn>.add", function () {
 
     $.fromLayer({
         title: '新增劳务考勤',
@@ -196,7 +196,6 @@ $(document).on("click", ".layer .content>.selectWhere>.addBtn", function () {
         }
     });
 });
-
 /**
  * 进度条弹框事件
  * 创建人:邵炜
