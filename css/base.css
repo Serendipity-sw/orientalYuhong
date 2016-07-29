@@ -58,9 +58,31 @@ body .fromLayerArea>.rows{
 
     margin: 20px auto 0 auto;
 }
-body .fromLayerArea>.rows>span{float: left;/* margin-left: 46px; */height: 38px;line-height: 38px;font-size: 13px;color: #6f6c6c;overflow: hidden;box-sizing: border-box;text-align: right;width: 100px;}
-body .fromLayerArea>.rows>input{height: 30px;box-sizing: border-box;overflow: hidden;padding: 0;width: 250px;text-align: left;border: 1px solid #a5a3a3;color: #828282;padding-left: 9px;margin: 4px 43px 0 13px;}
-body .fromLayerArea>.rows>select{height: 30px;box-sizing: border-box;overflow: hidden;padding: 0;width: 250px;text-align: left;border: 1px solid #a5a3a3;color: #828282;padding-left: 9px;margin: 4px 43px 0 13px;}
+body .fromLayerArea>.rows>span{float: left;/* margin-left: 46px; */height: 38px;line-height: 38px;font-size: 13px;color: #6f6c6c;overflow: hidden;box-sizing: border-box;text-align: right;width: 25%;}
+body .fromLayerArea>.rows>.inputGroup {float: left;width: 60%;padding-left: 15px;padding-top: 4px;}
+body .fromLayerArea>.rows>.inputGroup>input{height: 30px;box-sizing: border-box;overflow: hidden;padding: 0;width: 100%;text-align: left;border: 1px solid #a5a3a3;color: #828282;padding-left: 9px;}
+body .fromLayerArea>.rows>.inputGroup>select{height: 30px;box-sizing: border-box;overflow: hidden;padding: 0;width: 100%;text-align: left;border: 1px solid #a5a3a3;color: #828282;padding-left: 9px;}
+
+body .fromLayerArea > .rows > .inputGroup .error {
+   color: red;
+}
+       body .fromLayerArea > .rows > .inputGroup .error:before {
+           content: "\f00d";
+           display: inline-block;
+           font: normal normal normal 14px/1 FontAwesome;
+           color: red;
+           padding-right: 3px;
+    }
+     body .fromLayerArea > .rows > .inputGroup .success {
+    color: #390;
+    }
+      body .fromLayerArea > .rows > .inputGroup .success:before {
+           content: "\f00c";
+           display: inline-block;
+           font: normal normal normal 14px/1 FontAwesome;
+           color: #390;
+           padding-right: 3px;
+    }
 body .fromLayerArea>.bottom{
 
     padding: 0;

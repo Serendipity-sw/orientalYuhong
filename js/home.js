@@ -64,6 +64,16 @@ $(".rightArea .foldExpansion").click(function(){
  */
 $(".moreDown").click(function () {
     $(".progressRows:gt(4)").toggle();
+
+    if ($(this).hasClass("progressDown")) {
+        $(this).removeClass("progressDown");
+        $(this).addClass("progressUp");
+    }
+    else {
+        $(this).removeClass("progressUp");
+        $(this).addClass("progressDown");
+    }
+    
 });
 
 /**
@@ -176,12 +186,16 @@ $(document).on("click", ".laborAttendance  .selectWhereRows>.selectBtn>.add", fu
         list: [
             { name: "时间", Attributes: "startTime", class: "datetimepicker", value: "" },
             { name: "施工队", Attributes: "title" },
-             { name: "出勤数", Attributes: "number" }
+            { name: "出勤数", Attributes: "number" }
         ],
         saveCallBack: function (obj, closeFunc) {
+
+            $("input[name='title']").after("<span class='success'>验证通过！</span>");
+            $("input[name='startTime']").after("<span class='error'>不能为空！</span>");
+
             $.each(obj, function (index, value) {
                 alert(index + ":" + value);
-                closeFunc();
+                //closeFunc();
             });
         },
         cancelCallBack: function (closeFunc) {
@@ -249,17 +263,24 @@ $("body >.processArea>.top>.closeBtn").click(function(){
 
 /**
  * 左侧区域显示隐藏事件
- 修改为点击跳转到地图页面
- * 创建人:邵炜
- * 创建时间:2016年7月21日21:50:48
  */
-/*
-$(document).on("click",".goBack",function(){
-    $("body>.leftArea").toggle("slow",function(){
-        $("body>.centerArea").animate({paddingLeft:$(this).is(":hidden")?"0":"218px"});
+
+$(document).on("click", ".leftAreaToggleIcon", function () {
+
+    $("body>.leftArea").toggle("slow", function () {
+        $("body>.centerArea").animate({ paddingLeft: $(this).is(":hidden") ? "0" : "225px" });
     });
+    if ($(this).hasClass("leftAreaToggleIconRight")) {
+        $(this).removeClass("leftAreaToggleIconRight");
+        $(this).addClass("leftAreaToggleIconLeft");
+    }
+    else {
+        $(this).removeClass("leftAreaToggleIconLeft");
+        $(this).addClass("leftAreaToggleIconRight");
+    }
+
 });
-*/
+
 
 $(function(){
     /**

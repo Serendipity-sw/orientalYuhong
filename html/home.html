@@ -18,6 +18,9 @@
     <script src="../js/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="../js/jquery.pagination.min.js"></script>
     <script src="../js/jquery.datetimepicker.full.min.js"></script>
+
+  
+
     <script>
         $.datetimepicker.setLocale('ch');//设置中文
     </script>
@@ -72,6 +75,9 @@
         <div class="head">
             <!--头部左区域-->
             <div class="left">
+                <!-- 左侧菜单开关按钮 -->
+                <div class="leftAreaToggleIcon leftAreaToggleIconRight"></div>
+
                 <a href="../html/map.html"><img src="../images/goBack.png" alt="" class="goBack"></a>
                 <span class="pathTitle">西二旗领袖硅谷12号1单元202</span>
                 <span class="processTitle">（当前部位：<span class="processSelectTitle">全部</span>）</span>
@@ -212,7 +218,9 @@
                 <span class="processing">进行中:<span class="number">12</span></span>
                 <span class="notStarted">未开工:<span class="number">3</span></span>
             </div>
-            <img src="../images/moreDown.png" alt="" class="moreDown">
+            <div class="moreDown progressDown">
+                <div></div>
+            </div>  
         </div>
         <!--进度显示区域-->
         <!--项目信息切换-->
@@ -765,48 +773,48 @@
     <!--右部区域-->
 
     <!--进度条弹框区域-->
-<div class="processArea">
-    <div class="top"><span class="title">平展面</span><a href="javascript:void(0);" class="closeBtn"></a></div>
-    <div>
-        <div class="searchArea">
-            <span class="title">目前进度</span>
-            <span class="number">/100</span>
-            <input type="text" class="process">
-            <input type="text" class="dateTime" >
-            <a href="javascript:void(0);" class="saveBtn">保存</a>
-        </div>
-        <div class="dataListArea">
-            <span class="title">平展面进度明细</span>
-            <table class="table4_5">
-                <tr>
-                    <th>SAMPLE</th>
-                    <th>SAMPLE</th>
-                    <th>SAMPLE</th>
-                </tr>
-                <tr>
-                    <td>SAMPLE</td>
-                    <td>SAMPLE</td>
-                    <td>SAMPLE</td>
-                </tr>
-                <tr>
-                    <td>SAMPLE</td>
-                    <td>SAMPLE</td>
-                    <td>SAMPLE</td>
-                </tr>
-                <tr>
-                    <td>SAMPLE</td>
-                    <td>SAMPLE</td>
-                    <td>SAMPLE</td>
-                </tr>
-                <tr>
-                    <td>SAMPLE</td>
-                    <td>SAMPLE</td>
-                    <td>SAMPLE</td>
-                </tr>
-            </table>
+    <div class="processArea">
+        <div class="top"><span class="title">平展面</span><a href="javascript:void(0);" class="closeBtn"></a></div>
+        <div>
+            <div class="searchArea">
+                <span class="title">目前进度</span>
+                <span class="number">/100</span>
+                <input type="text" class="process">
+                <input type="text" class="dateTime" >
+                <a href="javascript:void(0);" class="saveBtn">保存</a>
+            </div>
+            <div class="dataListArea">
+                <span class="title">平展面进度明细</span>
+                <table class="table4_5">
+                    <tr>
+                        <th>SAMPLE</th>
+                        <th>SAMPLE</th>
+                        <th>SAMPLE</th>
+                    </tr>
+                    <tr>
+                        <td>SAMPLE</td>
+                        <td>SAMPLE</td>
+                        <td>SAMPLE</td>
+                    </tr>
+                    <tr>
+                        <td>SAMPLE</td>
+                        <td>SAMPLE</td>
+                        <td>SAMPLE</td>
+                    </tr>
+                    <tr>
+                        <td>SAMPLE</td>
+                        <td>SAMPLE</td>
+                        <td>SAMPLE</td>
+                    </tr>
+                    <tr>
+                        <td>SAMPLE</td>
+                        <td>SAMPLE</td>
+                        <td>SAMPLE</td>
+                    </tr>
+                </table>
+            </div>
         </div>
     </div>
-</div>
     <!--进度条弹框区域-->
 
 

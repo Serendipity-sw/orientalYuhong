@@ -1,28 +1,17 @@
 
 /*左部区域*/
 body>.leftArea{
-
-    width: 218px;
-
-    box-sizing: border-box;
-
-    overflow: hidden;
-
-    margin-bottom: 1px;
-
-    position: fixed;
-
-    border-right: 1px solid #e9e9e9;
-
-    background-color: white;
-
-    box-shadow: 7px 9px 7px #e4e3e3;
-
-    bottom: 0;
-
-    top: 0;
-
-    z-index: 50;
+width: 218px;
+box-sizing: border-box;
+overflow: hidden;
+margin-bottom: 1px;
+position: fixed;
+border-right: 1px solid #e9e9e9;
+background-color: white;
+box-shadow: 7px 0px 7px #e4e3e3;
+bottom: 0;
+top: 0;
+z-index: 50;
 }
 body > .leftArea, body > .leftArea ul, body > .leftArea li {
     overflow:visible;
@@ -261,34 +250,23 @@ body>.leftArea>.bottom>span{
 
 /*中间区域*/
 body>.centerArea{
-
-    padding: 0 301px 0 225px;
-
-    background: -ms-linear-gradient(left, #eaeaea,  white);
-
-    overflow: hidden;
-
-    box-sizing: border-box;
-
-    background: -webkit-gradient(linear, 0% 0%, 20% 0%,from(#eaeaea), to(white));
+border-top: 2px solid red;
+padding: 0 301px 0 225px;
+background: -ms-linear-gradient(left, #eaeaea,  white);
+overflow: hidden;
+box-sizing: border-box;
+/* background: -webkit-gradient(linear, 0% 0%, 20% 0%,from(#eaeaea), to(white)); */
 }
 
 /*头部区域*/
 body>.centerArea>.head{
-
-    /* overflow: hidden; */
-
-    height: 65px;
-
-    padding-top: 27px;
-
-    box-sizing: border-box;
-
-    width: 98%;
-
-    margin: 0 auto;
-
-    border-bottom: 3px solid #f7f7f7;
+/* overflow: hidden; */
+height: 62px;
+padding-top: 27px;
+box-sizing: border-box;
+width: 98%;
+margin: 0 auto;
+border-bottom: 3px solid #f7f7f7;
 }
 
 /*头部左区域*/
@@ -298,12 +276,19 @@ body>.centerArea>.head>.left{
 
     box-sizing: border-box;
 }
+    body > .centerArea > .head > .left > .leftAreaToggleIcon {
+    float: left;
+    position: relative;
+    margin-top: -5px;
+    }
+body>.centerArea>.head>.left>.leftAreaToggleIcon.leftAreaToggleIconLeft:before{content:"";content: url(../images/leftAreaClose.png);position: absolute;left: 0px;top: 8px;    cursor: pointer;}
+body>.centerArea>.head>.left>.leftAreaToggleIcon.leftAreaToggleIconLeft:after{content:"";border-right: 2px solid #f7f7f7;margin: 1px 15px;margin-left: 40px;height: 30px;display: inline-block;}
+body>.centerArea>.head>.left>.leftAreaToggleIcon.leftAreaToggleIconRight:after{content:"";border-right: 2px solid #f7f7f7;margin: 1px 15px;margin-left: 40px;height: 30px;display: inline-block;}
+body>.centerArea>.head>.left>.leftAreaToggleIcon.leftAreaToggleIconRight:before{ content:"";content: url(../images/leftAreaOpen.png);position: absolute;left: 0px; top: 8px;    cursor: pointer;
+}
 body>.centerArea>.head>.left .goBack{
-
     width: 13px;
-
     cursor: pointer;
-
     float: left;
 }
 body>.centerArea>.head>.left>.pathTitle{
@@ -700,17 +685,27 @@ body>.centerArea>.processArea>.gather>.notStarted{
 
 }
 body>.centerArea>.processArea>.moreDown{
-
-    display: block;
-
-    width: 29px;
-
-    height: 25px;
-
-    margin: 7px auto;
-
-    cursor: pointer;
+display: block;
+/* width: 29px; */
+height: 40px;
+/* margin: 7px auto; */
+cursor: pointer;
+text-align: center;
 }
+    body > .centerArea > .processArea > .moreDown.progressUp>div:after {
+            content: "\f106";
+            display: block;
+            font: normal normal normal 14px/1 FontAwesome;
+            font-size: 44px;
+            color: #d8d8d8;
+    }
+     body > .centerArea > .processArea > .moreDown.progressDown>div:after {
+          content: "\f107";
+          display: block;
+          font: normal normal normal 14px/1 FontAwesome;
+          font-size: 44px;
+          color: #d8d8d8;
+    }
 /*进度显示区域*/
 
 /*项目信息切换*/
@@ -1231,22 +1226,16 @@ body>.centerArea>.projectContent>.rows>.content>.photo>img:first-child{
 
 /*右部区域*/
 body>.rightArea{
-
-    width: 301px;
-
-    position: fixed;
-
-    right: 0;
-
-    background-color: #f6f6f6;
-
-    top: 0;
-
-    box-sizing: border-box;
+width: 301px;
+position: fixed;
+right: 0;
+background-color: #f6f6f6;
+top: 0;
+box-sizing: border-box;
 
     padding-bottom: 16px;
-
-    bottom: 0;
+bottom: 0;
+border-top: 2px solid red;
 }
 
 /*头部用户区域*/
@@ -1263,8 +1252,7 @@ body>.rightArea>div>div>.headTop{
     overflow: hidden;
 
     box-sizing: border-box;
-
-    height: 59px;
+height: 59px;
 }
 body>.rightArea>div>div>.headTop>.userPhoto{
 
@@ -2052,20 +2040,14 @@ body>.rightArea>div>div>.laborManagement .title{
 
 /*进度条弹出框区域*/
 body >.processArea{
-
-    position: fixed;
-
-    top: 0;
-
-    right: -393px;
-
-    z-index: 101;
-
-    background-color: white;
-
-    bottom: 0;
-
-    width: 393px;
+border-top: 2px solid red;
+position: fixed;
+top: 0;
+right: -393px;
+z-index: 101;
+background-color: white;
+bottom: 0;
+width: 393px;
 }
 body >.processArea>.top{
 
