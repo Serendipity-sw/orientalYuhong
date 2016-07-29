@@ -11,7 +11,7 @@ body>.leftArea{
 box-shadow: 7px 0px 7px #e4e3e3;
 bottom: 0;
 top: 0;
-z-index: 50;
+z-index: 101;
 }
 body > .leftArea, body > .leftArea ul, body > .leftArea li {
     overflow:visible;
