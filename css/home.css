@@ -250,7 +250,6 @@ body>.leftArea>.bottom>span{
 
 /*中间区域*/
 body>.centerArea{
-border-top: 2px solid red;
 padding: 0 301px 0 225px;
 background: -ms-linear-gradient(left, #eaeaea,  white);
 overflow: hidden;
@@ -270,6 +269,14 @@ body>.centerArea>.head{
 }
 
 /*头部左区域*/
+    body > .centerArea > .borderTopRed {
+    border-bottom: 2px solid red;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    margin-left: -15px;
+    z-index: 99;
+    }
 body>.centerArea>.head>.left{
 
     float: left;
@@ -1232,8 +1239,7 @@ body>.rightArea{
 background-color: #f6f6f6;
 top: 0;
 box-sizing: border-box;
-
-    padding-bottom: 16px;
+padding-bottom: 16px;
 bottom: 0;
 border-top: 2px solid red;
 }
