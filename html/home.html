@@ -19,16 +19,22 @@
     <script src="../js/jquery.pagination.min.js"></script>
     <script src="../js/jquery.datetimepicker.full.min.js"></script>
 
-  
-
+    <!--富文本-->
+    <script src="../js/ueditor1_4_3_3-utf8-jsp/utf8-jsp/ueditor.config.js"></script>
+    <script src="../js/ueditor1_4_3_3-utf8-jsp/utf8-jsp/ueditor.all.min.js"></script>
+    <!--图片浏览插件 -->
+    <link href="../js/Magnific-Popup-master/dist/magnific-popup.css" rel="stylesheet" />
+    <script src="../js/Magnific-Popup-master/dist/jquery.magnific-popup.min.js"></script>
     <script>
         $.datetimepicker.setLocale('ch');//设置中文
     </script>
 </head>
 <body>
     
+
     <!--左部区域-->
     <div class="leftArea">
+      
         <!--头部logo-->
         <img src="../images/logoIcon.png" alt="" class="logoIcon">
         <!--头部logo-->
@@ -72,6 +78,7 @@
     <!--中间区域-->
     <div class="centerArea">
         <div class="borderTopRed"></div>    
+     
         <!--头部区域-->
         <div class="head">
             <!--头部左区域-->
@@ -228,17 +235,16 @@
         <div class="projectInfoSwitch">
             <span class="projectInfo select" data-src="projectMaterial">项目信息</span>
             <span class="sitePhoto" data-src="sitePhoto">项目图片</span>
-            <span data-src="projectContract">项目合同</span>
             <span data-src="projectMaterials">项目物料</span>
-            <span data-src="projectCost">项目费用</span>
             <span data-src="visaRemittance">签证回款</span>
+            <span data-src="projectCost">项目费用</span>
         </div>
-        <!--项目信息切换-->
+        <!--项目费用切换-->
         <div class="projectInfo" data-src="projectCost" style="display: none">
             <!--项目费用-->
             <div class="rows">
                 <div class="head">
-                    <span class="projectCost">项目费用</span>
+                    <span class="projectPrice">项目费用</span>
                     <div class="right">
                         <img src="../images/update.png" alt="" class="update">
                         <div class="foldExpansion"></div>
@@ -246,74 +252,63 @@
                 </div>
                 <table class="table4_2">
                     <tr>
-                        <th>SAMPLE</th>
-                        <th>SAMPLE</th>
-                        <th>SAMPLE</th>
+                        <th>预算描述</th>
+                        <th>数量</th>
+                        <th>计量描述</th>
+                        <th>单价</th>
+                        <th>总价</th>
+                        <th>完工百分比</th>
+                        <th>可报销金额</th>
+                        <th>已报销金额</th>
+                        <th>剩余报销</th>
+                        <th>上次报销</th>
+                        <th>上次报销时间</th>
                     </tr>
                     <tr>
                         <td>SAMPLE</td>
                         <td>SAMPLE</td>
                         <td>SAMPLE</td>
+                        <td>SAMPLE</td>
+                        <td>SAMPLE</td>
+                        <td>SAMPLE</td>
+                        <td>SAMPLE</td>
+                        <td>SAMPLE</td>
+                        <td>SAMPLE</td>
+                        <td>SAMPLE</td>
+                        <td>SAMPLE</td>
                     </tr>
                     <tr>
                         <td>SAMPLE</td>
                         <td>SAMPLE</td>
                         <td>SAMPLE</td>
+                        <td>SAMPLE</td>
+                        <td>SAMPLE</td>
+                        <td>SAMPLE</td>
+                        <td>SAMPLE</td>
+                        <td>SAMPLE</td>
+                        <td>SAMPLE</td>
+                        <td>SAMPLE</td>
+                        <td>SAMPLE</td>
                     </tr>
                     <tr>
                         <td>SAMPLE</td>
                         <td>SAMPLE</td>
                         <td>SAMPLE</td>
-                    </tr>
-                    <tr>
+                        <td>SAMPLE</td>
+                        <td>SAMPLE</td>
+                        <td>SAMPLE</td>
+                        <td>SAMPLE</td>
+                        <td>SAMPLE</td>
                         <td>SAMPLE</td>
                         <td>SAMPLE</td>
                         <td>SAMPLE</td>
                     </tr>
                 </table>
+                <div class="M-box1" style="float: right; margin: 2px 5px 10px 0;"></div>
             </div>
             <!--项目费用-->
         </div>
-        <div class="projectInfo" data-src="projectContract" style="display: none">
-            <!--项目合同-->
-            <div class="rows">
-                <div class="head">
-                    <span class="projectContract">项目合同</span>
-                    <div class="right">
-                        <img src="../images/update.png" alt="" class="update">
-                        <div class="foldExpansion"></div>
-                    </div>
-                </div>
-                <table class="table4_2">
-                    <tr>
-                        <th>SAMPLE</th>
-                        <th>SAMPLE</th>
-                        <th>SAMPLE</th>
-                    </tr>
-                    <tr>
-                        <td>SAMPLE</td>
-                        <td>SAMPLE</td>
-                        <td>SAMPLE</td>
-                    </tr>
-                    <tr>
-                        <td>SAMPLE</td>
-                        <td>SAMPLE</td>
-                        <td>SAMPLE</td>
-                    </tr>
-                    <tr>
-                        <td>SAMPLE</td>
-                        <td>SAMPLE</td>
-                        <td>SAMPLE</td>
-                    </tr>
-                    <tr>
-                        <td>SAMPLE</td>
-                        <td>SAMPLE</td>
-                        <td>SAMPLE</td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-        <!--项目合同-->
+        <!--项目物料-->
         <div class="projectInfo" data-src="projectMaterials" style="display: none">
             <!--项目物料-->
             <div class="rows">
@@ -326,31 +321,57 @@
                 </div>
                 <table class="table4_2">
                     <tr>
-                        <th>SAMPLE</th>
-                        <th>SAMPLE</th>
-                        <th>SAMPLE</th>
+                        <th>物料号</th>
+                        <th>预算类型</th>
+                        <th>预算数量</th>
+                        <th>单位</th>
+                        <th>累计申请数</th>
+                        <th>可申请数量</th>
+                        <th>项目库存</th>
+                        <th>已消耗</th>
+                        <th>操作</th>
                     </tr>
                     <tr>
-                        <td>SAMPLE</td>
-                        <td>SAMPLE</td>
-                        <td>SAMPLE</td>
+                        <td>BCS231-40-B</td>
+                        <td>卷材</td>
+                        <td>290B</td>
+                        <td>公交</td>
+                        <td>896</td>
+                        <td>3000</td>
+                        <td>4000</td>
+                        <td>1029</td>
+                        <td>
+                            <a class="btn-green"><i class="fa fa-plus" aria-hidden="true"></i> 加入申请</a>
+                        </td>
                     </tr>
                     <tr>
-                        <td>SAMPLE</td>
-                        <td>SAMPLE</td>
-                        <td>SAMPLE</td>
+                        <td>BCS231-40-B</td>
+                        <td>卷材</td>
+                        <td>290B</td>
+                        <td>公交</td>
+                        <td>896</td>
+                        <td>3000</td>
+                        <td>4000</td>
+                        <td>1029</td>
+                        <td>
+                            <a class="btn-green"><i class="fa fa-plus" aria-hidden="true"></i> 加入申请</a>
+                        </td>
                     </tr>
                     <tr>
-                        <td>SAMPLE</td>
-                        <td>SAMPLE</td>
-                        <td>SAMPLE</td>
-                    </tr>
-                    <tr>
-                        <td>SAMPLE</td>
-                        <td>SAMPLE</td>
-                        <td>SAMPLE</td>
+                        <td>BCS231-40-B</td>
+                        <td>卷材</td>
+                        <td>290B</td>
+                        <td>公交</td>
+                        <td>896</td>
+                        <td>3000</td>
+                        <td>4000</td>
+                        <td>1029</td>
+                        <td>
+                            <a class="btn-green"><i class="fa fa-plus" aria-hidden="true"></i> 加入申请</a>
+                        </td>
                     </tr>
                 </table>
+                <div class="M-box1" style="float: right; margin: 2px 5px 10px 0;"></div>
             </div>
             <!--项目物料-->
             <!--项目物料-->
@@ -364,31 +385,57 @@
                 </div>
                 <table class="table4_2">
                     <tr>
-                        <th>SAMPLE</th>
-                        <th>SAMPLE</th>
-                        <th>SAMPLE</th>
+                        <th>物料号</th>
+                        <th>预算类型</th>
+                        <th>预算数量</th>
+                        <th>单位</th>
+                        <th>累计申请数</th>
+                        <th>可申请数量</th>
+                        <th>项目库存</th>
+                        <th>已消耗</th>
+                        <th>操作</th>
                     </tr>
                     <tr>
-                        <td>SAMPLE</td>
-                        <td>SAMPLE</td>
-                        <td>SAMPLE</td>
+                        <td>BCS231-40-B</td>
+                        <td>卷材</td>
+                        <td>290B</td>
+                        <td>公交</td>
+                        <td>896</td>
+                        <td>3000</td>
+                        <td>4000</td>
+                        <td>1029</td>
+                        <td>
+                            <a class="btn-green"><i class="fa fa-plus" aria-hidden="true"></i> 加入申请</a>
+                        </td>
                     </tr>
                     <tr>
-                        <td>SAMPLE</td>
-                        <td>SAMPLE</td>
-                        <td>SAMPLE</td>
+                        <td>BCS231-40-B</td>
+                        <td>卷材</td>
+                        <td>290B</td>
+                        <td>公交</td>
+                        <td>896</td>
+                        <td>3000</td>
+                        <td>4000</td>
+                        <td>1029</td>
+                        <td>
+                            <a class="btn-green"><i class="fa fa-plus" aria-hidden="true"></i> 加入申请</a>
+                        </td>
                     </tr>
                     <tr>
-                        <td>SAMPLE</td>
-                        <td>SAMPLE</td>
-                        <td>SAMPLE</td>
-                    </tr>
-                    <tr>
-                        <td>SAMPLE</td>
-                        <td>SAMPLE</td>
-                        <td>SAMPLE</td>
+                        <td>BCS231-40-B</td>
+                        <td>卷材</td>
+                        <td>290B</td>
+                        <td>公交</td>
+                        <td>896</td>
+                        <td>3000</td>
+                        <td>4000</td>
+                        <td>1029</td>
+                        <td>
+                            <a class="btn-green"><i class="fa fa-plus" aria-hidden="true"></i> 加入申请</a>
+                        </td>
                     </tr>
                 </table>
+                <div class="M-box1" style="float: right; margin: 2px 5px 10px 0;"></div>
             </div>
             <!--项目物料-->
         </div>
@@ -404,31 +451,37 @@
                 </div>
                 <table class="table4_2">
                     <tr>
-                        <th>SAMPLE</th>
-                        <th>SAMPLE</th>
-                        <th>SAMPLE</th>
+                        <th>施工方法</th>
+                        <th>预算工程量</th>
+                        <th>预算收入</th>
+                        <th>累计签证量</th>
+                        <th>累计回款金额</th>
+                        <th>合同单价</th>
+                        <th>签证产值</th>
+                        <th>状态</th>
                     </tr>
                     <tr>
                         <td>SAMPLE</td>
                         <td>SAMPLE</td>
                         <td>SAMPLE</td>
+                        <td>SAMPLE</td>
+                        <td>SAMPLE</td>
+                        <td>SAMPLE</td>
+                        <td>SAMPLE</td>
+                        <td>竣结</td>
                     </tr>
                     <tr>
                         <td>SAMPLE</td>
                         <td>SAMPLE</td>
                         <td>SAMPLE</td>
-                    </tr>
-                    <tr>
                         <td>SAMPLE</td>
                         <td>SAMPLE</td>
                         <td>SAMPLE</td>
-                    </tr>
-                    <tr>
                         <td>SAMPLE</td>
-                        <td>SAMPLE</td>
-                        <td>SAMPLE</td>
+                        <td>进结</td>
                     </tr>
                 </table>
+                <div class="M-box1" style="float: right; margin: 2px 5px 10px 0;"></div>
             </div>
             <!--签证回款-->
         </div>
@@ -437,45 +490,61 @@
             <!--项目材料-->
             <div class="rows">
                 <div class="head">
-                    <span class="projectMaterial">项目信息</span>
+                    <span class="projectMaterial">项目基本信息</span>
                     <div class="right">
-                        <img src="../images/update.png" alt="" class="update">
                         <div class="foldExpansion"></div>
                     </div>
                 </div>
-                <table class="table4_2">
-                    <tr>
-                        <th>SAMPLE</th>
-                        <th>SAMPLE</th>
-                        <th>SAMPLE</th>
-                    </tr>
-                    <tr>
-                        <td>SAMPLE</td>
-                        <td>SAMPLE</td>
-                        <td>SAMPLE</td>
-                    </tr>
-                    <tr>
-                        <td>SAMPLE</td>
-                        <td>SAMPLE</td>
-                        <td>SAMPLE</td>
-                    </tr>
-                    <tr>
-                        <td>SAMPLE</td>
-                        <td>SAMPLE</td>
-                        <td>SAMPLE</td>
-                    </tr>
-                    <tr>
-                        <td>SAMPLE</td>
-                        <td>SAMPLE</td>
-                        <td>SAMPLE</td>
-                    </tr>
-                </table>
+                <div class="projectInfoBody">
+                    <div class="projectInfoRows">
+                        <div class="leftProjectInfoRows">
+                            <div class="title">项目名称：</div>
+                            <div class="value">西二旗领秀硅谷</div>
+                        </div>
+                        <div class="rightProjectInfoRows">
+                            <div class="title">业务员：</div>
+                            <div class="value">武勋为</div>
+                        </div>
+                    </div>
+                    <div class="projectInfoRows">
+                        <div class="leftProjectInfoRows">
+                            <div class="title">项目经理名称：</div>
+                            <div class="value">徐建华</div>
+                        </div>
+                        <div class="rightProjectInfoRows">
+                            <div class="title">实际开工时间：</div>
+                            <div class="value">2016.01.02</div>
+                        </div>
+                    </div>
+                    <div class="projectInfoRows">
+                        <div class="leftProjectInfoRows">
+                            <div class="title">客户名称：</div>
+                            <div class="value">苏州金螳螂装饰有限公司</div>
+                        </div>
+                        <div class="rightProjectInfoRows">
+                            <div class="title">预计完成时间：</div>
+                            <div class="value">2017.01.12</div>
+                        </div>
+                    </div>
+                    <div class="projectInfoRows">
+                        <div class="leftProjectInfoRows">
+                            <div class="title">成本负责人：</div>
+                            <div class="value">冯金星</div>
+                        </div>
+                        <div class="rightProjectInfoRows">
+                            <div class="title">项目类型：</div>
+                            <div class="value">重大项目</div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
             </div>
             <!--项目材料-->
-            <!--项目材料-->
+            <!--项目成本-->
             <div class="rows">
                 <div class="head">
-                    <span class="projectMaterial">项目成本</span>
+                    <span class="projectCost">项目成本</span>
                     <div class="right">
                         <img src="../images/update.png" alt="" class="update">
                         <div class="foldExpansion"></div>
@@ -483,34 +552,60 @@
                 </div>
                 <table class="table4_2">
                     <tr>
-                        <th>SAMPLE</th>
-                        <th>SAMPLE</th>
-                        <th>SAMPLE</th>
+                        <th>预算收入</th>
+                        <th>进度产值</th>
+                        <th>竣工产值</th>
+                        <th>总回款</th>
                     </tr>
                     <tr>
                         <td>SAMPLE</td>
                         <td>SAMPLE</td>
                         <td>SAMPLE</td>
+                        <td>SAMPLE</td>
+                    </tr>
+                    
+                </table>
+                
+            </div>
+            <!--项目成本-->
+            <!--项目合同-->
+            <div class="rows">
+                <div class="head">
+                    <span class="projectContract">项目合同</span>
+                    <div class="right">
+                        <img src="../images/update.png" alt="" class="update">
+                        <div class="foldExpansion"></div>
+                    </div>
+                </div>
+                <table class="table4_2">
+                    <tr>
+                        <th>合同编码</th>
+                        <th>合同名称</th>
+                        <th>签订日期</th>
+                        <th>约定开工日期</th>
+                        <th>约定完成日期</th>
+                        <th>合同总价</th>
+                        <th>其他约定方式</th>
+                        <th>付款方式</th>
+                        <th>驻工代表</th>
+                        <th>保修期</th>
                     </tr>
                     <tr>
                         <td>SAMPLE</td>
                         <td>SAMPLE</td>
                         <td>SAMPLE</td>
-                    </tr>
-                    <tr>
                         <td>SAMPLE</td>
                         <td>SAMPLE</td>
                         <td>SAMPLE</td>
-                    </tr>
-                    <tr>
+                        <td>SAMPLE</td>
                         <td>SAMPLE</td>
                         <td>SAMPLE</td>
                         <td>SAMPLE</td>
                     </tr>
                 </table>
-                <div class="M-box1" style="float: right; margin: 2px 5px 10px 0;"></div>
             </div>
-            <!--项目材料-->
+            <!--项目合同-->
+
         </div>
         <!--项目信息数据区域-->
         <!--现场图片区域-->
@@ -605,17 +700,23 @@
                 </div>
                 <div class="content">
                     <span class="title">施工描述西二旗领秀硅谷</span>
-                    <p class="contentArea">
+                    <div class="contentArea">
                         一.在项目经理的直接领导下开展工作,贯彻安全第一,预防为主的方针,按规定搞好安全防范措施,把安全工作落到实处,做到将效益必须讲安全,抓生产首先必须抓安全.
                         二.认真熟悉施工图纸,编织各项施工组织设计方案和施工安全,质量,计数方案,编织各单项工程进度计划及人力,物力计划和极具,设备计划
                         三.编织,组织职工按其开会学习.
-                    </p>
+
+                        <div class="contentAreaEdit">
+                            <input type="button" name="" value="编辑" />
+                        </div>
+                    </div>
+                    
                     <div class="photo">
-                        <img src="" alt="">
-                        <img src="" alt="">
-                        <img src="" alt="">
-                        <img src="" alt="">
-                        <img src="" alt="">
+                        <a href="../images/demo1.jpg" class="lightsGal"><img class="" src="../images/demo1.jpg" alt=""></a>
+                        <a href="../images/demo1.jpg" class="lightsGal"><img class="" src="../images/demo1.jpg" alt=""></a>
+                        <a href="../images/demo1.jpg" class="lightsGal"><img class="" src="../images/demo1.jpg" alt=""></a>
+                        <a href="../images/demo1.jpg" class="lightsGal"><img class="" src="../images/demo1.jpg" alt=""></a>
+                        <a href="../images/demo1.jpg" class="lightsGal"><img class="" src="../images/demo1.jpg" alt=""></a>
+                      
                     </div>
                 </div>
             </div>
@@ -687,10 +788,7 @@
         <!--头部用户区域-->
         <!--项目基本信息-->
         <div class="projectBasicInfo">
-            <div class="headInfo">
-                <span class="title">项目基本信息</span>
-                <div class="foldExpansion"></div>
-            </div>
+            
             <div class="startState">
                 <span class="state">开工中</span>
             </div>
@@ -699,14 +797,7 @@
                 <li><div class="selectIcon"><img src="../images/zanting.png" alt="" /></div> 暂停</li>
                 <li><div class="selectIcon"><img src="../images/wangong.png" alt="" /></div> 完工</li>
             </ul>
-            <div class="rows"><span class="title">项目名称:</span><span class="value">西二旗领秀硅谷</span></div>
-            <div class="rows"><span class="title">项目经理名称:</span><span class="value">刘晓</span></div>
-            <div class="rows"><span class="title">客户名称:</span><span class="value">苏州金螳螂装饰有限公司</span></div>
-            <div class="rows"><span class="title">成本负责人:</span><span class="value">冯金星</span></div>
-            <div class="rows"><span class="title">业务员:</span><span class="value">武勋为</span></div>
-            <div class="rows"><span class="title">实际开工时间:</span><span class="value">2016.01.02</span></div>
-            <div class="rows"><span class="title">预计完成时间:</span><span class="value">2017.01.12</span></div>
-            <div class="rows"><span class="title">项目类型:</span><span class="value">重大项目</span></div>
+           
         </div>
         <!--项目基本信息-->
         <!--项目材料-->
@@ -821,7 +912,7 @@
 
     <script>
         $("body>.rightArea,body>.processArea>div:eq(1)").mCustomScrollbar();
-
+       
     </script>
     <script src="../js/home.js"></script>
 </body>

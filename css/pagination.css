@@ -21,18 +21,18 @@
 .M-box span,.M-box1 span,.M-box2 span,.M-box3 span{
 	float: left;
 	margin:0 5px;
-	width: 30px;
-    height: 30px;
-    line-height: 30px;
+	width: 24px;
+    height: 24px;
+    line-height: 24px;
     color: #bdbdbd;
     font-size: 14px;
 }
 .M-box .active,.M-box1 .active,.M-box2 .active,.M-box3 .active{
 	float: left;
 	margin:0 5px;
-	width: 30px;
-	height: 30px;
-	line-height: 30px;
+	width: 22px;
+	height: 22px;
+	line-height: 22px;
 	background: #00b7c4;
 	color: #fff;
 	font-size: 14px;
@@ -41,9 +41,9 @@
 .M-box a,.M-box1 a,.M-box2 a,.M-box3 a{
 	float: left;
 	margin:0 5px;
-	width: 30px;
-    height: 30px;
-    line-height: 30px;
+	width: 24px;
+    height: 24px;
+    line-height: 24px;
     background: #fff;
     border: 1px solid #ebebeb;
     color: #bdbdbd;
@@ -67,9 +67,9 @@
 input{
     float: left;
     margin:0 5px;
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
     text-align: center;
     background: #fff;
     border: 1px solid #ebebeb;
