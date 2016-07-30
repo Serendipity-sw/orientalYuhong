@@ -287,6 +287,7 @@ body>.centerArea>.head>.left{
     float: left;
     position: relative;
     margin-top: -5px;
+    display: none;
     }
 body>.centerArea>.head>.left>.leftAreaToggleIcon.leftAreaToggleIconLeft:before{content:"";content: url(../images/leftAreaClose.png);position: absolute;left: 0px;top: 8px;    cursor: pointer;}
 body>.centerArea>.head>.left>.leftAreaToggleIcon.leftAreaToggleIconLeft:after{content:"";border-right: 2px solid #f7f7f7;margin: 1px 15px;margin-left: 40px;height: 30px;display: inline-block;}
@@ -2087,7 +2088,7 @@ body >.processArea{
 bottom: 0;
 width: 393px;
 }
-body >.processArea>.top{
+body >.processArea .top{
 
     margin: 25px auto 0 auto;
 
@@ -2103,7 +2104,7 @@ body >.processArea>.top{
 
     box-sizing: border-box;
 }
-body >.processArea>.top>.title{
+body >.processArea .top>.title{
 
     display: block;
 
@@ -2121,7 +2122,7 @@ body >.processArea>.top>.title{
 
     box-sizing: border-box;
 }
-body >.processArea>.top>.closeBtn{
+body >.processArea .top>.closeBtn{
 
     overflow: hidden;
 
@@ -2309,3 +2310,226 @@ body >.processArea>div .dataListArea>.title{
     color: red;
 }
 /*扣分记录  弹出框页面  end*/
+
+/*项目物料右侧弹出框 start*/
+body >.projectMaterialsRightArea,body >.alreadyAppliedRightArea{
+border-top: 2px solid red;
+position: fixed;
+top: 0;
+right: -393px;
+z-index: 101;
+background-color: white;
+bottom: 0;
+width: 393px;
+}
+
+body  .R-Top{
+
+    margin: 25px auto 0 auto;
+
+    width: 93%;
+
+    height: 35px;
+
+    border-bottom: 1px solid #c7c7c7;
+
+    overflow: hidden;
+
+    padding: 0;
+
+    box-sizing: border-box;
+}
+body  .R-Top>.title{
+
+    display: block;
+
+    float: left;
+
+    font-size: 16px;
+
+    font-weight: 500;
+
+    overflow: hidden;
+
+    padding: 0;
+
+    margin: 0;
+
+    box-sizing: border-box;
+}
+body  .R-Top>.closeBtn{
+
+    overflow: hidden;
+
+    float: right;
+
+    display: block;
+
+    background: url(../images/closeBtn.png) no-repeat 50%;
+
+    background-size: 14px;
+
+    width: 15px;
+
+    height: 15px;
+
+    margin: 5.5px;
+}
+
+body  .R-Bottom {width: 93%;margin: 10px auto;}
+body  .R-Bottom>.title{font-size: 14px;/* margin-bottom: 10px; */}
+body  .R-Bottom>.R-Table{margin-bottom: 20px;}
+body  .R-Bottom>.R-Table table{width: 100%;text-align: center;border-collapse: collapse;color: #6e6e6e; /* webkit */      *letter-spacing: normal; /* IE < 8 重置 */ /* IE < 8 && gecko */}
+body  .R-Bottom>.R-Table table thead th{border-bottom: 1px solid #000;padding: 10px 0px;}
+body  .R-Bottom>.R-Table table thead th .checkboxAll{cursor:pointer;}
+body  .R-Bottom>.R-Table table tbody td{padding: 10px 0px;width: 25%;}
+body  .R-Bottom>.R-Table table tbody td:first-child{width: 50%;}
+body  .R-Bottom>.R-Table table tbody td .numberOperating{}
+body .R-Bottom>.R-Table table tbody td .numberOperating .numberOperatingBtn{display: inline-block;background-color: #f7f7f7;width: 20px;height: 20px; /* webkit */      *letter-spacing: normal; /* IE < 8 重置 */ /* IE < 8 && gecko */cursor: pointer;}
+    body .R-Bottom > .R-Table table tbody td .numberOperating .numberOperatingValue {
+    /* float: left; */
+    display: inline-block;
+    margin: 0px -4px;
+    }
+body .R-Bottom>.R-Table table tbody td .numberOperating input{height: 16px;width: 30px;text-align: center;display: inline-block;border: 1px solid #dcdcdc;}
+    body  .R-Bottom > .R-Table table tbody td.operatingTd {
+    }
+      body  .R-Bottom > .R-Table table tbody td.operatingTd .delete{
+    color: red;
+    cursor: pointer;
+    }
+
+    body .R-Bottom > .R-Form {
+    border: 1px dashed#dcdcdc;
+    padding: 15px 10px;
+    }
+      body .R-Bottom >  .R-Form .row{
+    margin-bottom: 10px;
+    }
+       body .R-Bottom >.R-Form .title{
+    display: inline-block;
+    width: 21%;
+    }   
+    body .R-Bottom >.R-Form .value{
+        display: inline-block;
+    }
+    
+         body .R-Bottom > .R-Form select,
+         body .R-Bottom >  .R-Form input{
+        width: 76%;
+        height: 28px;
+        border: 1px solid #d3d3d3;
+        box-sizing: border-box;
+    }
+        body .R-Bottom > .R-Form textarea {
+        
+        }
+        body .R-Bottom > .R-Form .input-2 {
+        display: inline-block;
+        width: 77%;
+        }
+          body .R-Bottom > .R-Form .input-2 select,
+         body .R-Bottom >  .R-Form  .input-2 input{
+        
+    width: 48%;
+    height: 28px;
+    border: 1px solid #d3d3d3;
+    box-sizing: border-box;
+    }
+    body .R-Bottom .saveBtn {
+    overflow: hidden;
+    display: block;
+    width: 163px;
+    background-color: red;
+    color: white;
+    text-align: center;
+    border-radius: 29px;
+    height: 39px;
+    line-height: 39px;
+    font-size: 15px;
+    margin: 11px 0 20px 105px;
+}
+a:visited {
+    text-decoration: none;
+}
+.saveBtn {
+    display: block;
+    float: left;
+    margin-left: 16px;
+    height: 28px;
+    background-color: #45c9d0;
+    color: white;
+    padding: 0 25px;
+    line-height: 28px;
+    letter-spacing: 3px;
+    box-sizing: border-box;
+    }
+/*项目物料右侧弹出框 end*/
+
+
+/*项目物料右侧弹出框 start*/
+/*
+body >.projectMaterialsRightArea{
+border-top: 2px solid red;
+position: fixed;
+top: 0;
+right: -393px;
+z-index: 101;
+background-color: white;
+bottom: 0;
+width: 393px;
+}
+body >.projectMaterialsRightArea .top{
+
+    margin: 25px auto 0 auto;
+
+    width: 93%;
+
+    height: 35px;
+
+    border-bottom: 1px solid #c7c7c7;
+
+    overflow: hidden;
+
+    padding: 0;
+
+    box-sizing: border-box;
+}
+body >.projectMaterialsRightArea .top>.title{
+
+    display: block;
+
+    float: left;
+
+    font-size: 16px;
+
+    font-weight: 500;
+
+    overflow: hidden;
+
+    padding: 0;
+
+    margin: 0;
+
+    box-sizing: border-box;
+}
+body >.projectMaterialsRightArea .top>.closeBtn{
+
+    overflow: hidden;
+
+    float: right;
+
+    display: block;
+
+    background: url(../images/closeBtn.png) no-repeat 50%;
+
+    background-size: 14px;
+
+    width: 15px;
+
+    height: 15px;
+
+    margin: 5.5px;
+}
+    */
+/*项目物料右侧弹出框 end*/

@@ -1,7 +1,13 @@
 /**
  * Created by gloomysw on 2016/07/06.
  */
+//右侧弹出框zindex初始化值，点击添加。达到每次点击都会盖在上面一层。
+var leftAreaPopupZindex = 100;
+function setLeftAreaPopoupZindex(_this) {
 
+    $(_this).css("z-index", leftAreaPopupZindex);
+    leftAreaPopupZindex++;
+}
 /**
  * 左部搜索区域点击选中事件  冒泡事件
  * 创建人:邵炜
@@ -220,25 +226,13 @@ $(document).on("click", "body>.centerArea>.processArea>.progressRows>.processAre
     var parent = $(this).closest('.progressRows').find('a').first().html();
     $(".processSelectTitle").html(parent);
 
+    //进度条添加选中样式
     $("body>.centerArea>.processArea").find(".progressRows").removeClass("select");
     $(this).parent().addClass("select");
 
 //    $("body").append(mark);
     var  processAreaOb=$("body>.processArea");
-    var centerArea=$("body>.centerArea");
-    var rightArea=$("body>.rightArea");
-    var leftArea=$("body>.leftArea");
-    if (processAreaOb.css("right") == "-393px") {
-        processAreaOb.animate({right:"0"});
-        centerArea.animate({paddingRight:"393px",paddingLeft:"0"});
-        rightArea.animate({width:"403px"});
-        leftArea.animate({left:"-224px"});
-    }else{
-        processAreaOb.animate({right:"-393px"});
-        centerArea.animate({paddingRight:"301px",paddingLeft:"225px"});
-        rightArea.animate({width:"301px"});
-        leftArea.animate({left:"0"});
-    }
+    rightAreaCommonShow(processAreaOb);
 });
 
 /**
@@ -247,39 +241,10 @@ $(document).on("click", "body>.centerArea>.processArea>.progressRows>.processAre
  * 创建时间:2016年7月17日22:55:00
  */
 $("body >.processArea>.top>.closeBtn").click(function(){
-    var  processAreaOb=$("body>.processArea");
-    var centerArea=$("body>.centerArea");
-    var rightArea=$("body>.rightArea");
-    if (processAreaOb.css("right") == "-393px") {
-        processAreaOb.animate({right:"0"});
-        centerArea.animate({paddingRight:"393px"});
-        rightArea.animate({width:"403px"});
-    }else{
-        processAreaOb.animate({right:"-393px"});
-        centerArea.animate({paddingRight:"301px"});
-        rightArea.animate({width:"301px"});
-    }
+    var processAreaOb = $("body>.processArea");
+    rightAreaCommonHide(processAreaOb);
 });
 
-/**
- * 左侧区域显示隐藏事件
- */
-
-$(document).on("click", ".leftAreaToggleIcon", function () {
-
-    $("body>.leftArea").toggle("slow", function () {
-        $("body>.centerArea").animate({ paddingLeft: $(this).is(":hidden") ? "0" : "225px" });
-    });
-    if ($(this).hasClass("leftAreaToggleIconRight")) {
-        $(this).removeClass("leftAreaToggleIconRight");
-        $(this).addClass("leftAreaToggleIconLeft");
-    }
-    else {
-        $(this).removeClass("leftAreaToggleIconLeft");
-        $(this).addClass("leftAreaToggleIconRight");
-    }
-
-});
 
 
 $(function(){
@@ -306,7 +271,7 @@ $("body>.centerArea>.head>.right>.mapTitle").click(function () {
 2016-07-27
 用户下拉框切换
 */
-$("body>.rightArea>div>div>.headTop>.userName").click(function () {
+$("body>.rightArea .headTop>.userName").click(function () {
     $(".peopleSelect").toggle();
 });
 
@@ -384,3 +349,169 @@ $(document).ready(function () {
         }
     });
 });
+
+//左侧菜单按钮显示
+function leftAreaToggleIconOpen() {
+    $("body > .centerArea > .head > .left > .leftAreaToggleIcon").show();
+}
+//左侧菜单按钮隐藏
+function leftAreaToggleIconClose() {
+    $("body > .centerArea > .head > .left > .leftAreaToggleIcon").hide();
+}
+
+
+
+/**
+ * 项目物料弹框事件
+ * 创建人:徐建华
+ * 创建时间:2016年7月30日22:49:24
+ */
+$(document).on("click", "body>.centerArea>.projectInfo .table4_2 .btn-green", function () {
+  
+    var processAreaOb = $("body>.projectMaterialsRightArea");
+    rightAreaCommonShow(processAreaOb);
+});
+
+/**
+ * 项目物料弹框关闭按钮
+ * 创建人:邵炜
+ * 创建时间:2016年7月17日22:55:00
+ */
+$("body>.projectMaterialsRightArea .closeBtn").click(function () {
+    var processAreaOb = $("body>.projectMaterialsRightArea");
+    rightAreaCommonHide(processAreaOb);
+});
+
+
+/**
+物料申请  数量减
+*/
+$(".numberOperating .numberOperatingMinus").click(function () {
+    var _input = $(this).closest(".numberOperating").find("input");
+    var v = _input.val();
+    if(v >1)
+    {
+        v--;
+        _input.val(v);
+    }
+});
+/**
+物料申请  数量加
+*/
+$(".numberOperating .numberOperatingPlus").click(function () {
+    var _input = $(this).closest(".numberOperating").find("input");
+    var v = _input.val();
+    v++;
+    _input.val(v);
+    
+});
+/**
+物料申请  全选
+*/
+$(".R-Table .checkboxAll").click(function () {
+    if ($(this).hasClass("active")) {
+        $(this).removeClass("active");
+        $(this).closest("table").find("input[type=checkbox]").prop("checked", false);
+    }
+    else {
+        $(this).addClass("active");
+        $(this).closest("table").find("input[type=checkbox]").prop("checked", true);
+    }
+});
+
+
+
+/**
+ * 项目物料 已申请 右侧弹出框
+ * 创建人:徐建华
+ * 创建时间:2016年7月30日22:49:24
+ */
+$(document).on("click", "body>.rightArea .projectMaterial .selectArea .alreadyApplied", function () {
+    var processAreaOb = $("body>.alreadyAppliedRightArea");
+    rightAreaCommonShow(processAreaOb);
+});
+
+/**
+ *项目物料 已申请 右侧弹出框 关闭按钮
+ * 创建人:邵炜
+ * 创建时间:2016年7月17日22:55:00
+ */
+$("body>.alreadyAppliedRightArea .closeBtn").click(function () {
+    var processAreaOb = $("body>.alreadyAppliedRightArea");
+    rightAreaCommonHide(processAreaOb);
+});
+
+/**
+ * 左侧区域显示事件
+ */
+$(document).on("click", ".leftAreaToggleIcon", function () {
+    //var processAreaOb = $("body>.processArea");
+    //var projectMaterialsRightAreaOb = $("body>.projectMaterialsRightArea");
+    $("body>.rightAreaCommonToggle").each(function () {
+        $(this).animate({ right: "-393px" });
+    });
+    
+    var centerArea = $("body>.centerArea");
+    var rightArea = $("body>.rightArea");
+    var leftArea = $("body>.leftArea");
+    //processAreaOb.animate({ right: "-393px" });
+    //projectMaterialsRightAreaOb.animate({ right: "-393px" });
+
+    centerArea.animate({ paddingRight: "301px", paddingLeft: "225px" });
+    rightArea.animate({ width: "301px" });
+    leftArea.animate({ left: "0" });
+
+    leftAreaToggleIconClose();
+
+});
+
+/*
+右侧区域显示公共方法
+*/
+function rightAreaCommonShow(_this) {
+   
+    var processAreaOb = _this;
+    var centerArea = $("body>.centerArea");
+    var rightArea = $("body>.rightArea");
+    var leftArea = $("body>.leftArea");
+    if (processAreaOb.css("right") == "-393px") {
+
+        processAreaOb.animate({ right: "0" });
+        //设置z-index
+        setLeftAreaPopoupZindex(processAreaOb);
+
+        centerArea.animate({ paddingRight: "393px", paddingLeft: "0" });
+        rightArea.animate({ width: "403px" });
+        leftArea.animate({ left: "-224px" });
+
+    } else {
+        //设置z-index
+        setLeftAreaPopoupZindex(processAreaOb);
+
+        /*
+        processAreaOb.animate({right:"-393px"});
+        centerArea.animate({paddingRight:"301px",paddingLeft:"225px"});
+        rightArea.animate({width:"301px"});
+        leftArea.animate({left:"0"});
+         */
+    }
+
+    leftAreaToggleIconOpen();
+}
+/*
+右侧区域隐藏公共方法
+*/
+function rightAreaCommonHide(_this) {
+    var processAreaOb = _this;
+    var centerArea = $("body>.centerArea");
+    var rightArea = $("body>.rightArea");
+    if (processAreaOb.css("right") == "-393px") {
+        processAreaOb.animate({ right: "0" });
+        // centerArea.animate({paddingRight:"393px"});
+        //rightArea.animate({width:"403px"});
+    } else {
+        processAreaOb.animate({ right: "-393px" });
+        // centerArea.animate({paddingRight:"301px"});
+        //rightArea.animate({width:"301px"});
+    }
+}

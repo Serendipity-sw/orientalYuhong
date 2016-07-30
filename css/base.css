@@ -236,3 +236,13 @@ ul.selectPopupCommon li:first-child:after {
         .popupCommon .right table.selectTableRows td.operatingTd .selectBtn {
         margin-left:0px;
         }
+
+.text-center {
+text-align:center;
+}
+.text-left {
+text-align:left;
+}
+.text-right {
+text-align:right;
+}

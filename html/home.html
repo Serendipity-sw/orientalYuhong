@@ -15,8 +15,11 @@
     <script src="../js/jquery-2.1.0.min.js"></script>
     <script src="../js/base.js"></script>
     <script src="../js/layer.js"></script>
+    <!--滚动条-->
     <script src="../js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <!--分页-->
     <script src="../js/jquery.pagination.min.js"></script>
+    <!--日期-->
     <script src="../js/jquery.datetimepicker.full.min.js"></script>
 
     <!--富文本-->
@@ -866,9 +869,11 @@
     </div>
     <!--右部区域-->
 
-    <!--进度条弹框区域-->
-    <div class="processArea">
-        <div class="top"><span class="title">平展面</span><a href="javascript:void(0);" class="closeBtn"></a></div>
+    <!--进度条右侧弹框区域-->
+    <div class="processArea rightAreaCommonToggle">
+        <div class="top">
+            <span class="title">平展面</span><a href="javascript:void(0);" class="closeBtn"></a>
+        </div>
         <div>
             <div class="searchArea">
                 <span class="title">目前进度</span>
@@ -881,40 +886,427 @@
                 <span class="title">平展面进度明细</span>
                 <table class="table4_5">
                     <tr>
-                        <th>SAMPLE</th>
-                        <th>SAMPLE</th>
-                        <th>SAMPLE</th>
+                        <th>日期</th>
+                        <th>进度</th>
+                        <th>施工产值</th>
+                        <th>单位</th>
                     </tr>
                     <tr>
-                        <td>SAMPLE</td>
-                        <td>SAMPLE</td>
-                        <td>SAMPLE</td>
+                        <td>04月20日</td>
+                        <td>14/100</td>
+                        <td>4000</td>
+                        <td>单平方米位</td>
                     </tr>
                     <tr>
-                        <td>SAMPLE</td>
-                        <td>SAMPLE</td>
-                        <td>SAMPLE</td>
+                        <td>04月20日</td>
+                        <td>14/100</td>
+                        <td>4000</td>
+                        <td>单平方米位</td>
                     </tr>
                     <tr>
-                        <td>SAMPLE</td>
-                        <td>SAMPLE</td>
-                        <td>SAMPLE</td>
+                        <td>04月20日</td>
+                        <td>14/100</td>
+                        <td>4000</td>
+                        <td>单平方米位</td>
                     </tr>
                     <tr>
-                        <td>SAMPLE</td>
-                        <td>SAMPLE</td>
-                        <td>SAMPLE</td>
+                        <td>04月20日</td>
+                        <td>14/100</td>
+                        <td>4000</td>
+                        <td>单平方米位</td>
+                    </tr>
+                    <tr>
+                        <td>04月20日</td>
+                        <td>14/100</td>
+                        <td>4000</td>
+                        <td>单平方米位</td>
+                    </tr>
+                    <tr>
+                        <td>04月20日</td>
+                        <td>14/100</td>
+                        <td>4000</td>
+                        <td>单平方米位</td>
+                    </tr>
+                    <tr>
+                        <td>04月20日</td>
+                        <td>14/100</td>
+                        <td>4000</td>
+                        <td>单平方米位</td>
+                    </tr>
+                    <tr>
+                        <td>04月20日</td>
+                        <td>14/100</td>
+                        <td>4000</td>
+                        <td>单平方米位</td>
+                    </tr>
+                    <tr>
+                        <td>04月20日</td>
+                        <td>14/100</td>
+                        <td>4000</td>
+                        <td>单平方米位</td>
+                    </tr>
+                    <tr>
+                        <td>04月20日</td>
+                        <td>14/100</td>
+                        <td>4000</td>
+                        <td>单平方米位</td>
+                    </tr>
+                    <tr>
+                        <td>04月20日</td>
+                        <td>14/100</td>
+                        <td>4000</td>
+                        <td>单平方米位</td>
                     </tr>
                 </table>
             </div>
         </div>
     </div>
-    <!--进度条弹框区域-->
+    <!--进度条右侧弹框区域-->
 
+
+    <!--项目物料 加入购物车 右侧弹出框-->
+    <div class="projectMaterialsRightArea rightAreaCommonToggle">
+        <div class="R-Top">
+            <span class="title">购物车</span><a href="javascript:void(0);" class="closeBtn"></a>
+        </div>
+        <div class="R-Bottom">
+            <div class="title">物料申请（主材）</div>
+            <div class="R-Table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="text-left">
+                                <span class="checkboxAll">全选</span>
+                                <span>/物料号</span>
+                            </th>
+                            <th><span>数量</span></th>
+                            <th><span>操作</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="text-left">
+                                <input type="checkbox" name="name" value=" " />
+                                <span>BCS20123-40-B</span>
+                            </td>
+                            <td>
+                                <div class="numberOperating">
+                                    <div class="numberOperatingMinus numberOperatingBtn" href="#">-</div>
+                                    <div class="numberOperatingValue"><input type="text" name="name" value="2" /></div>
+                                    <div class="numberOperatingPlus numberOperatingBtn" href="#">+</div>
+                                </div>
+                            </td>
+                            <td class="operatingTd">
+                                <a href="#" class="delete">删除</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-left">
+                                <input type="checkbox" name="name" value=" " />
+                                <span>BCS20123-40-B</span>
+                            </td>
+                            <td>
+                                <div class="numberOperating">
+                                    <div class="numberOperatingMinus numberOperatingBtn" href="#">-</div>
+                                    <div class="numberOperatingValue"><input type="text" name="name" value="2" /></div>
+                                    <div class="numberOperatingPlus numberOperatingBtn" href="#">+</div>
+                                </div>
+                            </td>
+                            <td class="operatingTd">
+                                <a href="#" class="delete">删除</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-left">
+                                <input type="checkbox" name="name" value=" " />
+                                <span>BCS20123-40-B</span>
+                            </td>
+                            <td>
+                                <div class="numberOperating">
+                                    <div class="numberOperatingMinus numberOperatingBtn" href="#">-</div>
+                                    <div class="numberOperatingValue"><input type="text" name="name" value="2" /></div>
+                                    <div class="numberOperatingPlus numberOperatingBtn" href="#">+</div>
+                                </div>
+                            </td>
+                            <td class="operatingTd">
+                                <a href="#" class="delete">删除</a>
+                            </td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
+            <div class="R-Form">
+                <div class="row">
+                    <div class="title">申请类型</div>
+                    <select>
+                        <option value="value">全部</option>
+                        <option value="value">金融机构</option>
+                        <option value="value">企业</option>
+                    </select>
+                </div>
+                <div class="row">
+                    <div class="title">申请名称</div>
+                    <input type="text" />
+                </div>
+                <div class="row">
+                    <div class="title">收货人</div>
+                    <div class="input-2">
+                        <select>
+                            <option value="value">纸质银承</option>
+                            <option value="value">纸质商承</option>
+                            <option value="value">电子银承</option>
+                            <option value="value">电子商承</option>
+                        </select>
+                        <select>
+                            <option value="value">纸质银承</option>
+                            <option value="value">纸质商承</option>
+                            <option value="value">电子银承</option>
+                            <option value="value">电子商承</option>
+                        </select>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="row">
+                    <div class="title">收货地址</div>
+                    <input type="text" />
+                </div>
+                <div class="row">
+                    <div class="title">合格证数量</div>
+                    <input type="text" />
+                </div>
+                <div class="row">
+                    <div class="title">送达时间</div>
+                    <input type="text" class="dateTime" />
+                </div>
+                <div class="row">
+                    <div class="title">备注</div>
+                    <input type="text" />
+                </div>
+            </div>
+
+            <a href="javascript:void(0);" class="saveBtn">确定申请</a>
+            <div class="clearfix"></div>
+        </div>
+
+        <div class="R-Bottom">
+            <div class="title">物料申请（辅材）</div>
+            <div class="R-Table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="text-left">
+                                <span class="checkboxAll">全选</span>
+                                <span>/物料号</span>
+                            </th>
+                            <th><span>数量</span></th>
+                            <th><span>操作</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="text-left">
+                                <input type="checkbox" name="name" value=" " />
+                                <span>BCS20123-40-B</span>
+                            </td>
+                            <td>
+                                <div class="numberOperating">
+                                    <div class="numberOperatingMinus numberOperatingBtn" href="#">-</div>
+                                    <div class="numberOperatingValue"><input type="text" name="name" value="2" /></div>
+                                    <div class="numberOperatingPlus numberOperatingBtn" href="#">+</div>
+                                </div>
+                            </td>
+                            <td class="operatingTd">
+                                <a href="#" class="delete">删除</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-left">
+                                <input type="checkbox" name="name" value=" " />
+                                <span>BCS20123-40-B</span>
+                            </td>
+                            <td>
+                                <div class="numberOperating">
+                                    <div class="numberOperatingMinus numberOperatingBtn" href="#">-</div>
+                                    <div class="numberOperatingValue"><input type="text" name="name" value="2" /></div>
+                                    <div class="numberOperatingPlus numberOperatingBtn" href="#">+</div>
+                                </div>
+                            </td>
+                            <td class="operatingTd">
+                                <a href="#" class="delete">删除</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-left">
+                                <input type="checkbox" name="name" value=" " />
+                                <span>BCS20123-40-B</span>
+                            </td>
+                            <td>
+                                <div class="numberOperating">
+                                    <div class="numberOperatingMinus numberOperatingBtn" href="#">-</div>
+                                    <div class="numberOperatingValue"><input type="text" name="name" value="2" /></div>
+                                    <div class="numberOperatingPlus numberOperatingBtn" href="#">+</div>
+                                </div>
+                            </td>
+                            <td class="operatingTd">
+                                <a href="#" class="delete">删除</a>
+                            </td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
+            <div class="R-Form">
+                <div class="row">
+                    <div class="title">申请类型</div>
+                    <select>
+                        <option value="value">全部</option>
+                        <option value="value">金融机构</option>
+                        <option value="value">企业</option>
+                    </select>
+                </div>
+                <div class="row">
+                    <div class="title">申请名称</div>
+                    <input type="text" />
+                </div>
+                <div class="row">
+                    <div class="title">收货人</div>
+                    <div class="input-2">
+                        <select>
+                            <option value="value">纸质银承</option>
+                            <option value="value">纸质商承</option>
+                            <option value="value">电子银承</option>
+                            <option value="value">电子商承</option>
+                        </select>
+                        <select>
+                            <option value="value">纸质银承</option>
+                            <option value="value">纸质商承</option>
+                            <option value="value">电子银承</option>
+                            <option value="value">电子商承</option>
+                        </select>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="row">
+                    <div class="title">收货地址</div>
+                    <input type="text" />
+                </div>
+                <div class="row">
+                    <div class="title">合格证数量</div>
+                    <input type="text" />
+                </div>
+                <div class="row">
+                    <div class="title">送达时间</div>
+                    <input type="text" class="dateTime" />
+                </div>
+                <div class="row">
+                    <div class="title">备注</div>
+                    <input type="text" />
+                </div>
+            </div>
+
+            <a href="javascript:void(0);" class="saveBtn">确定申请</a>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <!--项目物料 加入购物车 右侧弹出框-->
+
+
+    <!--项目物料 已申请 右侧弹出框-->
+    <div class="alreadyAppliedRightArea rightAreaCommonToggle">
+        <div class="R-Top">
+            <span class="title">已申请</span><a href="javascript:void(0);" class="closeBtn"></a>
+        </div>
+        <div class="R-Bottom">
+            <div class="title">物料申请（主材）</div>
+            <div class="R-Form">
+                <div class="row">
+                    <div class="title">收货人：</div>
+                    <div class="value">张三</div>
+                </div>
+                <div class="row">
+                    <div class="title">地址：</div>
+                    <div class="value">江苏省苏州市产业园区2-21栋</div>
+                </div>
+                <div class="row">
+                    <div class="title">收货人：</div>
+                    <div class="value">张三</div>
+                </div>
+                <div class="row">
+                    <div class="title">地址：</div>
+                    <div class="value">江苏省苏州市产业园区2-21栋</div>
+                </div>
+
+                <div class="row">
+                    <div class="title">备注：</div>
+                    <div class="value">江苏省苏州市产业园区2-21栋</div>
+                </div>
+            </div>
+
+            <div class="R-Table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>
+                                <span>/物料号</span>
+                            </th>
+                            <th><span>数量</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <span>BCS20123-40-B</span>
+                            </td>
+                            <td>
+                                <span>20</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span>BCS20123-40-B</span>
+                            </td>
+                            <td>
+                                <span>20</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span>BCS20123-40-B</span>
+                            </td>
+                            <td>
+                                <span>20</span>
+                            </td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
+
+
+            <a href="javascript:void(0);" class="saveBtn">确定申请</a>
+            <div class="clearfix"></div>
+        </div>
+
+
+    </div>
+    <!--项目物料 已申请 右侧弹出框-->
 
     <script>
-        $("body>.rightArea,body>.processArea>div:eq(1)").mCustomScrollbar();
-       
+        (function ($) {
+            $(window).load(function () {
+                $("body>.rightArea,body>.processArea,body>.projectMaterialsRightArea").mCustomScrollbar();
+
+                $('.dateTime').datetimepicker({
+                    lang: "ch",           //语言选择中文
+                    format: "Y-m-d",      //格式化日期
+                    timepicker: false,     //关闭时间选项
+                    todayButton: false    //关闭选择今天按钮
+                });
+
+            });
+        })(jQuery);
+        
     </script>
     <script src="../js/home.js"></script>
 </body>
