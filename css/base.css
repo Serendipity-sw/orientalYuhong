@@ -63,28 +63,28 @@ body .fromLayerArea>.rows>.inputGroup {float: left;width: 60%;padding-left: 15px
 body .fromLayerArea>.rows>.inputGroup>input{height: 30px;box-sizing: border-box;overflow: hidden;padding: 0;width: 100%;text-align: left;border: 1px solid #a5a3a3;color: #828282;padding-left: 9px;}
 body .fromLayerArea>.rows>.inputGroup>select{height: 30px;box-sizing: border-box;overflow: hidden;padding: 0;width: 100%;text-align: left;border: 1px solid #a5a3a3;color: #828282;padding-left: 9px;}
 
-body .fromLayerArea > .rows > .inputGroup .error {
+body .inputGroup .error {
    color: red;
 }
-       body .fromLayerArea > .rows > .inputGroup .error:before {
+body .inputGroup .error:before {
            content: "\f00d";
            display: inline-block;
            font: normal normal normal 14px/1 FontAwesome;
            color: red;
            padding-right: 3px;
     }
-     body .fromLayerArea > .rows > .inputGroup .success {
+body .inputGroup .success {
     color: #390;
-    }
-      body .fromLayerArea > .rows > .inputGroup .success:before {
+}
+body .inputGroup .success:before {
            content: "\f00c";
            display: inline-block;
            font: normal normal normal 14px/1 FontAwesome;
            color: #390;
            padding-right: 3px;
     }
-body .fromLayerArea>.bottom{
 
+body .fromLayerArea>.bottom{
     padding: 0;
 
     margin: 7px 0 16px 0;
@@ -237,6 +237,9 @@ ul.selectPopupCommon li:first-child:after {
         margin-left:0px;
         }
 
+.padding-left-10 {
+padding-left:10px;
+}
 .text-center {
 text-align:center;
 }
@@ -245,4 +248,17 @@ text-align:left;
 }
 .text-right {
 text-align:right;
+}
+.text-red,.text-error {
+color:red;
+}
+.text-success ,.text-blue {
+color:#00b7c4;
+}
+pull-left {
+float:left;
+}
+
+pull-right {
+float:right;
 }

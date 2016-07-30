@@ -1290,13 +1290,13 @@ body>.rightArea{
 }
 
 /*头部用户区域*/
-body>.rightArea>div>div{
-    margin: 0 !important;
+body>.rightArea .mCSB_container{
+ margin: 0 !important;
 }
-body>.rightArea>div>div:last-child{
-    width: 0 !important;
+body>.rightArea .mCSB_scrollTools {
+     width: 0 !important;
 }
-body>.rightArea>div>div>.headTop{
+body>.rightArea .rightArea1>.headTop{
 
     border-bottom: 1px solid #cacaca;
 
@@ -1305,7 +1305,7 @@ body>.rightArea>div>div>.headTop{
     box-sizing: border-box;
 height: 59px;
 }
-body>.rightArea>div>div>.headTop>.userPhoto{
+body>.rightArea .rightArea1>.headTop>.userPhoto{
 
     width: 33px;
 
@@ -1318,7 +1318,7 @@ body>.rightArea>div>div>.headTop>.userPhoto{
     float: left;
 }
 
-body>.rightArea>div>div>.headTop>.userName{
+body>.rightArea .rightArea1>.headTop>.userName{
 
     display: block;
 
@@ -1338,7 +1338,7 @@ body>.rightArea>div>div>.headTop>.userName{
 
     cursor: pointer;
 }
-body>.rightArea>div>div>.headTop{
+body>.rightArea .rightArea1>.headTop{
 
     border-bottom: 1px solid #cacaca;
 
@@ -1350,7 +1350,7 @@ body>.rightArea>div>div>.headTop{
 
     /* position: relative; */
 }
-body>.rightArea>div>div>.headTop>.peopleSelect{
+body>.rightArea .rightArea1>.headTop>.peopleSelect{
 
     position: absolute;
 
@@ -1362,10 +1362,10 @@ body>.rightArea>div>div>.headTop>.peopleSelect{
 
     z-index: 99999;
 }
-body > .rightArea > div > div > .headTop > .shoppingCart {
+body > .rightArea  .rightArea1>.headTop > .shoppingCart {
 
 }
-body>.rightArea>div>div>.headTop>.shoppingCart>div{
+body>.rightArea .rightArea1>.headTop>.shoppingCart>div{
 
     background: url(../images/shoppingChart.png) no-repeat 50%;
 
@@ -1383,10 +1383,10 @@ body>.rightArea>div>div>.headTop>.shoppingCart>div{
 
     right: 28px;
 }
-body>.rightArea>div>div>.headTop>.shoppingCart>div:hover{
+body>.rightArea .rightArea1>.headTop>.shoppingCart>div:hover{
     background-position: 50% 0;
 }
-body>.rightArea>div>div>.headTop>.shoppingCart>.number{
+body>.rightArea .rightArea1>.headTop>.shoppingCart>.number{
 
     display: block;
 
@@ -1411,19 +1411,19 @@ body>.rightArea>div>div>.headTop>.shoppingCart>.number{
 /*头部用户区域*/
 
 /*项目基本信息*/
-body>.rightArea>div>div>.projectBasicInfo{
+body>.rightArea .rightArea1> .projectBasicInfo{
 }
-body>.rightArea>div>div>.projectBasicInfo>.headInfo{
+body>.rightArea .rightArea1>.projectBasicInfo>.headInfo{
 
 }
-body>.rightArea>div>div>.projectBasicInfo>.headInfo>.title{
+body>.rightArea .rightArea1>.projectBasicInfo>.headInfo>.title{
 
     background: url(../images/projectBasicInfo.png) no-repeat 0px;
 }
-body>.rightArea>div>div>.projectBasicInfo>.headInfo>.foldExpansion{
+body>.rightArea .rightArea1>.projectBasicInfo>.headInfo>.foldExpansion{
 
 }
-body>.rightArea>div>div>.projectBasicInfo>.startState{
+body>.rightArea .rightArea1>.projectBasicInfo>.startState{
 
     height: 28px;
 
@@ -1433,15 +1433,16 @@ body>.rightArea>div>div>.projectBasicInfo>.startState{
 
     position: relative;
 }
-body>.rightArea>div>div>.projectBasicInfo>.showDilog{
+body>.rightArea .rightArea1>.projectBasicInfo>.showDilog{
 position: absolute;
 top: 30px;
-left: 112px;
+left: 50%;
+margin-left: -30px;
 background-color: white;
 display: none;
 z-index: 10;
 }
-body>.rightArea>div>div>.projectBasicInfo>.showDilog>.rows{
+body>.rightArea .rightArea1>.projectBasicInfo>.showDilog>.rows{
 
     padding: 4px 21px;
 
@@ -1449,10 +1450,10 @@ body>.rightArea>div>div>.projectBasicInfo>.showDilog>.rows{
 
     cursor: pointer;
 }
-body>.rightArea>div>div>.projectBasicInfo>.showDilog>.rows:hover{
+body>.rightArea .rightArea1>.projectBasicInfo>.showDilog>.rows:hover{
     background-color:#c1c1c1;
 }
-body>.rightArea>div>div>.projectBasicInfo>.startState>.state{
+body>.rightArea .rightArea1>.projectBasicInfo>.startState>.state{
 
     display: block;
 
@@ -1478,9 +1479,9 @@ body>.rightArea>div>div>.projectBasicInfo>.startState>.state{
 
     cursor: pointer;
 }
-body>.rightArea>div>div>.projectBasicInfo>.rows{margin: 3px auto 0 auto;width: 93%;}
-body>.rightArea>div>div>.projectBasicInfo>.rows:nth-child(1){}
-body>.rightArea>div>div>.projectBasicInfo>.rows>.title{
+body>.rightArea .rightArea1>.projectBasicInfo>.rows{margin: 3px auto 0 auto;width: 93%;}
+body>.rightArea .rightArea1>.projectBasicInfo>.rows:nth-child(1){}
+body>.rightArea .rightArea1>.projectBasicInfo>.rows>.title{
 
     display: block;
 
@@ -1490,13 +1491,13 @@ body>.rightArea>div>div>.projectBasicInfo>.rows>.title{
 
     color: #8e8b8b;
 }
-body>.rightArea>div>div>.projectBasicInfo>.rows>.value{
+body>.rightArea .rightArea1>.projectBasicInfo>.rows>.value{
 
 }
 /*项目基本信息*/
 
 
-body>.rightArea>div>div>div:nth-child(n+2){
+body>.rightArea .rightArea1>div:nth-child(n+2){
 width: 95%;
 margin: 11px auto 0 auto;
 box-sizing: border-box;
@@ -1506,7 +1507,7 @@ body>.rightArea>div>div>div:nth-child(n+2){
 background-color: white;
 position: relative;
 }
-body>.rightArea>div>div>div:nth-child(n+2)>.headInfo{
+body>.rightArea .rightArea1>div:nth-child(n+2)>.headInfo{
 
     height: 33px;
 
@@ -1514,7 +1515,7 @@ body>.rightArea>div>div>div:nth-child(n+2)>.headInfo{
 
     background-color: #f6f6f6;
 }
-body>.rightArea>div>div>div:nth-child(n+2)>.headInfo>.title{
+body>.rightArea .rightArea1>div:nth-child(n+2)>.headInfo>.title{
 
     overflow: hidden;
 
@@ -1532,7 +1533,7 @@ body>.rightArea>div>div>div:nth-child(n+2)>.headInfo>.title{
 
     width: auto;
 }
-body>.rightArea>div>div>div:nth-child(n+2)>.headInfo>.foldExpansion{
+body>.rightArea .rightArea1>div:nth-child(n+2)>.headInfo>.foldExpansion{
 
     width: 24px;
 
@@ -1550,7 +1551,7 @@ body>.rightArea>div>div>div:nth-child(n+2)>.headInfo>.foldExpansion{
 
     margin: 9px 8px 0 0;
 }
-body>.rightArea>div>div>div:nth-child(n+2)>.headInfo>.select{
+body>.rightArea .rightArea1>div:nth-child(n+2)>.headInfo>.select{
 
     background-position: 0 1px;
 
@@ -1558,11 +1559,11 @@ body>.rightArea>div>div>div:nth-child(n+2)>.headInfo>.select{
 
     margin-top: 14px;
 }
-body>.rightArea>div>div>div:nth-child(n+2)>.selectArea{
+body>.rightArea .rightArea1>div:nth-child(n+2)>.selectArea{
 
     overflow: hidden;
 }
-body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>.out{
+body>.rightArea .rightArea1>div:nth-child(n+2)>.selectArea>.out{
 
     overflow: hidden;
 
@@ -1574,7 +1575,7 @@ body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>.out{
 
     width: 95%;
 }
-body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>.out>.fraction{
+body>.rightArea .rightArea1>div:nth-child(n+2)>.selectArea>.out>.fraction{
 
     color: #828181;
 
@@ -1584,7 +1585,7 @@ body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>.out>.fraction{
 
     margin-right: 4px;
 }
-body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>.out>.number{
+body>.rightArea .rightArea1>div:nth-child(n+2)>.selectArea>.out>.number{
 
     color: red !important;
 
@@ -1598,7 +1599,7 @@ body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>.out>.number{
 
     margin-left: 8px;
 }
-body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>div{
+body>.rightArea .rightArea1>div:nth-child(n+2)>.selectArea>div{
 
     width: 78px;
 
@@ -1614,7 +1615,7 @@ body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>div{
 
     cursor: pointer;
 }
-body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>.rate>div{
+body>.rightArea .rightArea1>div:nth-child(n+2)>.selectArea>.rate>div{
 
     width: 100%;
 
@@ -1624,7 +1625,7 @@ body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>.rate>div{
 
     margin-top: 10px;
 }
-body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>.distribution>div{
+body>.rightArea .rightArea1>div:nth-child(n+2)>.selectArea>.distribution>div{
 
     width: 100%;
 
@@ -1634,7 +1635,7 @@ body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>.distribution>div{
 
     margin-top: 10px;
 }
-body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>.markingRecords>div{
+body>.rightArea .rightArea1>div:nth-child(n+2)>.selectArea>.markingRecords>div{
 
     width: 100%;
 
@@ -1644,7 +1645,7 @@ body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>.markingRecords>div{
 
     margin-top: 10px;
 }
-body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>.projectRecords>div{
+body>.rightArea .rightArea1>div:nth-child(n+2)>.selectArea>.projectRecords>div{
 
     width: 100%;
 
@@ -1654,7 +1655,7 @@ body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>.projectRecords>div{
 
     margin-top: 10px;
 }
-body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>.templateMaintenance>div{
+body>.rightArea .rightArea1>div:nth-child(n+2)>.selectArea>.templateMaintenance>div{
 
     width: 100%;
 
@@ -1664,7 +1665,7 @@ body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>.templateMaintenance>div{
 
     margin-top: 10px;
 }
-body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>.checkAttendance>div{
+body>.rightArea .rightArea1>div:nth-child(n+2)>.selectArea>.checkAttendance>div{
 
     width: 100%;
 
@@ -1674,7 +1675,7 @@ body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>.checkAttendance>div{
 
     margin-top: 10px;
 }
-body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>.attendanceDetails>div{
+body>.rightArea .rightArea1>div:nth-child(n+2)>.selectArea>.attendanceDetails>div{
 
     width: 100%;
 
@@ -1684,7 +1685,7 @@ body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>.attendanceDetails>div{
 
     margin-top: 10px;
 }
-body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>.payroll>div{
+body>.rightArea .rightArea1>div:nth-child(n+2)>.selectArea>.payroll>div{
 
     width: 100%;
 
@@ -1694,7 +1695,7 @@ body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>.payroll>div{
 
     margin-top: 10px;
 }
-body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>div>.number{
+body>.rightArea .rightArea1>div:nth-child(n+2)>.selectArea>div>.number{
 
     position: absolute;
 
@@ -1720,7 +1721,7 @@ body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>div>.number{
 
     text-align: center;
 }
-body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>div>.title{
+body>.rightArea .rightArea1>div:nth-child(n+2)>.selectArea>div>.title{
 
     position: absolute;
 
@@ -1736,22 +1737,22 @@ body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>div>.title{
 
     background: transparent;
 }
-body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>div>.div{
+body>.rightArea .rightArea1>div:nth-child(n+2)>.selectArea>div>.div{
 
 }
-body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>.out>div{
+body>.rightArea .rightArea1>div:nth-child(n+2)>.selectArea>.out>div{
 
 }
-body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>.out>div>.number{
+body>.rightArea .rightArea1>div:nth-child(n+2)>.selectArea>.out>div>.number{
 
 }
-body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>.out>div>.title{
+body>.rightArea .rightArea1>div:nth-child(n+2)>.selectArea>.out>div>.title{
 
 }
-body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>.rate{
+body>.rightArea .rightArea1>div:nth-child(n+2)>.selectArea>.rate{
 
 }
-body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>.distribution>div{
+body>.rightArea .rightArea1>div:nth-child(n+2)>.selectArea>.distribution>div{
 
     width: 100%;
 
@@ -1761,10 +1762,10 @@ body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>.distribution>div{
 
     margin-top: 10px;
 }
-body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>.markingRecords>div{
+body>.rightArea .rightArea1>div:nth-child(n+2)>.selectArea>.markingRecords>div{
 
 }
-body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>.templateMaintenance>div{
+body>.rightArea .rightArea1>div:nth-child(n+2)>.selectArea>.templateMaintenance>div{
 
     width: 100%;
 
@@ -1774,7 +1775,7 @@ body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>.templateMaintenance>div{
 
     margin-top: 10px;
 }
-body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>.checkAttendance>div{
+body>.rightArea .rightArea1>div:nth-child(n+2)>.selectArea>.checkAttendance>div{
 
     width: 100%;
 
@@ -1784,7 +1785,7 @@ body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>.checkAttendance>div{
 
     margin-top: 10px;
 }
-body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>.attendanceDetails>div{
+body>.rightArea .rightArea1>div:nth-child(n+2)>.selectArea>.attendanceDetails>div{
 
     width: 100%;
 
@@ -1794,7 +1795,7 @@ body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>.attendanceDetails>div{
 
     margin-top: 10px;
 }
-body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>.payroll>div{
+body>.rightArea .rightArea1>div:nth-child(n+2)>.selectArea>.payroll>div{
 
     width: 100%;
 
@@ -1804,8 +1805,8 @@ body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>.payroll>div{
 
     margin-top: 10px;
 }
-body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>div>div:hover{background-position: 50% 0;}
-body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>.alreadyApplied>div{
+body>.rightArea .rightArea1>div:nth-child(n+2)>.selectArea>div>div:hover{background-position: 50% 0;}
+body>.rightArea .rightArea1>div:nth-child(n+2)>.selectArea>.alreadyApplied>div{
 
     width: 100%;
 
@@ -1815,7 +1816,7 @@ body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>.alreadyApplied>div{
 
     margin-top: 10px;
 }
-body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>.inbound>div{
+body>.rightArea .rightArea1>div:nth-child(n+2)>.selectArea>.inbound>div{
 
     width: 100%;
 
@@ -1825,7 +1826,7 @@ body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>.inbound>div{
 
     margin-top: 10px;
 }
-body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>.updateReceipt>div{
+body>.rightArea .rightArea1>div:nth-child(n+2)>.selectArea>.updateReceipt>div{
 
     width: 100%;
 
@@ -1835,7 +1836,7 @@ body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>.updateReceipt>div{
 
     margin-top: 10px;
 }
-body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>.beConsumed>div{
+body>.rightArea .rightArea1>div:nth-child(n+2)>.selectArea>.beConsumed>div{
 
     width: 100%;
 
@@ -1845,7 +1846,7 @@ body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>.beConsumed>div{
 
     margin-top: 10px;
 }
-body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>.consumed>div{
+body>.rightArea .rightArea1>div:nth-child(n+2)>.selectArea>.consumed>div{
 
     width: 100%;
 
@@ -1855,7 +1856,7 @@ body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>.consumed>div{
 
     margin-top: 10px;
 }
-body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>.manReceiver>div{
+body>.rightArea .rightArea1>div:nth-child(n+2)>.selectArea>.manReceiver>div{
 
     width: 100%;
 
@@ -1865,16 +1866,16 @@ body>.rightArea>div>div>div:nth-child(n+2)>.selectArea>.manReceiver>div{
 
     margin-top: 10px;
 }
-body>.rightArea>div>div>.projectMaterial .title{background: url(../images/projectMaterial.png) no-repeat 0;}
-body>.rightArea>div>div>.projectQuality .title{
+body>.rightArea .rightArea1>.projectMaterial .title{background: url(../images/projectMaterial.png) no-repeat 0;}
+body>.rightArea .rightArea1>.projectQuality .title{
 
     background: url(../images/projectQuality.png) no-repeat 0;
 }
-body>.rightArea>div>div>.projectData .title{
+body>.rightArea .rightArea1>.projectData .title{
 
     background: url(../images/projectData.png) no-repeat 0;
 }
-body>.rightArea>div>div>.laborManagement .title{
+body>.rightArea .rightArea1>.laborManagement .title{
 
     background: url(../images/laborManagement.png) no-repeat 0;
 }
@@ -2312,7 +2313,7 @@ body >.processArea>div .dataListArea>.title{
 /*扣分记录  弹出框页面  end*/
 
 /*项目物料右侧弹出框 start*/
-body >.projectMaterialsRightArea,body >.alreadyAppliedRightArea{
+body >.rightAreaCommonToggle{
 border-top: 2px solid red;
 position: fixed;
 top: 0;
@@ -2322,7 +2323,9 @@ body >.projectMaterialsRightArea,body >.alreadyAppliedRightArea{
 bottom: 0;
 width: 393px;
 }
-
+    body > .rightAreaCommonToggle .mCSB_container {
+    margin:0px !important;
+    }
 body  .R-Top{
 
     margin: 25px auto 0 auto;
@@ -2376,6 +2379,7 @@ body  .R-Top>.closeBtn{
     margin: 5.5px;
 }
 
+body .R-Bottom table {width: 100%;}
 body  .R-Bottom {width: 93%;margin: 10px auto;}
 body  .R-Bottom>.title{font-size: 14px;/* margin-bottom: 10px; */}
 body  .R-Bottom>.R-Table{margin-bottom: 20px;}
@@ -2449,6 +2453,162 @@ body .R-Bottom>.R-Table table tbody td .numberOperating input{height: 16px;width
     font-size: 15px;
     margin: 11px 0 20px 105px;
 }
+
+/*项目材料弹出框*/
+/*项目材料 
+    已申请
+待收货
+收货变更
+待消耗
+已消耗 
+    右侧弹出框 start*/
+    body .R-Bottom .alreadyAppliedRows {
+    border: 1px solid #dcdcdc;
+    padding: 0px 10px;
+    margin-bottom: 20px;
+    }
+      body .R-Bottom .alreadyAppliedRows .titleRows{
+    padding: 10px 10px;
+    border-bottom: 1px solid #dcdcdc;
+    margin: 0px -10px;
+    }
+        body .R-Bottom .alreadyAppliedRows .titleRows span{
+    }
+            body .R-Bottom .alreadyAppliedRows .valueRows{
+    }
+                 body .R-Bottom .alreadyAppliedRows .valueRows .addressRows{
+    /* padding: 10px 0px; */
+    margin: 10px 0px;
+    }
+  body .R-Bottom .alreadyAppliedRows .valueRows .addressRows .row{
+    }
+    body .R-Bottom .alreadyAppliedRows .valueRows .addressRows .row .title{
+    display: inline-block;
+    color: #6e6e6e;
+    }
+     body .R-Bottom .alreadyAppliedRows .valueRows .addressRows .row .value{
+    display: inline-block;
+    }
+        body .R-Bottom .alreadyAppliedRows .valueRows .tableRows{
+    margin-top: 20px;
+    }
+              body .R-Bottom .alreadyAppliedRows .valueRows .tableRows table{
+    border-collapse: collapse;
+    }
+                body .R-Bottom .alreadyAppliedRows .valueRows .tableRows table thead th{
+    background: #00b7c4;
+    color: #fff;
+    padding: 8px 0px;
+    }
+                       body .R-Bottom .alreadyAppliedRows .valueRows .tableRows table tbody td{
+    border-bottom: 1px solid #dcdcdc;
+    padding: 8px 0px;
+    }
+   body .R-Bottom .alreadyAppliedRows .valueRows .statusRows {
+    padding: 15px 0px;
+    }
+ body .R-Bottom .alreadyAppliedRows .valueRows .statusRows .btnStatusError{
+    background: red;
+    color: #fff;
+    padding: 2px 10px;
+    border-radius: 4px;
+    }
+  body .R-Bottom .alreadyAppliedRows .valueRows .statusRows .btnStatusConfrim{
+    display: inline-block;
+    width: 99px;
+    background-color: red;
+    color: white;
+    text-align: center;
+    border-radius: 18px;
+    height: 26px;
+    line-height: 26px;
+    font-size: 15px;
+    }
+    body .R-Bottom .alreadyAppliedRows .valueRows .statusRows a {
+    margin: 0px 10px;
+    }
+/*项目材料 
+    已申请
+待收货
+收货变更
+待消耗
+已消耗 
+    右侧弹出框 end*/
+
+.updateReceiptRightArea .R-Bottom .valueRows table input {width: 50px;border: 1px solid #dcdcdc;}
+.beConsumedRightArea .R-Bottom .valueRows table input {width: 50px;border: 1px solid #dcdcdc;}
+.consumedRightArea .R-Bottom .valueRows table input {width: 50px;border: 1px solid #dcdcdc;}
+/*项目材料 收货人管理 start**/
+body .manReceiverRightArea  .R-Bottom .manReceiverRows {
+
+}
+body .manReceiverRightArea  .R-Bottom  .manReceiverRows .titleRows{
+border: 1px solid #dcdcdc;
+padding: 10px;
+}
+body .manReceiverRightArea  .R-Bottom .manReceiverRows .titleRows table{
+
+}
+body .manReceiverRightArea  .R-Bottom  .manReceiverRows .titleRows table tr td:first-child{
+
+}
+body .manReceiverRightArea  .R-Bottom  .manReceiverRows .titleRows table tr td:last-child{
+
+}
+    body .manReceiverRightArea .R-Bottom .manReceiverRows .titleRows table tr td:last-child input[type="checkbox"] {
+}
+body .manReceiverRightArea  .R-Bottom  .manReceiverRows .titleRows table tr td:last-child input[type="text"]{
+border: 1px solid #dcdcdc;
+width: 100%;
+height: 25px;
+display: inline-block;
+}
+body .manReceiverRightArea  .R-Bottom  .manReceiverRows .titleRows table .btn-save{
+display: inline-block;
+width: 99px;
+border: 0px;
+background-color: red;
+color: white;
+text-align: center;
+border-radius: 18px;
+height: 26px;
+line-height: 26px;
+font-size: 15px;
+-webkit-box-shadow: 0 0 2px 2px red;
+-moz-box-shadow: 0 0 2px 2px red;
+box-shadow: 0 0 2px 2px red;
+cursor: pointer;
+}
+  body .R-Bottom .manReceiverRows .valueRows .tableRows{
+    margin-top: 20px;
+    }
+              body .R-Bottom .manReceiverRows .valueRows .tableRows table{
+    border-collapse: collapse;
+    }
+                body .R-Bottom .manReceiverRows .valueRows .tableRows table thead th{
+    background: #00b7c4;
+    color: #fff;
+    padding: 8px 0px;
+    }
+                       body .R-Bottom .manReceiverRows .valueRows .tableRows table tbody td{
+    border-bottom: 1px solid #dcdcdc;
+    padding: 8px 0px;
+    }
+     body .R-Bottom .manReceiverRows .valueRows .tableRows table tbody td .update{
+             color: red;
+    text-decoration: underline;
+    }
+      body .R-Bottom .manReceiverRows .valueRows .tableRows table tbody td .delete{
+   color: red;
+   text-decoration: underline;
+   }
+         body .R-Bottom .manReceiverRows .valueRows .tableRows table tbody td .btn-default{
+   border: 0px;
+   background: #00b7c4;
+   color: #fff;
+   padding: 4px 6px;
+   }
+/*项目材料 收货人管理 end**/
 a:visited {
     text-decoration: none;
 }

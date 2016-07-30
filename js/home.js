@@ -371,7 +371,16 @@ $(document).on("click", "body>.centerArea>.projectInfo .table4_2 .btn-green", fu
     var processAreaOb = $("body>.projectMaterialsRightArea");
     rightAreaCommonShow(processAreaOb);
 });
+/**
+ * 项目物料弹框事件
+ * 创建人:徐建华
+ * 创建时间:2016年7月30日22:49:24
+ */
+$(document).on("click", "body > .rightArea  .rightArea1>.headTop > .shoppingCart", function () {
 
+    var processAreaOb = $("body>.projectMaterialsRightArea");
+    rightAreaCommonShow(processAreaOb);
+});
 /**
  * 项目物料弹框关闭按钮
  * 创建人:邵炜
@@ -441,6 +450,106 @@ $("body>.alreadyAppliedRightArea .closeBtn").click(function () {
     rightAreaCommonHide(processAreaOb);
 });
 
+/**
+ * 项目物料 待收货 右侧弹出框
+ * 创建人:徐建华
+ * 创建时间:2016年7月30日22:49:24
+ */
+$(document).on("click", "body>.rightArea .projectMaterial .selectArea .inbound", function () {
+    var processAreaOb = $("body>.inboundRightArea");
+    rightAreaCommonShow(processAreaOb);
+});
+
+/**
+ *项目物料 待收货 右侧弹出框 关闭按钮
+ * 创建人:邵炜
+ * 创建时间:2016年7月17日22:55:00
+ */
+$("body>.inboundRightArea .closeBtn").click(function () {
+    var processAreaOb = $("body>.inboundRightArea");
+    rightAreaCommonHide(processAreaOb);
+});
+
+/**
+ * 项目物料 收货变更 右侧弹出框
+ * 创建人:徐建华
+ * 创建时间:2016年7月30日22:49:24
+ */
+$(document).on("click", "body>.rightArea .projectMaterial .selectArea .updateReceipt", function () {
+    var processAreaOb = $("body>.updateReceiptRightArea");
+    rightAreaCommonShow(processAreaOb);
+});
+
+/**
+ *项目物料 收货变更 右侧弹出框 关闭按钮
+ * 创建人:邵炜
+ * 创建时间:2016年7月17日22:55:00
+ */
+$("body>.updateReceiptRightArea .closeBtn").click(function () {
+    var processAreaOb = $("body>.updateReceiptRightArea");
+    rightAreaCommonHide(processAreaOb);
+});
+
+
+/**
+ * 项目物料 待消耗 右侧弹出框
+ * 创建人:徐建华
+ * 创建时间:2016年7月30日22:49:24
+ */
+$(document).on("click", "body>.rightArea .projectMaterial .selectArea .beConsumed", function () {
+    var processAreaOb = $("body>.beConsumedRightArea");
+    rightAreaCommonShow(processAreaOb);
+});
+
+/**
+ *项目物料 待消耗 右侧弹出框 关闭按钮
+ * 创建人:邵炜
+ * 创建时间:2016年7月17日22:55:00
+ */
+$("body>.beConsumedRightArea .closeBtn").click(function () {
+    var processAreaOb = $("body>.beConsumedRightArea");
+    rightAreaCommonHide(processAreaOb);
+});
+
+/**
+ * 项目物料 已消耗 右侧弹出框
+ * 创建人:徐建华
+ * 创建时间:2016年7月30日22:49:24
+ */
+$(document).on("click", "body>.rightArea .projectMaterial .selectArea .consumed", function () {
+    var processAreaOb = $("body>.consumedRightArea");
+    rightAreaCommonShow(processAreaOb);
+});
+
+/**
+ *项目物料 已消耗 右侧弹出框 关闭按钮
+ * 创建人:邵炜
+ * 创建时间:2016年7月17日22:55:00
+ */
+$("body>.consumedRightArea .closeBtn").click(function () {
+    var processAreaOb = $("body>.consumedRightArea");
+    rightAreaCommonHide(processAreaOb);
+});
+
+/**
+ * 项目物料 收货人管理 右侧弹出框
+ * 创建人:徐建华
+ * 创建时间:2016年7月30日22:49:24
+ */
+$(document).on("click", "body>.rightArea .projectMaterial .selectArea .manReceiver", function () {
+    var processAreaOb = $("body>.manReceiverRightArea");
+    rightAreaCommonShow(processAreaOb);
+});
+
+/**
+ *项目物料 收货人管理 右侧弹出框 关闭按钮
+ * 创建人:邵炜
+ * 创建时间:2016年7月17日22:55:00
+ */
+$("body>.manReceiverRightArea .closeBtn").click(function () {
+    var processAreaOb = $("body>.manReceiverRightArea");
+    rightAreaCommonHide(processAreaOb);
+});
 /**
  * 左侧区域显示事件
  */
